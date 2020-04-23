@@ -1,0 +1,1206 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI
+  xmlns="http://www.tei-c.org/ns/1.0"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns:math="http://www.w3.org/1998/Math/MathML">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Edizione Logica Avicennae(2)</title>
+                <author>Avicenna</author>
+                <respStmt>
+                    <resp>Edited by</resp>
+                    <name xml:id="silvia">Silvia Di Vincenzo</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Text Encoding by</resp>
+                    <name xml:id="daniele">Daniele Marotta</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Changes for EVT testing purposes by</resp>
+                    <name xml:id="chiara">Chiara Martignano</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <interpGrp>
+                        <interp xml:id="rec1">Recensio 1</interp>
+                        <interp xml:id="rec2">Recensio 2</interp>
+                        <!-- Third recensio added for testing purposes -->
+                        <interp xml:id="rec3">Recensio 3</interp>
+                    </interpGrp>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <p></p>
+            </publicationStmt>
+            <notesStmt>
+                <note>
+                </note>
+            </notesStmt>
+            <sourceDesc>
+                <listWit>
+                    <listWit xml:id="rec1_wits" ana="#rec1" resp="#chiara">
+                    <head>Witnesses of version A</head>
+                    <witness xml:id="V">
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>Città del Vaticano</settlement>
+                                <repository>Biblioteca Apostolica Vaticana</repository>
+                                <idno>Vat.lat.2186</idno>
+                            </msIdentifier>
+                            <physDesc>
+                                <handDesc>
+                                    <handNote xml:id="V2">Seconda mano su Vat. lat. 2186. Gotica, con tratti forse francesi (e.g. taglio del segno tachigrafico per "et").</handNote>
+                                </handDesc>
+                            </physDesc>
+                        </msDesc>
+                    </witness>
+                    <witness xml:id="P">
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>Paris</settlement>
+                                <repository>Bibliothèque nationale de France</repository>
+                                <idno>Latin 6443</idno>
+                            </msIdentifier>
+                        </msDesc>
+                    </witness>
+                    <witness xml:id="N">
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>Napoli</settlement>
+                                <repository>Biblioteca Nazionale</repository>
+                                <idno>VIII.E.33</idno>
+                            </msIdentifier>
+                            <physDesc>
+                                <handDesc>
+                                    <handNote  xml:id="N2">Seconda mano su N; si tratta di una mano scrivente con inchiostro differente (nero) e scrittura differente.</handNote>
+                                </handDesc>
+                            </physDesc>
+                        </msDesc>
+                    </witness>
+                    <witness xml:id="M">
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>Oxford</settlement>
+                                <repository>Merton Coll.</repository>
+                                <idno>282</idno>
+                            </msIdentifier>
+                            <physDesc>
+                                <handDesc>
+                                    <handNote xml:id="M2"></handNote>
+                                </handDesc>
+                            </physDesc>
+                        </msDesc>
+                    </witness>
+                    </listWit>
+                    <listWit xml:id="rec2_wits" ana="#rec2" resp="#chiara">
+                    <head>Witnesses of version B</head>
+                    <witness xml:id="G">Graz, Universitaetsbibl. 482</witness>
+                    <witness xml:id="C">Cordoba, Bibl. capit.52</witness>
+                    <witness xml:id="R">Roma, Bibl. Angelica 242 (C.4.10)</witness>
+                    <witness xml:id="F">Paris. BnF lat. 16096</witness>
+                    <witness xml:id="D">Dubrovnik, Dominik. Samostan 63 (36-V-6)</witness>
+                    <witness xml:id="O">Oxford, Bodl. Libr. Digby 217</witness>
+                    </listWit>
+                    <listWit xml:id="rec3_wits" ana="#rec3" resp="#chiara">
+                    <head>Witnesses of version C</head>
+                    <witness xml:id="W">Oxford, Oriel Coll. 7</witness>
+                    <witness xml:id="M5mg">M5mg.</witness>
+                    <witness xml:id="B">
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>Bruges</settlement>
+                                <repository>Sted. Openb. Bibl.</repository>
+                                <idno>510</idno>
+                            </msIdentifier>
+                            <physDesc>
+                                <handDesc>
+                                    <handNote xml:id="B2"></handNote>
+                                </handDesc>
+                            </physDesc>
+                        </msDesc>
+                    </witness>
+                    <witness xml:id="U">
+                        <msDesc>
+                            <msIdentifier></msIdentifier>
+                            <physDesc>
+                                <handDesc>
+                                    <handNote xml:id="U2"></handNote>
+                                </handDesc>
+                            </physDesc>
+                        </msDesc>
+                    </witness>
+                    </listWit>
+                </listWit>
+                <listPerson>
+                    <person xml:id="p_Aristotele" sortKey="Aristotele">
+                        <persName full="yes" xml:lang="it">Aristotele</persName>
+                        <persName full="yes" type="alternative" xml:lang="en">Aristotle</persName>
+                        <persName full="abb" xml:lang="it">Arist.</persName>
+                        <birth calendar="#gregorian" notBefore="-0384" notAfter="-0383">384/383 a.C.</birth>
+                        <death  calendar="#gregorian" when="-0322">322 a.C.</death>
+                    </person>
+                    <person xml:id="p_Avicenna" sortKey="Avicenna">
+                        <persName full="yes" xml:lang="la">Avicenna</persName>
+                        <persName full="yes" type="alternative" xml:lang="ar-Latn">Abū ʿAlī al-Ḥusayn ibn ʿAbd Allāh ibn Al-Hasan ibn Ali ibn Sīnā</persName>
+                        <persName full="abb" type="alternative" xml:lang="ar-Latn">Ibn Sīnā</persName>
+                        <persName full="yes"  type="alternative" xml:lang="ar-Latn">Sharaf al-Mulk</persName>
+                        <persName full="yes"  type="alternative" xml:lang="ar-Latn">Hujjat al-Haq</persName>
+                        <birth calendar="#gregorian" when="0980-08-22">22 agosto 980 d.C.</birth>
+                        <death  calendar="#gregorian" when="1037-06-21">21 giugno 1037 d.C.</death>
+                    </person>
+                    <person xml:id="p_Boezio" sortKey="Boezio_Anicio">
+                        <persName full="yes" xml:lang="la">Anicius Manlius Severinus Boethius</persName>
+                        <persName full="yes"  type="alternative" xml:lang="it">Anicio Manlio Severino Boezio</persName>
+                        <persName full="abb" xml:lang="it">Boezio</persName>
+                        <persName full="abb" xml:lang="la">Boethius</persName>
+                        <persName full="yes"  type="alternative" xml:lang="ar-Latn">Sharaf al-Mulk</persName>
+                        <persName full="yes"  type="alternative" xml:lang="en">Boetius</persName>
+                        <birth calendar="#gregorian" when="0480">480 d.C.</birth>
+                        <death  calendar="#gregorian" when="0524">524 d.C.</death>
+                    </person>
+                </listPerson>
+                <listBibl>
+                    <head>Works</head>
+                    <bibl type="work" xml:id="w_metaph" sortKey="Metafisica">
+                        <title xml:lang="it">Metafisica</title>
+                        <title xml:lang="en">Metaphysics</title>
+                        <title type="short">Metaph.</title>
+                        <author ref="#p_Aristotele">Aristotele</author>
+                        <ref type="manifestation" target="#ar_met_perseus"/>
+                    </bibl>
+                    <bibl type="work" xml:id="w_sifa" sortKey="Kitab_al-Šifāʾ">
+                        <title xml:lang="ar-Latn">Kitab al-Šifāʾ</title>
+                        <title xml:lang="it">Libro della guarigione</title>
+                        <author ref="#p_Avicenna" xml:lang="ar-Latn">Ibn Sīnā</author>
+                    </bibl>
+                    <bibl type="work" xml:id="w_nafs" sortKey="Kitāb_al-Nafs">
+                        <title xml:lang="ar-Latn">Kitāb al-Nafs</title>
+                        <title type="short">Nafs</title>
+                        <author ref="#p_Avicenna" xml:lang="ar-Latn">Ibn Sīnā</author>
+                        <relatedItem type="isPartOf" target="#w_sifa"/>
+                        <ref type="manifestation" target="#Rahman1959"/>
+                    </bibl>
+                    <bibl type="work" xml:id="w_burhan" sortKey="Kitāb_al-Burhān">
+                        <title xml:lang="ar-Latn">Kitāb al-Burhān</title>
+                        <title type="short">Burhān</title>
+                        <author ref="#p_Avicenna" xml:lang="ar-Latn">Ibn Sīnā</author>
+                        <relatedItem type="isPartOf" target="#w_sifa"/>
+                        <ref type="manifestation" target="#Afifi1956"/>
+                    </bibl>
+                    <bibl type="work" xml:id="w_boe-in-isagoge" sortKey="In_Porphyrii_Isagogen">
+                        <title xml:lang="la">In Porphyrii Isagogen</title>
+                        <title type="short" xml:lang="it">In Porph. Isag.</title>
+                        <author ref="#p_Boezio" xml:lang="la">Boethius</author>
+                         <ref type="manifestation" target="#CPT_PLD64"/>
+                    </bibl>
+                    <bibl type="work" xml:id="w_boe-traslatio-isagoge" sortKey="Porphyrii_Isagoge_Translatio">
+                        <title xml:lang="la">Porphyrii Isagoge translatio</title>
+                        <title type="short" xml:lang="it">Porph. Isag. translatio.</title>
+                        <author ref="#p_Boezio" xml:lang="la">Boethius</author>
+                        <ref type="manifestation" target="#CPT_PLD64"/>
+                    </bibl>
+                    <bibl type="work" xml:id="w_boe-traslatio-topicorum" sortKey="Aristotelis_Topicorum_Translatio">
+                        <title xml:lang="la">Aristotelis Topicorum translatio</title>
+                        <title type="short" xml:lang="it">Arist. Top. translatio.</title>
+                        <author ref="#p_Boezio" xml:lang="la">Boethius</author>
+                        <ref type="manifestation" target="#ATT_PLD64"/>
+                    </bibl>
+                    <!-- non avendo i riferimenti precisi la segno così a utilità degli esempi -->
+                    <bibl type="work" xml:id="w_logica" sortKey="Logica">
+                        <title xml:lang="it">Logica</title>
+                        <title type="short" xml:lang="it">Logica</title>
+                        <author ref="#p_Avicenna" xml:lang="ar-Latn">Ibn Sīnā</author>
+                        <ref type="manifestation" target="#msAr #trLa"/>
+                    </bibl>
+                </listBibl>
+                <listBibl>
+                    <head>Editions and Manuscripts</head>
+                    <bibl xml:id="ar_met_perseus">Aristotle, Metaphysics (greek), in <title>Perseus Digital Library</title>, ed. <editor>Gregory R. Crane</editor>, Tufts University, <ref target="http://www.perseus.tufts.edu">http://www.perseus.tufts.edu</ref></bibl>
+                    <bibl xml:id="Rahman1959"><title>Avicenna's De Anima (Arabic Text), being the psychological part of the Kitab_al-Šifāʾ</title>, ed. by <editor>F. Rahman</editor>, London 1959</bibl>
+                    <bibl xml:id="Afifi1956"><title>Al-Šifāʾ, al-Manṭiq, al-Burhān</title>, ed. by <editor>A. F. ʿAfīfī, Al-Maṭbaʿa al-amīriyya</editor>, Cairo 1956</bibl>
+                    <bibl xml:id="msAr">Manoscritto arabo</bibl>
+                    <bibl xml:id="trLa">Manoscritto arabo del traduttore latino</bibl>
+                    <bibl xml:id="CPT_PLD64"><author>An. Manl. Sev. Boetii</author> <title>Commentaria in Porphyrium a se translatum</title>, in <title>Patrologia latina. The full text database</title>, versione elettronica di <title>Patrologiae cursus completus. Series Latina</title>, a cura di <editor>Jacques-Paul Migne, ProQuest-CSA, 1996-2017,  <ref target="http://pld.chadwyck.co.uk/">http://pld.chadwyck.co.uk/</ref> </editor>.</bibl>
+                    <bibl xml:id="ATT_PLD64"><title>Topicorum Aristoteli libri octo</title>,  <author>An. Manl. Sev. Boetii</author> interprete, in <title>Patrologia latina. The full text database</title>, versione elettronica di <title>Patrologiae cursus completus. Series Latina</title>, a cura di <editor>Jacques-Paul Migne, ProQuest-CSA, 1996-2017,  <ref target="http://pld.chadwyck.co.uk/">http://pld.chadwyck.co.uk/</ref> </editor>.</bibl>
+                    <!--Bibl entries added for testing purposes-->
+                    <bibl>
+                        <editor>ed. G. Roper</editor>
+                        <title>World Survey of Islamic Manuscripts</title>
+                        <pubPlace>London</pubPlace>
+                        <publisher>Al-Furqan Islamic Heritage Foundation</publisher>
+                        <date>1992-1994</date>
+                    </bibl>
+                    <bibl>
+                        <author>A. Q. Ahmed</author>
+                        <title level="j">“The Shifāʾ in India I: Reflections on the Evidence of the Manuscripts”</title>
+                        <title level="j">Oriens, 40</title>
+                        <date>2012</date>
+                    </bibl>
+                    <bibl>
+                        <author>J. J. Witkam</author>
+                        <title level="j"> “Avicenna’s Copyists at Work: Codicological Features of the Two Leiden Manuscripts of the Kitāb al-Shifāʾ”</title>
+                        <title level="j">Oriens, 40</title>
+                        <date>2012</date>
+                    </bibl>
+                    <bibl>
+                        <author>S. H. Rizvi,</author>
+                        <title level="a"> “Mīr Dāmād in India: Islamic Philosophical Traditions and the Problem of Creation”</title>
+                        <title level="j">Journal of the American Oriental Society</title>
+                        <date>2011</date>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <variantEncoding method="parallel-segmentation" location="internal" />
+            <tagsDecl>
+            </tagsDecl>
+        </encodingDesc>
+    </teiHeader>
+    <!--END OF TEIHEADER-->
+
+    <!--BEGINNING OF TEXT-->
+    <text>
+
+        <!--BEGINNING OF BODY-->
+        <body>
+
+<!--First div-->
+<div>
+    <!--Beginning of Head-->
+    <head><supplied resp="#silvia">Cap. I.4</supplied>
+        Capitulum 
+        <app resp="#silvia">
+            <lem wit="#F #G #N #P #R #V"/>
+            <rdg cause="add" wit="#M #B #U">tertium</rdg>
+        </app> de subiecto logicae 
+        <app resp="#silvia">
+            <lem wit="#F #G #M #N #P #R #V"/>
+            <rdg cause="add" wit="#B #U">Avicennae</rdg>
+        </app>
+    </head>
+    <!--End of Head-->
+    <!--Beginning of first Paragraph-->
+    <p>
+        Impossibile est 
+        <app resp="#silvia">
+            <lem wit="#F #G #M #N #P #R #V">animum moveri</lem>
+            <rdg type="orthographic" wit="#C" resp="#chiara">animu moveri</rdg>
+            <rdg wit="#B #U" cause="trans">moveri animum</rdg>
+        </app> ab uno solo intellectu ad credendum aliquid. Hic enim intellectus non est iudicium 
+        <app resp="#silvia">
+            <lem wit="#B #F #G #N #P #R #U #V">faciendi</lem>
+            <rdg cause="om" wit="#M"/>
+        </app> fidem 
+        <app resp="#silvia">
+            <lem wit="#F #G #M #N #P #R #V">essendi</lem>
+            <rdg cause="subs" wit="#B #U"></rdg>
+        </app>
+        <app resp="#silvia">
+            <lem wit="#F #M #N #P #R #V #C #G">rem</lem>
+            <rdg cause="om" wit="#B #U"/>
+        </app> vel non 
+        <app resp="#silvia">
+            <lem wit="#F #G #M #N #P #R #U #V">essendi</lem>
+            <rdg cause="subs" wit="#B">existendi</rdg>
+            <rdg type="concordance" wit="#U"><subst hand="#U2"><del>existendi</del><add>essendi</add></subst></rdg>
+        </app>.  Si enim fides esset, licet intellectus poneret rem esse 
+        <app resp="#silvia">
+            <lem wit="#F #G #M #N #P #R #U #V">vel</lem>
+            <rdg type="orthographic" wit="#C" resp="#chiara">fel</rdg>
+            <rdg cause="subs" wit="#B">iam</rdg>
+        </app> non esse. Tunc ipse 
+        <app resp="#silvia">
+            <lem wit="#C #F #G #M #N #P #R #V">intellectus</lem>
+            <rdg cause="om" wit="#B #U"/>
+        </app>
+        non 
+        <app resp="#silvia">
+            <lem wit="#F #G #M #N #P #R #V">valeret</lem>
+            <rdg type="orthographic" wit="#C" resp="#chiara">vaseret</rdg>
+            <rdg cause="subs" wit="#B #U">valet</rdg>
+        </app> ad faciendum 
+        <app resp="#silvia">
+            <lem wit="#B #F #N #P #R #U #V">ullam</lem>
+            <rdg cause="subs" wit="#M #G">illam</rdg>
+        </app> fidem ullomodo. Quod enim facit fidem 
+        <app resp="#silvia">
+            <lem wit="#C #F #G #M #N #P #R #V">causa est</lem>
+            <rdg cause="trans" wit="#B #U">est causa</rdg>
+        </app> fidei, sed impossibile est 
+        <app resp="#silvia">
+            <lem>
+                <app resp="#silvia">
+                    <lem>
+                        <app>
+                            <lem wit="#F #G #M #N #P #R #U #V">aliquid</lem>
+                            <rdg cause="subs" wit="#B">aliqua</rdg>
+                        </app>
+                        esse
+                    </lem>
+                    <rdg cause="trans" wit="#U #B">esse aliquid</rdg>
+                </app> 
+                <app resp="#silvia">
+                    <lem wit="#F #G #M #N #P #R #V">causam</lem>
+                    <rdg cause="subs" wit="#U #B">causa</rdg>
+                    <rdg type="concordance" wit="#U" hand="#U2">causa<add>m</add></rdg>
+                </app>
+            </lem>
+        </app> alterius sive 
+        <app resp="#silvia">
+            <lem wit="#F #G #M #N #P #R #U #V">habeat</lem>
+            <rdg cause="subs" wit="#B">hanc</rdg>
+        </app> esse, sive non. 
+    </p>
+    <!--End of first Paragraph-->
+
+    <!--Beginning of second Paragraph-->
+    <p>
+        <app resp="#silvia">
+            <lem wit="#F #G #M #N #P #R #V">Intellectus</lem>
+            <rdg cause="subs" wit="#B #U">Intelligendum</rdg>
+            <rdg type="concordance" wit="#U" hand="#U2"><subst><del>Intelligendum</del><add>Intellectus</add></subst></rdg>
+        </app> 
+        <app resp="#silvia">
+            <lem wit="#F #G #M #N #P #R #U #V">autem</lem>
+            <rdg cause="subs" wit="#B">non enim</rdg>
+        </app> saepe habetur ex uno solo verbo.
+        <note resp="#silvia" type="philological" xml:lang="it">
+            <mentioned xml:lang="la">Intellectus autem saepe habetur ex uno solo verbo</mentioned>
+            Il ms.
+            <bibl corresp="#trLa">ar. del trad. lat.</bibl>
+            disloca qui, in corrispondenza dell'
+            <bibl corresp="#msAr">ar.
+                <citedRange>21.6</citedRange>
+            </bibl>
+            il passo
+            <bibl corresp="#msAr">ar.
+                <citedRange>21.10</citedRange>
+            </bibl>
+            <quote source="#msAr" xml:lang="ar">و أما التصور فإنه كثيرا ما يقع بمعنى مفرد</quote>
+            ("la concettualizzazione spesso occorre per mezzo di una nozione semplice").
+            Il passo è poi omesso nel luogo in cui avrebbe dovuto essere (cf. <ref target="#n2">infra</ref>).
+        </note>
+        Si autem 
+        <app resp="#silvia">
+            <lem wit="#B #F #G #M #N #P #R #V">unum</lem>
+            <rdg cause="om" wit="#U"/>
+        </app> non sufficit 
+        <app resp="#silvia">
+            <lem wit="#F #G #M #N #P #R #U #V"/>
+            <rdg cause="add" wit="#B">unum</rdg>
+        </app> ad 
+        <app resp="#silvia">
+            <lem wit="#B #F #G #M #N #P #R #V"/>
+            <rdg cause="add" wit="#U">unum</rdg>
+        </app> intelligendum illud esse, vel non esse, in essentia sua, 
+        <app resp="#silvia">
+            <lem wit="#B #F #G #N #P #R #U #V">aut</lem>
+            <rdg cause="subs" wit="#M">ut</rdg>
+        </app> dispositione, 
+            <app resp="#silvia">
+                <lem wit="#F #G #M #N #P #R #V">nec</lem>
+                <rdg cause="subs" wit="#B #U">non</rdg>
+            </app> 
+        <app resp="#silvia">
+            <lem wit="#B #F #G #M #N #R #U #V">faciet</lem>
+            <rdg cause="subs" wit="#P">facit</rdg>
+        </app> fidem de 
+        <app resp="#silvia">
+            <lem wit="#F #G #M #N #P #R #U #V">alio</lem>
+            <rdg cause="subs" wit="#B">aliquo</rdg>
+        </app>. Cum vero addideris 
+        <app resp="#silvia">
+            <lem wit="#F #G #M #N #R #V">intellectui</lem>
+            <rdg cause="subs" wit="#P #B #U">intellectum</rdg>
+        </app> esse vel non esse, iam 
+        <app resp="#silvia">
+            <lem wit="#B #F #G #P #R #U #V">addidisti</lem>
+            <rdg cause="subs" wit="#N">addisti</rdg>
+            <rdg type="concordance" wit="#M">ad<add hand="#M2" place="above">di</add>disti</rdg>
+        </app> ei 
+       <app resp="#silvia">
+           <lem>
+               <app resp="#silvia">
+                   <lem wit="#B #F #G #M #N #P #R #V"/>
+                   <rdg cause="add" wit="#U">al</rdg>
+               </app> 
+               <app resp="#silvia">
+                   <lem wit="#F #G #M #N #P #R #U #V">alium</lem>
+                   <rdg cause="subs" wit="#B">aliquando</rdg>
+               </app>
+           </lem>
+       </app>
+       intellectum
+       <note xml:id="n2" type="philological">
+            <mentioned>intellectum</mentioned>
+            Qui l’<bibl corresp="#msAr">ar.
+                        <citedRange>21.10</citedRange>
+                  </bibl>
+        colloca il segmento trasposto dall’esemplare del traduttore lat.
+        </note>, sicut postea declarabitur 
+        <app resp="#silvia">
+            <lem wit="#B #F #G #N #P #R #U #V"/>
+            <rdg cause="add" wit="#M">in</rdg>
+        </app> suo loco. Hoc autem, scilicet 
+        <app resp="#silvia">
+            <lem wit="#F #G #M #N #P #R #V">ex</lem>
+            <rdg cause="om" wit="#U #B"/>
+        </app> uno verbo intelligere, 
+        <app resp="#silvia">
+            <lem wit="#F #G #M #N #P #R #V">in</lem>
+            <rdg cause="subs" wit="#B #U">ita</rdg>
+        </app> paucis contingit, et 
+        <app resp="#silvia">
+            <lem wit="#F #G #M #N #P #R #U #V">praeter</lem>
+            <rdg cause="subs" wit="#B">post</rdg>
+        </app> hoc in plerisque 
+        <app resp="#silvia">
+            <lem wit="#B #F #M #N #P #R #U #V">est</lem>
+            <rdg cause="om" wit="#G"/>
+        </app> 
+        <app resp="#silvia">
+            <lem wit="#F #G #M #N #P #R #V"/>
+            <rdg cause="add" wit="#B">secundum</rdg>
+            <rdg cause="add" wit="#U">hoc</rdg>
+        </app> diminutum et malum. 
+        <app resp="#silvia">
+            <lem wit="#F #G #M #N #P #R #V">Quod</lem>
+            <rdg cause="subs" wit="#U #B">oratio</rdg>
+        </app> autem 
+        <app resp="#silvia">
+            <lem wit="#B #F #G #N #P #R #U #V"/>
+            <rdg type="concordance" wit="#M"><del><add>intelligere</add></del></rdg>
+        </app>         
+        <app resp="#silvia">
+            <lem wit="#B #F #G #M #N #R #U">in plerisque dat 
+                <app resp="#silvia">
+                    <lem wit="#F #G #M #N #P #R #V">intelligi</lem>
+                    <rdg cause="subs" wit="#B #U">intelligere</rdg>
+                </app> 
+                et credere 
+                <app resp="#silvia">
+                    <lem wit="#F #G #M #N #P #R #U #V">sunt</lem>
+                    <rdg cause="subs" wit="#B">sui</rdg>
+                </app>
+            </lem>
+            <rdg cause="om" wit="#V"><del><add>in plerisque dat intelligi et credere sunt</add></del></rdg>
+            <rdg cause="om" wit="#P"><del><add>in plurimis dat intelligi et credere sunt</add></del></rdg>
+        </app> 
+        <app resp="#silvia">
+            <lem wit="#F #G #M #N #P #R #U #V">intellectus</lem>
+            <rdg cause="subs" wit="#B">intellectum</rdg>
+        </app> compositi. Omne 
+        <app resp="#silvia">
+            <lem wit="#F #G #M #N #P #R #V">autem</lem>
+            <rdg type="orthographic" wit="#D" resp="#chiara">outem</rdg>
+            <rdg cause="om" wit="#B #U"/>
+        </app> compositum componitur ex multis et inter multa sunt una. 
+        <app resp="#silvia">
+            <lem wit="#F #G #M #N #P #R #U #V">Ergo in omni composito sunt una</lem>
+            <rdg cause="om" wit="#B"/>
+        </app>. Unum autem in omni composito vocatur «simplex», et quia 
+        <app resp="#silvia">
+            <lem wit="#B #F #G #N #P #R #U #V">eius</lem>
+            <rdg cause="subs" wit="#M">eg<subst hand="#M2"><del>o</del><add place="above">eo</add></subst></rdg>
+        </app> quod componitur ex multis 
+        <app resp="#silvia">
+            <lem wit="#B #F #G #M #N #R #U #V"/>
+            <rdg cause="add" wit="#P">quod</rdg>
+        </app>
+        impossibile est 
+        <app resp="#silvia">
+            <lem wit="#F #G #M #N #P #R #V">sciri</lem>
+            <rdg type="orthographic" wit="#D" resp="#chiara">siri</rdg>
+            <rdg cause="subs" wit="#B #U">scire</rdg>
+        </app> 
+        <app resp="#silvia">
+            <lem wit="#F #G #M #N #P #R #V">naturam</lem>
+            <rdg cause="subs" wit="#B #U">causam</rdg>
+        </app> ignoratis eius simplicibus, ideo convenientius est prius cognoscere simplices quam compositos. 
+        <app resp="#silvia">
+            <lem wit="#B #F #G #M #N #P #R #U #V"/>
+            <rdg cause="add" wit="#C"><witStart/>item</rdg>
+        </app> 
+        <app resp="#silvia">
+            <lem wit="#B #F #G #M #N #P #R #U #V">Cognitio autem</lem>
+            <rdg cause="trans" wit="#C">autem cognitio</rdg>
+        </app> 
+        <app resp="#silvia">
+            <lem wit="#F #P #R">simplicium</lem>
+            <rdg type="concordance" wit="#N" hand="#N2"><subst><del>compositorum</del><add place="above">simplicium</add></subst></rdg>
+            <rdg type="concordance" wit="#V" cert="low"><add place="above">simplicium</add></rdg>
+            <rdg cause="subs" wit="#N #M #G #B #U #C #V2">compositorum</rdg>
+        </app> fit duobus modis, quia aut cognoscuntur 
+        <app resp="#silvia">
+            <lem wit="#C #F #G #M #N #P #R #V">secundum</lem>
+            <rdg cause="om" wit="#B #U"/>
+        </app> 
+        <app resp="#silvia">
+            <lem wit="#B #C #F #G #N #P #R #U #V">hoc</lem>
+            <rdg cause="om" wit="#M"/>
+        </app> quod 
+        <app resp="#silvia">
+            <lem wit="#B #C #F #G #M #N #P #R #V">
+                <app resp="#silvia">
+                    <lem wit="#C #F #G #M #N #P #R #U #V">apti 
+                        <app resp="#silvia">
+                            <lem wit="#B #F #G #M #N #P #R #U #V">sunt</lem>
+                            <rdg type="concordance" wit="#C"><add place="above">sunt</add></rdg>
+                        </app>
+                    </lem>
+                    <rdg cause="trans" wit="#B">sunt apti</rdg>
+                </app>
+            </lem>
+            <rdg cause="add" wit="#U"> nati</rdg>
+        </app> ut ex eis 
+        <app resp="#silvia">
+            <lem wit="#B #C #F #G #N #P #R #U #V">fiat</lem>
+            <rdg cause="om" wit="#M"/>
+        </app> 
+        <app resp="#silvia">
+            <lem wit="#C #F #G #M #N #P #R #U #V">
+                <app resp="#silvia">
+                    <lem wit="#B #F #G #M #N #P #R #U #V">compositio</lem>
+                    <rdg cause="om" wit="#C"/>
+                </app> 
+                praedicta
+            </lem>
+            <rdg cause="trans" wit="#B">praedicta compositio</rdg>
+        </app>, aut cognoscuntur 
+        <app resp="#silvia">
+            <lem wit="#C #F #G #M #N #P #R #V">secundum</lem>
+            <rdg cause="subs" wit="#B #U">ex</rdg>
+        </app> hoc 
+        <app resp="#silvia">
+            <lem wit="#B #C #F #G #M #N #P #R #V">quod  sunt</lem>
+            <rdg type="concordance" wit="#U"><add place="margin">quod  sunt</add></rdg>
+        </app> naturae et 
+        <app resp="#silvia">
+            <lem wit="#B #C #F #G #M #N #P #R #V">res</lem>
+            <rdg cause="dittography" wit="#U">res res</rdg>
+        </app>
+        quibus accidit hic intellectus, ad similitudinem domus, quae componitur ex lignis et aliis,
+        compositori cuius opus est cognoscere simplicia domus, scilicet ligna et lateres et lutum,
+        sed ligna et lateres et lutum habent dispositiones 
+        <app resp="#silvia">
+            <lem wit="#B #C #F #G #M #N #R #U #V"/>
+            <rdg cause="del" wit="#P">in</rdg>
+        </app> 
+        <app resp="#silvia">
+            <lem wit="#B #C #F #G #M #N #R #U #V">propter quas</lem>
+            <rdg cause="trans" wit="#P">quas propter</rdg>
+        </app> fiunt apta domui, et eius constructioni, et alias dispositiones praeter has, sicut hoc quod ligna sunt 
+        <app resp="#silvia">
+            <lem wit="#C #F #N #R #V">haec</lem>
+            <rdg cause="subs" wit="#P #M #G #B #U">huiusmodi</rdg>
+        </app>
+        substantiae in qua fuit anima vegetabilis aut quod natura eorum est calida aut frigida,
+        aut quod comparatio eorum inter ea quae sunt est talis vel talis. Hoc autem scire non est necesse
+        artifici domorum, sed an trabes sit mollis vel dura, 
+        <app resp="#silvia">
+            <lem>
+                <app resp="#silvia">
+                    <lem wit="#C #F #G #M #N #R">aut</lem>
+                    <rdg cause="subs" wit="#B #U">an</rdg>
+                    <rdg cause="om" wit="#P #V"/>
+                </app> 
+                <app resp="#silvia">
+                    <lem wit="#B #C #F #M #N #P #R #U #V">sit</lem>
+                    <rdg cause="subs" wit="#G">si</rdg>
+                </app>
+            </lem>
+        </app>
+        sana vel putrida aut huiusmodi, necesse est scire domorum artifici.
+        Similiter est doctrina logica: non enim considerat incomplexa harum 
+        <app resp="#silvia">
+            <lem wit="#B #F #G #N #R #U">rerum</lem>
+            <rdg type="concordance" wit="#V2"><add place="on smoothing">rerum</add></rdg>
+            <rdg cause="subs" wit="#P #V">scientiarum</rdg>
+            <rdg cause="om" wit="#C #M"/>
+            <note resp="#silvia"><mentioned>scientiarum</mentioned> fort. etiam V a.c.</note>
+        </app> secundum quod sunt alicuius duorum modorum esse, scilicet quod est in his 
+        <app resp="#silvia">
+            <lem wit="#B #F #G #M #N #P #R #U #V">sensibilibus</lem>
+            <rdg cause="subs" wit="#C"><del>sen</del>sibilibus</rdg>
+        </app>
+        aut in intellectu, nec etiam in essentia harum rerum ex hoc quod sunt essentiae,
+        sed secundum quod sunt praedicata aut subiecta, et universalia aut particularia,
+        aut huiusmodi quae non accidunt his 
+        <app resp="#silvia">
+            <lem wit="#B #F #G #M #N #P #R #U #V">intellectibus</lem>
+            <rdg type="concordance" wit="#C">intellectibus<witEnd/></rdg>
+        </app>
+        nisi ex hoc quod diximus in praemissis.
+    </p>
+    <!--End of second Paragraph-->
+
+    <!--Beginning of third paragraph-->     
+    <p>
+        Ad considerationem autem dictionum ducit nos necessitas: logicus enim,
+        ex hoc quod est logicus, non habet primo occupari circa verba prima,
+        nisi quantum ad loquendum et agendum. 
+        Si enim possibile esset logicam discere solo intellectu, ita ut non 
+        <!--**MOCK RECENSIO APP ENTRY: @type added by #chiara**-->
+        <app resp="#daniele" type="recensio">
+            <rdgGrp ana="#rec1">
+                <lem wit="#B #C #F #G #M #N #R #U #V">considerarentur</lem>
+                <rdg wit="#P">consisideraretur</rdg>
+            </rdgGrp>
+            <rdgGrp ana="#rec2">
+                <lem wit="#D #W">considerentur</lem>
+                <rdg wit="#O">consisideretur</rdg>
+            </rdgGrp>
+        </app>
+        aliqua eius nisi soli intellectus, tunc sufficeret. 
+            <app resp="#silvia">
+                <lem>
+                    <app resp="#silvia">
+                        <lem wit="#B #F #G #M #N #P #R #U #V"/>
+                        <rdg cause="add" wit="#C"><witStart/>item </rdg>
+                    </app>
+                    Si
+                    <app resp="#silvia">
+                        <lem wit="#C #F #G #M #N #P #R #V">etiam</lem>
+                        <rdg cause="subs" wit="#B #U">enim</rdg>
+                    </app>
+               </lem>
+          </app>
+         
+        <!--**MOCK EVT-ANALOGUE: <seg> + @source**-->
+        <seg source="#burhan_2-9-178-17-19" resp="#chiara">
+            doctor artis posset revelare id quod est in animo eius alio modo, supersederet semper
+            <!--**MOCK EVT-QUOTE: <quote>, @source, with an <app> inside**-->
+            <quote source="Ari_Meta_1-2-982b28-983a11" type="literal" resp="#chiara">
+                <!--**Critical Apparatus Entry**-->
+                <app resp="#silvia">
+                    <lem wit="#B #F #G #M #N #P #R #U #V">
+                        <app resp="#silvia">
+                            <lem wit="#B #F #G #M #N #P #R #U #V"/>
+                            <rdg type="concordance" wit="#C"><del><add place="above">Averrois </add></del></rdg>
+                        </app>a verbis,
+                    </lem>
+                    <rdg type="concordance" wit="#C">a verbis<witEnd/></rdg>
+                </app>
+                sed quia necessitas ducit nos ad agendum cum verbis praecipue
+            </quote>
+        </seg>
+        - non enim potest ratio
+        componere intellectus quin cum illis proferat verba, immo quia cogitatio quasi locutio est
+        inter ipsum hominem et cogitatum suum verbis imaginatis - sequitur ut verba habeant diversas
+        dispositiones propter quas differant dispositiones intentionum quae comitantur eas in anima, 
+        <!--**MOCK EVT-QUOTE: <quote>, with <biblStruct>**-->
+        <quote resp="#chiara">
+            <!--**Line elements**-->
+            <l>ita quod fiant eis iudicia</l>
+            <l>quae non haberent nisi propter verba.</l>
+            <!--**Structured Bibliographic Reference**-->
+            <biblStruct>
+                <analytic>
+                    <author>Albert Schachter</author>
+                    <title level="a">Iolaos</title>
+                </analytic>
+                <monogr>
+                    <title level="m">Herakles to Poseidon</title>
+                    <imprint>
+                        <date>1986</date>
+                    </imprint>
+                    <biblScope unit="pp">64-70</biblScope>
+                </monogr>
+                <monogr>
+                    <title level="m">Cults of Boiotia</title>
+                    <imprint>
+                        <pubPlace>London</pubPlace>
+                    </imprint>
+                    <extent>4 vols.</extent>
+                    <biblScope unit="part">2</biblScope>
+                </monogr>
+                <series>
+                    <title level="s">
+                        Bulletin of the Institute of Classical Studies Supplements
+                    </title>
+                    <biblScope unit="vol">38</biblScope>
+                </series>
+            </biblStruct>
+        </quote>
+        Et ideo necessarium fuit
+        in doctrina logica ut una pars eius esset consideratio de dispositionibus verborum.
+        Nisi enim esset quod diximus, non esset ei necesse etiam habere hanc partem cum hac necessitate.
+        Loqui enim de verbis comitantibus intellectus est tamquam loqui de eorum intellectibus. 
+        Congruum est ergo prius loqui de verbis. 
+    </p>
+    <!--End of third Paragraph-->
+
+    <!--Beginning of fourth Paragraph-->
+    <p>
+        Sed, praeter hoc, non valet quod ille dixit, scilicet quod logica instituta est ad considerandum
+        dictiones secundum hoc quod significant intellectus, et quod doctrina logicae est loqui de verbis
+        secundum hoc quod significant intellectus. Oportet autem intelligi hoc ad modum quo diximus.
+        Ille autem non deliravit sic, nisi quia non apprehendit certissime subiectum logicae et modum
+        essendi eius proprium. Invenit enim esse duobus modis, scilicet esse rerum extrinsecus et esse
+        quod habent in intellectu, et ideo posuit quod considerare esse quod est extra spectat ad doctrinam
+        vel ad doctrinas philosophicas.
+        <!--**MOCK EVT-QUOTE: <quote>, <listBibl>**-->
+        <quote resp="#chiara">
+            <!--**List of Bibliographic references**-->
+            <listBibl>
+                <head>Bibliographic references for the quotation.</head>
+                <bibl>
+                    <author ref="#p_Aristotle">
+                        <name>Aristotle</name>
+                    </author>
+                    <ref>
+                        <title ref="#w_metaph">Metaphysics</title>
+                    </ref>
+                </bibl>  
+                <bibl>
+                    <author ref="#p_Boethius">
+                        <name>Boethius</name>
+                    </author>
+                    <ref>
+                        <title ref="#w_inIsagogen">In Porph. Isag.</title>
+                    </ref>
+                </bibl>
+            </listBibl>
+            Considerare vero esse quod est in intellectu et quomodo intelligitur in eo spectat ad doctrinam aliam
+            vel partem doctrinae.
+            <!--**MOCK EVT-ANALOGUE inside a evt-quote: <ref> + @type, <bibl> inside**-->
+            <ref type="parallelPassage">
+                Dicemus quod verbum graece significans intentionem generis, prius apud eos, secundum primam impositionem, significabat aliud, et deinde, per impositionem secundam, translatum est ad significandam intentionem quae apud logicos vocatur «genus».
+                <!--**Bibliographic Reference**-->
+                <bibl>
+                    <author ref="#p_Avicenna">Avicenna</author>
+                    <title ref="#w_burhan">Burhān</title>
+                    <citedRange corresp="#Afifi1956">II, 9, p. 178, 17-19</citedRange>
+                </bibl>
+            </ref>
+        </quote>
+        Non distinguens nec sciens quod ea quae sunt in intellectu, aut sunt res formatae 
+        in intellectu apprehensae extrinsecus, aut sunt res accidentes eis secundum hoc quod sunt in intellectu,
+        quae non fuerunt representatae in aliquo extrinseco. Cognitio autem horum duorum spectat ad unam doctrinam, 
+        quorum unum est subiectum doctrinae logicae, secundum accidens quod accidit ei.
+        Quod autem duum est hoc, pars scilicet secunda, et quod est etiam accidens quod accidit ei, hoc scilicet
+        quod fit deducens nos ad habendum aliam formam intelligibilem quam non habebamus, vel utilis ad deducendum
+        <gap resp="#silvia"/>
+        <note type="philological">
+            om.:
+            <quote resp="#silvia" xml:lang="ar" source="#msAr">أو ما يعاوق ذلك الوصول</quote>
+            (“oppure è ciò che impedisce di ottenere quel risultato”). L’om. potrebbe essere avvenuta
+            per salto da pari a pari nel ms. ar. del traduttore.
+        </note>.
+        Et quoniam isti vere non cognoverunt subiectum logicae, nec partem ad quam instituta est,
+        ideo deliraverunt. 
+        <!--**MOCK EVT-QUOTE: <quote>, <ref> + @target**-->
+        <quote resp="#chiara">
+            <!--**Critical Apparatus Entry (as first level child)**-->
+            <app>
+                <lem>Tu</lem>
+                <rdg wit="#C">Ego</rdg>
+            </app>
+            <l>
+                autem postea
+                <!--**Critical Apparatus Entry (as second level child)**-->
+                <app>
+                    <lem>clarius</lem>
+                    <rdg wit="#C">clare</rdg>
+                </app>
+                scies,
+            </l>
+            <l>
+                quod omnis doctrina speculativa habet subiectum,
+            </l>
+            <!--**Ref to the source**-->
+            <ref target="#boe_transAristTop_I-4-913B"/>                
+        </quote>
+        <quote xml:id="prova" resp="#chiara">
+            <!--**Critical Apparatus Entry (as first level child)**-->
+            <app>
+                <lem>Tu</lem>
+                <rdg wit="#C">Ego</rdg>
+            </app>
+            autem postea scies,
+                quod omnis doctrina speculativa habet subiectum,
+                <!--**Note**-->
+                <note>
+                    Proin urna neque, pulvinar id egestas id,tempus quis risus.
+                    Aenean dictum ornare diam, sed imperdiet purus consequat nec. 
+                </note>
+            <!--**Ref to the source**-->
+            <ref target="#boe_transAristTop_I-4-913B">
+                Nullam vel imperdiet velit.
+            </ref>
+        </quote>
+        et quod non tractat nisi de dispositionibus eius et de accidentibus, et scies quod tractatus de
+        essentia subiecti est unius dotrinae, et tractatus de eius accidentibus est alterius doctrinae.
+        Similiter debes scire de dispositione logicae.
+    </p>
+    <!--End of fourth Paragraph-->
+</div>
+<!--End of first Div-->
+
+<!--Second Div-->
+<div>
+    <!--Head-->
+    <head>
+        <supplied resp="#silvia">Cap. I.5</supplied>
+        Capitulum docendi verbum incomplexum et complexum et docendi universale et particulare
+        et essentiale et accidentale et id quod respondetur ad quid et quod non respondetur
+    </head>
+
+    <!--Beginning of first paragraph-->
+    <p>
+        Postquam in docendo et discendo necessario indigemus verbis, dicemus quod verbum aut est
+        incomplexum, aut complexum. Complexum autem est in quo invenitur pars significativa
+        intellectus qui est pars intellectus significati a toto significatione essentiali, sicut
+        est hoc quod dicimus « homo » vel « scriptor », huius quod dicimus « homo est scriptor ».
+        Hoc enim verbum « homo » significat unum intellectum, et hoc verbum « scriptor » significat
+        alium, quorum unumquodque est pars huius quod dicimus « homo est scriptor ». Sed eius
+        intellectus est pars intellectus totius, qui fit ex hoc quod dicimus « homo est scriptor »
+        significatione requisita ex verbo.
+        <gap resp="#silvia"/>.
+        Incomplexum autem est cuius pars non significat partem intellectus totius significatione
+        essentiali, sicut hoc quod dicimus « homo », quia « ho » et « mo » non significant partes
+        intentionis quam significat homo
+        <gap resp="#silvia"/>. 
+        In hac autem doctrina non debet considerari compositio quae est secundum auditum, quoniam
+        pars eius non significat partem intellectus, sicut hoc quod dicimus « dominus », cum non
+        intendimus significare vel « dare » vel « minus ». Hoc enim et similia non sunt de verbis
+        complexis, sed de incomplexis.
+    </p>
+    <!--End of first Paragraph-->
+
+    <!--Beginning of second Paragraph-->
+    <p>
+        Quod autem invenitur in doctrina antiquorum de descriptione verborum incomplexorum hoc
+        est, scilicet quod incomplexa sunt quorum partes non significant aliquid.
+        <!--**MOCK EVT-CriticalApparatusEntry: evt-analogue and evt-quote inside**-->
+        <app resp="#chiara">
+            <lem>
+                Quam descriptionem
+                <!--**MOCK EVT-QUOTE inside a CriticalApparatusEntry**-->
+                <quote source="Ari_Meta_6-1-1026a16-21">multi reprehenderunt,</quote>
+            </lem>
+            <rdg wit="#C">
+                <!--**MOCK EVT-ANALOGUE inside a CriticalApparatusEntry**-->
+                <seg source="burhan_2-7-165-7-10">Multi reprehenderunt,</seg>
+                quam descriptionem
+            </rdg>
+        </app>
+        dicentes debere addi ei, scilicet incomplexa esse
+        quorum partes non significant aliquid de intellectu totius, quia contingit aliquando
+        partes incomplexorum significare aliquos intellectus, sed non sunt partes intellectus
+        totius. Ego autem teneo quod haec reprehensio error fuit, et haec additio non est
+        necessaria ad supplendum, sed ad exponendum. Verbum enim ex seipso nihil significat
+        omnino, alioquin omni verbo esset debita significatio quam numquam variaret. Non autem
+        significat nisi ad placitum loquentis, sicut cum quis imponit verbum ad significandum
+        aliquem intellectum,
+        <seg source="#boe_inPorfIsag_I-80A-B" type="source" subtype="paraphrase">
+            ut « canis » cum dicitur pro « latrabili », et haec est eius significatio, deinde imponat ad
+            significandum aliud, sicut « pisci »
+        </seg>,
+        et haec est eius significatio, sic etiam cum in impositione fuerit vacuum a significatione
+        remanebit non significans, et, secundum multos auctorum, nec etiam verbum. Verbum etenim et
+        vox, secundum meum intellectum, non est secundum placitum multorum logicorum verbum nisi sit
+        significativum.
+        <!--** MOCK RECENSIO APP ENTRY **-->
+        <app type="recensio" resp="#chiara">
+            <rdgGrp ana="#rec1">
+                <rdg>
+                    Et quandoquidem ita est et qui protulit verbum incomplexum non voluit parte
+                    illius significare partem intellectus totius, nec etiam voluit parte illius significare aliquid
+                    aliud quod significare solet, et ita placuit, tunc pars illa non est significativa ullo modo, 
+                    cum sit pars eius in effectu.
+                </rdg>
+            </rdgGrp>
+            <rdgGrp ana="#rec3">
+                <rdg>
+                    Deinde est hic tractandum si oportet ut intentio verbi substantialis sit continens intentionem verbi significantis quid est sicut commune continet proprium, aut non. Hoc enim quod dicimus verbum essentiale significat verbum cuius intentio 
+                    habet comparationem ad substantiam rei.
+                </rdg>
+            </rdgGrp>
+        </app>
+        Si autem fuerit in potentia, fortasse significabit aliquid, cum
+        addiderint relationem aliquam designatam, hoc est ut sit ibi voluntas loquentis aliquid
+        significandi per illam. Omnino autem non significabit dum fuerit pars verbi incomplexi,
+        sed cum fuerit verbum per se; cum autem fuerit pars non significabit aliquid ullo modo.
+    </p>
+    <!--End of second Paragraph-->
+
+    <!--Beginning of third Paragraph-->
+    <p>
+        Verbum autem aut est incomplexum aut complexum. Iam autem scis quod prius est considerare
+        incomplexum quam complexum. Deinde intentio incomplexi aut talis erit quod non prohibetur
+        in intellectu ex hoc quod intelligitur multa convenire in ea aequaliter ut unumquodque
+        eorum dicatur ipsum esse equaliter, sicut hoc quod dicimus « homo » habet intentionem in
+        anima quae comitatur Socratem et Platonem et reliquos uno modo quorum unusquisque est homo; 
+        <gap resp="#silvia"/>
+        immo sicut verbum Solis et Lunae unumquodque significat intentionem in qua non prohibet
+        intellectus multa convenire, quamvis non sint in actu
+        <gap resp="#silvia"/>.
+        Prohibetur autem hoc ex alia causa, non ex hoc quod intelligitur de verbo ipso, vel sicut
+        Luna, aut eius una intentio est, sic quod prohibetur in intellectu multa convenire in ea,
+        scilicet in eo uno quod intelligitur de eo, sicut in hoc quod dicimus Socrates. Quia quamvis
+        in hoc multi conveniant non conveniunt nisi secundum auditum. Eius autem una intentio
+        impossibile est ut ponatur una in qua multi conveniunt. Una etenim suarum intentionum est
+        substantia huius singularis. Sed substantiam huius singularis prohibet intellectus attribui
+        alii.
+        <!--**MOCK EVT-QUOTE: <quote>, <msDesc>**-->
+        <quote resp="#chiara">
+            Aliquando autem cum dicitur
+            <!--**<choice>**-->
+            <choice>
+                <orig>Socrates</orig>
+                <reg>Socrate</reg>
+            </choice>
+            non quaeritur eius substantia
+            <!--**<msDesc>**-->
+            <msDesc xml:id="ms_add_a">
+                <msIdentifier>
+                    <settlement>Oxford</settlement>
+                    <repository>Bodleian Library</repository>
+                    <idno>MS. Add. A. 61</idno>
+                    <altIdentifier type="SC">
+                        <idno>28843</idno>
+                    </altIdentifier>
+                </msIdentifier>
+                <p>
+                    In Latin, on parchment: written in more than one hand of the 13th cent. in
+                    England: 7¼ x 5⅜ in., i + 55 leaves, in double columns: with a few coloured
+                    capitals.
+                </p>
+                <p>
+                    'Hic incipit Bruitus Anglie,' the De origine et gestis Regum Angliae of
+                    Geoffrey of Monmouth (Galfridus Monumetensis: beg. 'Cum mecum multa &amp; de
+                    multis.'
+                </p>
+                <p>
+                    On fol. 54v very faint is 'Iste liber est fratris guillelmi de buria de ...
+                    Roberti ordinis fratrum Pred[icatorum],' 14th cent. (?): 'hanauilla' is written
+                    at the foot of the page (15th cent.). Bought from the rev. W. D. Macray on March
+                    17, 1863, for £1 10s.
+                </p>
+            </msDesc>
+        </quote>,
+        sed aliqua suarum
+        proprietatum in qua multi conveniunt. In hac autem parte divisionis, quamvis non prohibetur
+        multa convenire quantum ad auditum eius, tamen prohibetur esse in eius una intentione
+        communio in qua conveniant. Prima autem pars divisionis vocatur universalis, secunda vero
+        vocatur particularis.       
+        Ad modum partis primae et in intellectibus multos qui sunt ad modum intellectus primae
+        partis, et hoc est intentio de qua id quod intelligitur in anima non prohibetur habere
+        comparationem similitudinis ad multa.
+        <!--**MOCK EVT-QUOTE: <quote> e <ref> inside**-->
+        Et quoniam haec intentio quae nunc vocatur apud logicos «genus» est unum intellectum quod habet
+        comparationem ad multa quae conveniunt in eo, sed in lingua non erat ei nomen quo appellarentur
+        ea quae sunt inter se similia, transtulerunt ad hoc et vocaverunt «genus» hoc, scilicet de quo
+        loquuntur dialectici, et describunt dicentes quod est
+        <quote type="literal" corresp="#boe_porpIsagTrans_II-91A/seg_1">
+            <ref target="#boe_porpIsagTrans_II-91A #boe_transAristTop_I-4-913B"/>
+            id quod praedicatur de pluribus differentibus specie in eo quod quid est.
+        </quote>
+    </p>
+    <!--End of third Paragraph-->
+
+    <!--Beginning of fourth Paragraph-->
+    <p>
+        Non cures autem, secundum hoc quod es logicus, qualiter sit haec comparatio et an hic intellectus
+        ex hoc quod est unus in quo multa conveniunt habeat esse in ipsis rebus quae in ipso conveniunt,
+        scilicet esse separatum extra per se, praeter esse quod habet in tuo intellectu, an qualiter
+        habet esse in tuo intellectu. Consideratio enim horum alterius doctrinae est aut duarum doctrinarum.
+        <!--**MOCK EVT-ANALOGUE: <ref> + @type="parallelPassage"**-->
+        <ref type="parallelPassage" source="#burhan_2-9-178-17-19" resp="#chiara">
+            Iam igitur
+            <!--**Critical Apparatus Entry**-->
+            <app>
+                <lem>nosti</lem>
+                <rdg wit="#C">nostri</rdg>
+            </app>
+            <l>
+                quod verbum aut est
+                <!--**MOCK SUB EVT-ANALOGUE: <seg> + @ref e <ptr> inside**-->
+                <seg>
+                    incomplexum aut complexum
+                    <!--**Pointer to the source**-->
+                    <ptr target="#burhan_2-9-178-17-19"/>
+                    <!--**Note**-->
+                    <note>Aliquam sit amet varius eros.</note>
+                    <!--**Page Break**-->
+                    <pb ed="#C" n="112v"/>
+                </seg>
+            </l>
+        </ref>
+        et quod incomplexum aut est
+        universale aut particulare. Nosti etiam quod debemus post ponere tractatum de complexis. Scias etiam
+        nos non occupari circa tractatum verborum singularium et intentionum ipsorum: infinita enim sunt,
+        nec numerari possunt.
+        <!--** MOCK RECENSIO APP ENTRY**-->
+        <app type="recensio" resp="#chiara">
+            <note>
+                Here versions B and C of the text differ from version A, which is the default version.
+            </note>
+            <rdgGrp ana="#rec1">
+                <rdg>
+                    Quae etiam si essent finita, scire eas secundum quod sunt particularia non conferret nobis
+                    perfectionem sapientiae, nec perveniremus per illas ad finem sapientiae, sicut postea scies in libro
+                    sapientiae. Sed quod debemus considerare est cognitio verbi universalis. 
+                    Scis enim quod verbum universale non fit
+                    <app>
+                        <lem>universale</lem>
+                        <rdg wit="#C">univesale</rdg>
+                    </app>
+                    nisi habeat comparationem aliquam aut in esse
+                    aut in nostra opinione ad particularia de quibus praedicatur. Praedicatio autem fit duobus modis, quia
+                    aut univoce, sicut hoc quod dicimus quod Socrates est homo: homo enim praedicatur de Socrate vere
+                    et univoce aut denominative, ut albedo de homine: dicitur enim homo albus et habens albedinem nec
+                    dicitur esse albedo. Si autem contingitur dici corpus album et color albus diffinitio praedicationis
+                    huiusmodi non praedicatur de subiectis aequaliter. Nostra autem intentio non est hic nisi de eo
+                    quod praedicatur univoce.
+                </rdg>
+            </rdgGrp>
+            <rdgGrp ana="#rec2">
+                <rdg>
+                    Quae etiam si essent finita, scire eas secundum quod sunt particularia non conferret nobis
+                    perfectionem sapientiae, nec perveniremus per illas ad finem sapientiae,
+                    sicut postea scies in libro sapientiae. Sed
+                    <ref type="parallelPassage" source="#burhan_2-9-178-17-19">
+                        quod debemus considerare est cognitio verbi universalis
+                    </ref>.
+                    Scis enim quod verbum universale non fit universale nisi habeat comparationem aliquam
+                    aut in esse aut in nostra opinione ad particularia de quibus praedicatur.
+                    Praedicatio autem fit duobus modis, quia aut univoce, sicut hoc quod dicimus 
+                    quod Socrates est homo: homo enim praedicatur de Socrate vere et univoce aut denominative,
+                    ut albedo de homine: dicitur enim homo albus et habens albedinem nec dicitur esse albedo.
+                    Si autem contingitur dici corpus album et color albus 
+                    diffinitio praedicationis huiusmodi non praedicatur de subiectis aequaliter.
+                    Nostra autem intentio non est hic nisi de eo quod praedicatur univoce. Enumerabimus ergo partes
+                    universalis, quod comparatur ad particularia univoce, et dat eis nomen et diffinitionem. 
+                    Multa autem quae invenimus faciunt necesse primo non incedere solita via in divisione verborum,
+                    sed postea redibimus ad illam.
+                </rdg>
+            </rdgGrp>
+            <rdgGrp ana="#rec3">
+                <rdg>
+                    Dicemus ergo quia omne quod est, substantiam habet qua est id quod est et quae est veritas eius,
+                    quia est eius substantia. Substantia autem uniuscuiusque rei una est, sed quod est unum absolutum
+                    non est id quod est ex multis intellectibus ex quibus coniunctis provenit una essentia. 
+                    Exemplum autem huius non invenitur in rebus sensibilibus, debes ergo nunc credere eius esse.
+                    Aliquando autem erit unum aliquid non absolutum, cuius esse veritas composita est ex rebus
+                    et intentionibus ex quibus coniunctis provenit essentia rei. 
+                    Cuius exemplum est homo:
+                    <quote source="#ms_add_a">
+                        necesse est enim ut homo sit substantia habens dimensiones in spatiis in quibus fiat longitudo et latitudo et spissitudo
+                    </quote>
+                    , et praeter hoc necesse est ut sit habens animam
+                    qua vegetetur et sentiat et moveatur voluntate, et praeter hoc sit aptus etiam intelligere
+                    intelligibilia et scire artes et docere eas, nisi fuerit prohibens extrinsecum non ex parte humanitatis.
+                    Quae omnia cum conveniunt ex conventu omnium provenit substantia una quae est substantia hominis.
+                </rdg>                    
+            </rdgGrp>
+        </app>
+    </p>
+    <!--End of fourth Paragraph-->
+    <p>Iam etiam audisti quod <quote resp="#chiara" source="#Ari_Meta_4-1-1003a31-32" corresp="#Ari_Meta_4-1-1003a31-32/seg_1">scientia divina est in qua quaerunt de primis causis naturalis esse et doctrinalis esse et de eo quod pendet ex his, et de causa causarum et de principio principiorum, quod est Deus excelsus</quote>. Et hoc est quod potuisti attingere ex libris transactis...</p>
+
+<!--End of second Div-->
+</div>
+        </body>
+        <!--END OF BODY-->
+
+        <!--BEGINNING OF BACK-->
+        <back>
+
+            <!--SOURCES DIV-->
+            <div>
+                <head>Sources</head>
+                <cit xml:id="Ari_Meta_1-2-982b28-983a11">
+                    <bibl>
+                        <author ref="#p_Aristotle">Arist.</author>
+                        <title ref="#w_metaph">Metaph.</title>
+                        <citedRange corresp="#ar_met_perseus" target="http://data.perseus.org/citations/urn:cts:greekLit:tlg0086.tlg025.perseus-grc1:1.982b">Α, 2, 982b28-983a11</citedRange>
+                    </bibl>
+                    <quote></quote>
+                </cit>
+                <!--**ASSIGNED**-->
+                <cit xml:id="Ari_Meta_4-1-1003a31-32" source="#Ari_Meta_4-1-1003a31-32.xml">
+                    <bibl>
+                        <author ref="#p_Aristotle">Arist.</author>
+                        <title ref="#w_metaph">Metaph.</title>
+                        <citedRange corresp="#ar_met_perseus" target="http://data.perseus.org/citations/urn:cts:greekLit:tlg0086.tlg025.perseus-grc1:4.1003a">Γ, 1, 1003a31-32</citedRange>
+                    </bibl>
+                    <quote></quote>
+                </cit>
+                <!--**UNASSIGNED**-->
+                <cit xml:id="Ari_Meta_6-1-1025b1-2">
+                    <bibl>
+                        <author ref="#p_Aristotle">Arist.</author>
+                        <title ref="#w_metaph">Metaph.</title>
+                        <citedRange corresp="#ar_met_perseus" target="http://data.perseus.org/citations/urn:cts:greekLit:tlg0086.tlg025.perseus-grc1:6.1025b">Ε, 1, 1025b1-2</citedRange>
+                    </bibl>
+                    <quote></quote>
+                </cit>
+                <cit xml:id="Ari_Meta_6-1-1026a16-21">
+                    <bibl>
+                        <author ref="#p_Aristotle">Arist.</author>
+                        <title ref="#w_metaph">Metaph.</title>
+                        <citedRange corresp="#ar_met_perseus" target="http://data.perseus.org/citations/urn:cts:greekLit:tlg0086.tlg025.perseus-grc1:6.1026a">Ε, 1, 1026a16-21</citedRange>
+                    </bibl>
+                    <quote></quote>
+                </cit>    
+                <cit xml:id="boe_inPorfIsag_I-80A-B">
+                    <bibl>
+                        <author ref="#p_Boethius">Boethius</author>
+                        <title ref="#w_inIsagogen">In Porph. Isag.</title>
+                        <citedRange  corresp="#CPT_PLD64">I, coll. 80A-B</citedRange>
+                    </bibl>
+                    <quote>Rursus divisio est quoties vox plura significans aperitur, et quam multa sint quae ab ea voce signantur ostenditur, ut si quis dicat: nomen canis plura significat, et hunc latrabilem quadrupedemque, et coeleste sidus, et marinam bestiam, quae omnia a se diffinitione disjuncta sunt.</quote>
+                </cit>
+                <cit xml:id="boe_porpIsagTrans_II-91A" source="boe_porpIsagTrans_II-91A.xml">
+                    <bibl>
+                        <author ref="#p_Boethius">Boethius</author>
+                        <title ref="#w_boe-traslatio-isagoge">Porph. Isag. translatio</title>
+                        <citedRange  corresp="#CPT_PLD64">II, coll. 91A</citedRange>
+                    </bibl>
+                    <quote>Tripliciter igitur cum genus dicatur, de tertio apud philosophos est sermo, quod etiam describentes assignaverunt, dicentes genus esse quod de pluribus et differentibus specie in eo quod quid sit praedicatur, ut animal.</quote>
+                </cit>
+                <cit xml:id="boe_transAristTop_I-4-913B">
+                    <bibl>
+                        <author ref="#p_Boethius">Boethius</author>
+                        <title ref="#w_boe-traslatio-topicorum">Porph. Isag. translatio</title>
+                        <citedRange  corresp="#ATT_PLD64">I, 4, coll. 913B</citedRange>
+                    </bibl>
+                    <quote>Genus autem est, quod de pluribus et differentibus specie in eo quod quid est praedicatur.</quote>
+                </cit>
+            </div>
+
+            <!--PARALLEL PASSAGES DIV-->
+            <div>
+                <head>Parallel passages</head>
+                <cit xml:id="burhan_2-7-165-7-10">
+                    <bibl>
+                        <author ref="#p_Avicenna">Avicenna</author>
+                        <title ref="#w_burhan">Burhān</title>
+                        <citedRange corresp="#Afifi1956">II, 7, p. 165, 7-10</citedRange>
+                    </bibl>
+                    <quote></quote>
+                </cit>
+                <cit xml:id="burhan_2-9-178-17-19">
+                    <bibl>
+                        <author ref="#p_Avicenna">Avicenna</author>
+                        <title ref="#w_burhan">Burhān</title>
+                        <citedRange corresp="#Afifi1956">II, 9, p. 178, 17-19</citedRange>
+                    </bibl>
+                    <quote></quote>
+                </cit>
+            </div>
+        </back>
+        <!--END OF BACK-->
+
+    </text>
+    <!--END OF TEXT-->
+
+<!--END OF DOCUMENT-->
+</TEI>
