@@ -175,11 +175,12 @@
                 <p>Mano di XX: <del hand="#A2">cassature</del> ed <add hand="#A2">aggiunte</add></p>
                 <p>Mano di YY: <del hand="#A3">cassature</del> ed <add hand="#A3">aggiunte</add></p>
                 <p>Mano di ZZ: <del hand="#A4">cassature</del> ed <add hand="#A4">aggiunte</add></p>
+                <p> Le abbreviazioni nella diplomatica sono sciolte e segnalate in corsivo e grassetto </p>
 
             </div>
         </front>       
         <body>
-            <pb n="8r" xml:id="fol_8r"/>
+            <pb n="8r" xml:id="fol_8r"/><lb n="[8r]"/>
             <div type="libro" xml:id="Proemio">
                 <head> &#9753; DELLA STORIA FIORENTINA <lb/>DI BENEDETTO VARCHI COMINCIATA DALL’<lb/>ANNO
                     MILLE CINQUECENTO VENTISETTE,<lb/> A 
@@ -225,7 +226,7 @@
                     eglino con i danari della chiesa, e col<choice>
                         <orig>-</orig>
                         <reg resp="#D.B."></reg>
-                    </choice><pb n="8v" xml:id="fol_8v"/>le forze
+                    </choice><pb n="8v" xml:id="fol_8v"/><lb n="[8v]"/>le forze
                     dell’imperio nell’anno <date when="1530">millecinquecento trenta</date> agli
                         <date when="1530-08-20">.XX. <lb/> d’agosto</date>, fatto parlamento, lo
                     racquistarono. <del hand="#A3"> Benché, l’animo no<choice>
@@ -290,7 +291,7 @@
                     </choice><lb/>pa e dell’Imperadore con incredibile à
                     ardire, e costanza, secondo <lb/>che à noi pare, ò temerità, <add hand="#A1"><emph rend="italic">et</emph></add> ostinazione,
                     secondo il giudizio <del hand="#A1">d'</del>
-                    <pb n="9r" xml:id="fol_9r"/> d’Alcuni, poco meno d’un'anno intero, se non
+                    <pb n="9r" xml:id="fol_9r"/><lb n="[9r]"/> d’Alcuni, poco meno d’un'anno intero, se non
                     felicemente, franca<choice>
                         <orig>-</orig>
                         <reg resp="#D.B."></reg>
@@ -344,7 +345,7 @@
                         <orig>-</orig>
                         <reg resp="#D.B."></reg>
                     </choice><lb/>se, e divolgò, diede à molte persone, e diverse, assai piu, che
-                            nel</del><pb n="9v" xml:id="fol_9v"/><del hand="#A3">vero non pareva che <add hand="#A1"
+                        nel</del><pb n="9v" xml:id="fol_9v"/><del hand="#A3">vero non pareva che <add hand="#A1"
                             place="above">dare</add> dovesse, parte cagione, e parte occasione di
                         mol<choice>
                         <orig>-</orig>
@@ -482,7 +483,7 @@
                         <orig>-</orig>
                         <reg resp="#D.B."></reg>
                     </choice></del>
-                        <pb n="10v" xml:id="fol_10v"/><del hand="#A3">sofo, ciò è amico e disideroso del sapere, non
+                        <pb n="10v" xml:id="fol_10v"/><lb n="[10v]"/><del hand="#A3">sofo, ciò è amico e disideroso del sapere, non
                         penso, che nïuna cosa, la <lb/> quale ad huomo, e à Filosofo s’appartenga,
                         sia ne da me ne da’ miei<lb/> studij lontana. Potrei bene testi
                             <del hand="#A2">ficare e</del>
@@ -615,7 +616,7 @@
                         <orig>-</orig>
                         <reg resp="#D.B."></reg>
                     </choice><lb/>bio meco
-                                stesso, e fui molte fïate molto vicino à far credere à </del><lb n="[11v]"/><pb n="11v"
+                                stesso, e fui molte fïate molto vicino à far credere à </del><pb n="11v"
                             xml:id="fol_11v"/><del hand="#A3">me medesimo, che le cose humane non da ragione, e
                         giudizio, ma dal<choice>
                         <orig>-</orig>
@@ -732,7 +733,7 @@
                         promessioni proprie con mille giuri, e sagramenti confermate, <lb/>mancato, sempre
                         all’honesto l’utile, ò il giocondo preponendo. 
                             </del>
-                    <pb n="12v" xml:id="fol_12v"/>
+                    <pb n="12v" xml:id="fol_12v"/><lb n="[12v]"/>
                     <add hand="#A3" place="margin" n="miaone">Et </add><span n="miaone">Secondariamente</span>, perche, essendo uno de i principali
                     uffizij delli <lb/>storiografi, et una delle maggiori utilità, che n’arrechi la storia,<lb/>
                     hora il riprendere, e biasimare i vizij per isbigottire, e spaven<choice>
@@ -807,7 +808,7 @@
                     correggerle, et ammendarle, deve, poster<choice>
                         <orig>-</orig>
                         <reg resp="#D.B."></reg>
-                    </choice><pb n="13r" xml:id="fol_13r"/>gandole
+                    </choice><pb n="13r" xml:id="fol_13r"/><lb n="[13r]"/>gandole
                     tutte, come false, e transitorie, à quelle vere e sempiterne <lb/>rivolgersi. Ma tempo
                     è omai, che posto fine à’ proemij, dia<choice>
                         <orig>-</orig>
