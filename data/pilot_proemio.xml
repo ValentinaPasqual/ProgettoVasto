@@ -9,8 +9,24 @@
                 <title>Storia Fiorentina</title>
                 <author xml:id="B.V.">Benedetto Varchi</author>
                 <respStmt>
+               
+                        <resp>Responsabile progetto</resp>
+                        <persName xml:id="P.I.">Paola Italia</persName>
+                </respStmt>
+                <respStmt>
+                    
                     <resp>Codifica</resp>
                     <persName xml:id="R.P.">Roberta Priore</persName>
+                    
+                </respStmt>
+                <respStmt>
+                    <resp>Sviluppo interfaccia web</resp>
+                    <persName xml:id="V.P.">Valentina Pasqual</persName>
+                    
+                </respStmt>
+                <respStmt>
+                    <resp>Assistenza sviluppo interfaccia web</resp>
+                    <persName xml:id="M.C.">Milena Corbellini</persName>
                     
                 </respStmt>
                 <respStmt>
@@ -39,11 +55,11 @@
                     </msIdentifier>
                     <physDesc>
                         <handDesc>
-                            <handNote scribe="Bonsi" xml:id="A1">Testo base su RC4</handNote>
-                            <handNote scribe="Varchi" xml:id="A2">Revisioni Varchi</handNote>
-                            <handNote scribe="Baldini" xml:id="A3"> Interventi di correzioni e
-                                aggiunte</handNote>
-                            <handNote scribe="N.I." xml:id="A4">Mano non identificata</handNote>
+                            <handNote scribe="Bonsi" xml:id="A1">Mano di Bonsi, testo base su RC4;</handNote>
+                            <handNote scribe="Varchi" xml:id="A2">Mano di Varchi, revisioni;</handNote>
+                            <handNote scribe="Baldini" xml:id="A3"> Mano di Baldini, interventi di correzioni e
+                                aggiunte;</handNote>
+                            <handNote scribe="N.I." xml:id="A4">Altra mano non identificata</handNote>
                         </handDesc>
                     </physDesc>
                     
@@ -170,11 +186,11 @@
     <text n="RC4" xml:id="RC4" hand="#A1">
         <front> 
             <div>
-                <p><hi> legenda dei colori </hi></p>
-                <p>Mano di Varchi: testo normale in nero</p>
-                <p>Mano di XX: <del hand="#A2">cassature</del> ed <add hand="#A2">aggiunte</add></p>
-                <p>Mano di YY: <del hand="#A3">cassature</del> ed <add hand="#A3">aggiunte</add></p>
-                <p>Mano di ZZ: <del hand="#A4">cassature</del> ed <add hand="#A4">aggiunte</add></p>
+                <p><hi> Legenda dei colori </hi></p>
+                <p>Mano di Bonsi: testo base in nero</p>
+                <p>Mano di Varchi: <del hand="#A2">cassature</del> ed <add hand="#A2">aggiunte</add></p>
+                <p>Mano di Baldini: <del hand="#A3">cassature</del> ed <add hand="#A3">aggiunte</add></p>
+                <p>Mano non identificata: <del hand="#A4">cassature</del> ed <add hand="#A4">aggiunte</add></p>
                 <p> Le abbreviazioni nella diplomatica sono sciolte e segnalate in corsivo e grassetto </p>
 
             </div>
@@ -185,7 +201,7 @@
                 <head> &#9753; DELLA STORIA FIORENTINA <lb/>DI BENEDETTO VARCHI COMINCIATA DALL’<lb/>ANNO
                     MILLE CINQUECENTO VENTISETTE,<lb/> A 
                        L’ILL<emph rend="italic">USTRISSI</emph>MO ET ECC<emph rend="italic">ELLENTISSI</emph>MO 
-                        <persName ref="#Cosimo">SIGNOR COSIMO <del hand="#A3">DE’<lb/></del>
+                        <persName ref="#Cosimo">SIGNOR COSIMO <del hand="#A2">DE’<lb/></del>
                         MEDICI</persName>, DUCA SECONDO DI <lb/> FIRENZE <lb/><lb/>PROEMIO &#9753;</head>
                 <p><choice><sic>L'INTENDIMENTO</sic><corr>L'intendimento</corr></choice> nostro è di dovere con quella diligenza, e verità,<lb/> che
                     potremo, e saperremo maggiore tutte quelle cose ordinatamente, e<lb/>
@@ -202,7 +218,7 @@
                         .VII.º</persName> per lo <persName ref="#Ippolito">Mag<emph rend="italic">nifi</emph>co
                         Ippolito</persName><lb/> in quel tempo la governava, che per
                     alcuna altra piu possente <lb/>cagione; la qual cosa seguì agli <date
-                        when="1527-04-26">XXVI giorni del mese d’<lb/>AP<add hand="#A1" place="above">ri</add>le </date>, quando il popolo inaspettatamente levatosi, furiosame<emph rend="italic">n</emph>te
+                        when="1527-04-26">XXVI giorni del mese d’<lb/>Aprile </date>, quando il popolo inaspettatamente levatosi, furiosame<emph rend="italic">n</emph>te
                     <lb/> corse all’armi, ò più tosto agli <date when="1527-05-17">XVII di
                         maggio</date>, allhora che<lb/>
                     <persName ref="#Famiglia_Medici">i Medici</persName>, di <placeName
@@ -217,7 +233,8 @@
                         >va</del>no l’anno 
                     
                     <span n="miaone"><choice><orig>
-                        ^ </orig><reg resp="#D.B."></reg></choice></span> <add hand="#A2" place="bottom" n="miaone"> ^ benché non senza errore
+                        ^ </orig><reg resp="#D.B."></reg></choice></span> <add hand="#A2" place="bottom" n="miaone"> <span n="miaone"><choice><orig>
+                            ^ </orig><reg resp="#D.B."></reg></choice></span> benché non senza errore
                             manifesto, <del hand="#A2">i Fiorentini <emph rend="italic">ecc.</emph></del></add>  i Fiorentini <date
                         when="1527">millecinquecento venti<choice>
                         <orig>-</orig>
@@ -541,7 +558,7 @@
                         <reg resp="#D.B."></reg>
                     </choice><lb/>niera alcuna <lb/> ritrovare la<lb/> verità delle<lb/> cose seguite
                         in<lb/> quei tempi<lb/>
-                        <del hand="#A3">nei qua</del><add hand="#A3">c</add><del hand="#A3">li</del><add hand="#A3">h</add><add hand="#A3">e</add> io <lb/> doveva scrivere</add>
+                        <del hand="#A3">nei q<emph rend="italic">u</emph>a</del><add hand="#A3">c</add><del hand="#A3">li</del><add hand="#A3">h</add><add hand="#A3">e</add> io <lb/> doveva scrivere</add>
                     <del hand="#A3">e intavolare per l’ordi<choice>
                         <orig>-</orig>
                         <reg resp="#D.B."></reg>
