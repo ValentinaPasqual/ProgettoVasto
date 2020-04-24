@@ -90,7 +90,7 @@
 .criticalEdition .lb[data-n] {display:inline !important}
 .diplomaticEdition .lb[data-n] {display:none!important}
 .criticalEdition .lb > br {display:none !important}
-.criticalEdition .head > .lb {display:inline}
+.criticalEdition .head > .lb {display:block !important}
 .criticalEdition .orig, .criticalEdition .sic, .criticalEdition .abbr {display:none}
 /*.criticalEdition .choice .corr, .criticalEdition .choice .reg, .criticalEdition .choice .expan {color:purple !important} */
 .criticalEdition .del {display:none}
