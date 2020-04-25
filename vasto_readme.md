@@ -57,7 +57,7 @@ Mostra il testo di RC4 dopo la redazione a cura di Dario Brancato. L'edizione cr
 ### LIMITAZIONI SIGNIFICATIVE 
 * Il carosello di immagini (posizionato a sinistra nella visualizzazioni "Immagine Testo") non segue lo scroll-down del testo a destra. Questo rende le immagini "scollate" dal testo corrispondente, ma è ancora possibile un confronto manuale immagine-testo grazie all'indicazione nel testo della pagina del manoscritto che l'utente sta leggendo. 
 
-## LISTA DEI TAG UTILIZZATI
+## Lista dei tag XML-TEI utilizzati per l'encoding dell'edizione
 Il progetto Vasto al momento, come già detto in precedenza, è da considerasi una versione pilot che necessita di essere arricchita con altri materiali. Allo scopo di ampliare il progetto, di seguito rilasciamo una legenda di tag che sono stati utilizzati nel file xml pilot_proemio.xml e che sono stati appostiamente customizzati per rispettare le esigenze del testimone. In particolare presentiamo qui di seguito la lista di tag presenti nel ```<body>``` del file xml. 
 
 * titolo ```<head>```
