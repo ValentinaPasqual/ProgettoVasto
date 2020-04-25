@@ -1,0 +1,19 @@
+<div>
+<head>Parallel passages</head>
+
+<cit xml:id="burhan_2-7-165-7-10">
+    <bibl>
+        <author ref="#p_Avicenna">Avicenna</author>
+        <title ref="#w_burhan">Burhān</title>
+        <citedRange corresp="#Afifi1956">II, 7, p. 165, 7-10</citedRange>
+    </bibl>
+</cit>
+
+<cit xml:id="burhan_2-9-178-17-19">
+    <bibl>
+        <author ref="#p_Avicenna">Avicenna</author>
+        <title ref="#w_burhan">Burhān</title>
+        <citedRange corresp="#Afifi1956">II, 9, p. 178, 17-19</citedRange>
+    </bibl>
+</cit>
+</div>

@@ -1,0 +1,54 @@
+<div>
+<head>Sources</head>
+
+<cit xml:id="Ari_Meta_1-2-982b28-983a11">
+    <bibl>
+        <author ref="#p_Aristotle">Arist.</author>
+        <title ref="#w_metaph">Metaph.</title>
+        <citedRange corresp="#ar_met_perseus" target="http://data.perseus.org/citations/urn:cts:greekLit:tlg0086.tlg025.perseus-grc1:1.982b">Α, 2, 982b28-983a11</citedRange>
+    </bibl>
+</cit>
+
+<cit xml:id="Ari_Meta_4-1-1003a31-32" source="#Ari_Meta_4-1-1003a31-32.xml">
+    <bibl>
+        <author ref="#p_Aristotle">Arist.</author>
+        <title ref="#w_metaph">Metaph.</title>
+        <citedRange corresp="#ar_met_perseus" target="http://data.perseus.org/citations/urn:cts:greekLit:tlg0086.tlg025.perseus-grc1:4.1003a">Γ, 1, 1003a31-32</citedRange>
+    </bibl>
+</cit>
+
+<cit xml:id="Ari_Meta_6-1-1026a16-21">
+    <bibl>
+        <author ref="#p_Aristotle">Arist.</author>
+        <title ref="#w_metaph">Metaph.</title>
+        <citedRange corresp="#ar_met_perseus" target="http://data.perseus.org/citations/urn:cts:greekLit:tlg0086.tlg025.perseus-grc1:6.1026a">Ε, 1, 1026a16-21</citedRange>
+    </bibl>
+</cit>    
+
+<cit xml:id="boe_inPorfIsag_I-80A-B">
+    <bibl>
+        <author ref="#p_Boethius">Boethius</author>
+        <title ref="#w_inIsagogen">In Porph. Isag.</title>
+        <citedRange  corresp="#CPT_PLD64">I, coll. 80A-B</citedRange>
+    </bibl>
+    <quote>Rursus divisio est quoties vox plura significans aperitur, et quam multa sint quae ab ea voce signantur ostenditur, ut si quis dicat: nomen canis plura significat, et hunc latrabilem quadrupedemque, et coeleste sidus, et marinam bestiam, quae omnia a se diffinitione disjuncta sunt.</quote>
+</cit>
+
+<cit xml:id="boe_porpIsagTrans_II-91A" source="boe_porpIsagTrans_II-91A.xml">
+    <bibl>
+        <author ref="#p_Boethius">Boethius</author>
+        <title ref="#w_boe-traslatio-isagoge">Porph. Isag. translatio</title>
+        <citedRange  corresp="#CPT_PLD64">II, coll. 91A</citedRange>
+    </bibl>
+    <quote>Tripliciter igitur cum genus dicatur, de tertio apud philosophos est sermo, quod etiam describentes assignaverunt, dicentes genus esse quod de pluribus et differentibus specie in eo quod quid sit praedicatur, ut animal.</quote>
+</cit>
+
+<cit xml:id="boe_transAristTop_I-4-913B">
+    <bibl>
+        <author ref="#p_Boethius">Boethius</author>
+        <title ref="#w_boe-traslatio-topicorum">Porph. Isag. translatio</title>
+        <citedRange  corresp="#ATT_PLD64">I, 4, coll. 913B</citedRange>
+    </bibl>
+    <quote>Genus autem est, quod de pluribus et differentibus specie in eo quod quid est praedicatur.</quote>
+</cit>
+</div>

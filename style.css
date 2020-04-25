@@ -1,0 +1,550 @@
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body {
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    /*color: to be defined;*/
+    margin: auto 0;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+}
+
+h2, h3{
+    font-family: 'EB Garamond', serif;
+    letter-spacing: .1rem;
+}
+
+
+.foot:before {
+    height: 3.8rem;
+    margin-top: -5rem;
+    content: "";
+    display: block;
+}
+
+
+
+
+/*--- Navbar --*/
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background-color: #DC143C;
+}
+.navbar-dark{
+    background-color: #DC143C;
+}
+.navbar-brand {
+    text-transform: capitalize;
+    height: 1.9rem;
+    font-weight: 900;
+    font-family: 'Lota', cursive;
+}
+
+.navbar-nav {
+    padding-right: .7rem;
+
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    padding-top: .8rem;
+
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color:rgb(228, 143, 160);
+}
+
+#color {
+    color:white;
+}
+
+/*--- Slider --*/
+
+
+
+.Home {
+    position: absolute;
+    top:35%;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.Home h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    color: rgba(255, 255, 255, 0.911);
+    text-shadow: .4rem .4rem .9rem black;
+    padding-bottom: 1rem;
+}
+
+.Home h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-shadow: .5rem .5rem 1rem black;
+    padding-bottom: 1.6rem;
+    color:rgba(255, 255, 255, 0.911);
+}
+
+.btn-lg {
+    border-width: medium;
+    border-radius: 0;
+    font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: .1rem;
+}
+
+#evt{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.red a:link{
+    color:crimson;
+}
+.red a:hover{
+    color:crimson;
+}
+.red a:visited{
+    color:crimson;
+}
+/*--- Overview Section --*/
+
+.d{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+#doc{
+    background-image: url("writ.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    color: black;
+    text-shadow: 2px 2px 6px red;
+}
+#EVT{
+
+    border-color: #DC143C;
+    border-width: 5rem;
+    border-radius: 0.5rem ;
+
+}
+
+.narrow {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+.btn-md {
+    border-width: medium;
+    border-radius: 0;
+    padding: .6rem 1.1rem;
+    text-transform: uppercase;
+    margin: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: .1rem;
+    font-weight: 900;
+}
+.container{
+position: relative;
+
+}
+#evt{
+    width: 50%;
+}
+#center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+footer {
+    color: white;
+    padding: 2rem 0 0;
+    margin-top: 1rem;
+    font-size: 1rem;
+
+}
+
+footer h3 {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+footer a {
+    color: white;
+}
+footer a:hover{
+    color: lightcoral;
+
+}
+footer a:link{
+    color: white;
+    text-decoration: underline;
+
+}
+
+footer a:visited {
+    color:lightpink;
+  }
+
+hr.socket {
+    border-top: .1rem solid white;
+    width: 100%;
+    margin: 0.5rem;
+}
+
+#Credits h1{
+    color: #DC143C;
+    font-size:3rem;
+    font-weight:bold;
+    font-family: 'Bree Serif', serif;
+    padding-bottom: 0.5rem;
+}
+#Credits h2{
+    color: black;
+    font-size:1.3rem;
+    font-weight:bold;
+    font-family: 'Bree Serif', serif;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2;
+}
+
+#Credits p{
+    color: rgb(31, 28, 28);
+    font-size:1rem;
+    font-family: 'Bree Serif', serif;
+    text-align: justify;
+}
+#Credits a:link{
+    color: #DC143C;
+}
+
+#Credits a:visited {
+    color:crimson;
+  }
+#Credits a:hover {
+    color:crimson;
+  }
+#Documentation a:link{
+    color: #DC143C;
+}
+
+#Documentation a:visited {
+    color:crimson;
+  }
+#Documentation a:hover {
+    color:crimson;
+  }
+
+#Documentation p{
+    font-family: 'Bree Serif', serif;
+    text-align: justify;
+    color: rgb(31, 28, 28);
+}
+#Documentation li{
+    font-family: 'Bree Serif', serif;
+    text-align: justify;
+    color: rgb(31, 28, 28);
+}
+#Documentation h1{
+    color: #DC143C;
+    font-size:3rem;
+    font-weight:bold;
+    font-family: 'Bree Serif', serif;
+    padding-bottom: 0.5rem;
+}
+#Documentation h2{
+    color: black;
+    font-size:1.3rem;
+    font-weight:bold;
+    font-family: 'Bree Serif', serif;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2;
+}
+#Documentation h3{
+    color: black;
+    font-size:1rem;
+    font-weight:bold;
+    font-family: 'Bree Serif', serif;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2;
+}
+@media (max-width: 992px) {  
+    .Home{
+        top: 20%;
+    }
+    .Home h1 {
+        font-size: 3rem;
+        letter-spacing: .15rem;
+        padding-bottom: .5rem;
+    }
+    .Home h3 {
+        font-size: 2rem;
+        padding-bottom: 1.2rem;
+        letter-spacing: .15rem;
+    }
+    .btn-lg {
+        font-size: 0.9rem;
+        letter-spacing: .25rem;
+    }
+    .btn-md {
+        font-size: 0.9rem;
+        letter-spacing: .25rem;
+    }
+    #center{
+        font-size: 0.9rem;
+        letter-spacing: .25rem;
+    }
+    .narrow h1 {
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    footer h3{
+        font-size: 1rem;
+    }
+    footer{
+        font-size:75%;
+    }
+
+    #Credits h1{
+        font-size: 1.8rem;
+        padding-bottom: 1rem;
+    }
+    #Credits h2{
+        font-size: 1.5rem;;
+    }
+    
+    #Credits p{
+        font-size: 1rem
+    }
+    #Documentation h1{
+        font-size: 1.8rem;
+        padding-bottom: 1rem;
+    }
+   
+    #Documentation h2{
+        font-size: 1.5rem;;
+    }
+    #Documentation h3{
+        font-size: 1.2rem;;
+    }
+    
+    #Documentation p{
+        font-size: 1rem
+    }
+    #Documentation li{
+        font-size: 1rem
+    }
+    #doc{
+        height:40%;
+    }
+    p{
+        font-size:1.2 rem;
+    }
+    .d{
+        padding-left: 2.5rem;
+        padding-right:2.5rem;
+        padding-top: 1rem;
+    }
+    #evt{
+        width: 80%;
+    }
+}
+
+/*--- Media Queries --*/
+@media (max-width: 768px) {
+    .Home{
+        top: 10%;
+    }
+    .Home h1 {
+        font-size: 2rem;
+        letter-spacing: .15rem;
+        padding-bottom: .7rem;
+    }
+    .Home h3 {
+        font-size: 1.2rem;
+        padding-bottom: 2rem;
+        letter-spacing: .15rem;
+    }
+    .btn-lg {
+        font-size: 0.9rem;
+        letter-spacing: .15rem;
+    }
+    .btn-md {
+        font-size: 0.9rem;
+        letter-spacing: .15rem;
+    }
+    #center{
+        font-size: 0.9rem;
+        letter-spacing: .15rem;
+    }
+    .narrow h1 {
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+
+    #Credits h1{
+        font-size:1.2rem;
+        padding-bottom: 1rem;
+    }
+    #Credits h2{
+        font-size: 1rem;;
+    }
+    
+    #Credits p{
+        font-size: .85rem
+    }
+    #Documentation h1{
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+    }
+   
+    #Documentation h2{
+        font-size: 1rem;;
+    }
+    #Documentation h3{
+        font-size: 0.9rem;;
+    }
+    
+    #Documentation p{
+        font-size: .8rem
+    }
+    #Documentation li{
+        font-size: .8rem
+    }
+    #doc{
+        height:30%;
+    }
+    p{
+        font-size:1.2 rem;
+    }
+    .d{
+        padding-left: 2.5rem;
+        padding-right:2.5rem;
+        padding-top: 1rem;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .Home{
+        top: 15%;
+    }
+    .Home h1 {
+        font-size: 2rem;
+        letter-spacing: .15rem;
+        padding-bottom: .5rem;
+    }
+    .Home h3 {
+        font-size: 1.2rem;
+        padding-bottom: .8rem;
+        letter-spacing: .15rem;
+    }
+    .btn-lg {
+        font-size: .9rem;
+        letter-spacing: .10rem;
+    }
+    .btn-md{
+        font-size: .9rem;
+        letter-spacing: .10rem;
+    }
+    #center{
+        font-size: 0.9rem;
+        letter-spacing: .10rem;
+    }
+    .narrow h1 {
+        font-size: 1rem;
+    }
+    h3{
+        font-size: 1.1rem;
+    }
+    footer h3{
+        font-size: 0.8rem;
+    }
+    #Credits h1{
+        font-size: 90%;
+        padding-bottom: 1rem;
+    }
+    #Credits h2{
+        font-size: 75%;
+    }
+    
+    #Credits p{
+        font-size: 75%;
+    }
+    #Documentation h1{
+        font-size: 90%;
+        padding-bottom: 1rem;
+    }
+    #Documentation h2{
+        font-size: 75%;
+    }
+    #Documentation h3{
+        font-size: 75%;
+    }
+    #Documentation p{
+        font-size: 75%;
+    }
+    #Documentation li{
+        font-size: 75%;
+    }
+    #doc{
+        height:25%;
+    }
+    p{
+        font-size:75%;
+    }
+    footer{
+        font-size:85%;
+    }
+    .d{
+        padding-left: 2.5rem;
+        padding-right:2.5rem;
+        padding-top: 1rem;
+    }
+}
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/

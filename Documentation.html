@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Information</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Personal stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!--    <link rel="stylesheet" href="css/fixed.css">-->
+    <style>
+        .navbar {
+            background-color: #DC143C !important;
+            opacity: 0.9 !important;
+        }
+        .btn-secondary{
+            background-color: #DC143C !important;
+            opacity: 0.9 !important;
+            border-color: #DC143C !important ;
+        }
+    </style>
+</head>
+<body>
+        <div id="home">
+    
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="background-color: #DC143C;">
+                <a class="navbar-brand" href="index.html">VaSto</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#EVT">EVT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#doc">Documentazione</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    <section class="Documentation" id="Documentation">
+    <div class="col-12 narrow">
+        <h1 id="informazioni-e-specifiche-tecniche-della-piattaforma-vasto">Informazioni e specifiche tecniche della Piattaforma Vasto</h1>
+<h2 id="che-cos-la-piattaforma-vasto-">Che cos&#39;è la Piattaforma Vasto?</h2>
+<p>[BLABLABLABLA DA COMPLETARE --&gt; cos’è, cos’è l’edizione in Evt2 di vasto (link a evt2) --&gt; riusa evt2 blabla PER ORA MONOTESTIMONE
+   o meglio forse che cos&#39;è il pilot???]
+</p>
+<h2 id="nello-specifico-che-cos-il-pilot-della-piattaforma-vasto-">Nello specifico, che cos&#39;è il pilot della Piattaforma Vasto?</h2>
+<p>[BLABLABLA DA COMPLETARE]</p>
+
+<p>In particolare, edizione digitale presenta la Storia Fiorentina di Varchi, in particolare del testimone RC4. Allo stato attuale la piattaforma Vasto presenta il proemio del Primo Libro (versione Pilot).
+   L&#39;edizione è quindi stata implementata su <a href="http://evt.labcd.unipi.it">EVT-2</a>, customizzando quest ultimo nei casi di necessità specifici riportati nei prossimi paragrafi.<br>EVT-2 permette di caricare facilmente il file xml (il quale segue l’encoding XML-TEI). Il documento xml che contiene il testo marcato è unico e contiene tutti gli elementi dell&#39;edizione critica e diplomatica (opportunamente abilitati e disabilitati nel css a seconda delle esigenze di visualizzazione).
+</p>
+<p>La customizzazione della Piattaforma Vasto rispetto il pacchetto EVT-2 avviene attraverso la modifica di tre file: </p>
+<ul>
+   <li>il file xml contenente il testo marcato in tei (in questo specifico caso <code>data/pilot_proemio.xml</code>)</li>
+   <li>il file json di configuarazione della visualizzazione (<code>config/config.json</code>)</li>
+   <li>il file css messo a disposizione da EVT-2 per facilitare la customizzazione della visualizzazione (<code>config/custom_style.css</code>)</li>
+   <li>infine, all&#39;occorrenza, sono state fatte delle piccole modifiche al file javascript (<code>scripts/evtviewer.b31e1966.js</code>)</li>
+</ul>
+<h2 id="l-edizione-digitale-vasto-fuzionalit-e-visualizzazioni">L&#39;edizione Digitale Vasto: Fuzionalità e Visualizzazioni</h2>
+<p>Come descritto in precedenza, l&#39;edizione digitale è composta dall&#39;edizione diplomatica e critica. </p>
+<h2 id="funzionalit-trasversali-alle-edizioni">Funzionalità trasversali alle edizioni</h2>
+<p>Con &quot;funzionalità trasversali alle edizioni&quot; si intendono tutte quelle funzionalità consultabili nel sistema a prescidere dall&#39; edizione (diplomatica o critica) sul quale l&#39;utente si trova. Le funzionalità sono le seguenti:</p>
+<ul>
+   <li>Nella presente edizione vengono attivate solo le visualizzazioni &quot;Testo di Lettura&quot; e &quot;Immagine Testo&quot;</li>
+   <li>Tutte le scelte stilistiche usate per indicare i fenomeni testuali e le pelculiarità sopracitate sono indicizzati nella sezione info in alto</li>
+   <li>Possibilità di scaricare l’xml (in alto a dx)</li>
+   <li>Metadati descrittivi (in alto a dx)</li>
+   <li>Il testo è ricco di citazioni di luoghi, persone e date, che vengono marcate e visualizzate grazie al menù in basso (<code>NamedEnititySelection</code>).</li>
+</ul>
+<h2 id="funzionalit-dell-edizione-diplomatica">Funzionalità dell&#39;Edizione Diplomatica</h2>
+<p>L’edizione diplomatica si impegna a visualizzare il testo nel modo più simile possibile alle immagini proposte.
+   In particolare vengono annotati e visualizzati: 
+</p>
+<ul>
+   <li>linebreak, </li>
+   <li>le aggiunte a margine, in riga, o a piè di pagina. Inoltre nel testo vi è un’ancora (solitamente <code>^</code>) che, se selezionata dall&#39;utente, permette di illuminare l’addizione corrispondente. </li>
+   <li>La peculiarità che si è voluto enhance nella presente edizione diplomatica è la coesistenza di quattro diverse mani (cassature e addizioni) sul testimone RC4. L’edizione vuole quindi visualizzare in modo efficacie tale peculiarità. Le cassature sono rappresentate con una barra centro del testo del colore corrispondente alla mano che l&#39;ha creata, allo stesso modo le aggiunte vengono segnalate con il colore del testo corrispondente alla mano che l&#39;ha prodotta.</li>
+   <li>Nella diplomatica le abbreviazioni vengono sciolte e segnalate in corsivo e grassetto</li>
+</ul>
+<h3 id="funzionalit-aggiuntive-rispetto-ad-evt-2-nell-edizione-diplomatica-vasto-">Funzionalità aggiuntive rispetto ad EVT-2 nell&#39;Edizione Diplomatica Vasto:</h3>
+<ul>
+   <li>La visualizzazione &quot;Immagine Testo&quot; in EVT-2 non è abilitata (non è possibile visualizzare l&#39;immagine corrispondente al testo). La funzionalità è stata quindi abilitata all&#39;interno dell&#39;edizione digitale Vasto. 
+      Nello specifico le immagini del manoscritto devono essere caricate all&#39;interno di <code>data/imgs/[nome_del_testimone]</code>. Le immagini vanno rinominate con il contenuto dell&#39;attributo &quot;n&quot; dei tag <code>&lt;pb&gt;</code> contenuti nel file xml dell&#39;edizione.  
+   </li>
+</ul>
+<h2 id="funzionalit-dell-edizione-critica">Funzionalità dell&#39;Edizione Critica</h2>
+<p>Mostra il testo di RC4 dopo la redazione a cura di Dario Brancato. L&#39;edizione critica presenta: </p>
+<ul>
+   <li>l&#39;assenza delle cassature </li>
+   <li>normalizzazioni del testo originale</li>
+   <li>abbreviazioni sciolte senza alcun riferimento tipografico</li>
+   <li>il testo in versione scroll-down, la divisione delle pagine è segnalata inline all&#39;interno del testo (ad esempio con la dicitura [12v]) </li>
+   <li>note a margine, a piè di pagina etc sono rappresentate come parte integrante del testo senza alcuna distinzione tipografica</li>
+   <li>le segnalazioni tipografiche delle mani sono eliminate </li>
+   <li>segni particolari (ad esempio <code>^</code> oppure <code>-</code>) sono normalizzati e/o eliminati</li>
+   <li>il testo è ottimizzato per la lettura e la comprensione testuale</li>
+</ul>
+<h3 id="limitazioni-significative-dell-edizione-critica-vasto">Limitazioni significative dell&#39;Edizione Critica Vasto</h3>
+<ul>
+   <li>Il carosello di immagini (posizionato a sinistra nella visualizzazioni &quot;Immagine Testo&quot;) non segue lo scroll-down del testo a destra. Questo rende le immagini &quot;scollate&quot; dal testo corrispondente, ma è ancora possibile un confronto manuale immagine-testo grazie all&#39;indicazione nel testo della pagina del manoscritto che l&#39;utente sta leggendo. </li>
+</ul>
+<h2 id="lista-dei-tag-xml-tei-utilizzati-per-l-encoding-dell-edizione">Lista dei tag XML-TEI utilizzati per l&#39;encoding dell&#39;edizione</h2>
+<p>Il progetto Vasto al momento, come già detto in precedenza, è da considerasi una versione pilot che necessita di essere arricchita con altri materiali. Allo scopo di ampliare il progetto, di seguito rilasciamo una legenda di tag che sono stati utilizzati nel file xml pilot_proemio.xml e che sono stati appostiamente customizzati per rispettare le esigenze del testimone. In particolare presentiamo qui di seguito la lista di tag presenti nel <code>&lt;body&gt;</code> del file xml. </p>
+<ul>
+   <li>titolo <code>&lt;head&gt;</code></li>
+   <li>divisione pagine <code>&lt;pb&gt; @n @xml:id</code></li>
+   <li>divisione per libri <code>&lt;div&gt;</code> attrib <code>@type @xml:id</code></li>
+   <li>divisione righe <code>&lt;lb&gt;</code></li>
+   <li>integrazione abbreviazioni manoscritto <code>&lt;emph&gt; @rend</code></li>
+   <li>aggiunte <code>&lt;add&gt; @hand @place @n</code></li>
+   <li>cassature <code>&lt;del&gt; @hand</code> </li>
+   <li>normalizzazioni <code>&lt;choice&gt;&lt;sic&gt;&lt;corr&gt;</code></li>
+   <li>regolarizzazione diplomatica-critica: <code>&lt;span&gt;&lt;choice&gt;&lt;orig&gt;&lt;reg&gt;</code></li>
+   <li>
+      collegamento tra ancora nel testo e la nota a margine corrispondente <code>&lt;span n=&quot;x&quot;&gt;&lt;/span&gt;&lt;span @place n=&quot;x&quot;&gt;</code>
+   </li>
+</ul>
+<ul>
+   <li>
+      nomi di persona <code>&lt;persName&gt; @ref</code>
+   </li>
+   <li>nomi di luoghi <code>&lt;placeName&gt; @ref</code></li>
+   <li>
+      <p>date<code> 
+        &lt;date&gt;
+      @when</code>
+   </li>
+</ul>
+<p>Per ulteriori esempi ed informazioni consulta il file <code>data/pilot_proemio.xml</code></p>
+    </div>
+    </section>
+    <section class="foot">
+        <footer>
+            <div class="row justify-content-center pt-1" style="background-color:#DC143C;">
+    
+                <div class="col-md-5 text-center">
+                    <h3>Digital Humanities Advanced Research Centre (/DH.arc)</h3>
+                    <img src=""/>
+                    <p>Questo progetto e l'edizione digitale sono parte delle attività di ricerca del Digital Humanities Advanced Research Centre <a href="https://centri.unibo.it/dharc/en">(/DH.arc)</a></p>
+                    <h3>Contatti</h3>
+                    <p>Università di Bologna<br>
+                        Dipartimento di Filologia Classica e Italianistica <a href="https://ficlit.unibo.it/it">(FICLIT)</a><br>
+                        Via Zamboni 32<br>
+                        40126 Bologna, Italia</p>
+                    <p><strong>Email:</strong> <a class="email-link" href="mailto:dharc@live.unibo.it">dharc@live.unibo.it</a></p>
+    
+    
+                </div>
+    
+                <hr class="socket">
+                <p>&copy;2020 <a href="https://centri.unibo.it/dharc/en">DHARC</a>- VASTO | DOI:    | <a href="credits.html">Credits</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.it"><img alt="Licenza Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" /></a><br />
+                </p>
+    
+            </div> <!-- End of Row -->
+        </footer>
+    </section>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
