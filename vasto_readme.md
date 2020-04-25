@@ -75,9 +75,11 @@ Il progetto Vasto al momento, come già detto in precedenza, è da considerasi u
 * cassature ```<del> @hand``` 
 * normalizzazioni ```<choice><sic><corr>```
 * regolarizzazione diplomatica-critica: ```<span><choice> <orig><reg>```
+* collegamento tra ancora nel testo e la nota a margine corrispondente ```<span n="x"></span><span @place n="x">```
 
 * nomi di persona ```<persName> @ref```
 * nomi di luoghi ```<placeName> @ref```
 * date <date> ```@when```
 
 Per ulteriori esempi ed informazioni consulta il file ```data/pilot_proemio.xml```
+
