@@ -1,6 +1,13 @@
-# Introduzione al Progetto Vasto? 
+# Informazioni e specifiche tecniche della Piattaforma Vasto
 
-cos’è, cos’è l’edizione in Evt2 di vasto (link a evt2)  --> riusa evt2 blabla PER ORA MONOTESTIMONE
+## Che cos'è la Piattaforma Vasto?
+
+[BLABLABLABLA DA COMPLETARE --> cos’è, cos’è l’edizione in Evt2 di vasto (link a evt2) --> riusa evt2 blabla PER ORA MONOTESTIMONE
+o meglio forse che cos'è il pilot???]
+
+## Nello specifico, che cos'è il pilot della Piattaforma Vasto?
+
+[BLABLABLA DA COMPLETARE]
 
 ## L'edizione digitale Vasto: funzionalità e limitazioni 
 
@@ -19,16 +26,16 @@ La customizzazione della Piattaforma Vasto rispetto il pacchetto EVT-2 avviene a
 Come descritto in precedenza, l'edizione digitale è composta dall'edizione diplomatica e critica. 
 
 
-## FUNZIONALITA' TRANS-EDIZIONE:
+## Funzionalità trasversali alle edizioni
+Con "funzionalità trasversali alle edizioni" si intendono tutte quelle funzionalità consultabili nel sistema a prescidere dall' edizione (diplomatica o critica) sul quale l'utente si trova. Le funzionalità sono le seguenti:
+
 * Nella presente edizione vengono attivate solo le visualizzazioni "Testo di Lettura" e "Immagine Testo"
 *	Tutte le scelte stilistiche usate per indicare i fenomeni testuali e le pelculiarità sopracitate sono indicizzati nella sezione info in alto
 * Possibilità di scaricare l’xml (in alto a dx)
 *	Metadati descrittivi (in alto a dx)
 * Il testo è ricco di citazioni di luoghi, persone e date, che vengono marcate e visualizzate grazie al menù in basso (```NamedEnititySelection```).
 
-## EDIZIONE DIPLOMATICA
-
-### FUNZIONALITA’
+## Funzionalità dell'Edizione Diplomatica
 
 L’edizione diplomatica si impegna a visualizzare il testo nel modo più simile possibile alle immagini proposte.
 In particolare vengono annotati e visualizzati: 
@@ -37,13 +44,12 @@ In particolare vengono annotati e visualizzati:
 * La peculiarità che si è voluto enhance nella presente edizione diplomatica è la coesistenza di quattro diverse mani (cassature e addizioni) sul testimone RC4. L’edizione vuole quindi visualizzare in modo efficacie tale peculiarità. Le cassature sono rappresentate con una barra centro del testo del colore corrispondente alla mano che l'ha creata, allo stesso modo le aggiunte vengono segnalate con il colore del testo corrispondente alla mano che l'ha prodotta.
 * Nella diplomatica le abbreviazioni vengono sciolte e segnalate in corsivo e grassetto
 
-### Funzionalità aggiuntive rispetto ad EVT-2: 
+### Funzionalità aggiuntive rispetto ad EVT-2 nell'Edizione Diplomatica Vasto: 
 * La visualizzazione "Immagine Testo" in EVT-2 non è abilitata (non è possibile visualizzare l'immagine corrispondente al testo). La funzionalità è stata quindi abilitata all'interno dell'edizione digitale Vasto. 
 Nello specifico le immagini del manoscritto devono essere caricate all'interno di ```data/imgs/[nome_del_testimone]```. Le immagini vanno rinominate con il contenuto dell'attributo "n" dei tag ```<pb>``` contenuti nel file xml dell'edizione.  
 
-## CRITICA 
+## Funzionalità dell'Edizione Critica
 
-### FUNZIONALITA’
 Mostra il testo di RC4 dopo la redazione a cura di Dario Brancato. L'edizione critica presenta: 
 * l'assenza delle cassature 
 * normalizzazioni del testo originale
@@ -54,7 +60,7 @@ Mostra il testo di RC4 dopo la redazione a cura di Dario Brancato. L'edizione cr
 * segni particolari (ad esempio ```^``` oppure ```-```) sono normalizzati e/o eliminati
 * il testo è ottimizzato per la lettura e la comprensione testuale
 
-### LIMITAZIONI SIGNIFICATIVE 
+### Limitazioni significative dell'Edizione Critica Vasto
 * Il carosello di immagini (posizionato a sinistra nella visualizzazioni "Immagine Testo") non segue lo scroll-down del testo a destra. Questo rende le immagini "scollate" dal testo corrispondente, ma è ancora possibile un confronto manuale immagine-testo grazie all'indicazione nel testo della pagina del manoscritto che l'utente sta leggendo. 
 
 ## Lista dei tag XML-TEI utilizzati per l'encoding dell'edizione
