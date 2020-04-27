@@ -129,7 +129,7 @@ h2, h3{
 }
 
 #doc{
-    background-image: url("writ.JPG");
+    background-image: url("images/writ.JPG");
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
@@ -289,6 +289,12 @@ hr.socket {
     padding-top: 0.5rem;
     padding-bottom: 0.2;
 }
+
+#Documentation p {
+    font-weight:normal
+}
+
+
 @media (max-width: 992px) {  
     .Home{
         top: 20%;
