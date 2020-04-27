@@ -1,13 +1,12 @@
-# Informazioni e specifiche tecniche della Piattaforma Vasto
+# Informazioni sulla Piattaforma Vasto
 
 ## Che cos'è la Piattaforma Vasto?
 
-[BLABLABLABLA DA COMPLETARE --> cos’è, cos’è l’edizione in Evt2 di vasto (link a evt2) --> riusa evt2 blabla PER ORA MONOTESTIMONE
-o meglio forse che cos'è il pilot???]
+[intro]
 
 ## Nello specifico, che cos'è il pilot della Piattaforma Vasto?
 
-[BLABLABLA DA COMPLETARE]
+[intro]
 
 ## L'edizione digitale Vasto: funzionalità e limitazioni 
 
