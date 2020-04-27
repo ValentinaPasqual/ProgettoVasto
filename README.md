@@ -1,5 +1,3 @@
-# Informazioni sulla Piattaforma Vasto
-
 ## Che cos'è la Piattaforma Vasto?
 
 [intro]
