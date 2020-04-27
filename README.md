@@ -45,7 +45,7 @@ In particolare vengono annotati e visualizzati:
 * La visualizzazione "Immagine Testo" in EVT-2 non è abilitata (non è possibile visualizzare l'immagine corrispondente al testo). La funzionalità è stata quindi abilitata all'interno dell'edizione digitale Vasto. 
 Nello specifico le immagini del manoscritto devono essere caricate all'interno di ```data/imgs/[nome_del_testimone]```. Le immagini vanno rinominate con il contenuto dell'attributo "n" dei tag ```<pb>``` contenuti nel file xml dell'edizione.  
 
-## Funzionalità dell'Edizione Critica
+## Funzionalità dell'Edizione Critica - COMING SOON
 
 Mostra il testo di RC4 dopo la redazione a cura di Dario Brancato. L'edizione critica presenta: 
 * l'assenza delle cassature 
