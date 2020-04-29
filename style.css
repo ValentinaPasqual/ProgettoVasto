@@ -18,7 +18,9 @@ h2, h3{
     font-family: 'EB Garamond', serif;
     letter-spacing: .1rem;
 }
-
+.maiusc{
+    font-variant: small-caps;
+}
 
 .foot:before {
     height: 3.8rem;
