@@ -103,7 +103,7 @@
 	"fragmentMilestone": "<witStart>, <witEnd>",
 	"lacunaMilestone": "<lacunaStart>, <lacunaEnd>",
 	"possibleVariantFilters": "hand",
-	"possibleLemmaFilters": "resp",
+	"possibleLemmaFilters": "hand",
 	"notSignificantVariant": "<orig>, <sic>, [type=orthographic]",
 
 	"maxWitsLoadTogether": 5,
