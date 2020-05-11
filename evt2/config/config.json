@@ -94,7 +94,7 @@
     }],
 
 
-    "toolHeatMap": true,
+    "toolHeatMap": false,
     "preferredWitness": "",
     "skipWitnesses": "",
 
@@ -139,7 +139,7 @@
     "quoteDef"              : "<quote>",
     "analogueDef"           : "<seg>,<ref[type=parallelPassage]>",
 
-    "showReadingExponent": false,
+    "showReadingExponent": true,
 
     "showInlineCriticalApparatus": true,
     "showInlineSources": true,
