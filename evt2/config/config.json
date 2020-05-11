@@ -31,7 +31,7 @@
                                 "label"    : "TEXT_TEXT",
                                 "icon"     : "mode-txtTxt",
                                 "viewMode" : "txtTxt",
-                                "visible"  : true
+                                "visible"  : false
                             },
                             {
                                 "label"    : "COLLATION",
@@ -102,8 +102,8 @@
 	"versionDef": "<witness>, <change>",
 	"fragmentMilestone": "<witStart>, <witEnd>",
 	"lacunaMilestone": "<lacunaStart>, <lacunaEnd>",
-	"possibleVariantFilters": "<hand>",
-	"possibleLemmaFilters": "",
+	"possibleVariantFilters": "hand",
+	"possibleLemmaFilters": "resp",
 	"notSignificantVariant": "<orig>, <sic>, [type=orthographic]",
 
 	"maxWitsLoadTogether": 5,
