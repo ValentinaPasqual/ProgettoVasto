@@ -203,7 +203,22 @@
                        L’ILL<emph rend="italic">USTRISSI</emph>MO ET ECC<emph rend="italic">ELLENTISSI</emph>MO 
                         <persName ref="#Cosimo">SIGNOR COSIMO <del hand="#A2">DE’<lb/></del>
                         MEDICI</persName>, DUCA SECONDO DI <lb/> FIRENZE <lb/><lb/>PROEMIO &#9753;</head>
-                <p><choice><sic>L'INTENDIMENTO</sic><corr>L'intendimento</corr></choice> nostro è di dovere con quella diligenza, e verità,<lb/> che
+                <p>
+                    <app type="recensio" resp="#chiara">
+            <note>
+                Here versions B and C of the text differ from version A, which is the default version.
+            </note>
+            <rdgGrp ana="#rec1">
+                <rdg>
+                    Quae etiam si essent finita, scire eas secundum quod sunt particularia non conferret nobis
+                    perfectionem sapientiae, nec perveniremus per illas ad finem sapientiae, sicut postea scies in libro
+                    sapientiae. Sed quod debemus considerare est cognitio verbi universalis. 
+                    Scis enim quod verbum universale non fit
+                    <app>
+                        <lem>universale</lem>
+                        <rdg wit="#C">univesale</rdg>
+                    </app>
+                    <choice><sic>L'INTENDIMENTO</sic><corr>L'intendimento</corr></choice> nostro è di dovere con quella diligenza, e verità,<lb/> che
                     potremo, e saperremo maggiore tutte quelle cose ordinatamente, e<lb/>
                     particolarmente raccontare, le quali dal popolo fiorentino degne<lb/> di memoria
                     ò in pace, ò in guerra, ò dentro, ò fuori della città,<lb/> ò publicamente, ò
