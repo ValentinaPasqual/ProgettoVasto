@@ -31,7 +31,7 @@
                                 "label"    : "TEXT_TEXT",
                                 "icon"     : "mode-txtTxt",
                                 "viewMode" : "txtTxt",
-                                "visible"  : false
+                                "visible"  : true
                             },
                             {
                                 "label"    : "COLLATION",
@@ -43,7 +43,7 @@
                                 "label"    : "SOURCE_TEXT",
                                 "icon"     : "mode-srcTxt",
                                 "viewMode" : "srcTxt",
-                                "visible"  : false
+                                "visible"  : true
                             }],
     "defaultEdition": "critical",
     "showEditionLevelSelector": true,
@@ -94,7 +94,7 @@
     }],
 
 
-    "toolHeatMap": false,
+    "toolHeatMap": true,
     "preferredWitness": "",
     "skipWitnesses": "",
 
