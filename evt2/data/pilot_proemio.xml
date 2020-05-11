@@ -180,24 +180,6 @@
                         <settlement type="città">Pavia</settlement>
                     </place>
                 </listPlace>
-                 <listWit>
-                    <listWit xml:id="rec1_wits" ana="#rec1" resp="#chiara">
-                    <head>Witnesses of version A</head>
-                    <witness xml:id="V">
-                        <msDesc>
-                            <msIdentifier>
-                                <settlement>Città del Vaticano</settlement>
-                                <repository>Biblioteca Apostolica Vaticana</repository>
-                                <idno>Vat.lat.2186</idno>
-                            </msIdentifier>
-                            <physDesc>
-                                <handDesc>
-                                    <handNote xml:id="V2">Seconda mano su Vat. lat. 2186. Gotica, con tratti forse francesi (e.g. taglio del segno tachigrafico per "et").</handNote>
-                                </handDesc>
-                            </physDesc>
-                        </msDesc>
-                    </witness>
-                   </listWit>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
@@ -221,32 +203,7 @@
                        L’ILL<emph rend="italic">USTRISSI</emph>MO ET ECC<emph rend="italic">ELLENTISSI</emph>MO 
                         <persName ref="#Cosimo">SIGNOR COSIMO <del hand="#A2">DE’<lb/></del>
                         MEDICI</persName>, DUCA SECONDO DI <lb/> FIRENZE <lb/><lb/>PROEMIO &#9753;</head>
-                
-                    <app type="recensio" hand="#A3">
-            <note>
-                Here versions B and C of the text differ from version A, which is the default version.
-            </note>
-            <rdgGrp ana="#rec1">
-                <rdg>
-                    Quae etiam si essent finita, scire eas secundum quod sunt particularia non conferret nobis
-                    perfectionem sapientiae, nec perveniremus per illas ad finem sapientiae, sicut postea scies in libro
-                    sapientiae. Sed quod debemus considerare est cognitio verbi universalis. 
-                    Scis enim quod verbum universale non fit
-                    <app>
-                        <lem>universale</lem>
-                        <rdg wit="#V">univesale</rdg>
-                    </app>
-                     nisi habeat comparationem aliquam aut in esse
-                    aut in nostra opinione ad particularia de quibus praedicatur. Praedicatio autem fit duobus modis, quia
-                    aut univoce, sicut hoc quod dicimus quod Socrates est homo: homo enim praedicatur de Socrate vere
-                    et univoce aut denominative, ut albedo de homine: dicitur enim homo albus et habens albedinem nec
-                    dicitur esse albedo. Si autem contingitur dici corpus album et color albus diffinitio praedicationis
-                    huiusmodi non praedicatur de subiectis aequaliter. Nostra autem intentio non est hic nisi de eo
-                    quod praedicatur univoce.
-                </rdg>
-            </rdgGrp>
-                    <p>
-                    <choice><sic>L'INTENDIMENTO</sic><corr>L'intendimento</corr></choice> nostro è di dovere con quella diligenza, e verità,<lb/> che
+                    <p><choice><sic>L'INTENDIMENTO</sic><corr>L'intendimento</corr></choice> nostro è di dovere con quella diligenza, e verità,<lb/> che
                     potremo, e saperremo maggiore tutte quelle cose ordinatamente, e<lb/>
                     particolarmente raccontare, le quali dal popolo fiorentino degne<lb/> di memoria
                     ò in pace, ò in guerra, ò dentro, ò fuori della città,<lb/> ò publicamente, ò
