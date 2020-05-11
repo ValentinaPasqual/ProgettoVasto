@@ -180,6 +180,24 @@
                         <settlement type="città">Pavia</settlement>
                     </place>
                 </listPlace>
+                 <listWit>
+                    <listWit xml:id="rec1_wits" ana="#rec1" resp="#chiara">
+                    <head>Witnesses of version A</head>
+                    <witness xml:id="V">
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>Città del Vaticano</settlement>
+                                <repository>Biblioteca Apostolica Vaticana</repository>
+                                <idno>Vat.lat.2186</idno>
+                            </msIdentifier>
+                            <physDesc>
+                                <handDesc>
+                                    <handNote xml:id="V2">Seconda mano su Vat. lat. 2186. Gotica, con tratti forse francesi (e.g. taglio del segno tachigrafico per "et").</handNote>
+                                </handDesc>
+                            </physDesc>
+                        </msDesc>
+                    </witness>
+                   </listWit>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
@@ -216,7 +234,7 @@
                     Scis enim quod verbum universale non fit
                     <app>
                         <lem>universale</lem>
-                        <rdg wit="#C">univesale</rdg>
+                        <rdg wit="#V">univesale</rdg>
                     </app>
                      nisi habeat comparationem aliquam aut in esse
                     aut in nostra opinione ad particularia de quibus praedicatur. Praedicatio autem fit duobus modis, quia
