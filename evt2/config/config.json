@@ -43,7 +43,7 @@
                                 "label"    : "SOURCE_TEXT",
                                 "icon"     : "mode-srcTxt",
                                 "viewMode" : "srcTxt",
-                                "visible"  : false
+                                "visible"  : true
                             }],
     "defaultEdition": "critical",
     "showEditionLevelSelector": true,
@@ -52,7 +52,7 @@
         "value": "critical",
         "label": "Critical",
         "title": "Critical edition",
-        "visible": false
+        "visible": true
     }, {
         "value": "diplomatic",
         "label": "Diplomatic",
@@ -102,8 +102,8 @@
 	"versionDef": "<witness>, <change>",
 	"fragmentMilestone": "<witStart>, <witEnd>",
 	"lacunaMilestone": "<lacunaStart>, <lacunaEnd>",
-	"possibleVariantFilters": "<hand>",
-	"possibleLemmaFilters": "",
+	"possibleVariantFilters": "hand",
+	"possibleLemmaFilters": "hand",
 	"notSignificantVariant": "<orig>, <sic>, [type=orthographic]",
 
 	"maxWitsLoadTogether": 5,
@@ -139,7 +139,7 @@
     "quoteDef"              : "<quote>",
     "analogueDef"           : "<seg>,<ref[type=parallelPassage]>",
 
-    "showReadingExponent": false,
+    "showReadingExponent": true,
 
     "showInlineCriticalApparatus": true,
     "showInlineSources": true,
