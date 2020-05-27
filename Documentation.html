@@ -46,94 +46,82 @@
             </nav>
     <section class="Documentation" id="Documentation">
     <div class="col-12 narrow">
-        <h1 id="informazioni-e-specifiche-tecniche-della-piattaforma-vasto">Informazioni e documentazione della Piattaforma Vasto</h1>
-<h2 id="che-cos-la-piattaforma-vasto-">Che cos&#39;è la Piattaforma VaSto?</h2>
-<p>[intro]
-</p>
-<h2 id="nello-specifico-che-cos-il-pilot-della-piattaforma-vasto-">Nello specifico, che cos&#39;è il pilot della Piattaforma VaSto?</h2>
-<p>[intro]</p>
 
-<p>In particolare, edizione digitale presenta la Storia Fiorentina di Varchi, in particolare del testimone RC4. Allo stato attuale la piattaforma Vasto presenta il proemio del Primo Libro (versione Pilot).
-   L&#39;edizione è quindi stata implementata su <a href="http://evt.labcd.unipi.it">EVT-2</a>, customizzando quest ultimo nei casi di necessità specifici riportati nei prossimi paragrafi.<br>EVT-2 permette di caricare facilmente il file xml (il quale segue l’encoding XML-TEI). Il documento xml che contiene il testo marcato è unico e contiene tutti gli elementi dell&#39;edizione critica e diplomatica (opportunamente abilitati e disabilitati nel css a seconda delle esigenze di visualizzazione).
-</p>
-<p>La customizzazione della Piattaforma Vasto rispetto il pacchetto EVT-2 avviene attraverso la modifica di tre file: </p>
-<ul>
-   <li>il file xml contenente il testo marcato in TEI (in questo specifico caso <code>data/pilot_proemio.xml</code>)</li>
-   <li>il file json di configuarazione della visualizzazione (<code>config/config.json</code>)</li>
-   <li>il file css messo a disposizione da EVT-2 per facilitare la customizzazione della visualizzazione (<code>config/custom_style.css</code>)</li>
-   <li>infine, all&#39;occorrenza, sono state fatte delle piccole modifiche al file javascript (<code>scripts/evtviewer.b31e1966.js</code>)</li>
-</ul>
-<h2 id="l-edizione-digitale-vasto-fuzionalit-e-visualizzazioni">L&#39;edizione Digitale Vasto: Fuzionalità e Visualizzazioni</h2>
-<p>Come descritto in precedenza, l&#39;edizione digitale è composta dall&#39;edizione diplomatica e critica. </p>
-<h2 id="funzionalit-trasversali-alle-edizioni">Funzionalità trasversali alle edizioni</h2>
-<p>Con &quot;funzionalità trasversali alle edizioni&quot; si intendono tutte quelle funzionalità consultabili nel sistema a prescidere dall&#39; edizione (diplomatica o critica) sul quale l&#39;utente si trova. Le funzionalità sono le seguenti:</p>
-<ul>
-   <li>Nella presente edizione vengono attivate solo le visualizzazioni &quot;Testo di Lettura&quot; e &quot;Immagine Testo&quot;</li>
-   <li>Tutte le scelte stilistiche usate per indicare i fenomeni testuali e le pelculiarità sopracitate sono indicizzati nella sezione info in alto</li>
-   <li>Possibilità di scaricare l’xml (in alto a dx)</li>
-   <li>Metadati descrittivi (in alto a dx)</li>
-   <li>Il testo è ricco di citazioni di luoghi, persone e date, che vengono marcate e visualizzate grazie al menù in basso (<code>NamedEnititySelection</code>).</li>
-</ul>
-<h2 id="funzionalit-dell-edizione-diplomatica">Funzionalità dell&#39;Edizione Diplomatica</h2>
-<p>L’edizione diplomatica si impegna a visualizzare il testo nel modo più simile possibile alle immagini proposte.
-   In particolare vengono annotati e visualizzati: 
-</p>
-<ul>
-   <li>linebreak, </li>
-   <li>le aggiunte a margine, in riga, o a piè di pagina. Inoltre nel testo vi è un’ancora (solitamente <code>^</code>) che, se selezionata dall&#39;utente, permette di illuminare l’addizione corrispondente. </li>
-   <li>La peculiarità che si è voluto enhance nella presente edizione diplomatica è la coesistenza di quattro diverse mani (cassature e addizioni) sul testimone RC4. L’edizione vuole quindi visualizzare in modo efficacie tale peculiarità. Le cassature sono rappresentate con una barra centro del testo del colore corrispondente alla mano che l&#39;ha creata, allo stesso modo le aggiunte vengono segnalate con il colore del testo corrispondente alla mano che l&#39;ha prodotta.</li>
-   <li>Nella diplomatica le abbreviazioni vengono sciolte e segnalate in corsivo e grassetto</li>
-</ul>
-<h3 id="funzionalit-aggiuntive-rispetto-ad-evt-2-nell-edizione-diplomatica-vasto-">Funzionalità aggiuntive rispetto ad EVT-2 nell&#39;Edizione Diplomatica Vasto:</h3>
-<ul>
-   <li>La visualizzazione &quot;Immagine Testo&quot; in EVT-2 non è abilitata (non è possibile visualizzare l&#39;immagine corrispondente al testo). La funzionalità è stata quindi abilitata all&#39;interno dell&#39;edizione digitale Vasto. 
-      Nello specifico le immagini del manoscritto devono essere caricate all&#39;interno di <code>data/imgs/[nome_del_testimone]</code>. Le immagini vanno rinominate con il contenuto dell&#39;attributo &quot;n&quot; dei tag <code>&lt;pb&gt;</code> contenuti nel file xml dell&#39;edizione.  
-   </li>
-</ul>
-<h2 id="funzionalit-dell-edizione-critica">Funzionalità dell&#39;Edizione Critica - COMING SOON</h2>
-<p>Mostra il testo di RC4 dopo la redazione a cura di Dario Brancato. L&#39;edizione critica presenta: </p>
-<ul>
-   <li>l&#39;assenza delle cassature </li>
-   <li>normalizzazioni del testo originale</li>
-   <li>abbreviazioni sciolte senza alcun riferimento tipografico</li>
-   <li>il testo in versione scroll-down, la divisione delle pagine è segnalata inline all&#39;interno del testo (ad esempio con la dicitura [12v]) </li>
-   <li>note a margine, a piè di pagina etc sono rappresentate come parte integrante del testo senza alcuna distinzione tipografica</li>
-   <li>le segnalazioni tipografiche delle mani sono eliminate </li>
-   <li>segni particolari (ad esempio <code>^</code> oppure <code>-</code>) sono normalizzati e/o eliminati</li>
-   <li>il testo è ottimizzato per la lettura e la comprensione testuale</li>
-</ul>
-<h3 id="limitazioni-significative-dell-edizione-critica-vasto">Limitazioni significative dell&#39;Edizione Critica Vasto</h3>
-<ul>
-   <li>Il carosello di immagini (posizionato a sinistra nella visualizzazioni &quot;Immagine Testo&quot;) non segue lo scroll-down del testo a destra. Questo rende le immagini &quot;scollate&quot; dal testo corrispondente, ma è ancora possibile un confronto manuale immagine-testo grazie all&#39;indicazione nel testo della pagina del manoscritto che l&#39;utente sta leggendo. </li>
-</ul>
-<h2 id="lista-dei-tag-xml-tei-utilizzati-per-l-encoding-dell-edizione">Lista dei tag XML-TEI utilizzati per l&#39;encoding dell&#39;edizione</h2>
-<p>Il progetto Vasto al momento, come già detto in precedenza, è da considerasi una versione pilot che necessita di essere arricchita con altri materiali. Allo scopo di ampliare il progetto, di seguito rilasciamo una legenda di tag che sono stati utilizzati nel file xml pilot_proemio.xml e che sono stati appostiamente customizzati per rispettare le esigenze del testimone. In particolare presentiamo qui di seguito la lista di tag presenti nel <code>&lt;body&gt;</code> del file xml. </p>
-<ul>
-   <li>titolo <code>&lt;head&gt;</code></li>
-   <li>divisione pagine <code>&lt;pb&gt; @n @xml:id</code></li>
-   <li>divisione per libri <code>&lt;div&gt;</code> attrib <code>@type @xml:id</code></li>
-   <li>divisione righe <code>&lt;lb&gt;</code></li>
-   <li>integrazione abbreviazioni manoscritto <code>&lt;emph&gt; @rend</code></li>
-   <li>aggiunte <code>&lt;add&gt; @hand @place @n</code></li>
-   <li>cassature <code>&lt;del&gt; @hand</code> </li>
-   <li>normalizzazioni <code>&lt;choice&gt;&lt;sic&gt;&lt;corr&gt;</code></li>
-   <li>regolarizzazione diplomatica-critica: <code>&lt;span&gt;&lt;choice&gt;&lt;orig&gt;&lt;reg&gt;</code></li>
-   <li>
-      collegamento tra ancora nel testo e la nota a margine corrispondente <code>&lt;span n=&quot;x&quot;&gt;&lt;/span&gt;&lt;span @place n=&quot;x&quot;&gt;</code>
-   </li>
-</ul>
-<ul>
-   <li>
-      nomi di persona <code>&lt;persName&gt; @ref</code>
-   </li>
-   <li>nomi di luoghi <code>&lt;placeName&gt; @ref</code></li>
-   <li>
-      <p>date<code> 
-        &lt;date&gt;
-      @when</code>
-   </li>
-</ul>
-<p>Per ulteriori esempi ed informazioni consulta il file <code>data/pilot_proemio.xml</code></p>
+        <h1 id="informazioni-e-specifiche-tecniche-della-piattaforma-vasto">Informazioni e documentazione della Piattaforma Vasto</h1>
+        <h2 id="che-cos-la-piattaforma-vasto-">Il progetto</h2>
+
+        <p>Il progetto VaSto, realizzato nell’ambito del <a href="">DHarc</a> dell’<a href="">Università di Bologna</a>, costituisce il risultato della collaborazione tra <a href="">Università di Bologna</a>, <a hredf="">Concordia University</a> di Montreal e <a href="">CarisBo</a>, e presenta, in un’ambiente digitale interattivo, l’edizione digitale genetica e annotata della Storia fiorentina di Benedetto Varchi (1503-1565). 
+        <br><br>
+        Alla fine del 1546 Varchi, già noto in Italia per le sue lezioni accademiche, ma digiuno di scrittura storica e per di più ex repubblicano, aveva ricevuto a sorpresa dal duca di Firenze Cosimo I de’ Medici (1519-1574) l’incarico di continuare idealmente le Istorie fiorentine di Niccolò Machiavelli e di narrare gli eventi che avevano portato alla definitiva affermazione dei Medici alla guida di Firenze: nonostante le invidie e le perplessità suscitate in ambito fiorentino, egli si mise subito al lavoro raccogliendo un’impressionante mole di materiali (spogli di documenti, riassunti, appunti), molti dei quali ancora oggi conservati. Varchi aveva in progetto di comporre un’opera distribuita in dodici libri e incentrata sugli anni dell’ultima Repubblica di Firenze (1527-1530); tuttavia fu costretto, per espresso volere di Cosimo, a continuare la narrazione anche per gli anni successivi. Non è dato di sapere a quale anno dovesse fermarsi la Storia: Varchi infatti morì improvvisamente lasciandola incompiuta ai fatti del 1537. L’interessamento diretto di Cosimo fece sì che i materiali superstiti ricevessero forma organica, comprendendo altri quattro libri oltre ai dodici iniziali; al contempo, però, il testo fu oggetto di un’operazione di “rassettatura”, una censura cioè politico-religiosa ispirata comunque a un principio di razionalizzazione stilistica, voluta da Cosimo stesso e condotta da Baccio Baldini (1517-1589), bibliotecario della Laurenziana e medico personale del duca (e dal 1569 granduca). In questa edizione “censurata” dunque il testo è circolato per oltre 150 anni, peraltro in forma manoscritta dato l’implicito divieto alla pubblicazione, e in forma simile viene stampato nel 1721, finendo inevitabilmente all’Indice. Per la ricchezza di dati relativi a luoghi, opere d’arte, protagonisti del tempo, la Storia fiorentina è una fonte preziosa per letterati, storici e storici dell’arte, ma, lasciata incompiuta dall’autore e fortemente rimaneggiata dallo stesso Cosimo, è stata pubblicata solo nel 1721.</p>
+        
+        <h2 id="che-cos-la-piattaforma-vasto-">L'edizione digitale</h2>
+        <p>L’edizione digitale della Storia fiorentina costituisce un caso esemplare di filologia digitale. Il progetto VaSto intende infatti risolvere il nodo cruciale fra l’ultima redazione d’autore (nella quale è palese lo statuto di non finito dell’opera) e l’“edizione” di Baldini e Cosimo, alla cui compiutezza si contrappongono le numerose censure. Per la versione pilota del progetto si è scelto pertanto il codice Corsiniano 1532 della <a href="">Biblioteca Nazionale dei Lincei e Corsiniana</a> di Roma (= <b>RC4</b>), il testimone in parte autografo, recante correzioni tardive d’autore, su cui vennero materialmente effettuati i tagli voluti da Cosimo, L’edizione, realizzata con marcatura <a href="">XML/TEI</a> e visualizzata con <a href="">EVT2</a> (beta2), permette di visualizzare la stratificazione degli interventi d’autore, editoriali e censorii. 
+        L’edizione digitale del progetto VaSto è quindi un’edizione genetica, diplomatica e critica, ma è anche un’edizione annotata, poiché in corrispondenza con persone, luoghi o fatti significativi offre un commento o un rimando ad informazioni esplicative collegate al testo. VaSto costituisce anche un esempio di edizione collaborativa, realizzata dagli studenti del laboratorio di Scholarly Editions tenuto presso l’Università di Bologna nell’a.a. 2020-2021.
+        L’edizione digitale completa comprenderà il testo integrale, nella versione manoscritta corrispondente all’ultima volontà dell’autore, e nella lezione post censuram divenuta poi la vulgata della Storia.</p>
+        
+        
+        <h2 id="che-cos-la-piattaforma-vasto-">Il prototipo (pilot version)</h2>
+        <p>Il prototipo di edizione digitale finora realizzato è dedicato alla rappresentazione del Proemio della Storia fiorentina, secondo lo stadio redazionale più avanzato, precedente la morte di Varchi (RC4, cc. 8r-13r), e di un estratto del libro IX (RC4, pp. 690-742), particolarmente interessante perché relativo alla descrizione della città di Firenze.</p>
+        
+        
+        <h2 id="che-cos-la-piattaforma-vasto-">Il prototipo (pilot version)</h2>
+        <p>Il progetto VaSto rappresenta anche, in una concreta ambientazione digitale, luoghi, fatti, protagonisti della Firenze rinascimentale dal 1527 al 1530, di cui questo testo offre uno straordinario e dettagliato racconto. Il sito è articolato in tre sezioni:
+            <ul>
+                <li>ARCHIVIO dei manoscritti e delle stampe;</li>
+                <li>TIMELINE degli anni relativi alla storia di Firenze dal 1527 al 1530;</li>
+                <li>MAPPA della città di Firenze con annotazione di luoghi e persone menzionati nel testo </li>
+
+            </ul>
+        </p>
+        
+        
+        <h2 id="che-cos-la-piattaforma-vasto-">L'autore</h2>
+        <p>Benedetto Varchi nacque a Firenze il 19 marzo 1503 da Ser Giovanni, un notaio originario di Montevarchi (da cui il soprannome di Benedetto) e da Diamante, vedova del pittore Benedetto del Ghirlandaio. Il padre aveva di avviarlo alla carriera notarile, ma dopo gli studi a Pisa e la laurea in legge, il giovane Benedetto si dedicò agli studi di letteratura e frequentò gli incontri che si tenevano agli Orti Oricellari, dove ebbe modo di conoscere Machiavelli. Negli anni ’30, Varchi approfondì le sue conoscenze di filosofia e di letteratura greca seguendo le lezioni di Francesco Verino “Primo”, erede della tradizione platonica ficiniana, e del grande filologo Piero Vettori. <br><br>
+        Nel gennaio 1537 l’assassinio del duca di Firenze, Alessandro de’ Medici, da parte del cugino Lorenzino infiammò in Varchi le speranze di una restaurazione repubblicana nella città; speranze che vennero frustrate allorché la crisi istituzionale fu risolta in pochissimi giorni con l’elezione di Cosimo a nuovo duca. Varchi scelse allora la via dell’esilio, e si unì ai fuorusciti che si stringevano attorno al potente banchiere Filippo Strozzi, rimanendo ai servizi della famiglia Strozzi anche dopo la cattura di quest’ultimo: egli infatti seguì il figlio maggiore di Filippo, Piero, divenendo il precettore dei suoi fratelli minori e seguendoli prima a Venezia e poi a Padova. Testimonianza di questo periodo sono una serie di carmi latini e componimenti toscani, nei quali, con accesi toni repubblicani, si lodavano Piero Strozzi e Lorenzino de’ Medici e al contempo si vituperavano il nuovo duca, Cosimo, e la memoria di quello vecchio, Alessandro, definito un tiranno. <br><br>
+        Varchi rimase a Padova anche dopo la brusca rottura dei rapporti con gli Strozzi: a questo periodo infatti, risale la frequentazione di un gruppo di intellettuali collegati all’Università, con i quali fondò nel 1540 l’Accademia degli Infiammati, presso la quale tenne numerose lezioni di filosofia (un ciclo sull’Etica nicomachea di Aristotele), o su autori classici (Teocrito, Orazio, Tibullo) e volgari (Petrarca, ma anche contemporanei come Bembo o Della Casa). Caratteristica principale delle lezioni “infiammate” era la cornice filosofica, spesso di stampo aristotelico, di cui Varchi (ma anche altri accademici come per esempio il senese Alessandro Piccolomini) si serviva per spiegare un testo poetico. La lezione poetica quindi diventava un pretesto per parlare di filosofia: fu quindi in questo ambito che prese forma il progetto di voler tradurre Aristotele in volgare, attraverso una serie di commenti che dovevano servire da un lato a irrobustire il volgare toscano arricchendolo di concetti presi dalle lingue classiche, dall’altro a dimostrare che il volgare aveva in sé tutte le caratteristiche per poter fare filosofia. Varchi cominciò a tradurre e commentare Aristotele: gli impegnativi commenti all’Etica nicomachea e gli Analitici primi, però, rimasero incompiuti, forse anche a causa delle reazioni tiepide dell’ambiente fiorentino al progetto. 
+        Nel 1541 Varchi si trasferì a Bologna e perfezionò le sue competenze filosofiche seguendo le lezioni di Lodovico Boccadiferro, uno dei maggiori esponenti dell’aristotelismo e divenendo uno degli intellettuali più illustri del suo tempo: l’eco della sua fama giunse a Firenze fino alle orecchie del duca Cosimo, il quale, con un’abile mossa politico-culturale, perdonò a Varchi i suoi trascorsi repubblicani e lo fece rientrare in patria nel 1543.<br><br>
+        Una volta a Firenze, Varchi continuò per un po’ a lavorare sui commenti aristotelici (come quello alla Meteorologia, anch’esso rimasto incompiuto), ma fu a poco a poco assorbito dalla vita culturale dell’Accademia Fiorentina, da poco creata per espresso volere di Cosimo: qui tenne varie lezioni, specialmente su Petrarca e su Dante, nelle quali si sforzò di difendere il modello linguistico bembiano, ancora inviso a Firenze, e di dimostrare il contenuto filosofico (e in particolare aristotelico) di Dante. Il profondo divario creatosi fra lui e gli altri intellettuali fiorentini, specie quelli che non avevano mai lasciato la città, fece sì che Varchi incontrasse enormi resistenze, specie da parte di un gruppo di accademici, che presto sfociarono in aperta ostilità: nel 1545, infatti, durante il suo consolato presso l’Accademia Fiorentina, fu accusato di stupro nei confronti di una giovane contadina. Varchi si addossò la colpa per salvare la persona che aveva commesso il delitto, ma finì in carcere, anche se solo per poco tempo, visto che la pena fu commutata da Cosimo in multa e poi condonata. <br> <br>
+        Intorno alla fine del 1546 Varchi ricevette l’incarico ufficiale di scrivere una storia di Firenze, al quale egli si dedicò interamente raccogliendo moltissimi documenti da fonti storiche, documentarie e persino dai protagonisti delle vicende dell’ultima Repubblica Fiorentina, come i più illustri fuorusciti repubblicani, Jacopo Nardi e Giovan Battista Busini. Il lavoro fu tuttavia intervallato da varie richieste da parte del duca e della sua consorte, Eleonora di Toledo: nel 1546 infatti quest’ultima gli commissionò una traduzione del De beneficiis di Seneca (uscita nel 1554); tre anni dopo Cosimo richiese un Boezio (ovvero una traduzione toscana del De consolatione philosophiae) per soddisfare il desiderio dell’imperatore Carlo V. All’inizio degli anni ’50, inoltre, Varchi fece parte di una commissione che doveva stendere una grammatica ufficiale del volgare toscano: al di là dell’insuccesso dell’impresa, dovuto principalmente all’incompatibilità fra i vari accademici che facevano parte della commissione, la riflessione teorica di Varchi sul volgare diede i propri risultati nel dialogo L’Hercolano. Sebbene frutto di una polemica fra Annibal Caro e Lodovico Castelvetro nella quale Varchi fu coinvolto nel 1559, quest’opera, pubblicata postuma nel 1570, riassume non solo il percorso intellettuale varchiano dagli anni padovani a quelli fiorentini, ma riassume anche i vari decenni di discussioni sulla Questione della lingua. <br><br>
+        Gli ultimi anni della vita del Varchi videro un’intensificazione del lavoro poetico (nel 1555 e nel 1557 pubblicò i suoi Sonetti), spesso d’occasione, e la ripresa della redazione della Storia fiorentina. Dopo aver preso gli ordini, nel 1564 gli venne affidata la pieve di Montevarchi, ma non fece in tempo a trasferirvisi perché un ictus lo uccise il 19 dicembre 1565. Alla sua morte Cosimo gli fece tributare solenni funerali durante i quali Lionardo Salviati, allievo di Varchi e futura anima dell’Accademia della Crusca, pronunziò un discorso di elogio.</p>
+        
+        <h2 id="che-cos-la-piattaforma-vasto-">La storia del testo</h2>
+        <p>La Storia fiorentina ha una ricca e complicata tradizione testuale. Tralasciando infatti i vari riassunti e spogli da documenti e scritti storici, Varchi lasciò alla sua morte moltissime carte manoscritte, che testimoniano il progredire dell’opera nel corso degli anni. La maggior parte dei materiali, fra cui quelli cioè che contenevano l’opera al suo stadio redazionale più avanzato, rimase presso Cosimo: su questi ultimi fascicoli intervenne Baccio Baldini, in vista di un’edizione a stampa mai realizzata, anche se il testo “rassetto” fu copiato in un meraviglioso codice di dedica, che oggi si può ammirare presso la Biblioteca Palatina di Parma (Palatino 342 = Pr3). La Storia rischiò addirittura di perdersi tra la fine del Cinquecento e l’inizio del Seicento: il manoscritto di dedica infatti finì per essere trafugato dall’arcivescovo di Pisa Carl’Antonio Dal Pozzo (1547-1607), e alla sua morte mandato ai suoi eredi in Piemonte, mentre i successori di Cosimo, per motivi ancora non bene chiariti, si disfecero di gran parte delle carte d’autore. Pr3 rientrò a Firenze nel 1617 grazie all’intervento dei segretari granducali, mentre i materiali d’autore furono per lo più recuperati da due collezionisti secenteschi, Carlo di Tommaso Strozzi (1587-1670) e Orazio Tempi (1572-1639), i quali letteralmente acquistarono dai pizzicagnoli i fascicoli smembrati della Storia. Il Tempi, inoltre, si procurò di far copiare Pr3, il cui testo a questo punto cominciò a circolare ampiamente (a oggi si contano più di 100 testimoni derivati da Pr3). Ma anche l’unico testimone della Storia (in 12 libri) costituito da materiali d’autore e ancora gelosamente custodito fra le carte private dei Medici fu sottratto alla biblioteca del cardinale Carlo (1595-1666), dove era finito; il codice fu poi donato a Lorenzo Corsini (il futuro Clemente XII, 1652-1740), che lo portò a Roma ad arricchire la propria biblioteca, presso la quale il esso è ancora oggi conservato (Corsiniano 1352 = RC4). Nel 1721 Francesco Settimanni, cavaliere fiorentino caduto in disgrazia, diede alle stampe la Storia, utilizzando un codice derivato da Pr3, ma la cui lezione era contaminata con alcune redazioni d’autori anteriori a quella finale che Settimanni era riuscito a procurarsi. L’opera fu pubblicata ad Augusta, con la falsa data di Colonia, e destò subito scalpore per la presenza alla fine del volume del famigerato “oltraggio di Fano”, il presunto stupro di Cosimo Gheri, vescovo di Fano, perpetrato nel 1537 da Pier Luigi Farnese, figlio di papa Paolo III e futuro duca di Parma. Dall’edizione Settimanni deriva anche quella a tutt’oggi citata, a cura di Lelio Arbib, (1838-41, riveduta nel 1843-44) il quale si sforzò di correggere il testo sulla scorta del materiale autografo. </p>
+        
+        <h2 id="che-cos-la-piattaforma-vasto-">Principali testimoni manoscritti</h2> 
+        A) Testimoni contenenti minute e prime redazioni
+        1) FN9 = Firenze, Biblioteca Nazionale Centrale, II.II.138 (in massima parte autografo: contiene sbozzi e prime redazioni di diversi libri, nonché la versione finale, sempre autografa, del principio del XIII libro; provenienza Strozzi).
+        2) FL2 = Firenze, Biblioteca Medicea Laurenziana, Med. Pal. 168 (contiene frammenti autografi di prime redazioni dall’XI libro).
+        3) FL5 = Firenze, Biblioteca Medicea Laurenziana, Tempi 4 (come FL2).
+        
+        B) Testimoni con redazioni in pulito intermedie e finali
+        4) FN7 = Firenze, Biblioteca Nazionale Centrale, II.I.176 (contiene dedica, Proemio, i libri I-IV in gran parte autografi, e il IX apografo della lezione di FN10 con correzioni autografe; provenienza Rinuccini).
+        5) FN10 = Firenze, Biblioteca Nazionale Centrale, II.II.139 (idiografo: contiene dedica, Proemio, brani dei libri II-III; il libro IX in una redazione posteriore a quella di FN9 ma anteriore rispetto a FN7; un frammento dal libro X; un frammento del libro XI e i libri XV-XVI nello stadio redazionale più avanzato; provenienza Strozzi).
+        
+        C) Testimoni con redazioni in pulito finali
+        6) RC4 = Roma, Biblioteca dell’Accademia Nazionale dei Lincei e Corsiniana, Cors. 1352 (44.G.8-9) (contiene dedica, Proemio e i libri I-XII. In esso vanno distinte a) l’ultima redazione d’autore [= a] e b) la lezione finale con le censure di Cosimo e Baldini [= b]).
+        7) Pr3 = Parma, Biblioteca Palatina 342 (contiene tutti e 16 i libri). Il ms. è un apografo di: RC4 (dedica, Proemio, libri I-XII meno un frammento dall’XI), FN9 (inizio del XIII libro), un testimone perduto (continuazione e fine del XIII libro e XIV libro), FN10 (frammento dell’XI libro; libri XV-XVI).
+        
+        Principali edizioni a stampa
+        1) Co 1721 = STORIA | FIORENTINA | DI MESSER | BENEDETTO VARCHI. | Nella quale principalmen-|te si contengono l’ultime Revoluzioni | della Repubblica Fiorentina, e lo Stabilimento del Princi-|pato nella Casa de’ Medici. | Colla Tavola in fine delle Cose più notabili | IN COLONIA MDCCXXI. | Appresso PIETRO MARTELLO [ma Augsburg, Joseph Gruber].
+        
+        2) Fi 1838-41 = Storia fiorentina di Benedetto Varchi, con aggiunte e correzioni tratte dagli autografi e corredata di note per cura e opera di Lelio Arbib […], Volume primo[-terzo], Firenze, A spese della Società editrice delle Storie del Nardi e del Varchi, 1838-1841.
+        
+        3) Fi 1843-44 = Storia fiorentina di Benedetto Varchi, con aggiunte e correzioni tratte dagli autografi e corredata di note per cura e opera di Lelio Arbib […], Volume primo[-terzo], Firenze, A spese della Società editrice delle Storie del Nardi e del Varchi, 1843[-1844 il volume terzo].
+        
+        <h2 id="che-cos-la-piattaforma-vasto-">Bibliografia Essenziale</h2> 
+        A) Su Benedetto Varchi
+        Andreoni, Annalisa, La via della dottrina. Le lezioni accademiche di Benedetto Varchi, Pisa, ETS, 2012;
+        Brancato, Dario, Varchi, Benedetto, in Encyclopedia of Renaissance Philosophy, edited by Marco Sgarbi, Cham, Springer, 2019, <https://doi.org/10.1007/978-3-319-02848-4>.
+        Lo Re, Salvatore, Politica e cultura nella Firenze cosimiana. Studi su Benedetto Varchi, Manziana, Vecchiarelli, 2008;
+        Sorella, Antonio, Varchi, Benedetto, in Enciclopedia machiavelliana, a cura di Gennaro Sasso e Giorgio Inglese, Roma, 2014, <http://www.treccani.it/enciclopedia/benedetto-varchi_%28Enciclopedia-machiavelliana%29/>.
+        
+        B) Sulla Storia fiorentina
+        Bramanti, Vanni, Viatico per la Storia fiorentina di Benedetto Varchi, «Rivista Storica Italiana», 114.3 (2002), pp. 880-928, ora in Id., Uomini e libri del cinquecento fiorentino, Manziana, Vecchiarelli, 2017, pp. 147-200.
+        Brancato, Dario, “Narrar la sustanzia in poche parole”: Cosimo I e Baccio Baldini correttori della ‘Storia fiorentina’ di Benedetto Varchi, «Giornale italiano di filologia», 67 (2016), pp. 323-334.
+        Brancato, Dario e Salvatore Lo Re, Per una nuova edizione della ‘Storia’ del Varchi: il problema storico e testuale, «Annali della Scuola Normale Superiore di Pisa», s. V, 7.1, pp. 201-231; 271-272.
+        Storici e politici fiorentini del Cinquecento, a cura di Angelo Baiocchi, testi a cura di Simone Albonico, Milano-Napoli, Ricciardi, 1994. In particolare, l’introduzione (di Baiocchi) e la nota al testo (di Albonico) alla Storia fiorentina, rispettivamente alle pp. 735-752 e 880-928.
+        
+        <a href="credits.html">CREDITS</a>
     </div>
     </section>
 
