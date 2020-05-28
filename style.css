@@ -139,6 +139,16 @@ h2, h3{
     color: black;
     text-shadow: 2px 2px 6px red;
 }
+#Progetto{
+    background-image: url("images/storia.JPG");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    color: black;
+    text-shadow: 2px 2px 6px red;
+    padding-top: 4em;
+
+}
 #EVT{
 
     border-color: #DC143C;
