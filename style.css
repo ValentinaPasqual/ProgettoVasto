@@ -296,6 +296,9 @@ hr.socket {
 #Documentation p {
     font-weight:normal
 }
+#Documentation ul{
+    display:none;
+}
 
 
 @media (max-width: 992px) {  
