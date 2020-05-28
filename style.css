@@ -147,6 +147,8 @@ h2, h3{
     color: black;
     text-shadow: 2px 2px 6px red;
     padding-top: 4em;
+    padding-left: 3em;
+    padding-right: 10em;
 
 }
 #EVT{
