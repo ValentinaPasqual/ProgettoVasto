@@ -49,6 +49,7 @@ h2, h3{
     height: 1.9rem;
     font-weight: 900;
     font-family: 'Lota', cursive;
+    text-shadow: 2px 2px 6px black;
 }
 
 .navbar-nav {
@@ -59,6 +60,7 @@ h2, h3{
 .navbar-dark .navbar-nav .nav-link {
     color: white;
     padding-top: .8rem;
+    text-shadow: 2px 2px 6px black;
 
 }
 
@@ -67,6 +69,7 @@ h2, h3{
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
     color:rgb(228, 143, 160);
+    
 }
 
 #color {
@@ -109,7 +112,7 @@ h2, h3{
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     letter-spacing: .1rem;
-    text-shadow: 2px 2px 6px white;
+    text-shadow: 2px 2px 6px lightpink;
 }
 
 #evt{
