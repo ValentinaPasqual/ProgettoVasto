@@ -109,6 +109,7 @@ h2, h3{
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     letter-spacing: .1rem;
+    text-shadow: 2px 2px 6px white;
 }
 
 #evt{
@@ -173,6 +174,8 @@ h2, h3{
     font-family: 'Open Sans', sans-serif;
     letter-spacing: .1rem;
     font-weight: 900;
+    color: white;
+    text-shadow: 2px 2px 6px black;
 }
 .container{
 position: relative;
