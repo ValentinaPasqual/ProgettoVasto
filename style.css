@@ -297,7 +297,11 @@ hr.socket {
     font-weight:normal
 }
 #Documentation ul{
-    display:none;
+    list-style-type: none;
+}
+#Documentation ol{
+    list-style-type: none;
+    padding: 5px;
 }
 
 
