@@ -19,7 +19,7 @@ h2, h3{
     letter-spacing: .1rem;
 }
 .maiusc{
-    font-variant: small-caps;
+    font-size: 40px;
 }
 
 .foot:before {
@@ -560,6 +560,12 @@ hr.socket {
         padding-right:2.5rem;
         padding-top: 1rem;
     }
+}
+@media (min-width: 1200px) { 
+    .Home{
+        display: 130%;
+    }
+
 }
 
 
