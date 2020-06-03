@@ -48,6 +48,10 @@ div.box-body.Edition  {font-size:83% !important; text-align:justify}
 /* .diplomaticEdition .lb[data-n] {display:none}
 .criticalEdition .lb[data-n] {display:block !important} */
 
+.diplomaticEdition .sic, .diplomaticEdition .orig {color:inherit !important}
+.diplomaticEdition .choice .corr {display:none !important}
+.diplomaticEdition .choice .sic {text-decoration:none !important}
+
 .diplomaticEdition .add[data-place="margin"] {
     width:20% !important ;
     float:right !important ; 
@@ -75,7 +79,7 @@ div.box-body.Edition  {font-size:83% !important; text-align:justify}
 .diplomaticEdition .add[data-place="bottom"]{ 
     display: block !important; 
     position: absolute !important; 
-    bottom: -9em !important;
+    bottom: -20em !important;
     
 }
 
@@ -106,6 +110,8 @@ div.box-body.Edition .del {display:inline !important}
 .criticalEdition .del[data-hand="#A3"] {display:inline !important}
 .criticalEdition .del[data-hand="#A2"] {display:none !important}
 .inApparatus {display:none !important}
+.app_lemma_content .inApparatus {font-size:0% !important}
+
 
 .front .p .add {color:red !important}  
 .criticalEdition .persName .lb, div.box-body.Edition .persName .lb {display:inline}
