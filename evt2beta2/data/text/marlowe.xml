@@ -1,0 +1,492 @@
+<TEI xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns="http://www.tei-c.org/ns/1.0" xmlns:svg="http://www.w3.org/2000/svg">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Tragedie of Doctor Faustus (B text)</title>
+                <author>Christopher Marlowe</author>
+                <editor role="editor">Hilary Binda</editor>
+                <sponsor>Perseus Project, Tufts University</sponsor>
+                <principal xml:id="GC">Gregory Crane</principal>
+                <respStmt>
+                    <resp>Prepared under the supervision of</resp>
+                    <name xml:id="LC">Lisa Cerrato</name>
+                    <name xml:id="WM">William Merrill</name>
+                    <name xml:id="EM">Elli Mylonas</name>
+                    <name xml:id="DS">David Smith</name>
+                </respStmt>
+                <funder n="org:Tufts">Tufts University</funder>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Trustees of Tufts University</publisher>
+                <pubPlace>Medford, MA</pubPlace>
+                <authority>Perseus Project</authority>
+                <availability status="free">
+                    <p>This text may be freely distributed, subject to the following restrictions: 
+                        <list>
+                            <item>You credit Perseus, as follows, whenever you use the document: <quote>Text provided by Perseus Digital Library, with funding from Tufts University. Original version available for viewing and download at http://www.perseus.tufts.edu/hopper/.</quote> </item>
+                            <item>You leave this availability statement intact.</item>
+                            <item>You use it for non-commercial purposes only.</item>
+                            <item>You offer Perseus any modifications you make.</item>
+                        </list> 
+                    </p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl/>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <refsDecl>
+                <refState unit="line"/>
+            </refsDecl>
+            <refsDecl>
+                <refState unit="scene" delim="."/>
+                <refState unit="line"/>
+            </refsDecl>
+            <variantEncoding method="parallel-segmentation" location="internal"/>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+                <language ident="la">Latin</language>
+                <language ident="greek">Greek</language>
+                <language ident="it">Italian</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change when="1997-06-25" who="#DS"> $Log: marl.faustb.xml,v $ Revision 1.2 2004/04/22 14:24:57 cwulfman *** empty log message *** Revision 1.1 2004/04/22 13:55:24 cwulfman Making xml files the canonical ones. Revision 1.11 2003/07/01 22:14:53 yorkc Updated texts to TEI P4 and Perseus P4 extensions; minor cleanup (esp. character encodings and typos.) Revision 1.10 2000/04/27 23:22:22 dasmith Hopperized TEI header. Fixed typos. Revision 1.9 1999/09/01 17:15:34 dasmith Fixed preamble and added encodingDesc. Revision 1.8 1997/09/11 16:00:37 textgod Updated for nsgmls. Revision 1.7 1997/07/02 21:57:11 textgod Added CASTLIST HEAD Revision 1.6 1997/06/30 21:57:09 textgod Added group for the prologue. Revision 1.5 1997/06/25 14:51:39 textgod Fixed broken NAME tag. Revision 1.4 1997/06/25 14:40:00 textgod Added log messages to file. </change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div>
+                <listWit>
+                    <witness xml:id="Bow">
+                        <bibl><title>Complete Works</title>, ed. Bowers, 1973</bibl>
+                    </witness>
+                    <witness xml:id="Q1">Quarto 1, 1594</witness>
+                    <witness xml:id="Q2">Quarto 2, 1598</witness>
+                    <witness xml:id="Q3">Quarto 3, 1612</witness>
+                    <witness xml:id="Q4">Quarto 4, 1622</witness>
+                    <witness xml:id="Dd1">
+                        <bibl><title>Old Plays</title>, ed. Dodsley, 1744</bibl>
+                    </witness>
+                    <witness xml:id="Dd2">
+                        <bibl><title>Old Plays</title>, ed. Dodsley, ed. Reed,1780</bibl>
+                    </witness>
+                    <witness xml:id="S">
+                        <bibl><title>Ancient British Drama</title>, ed. Sir Walter Scott,
+                            1810</bibl>
+                    </witness>
+                    <witness xml:id="Ch">
+                        <bibl><title>Edward the Second</title>, sold by J. Chappell, Jr.,
+                            1818</bibl>
+                    </witness>
+                    <witness xml:id="Ox">
+                        <bibl><title>Edward the Second</title>, ed. William Oxberry, 1818</bibl>
+                    </witness>
+                    <witness xml:id="Dd3">
+                        <bibl><title>Old Plays</title>, Dodsley, ed. Collier, 1825</bibl>
+                    </witness>
+                    <witness xml:id="R">
+                        <bibl><title>Works</title>, Robinson, 1826</bibl>
+                    </witness>
+                    <listWit xml:id="D">
+                        <witness xml:id="D1">
+                            <bibl><title>Works</title>, Dyce 1, 1850</bibl>
+                        </witness>
+                        <witness xml:id="D2">
+                            <bibl><title>Works</title>, Dyce 2, 1858</bibl>
+                        </witness>
+                    </listWit>
+                    <witness xml:id="C">
+                        <bibl><title>Works</title>, Cunningham, 1870</bibl>
+                    </witness>
+                    <witness xml:id="B">
+                        <bibl><title>Works</title>, Bullen, 1885</bibl>
+                    </witness>
+                    <witness xml:id="TB">
+                        <bibl><title>Works</title>, Tucker Brooke, 1910</bibl>
+                    </witness>
+                    <witness xml:id="Bgs">
+                        <bibl><title>Edward the Second</title>, Briggs, 1914</bibl>
+                    </witness>
+                    <witness xml:id="Gg">
+                        <bibl><title>Edward the Second</title>, Malone Society Reprints, ed. W. W.
+                            Greg, 1925</bibl>
+                    </witness>
+                    <witness xml:id="M">
+                        <bibl><title>Edward the Second</title>, Methuen, ed. Charlton and Waller,
+                            1933</bibl>
+                    </witness>
+                    <witness xml:id="K">
+                        <bibl><title>Plays</title>, ed. Kirschbaum, 1962</bibl>
+                    </witness>
+                    <witness xml:id="Ri">
+                        <bibl><title>Plays</title>, ed. Ribner, 1963</bibl>
+                    </witness>
+                    <witness xml:id="Gl">
+                        <bibl><title>Edward the Second</title>, ed. Gill, 1967</bibl>
+                    </witness>
+                    <witness xml:id="Q2MS">
+                        <bibl>transcript in Dyce copy of Q2</bibl>
+                    </witness>
+                    <witness xml:id="Br">Broughton in BM copy of Robinson</witness>
+                    <witness xml:id="Coll">Collier in BM copy of Dyce1 </witness>
+                </listWit>
+            </div>
+        </front>
+        <body>
+            <!-- ... -->
+            <div1 type="act" n="4">
+                <!-- ... -->
+                <div2 type="scene" n="2" org="uniform" sample="complete">
+                    <head>Act Four, Scene Two</head>
+                    <stage type="entrance">Enter the <name>Queene</name> and her sonne.</stage>
+                    <sp who="quee">
+                        <speaker>Queene</speaker>
+                        <l>A boye, our friends do faile us all in <name>Fraunce,</name>
+                        </l>
+                        <l>The lords are cruell, and the king unkinde,</l>
+                        <l>What shall we <app>
+                                <lem>doe</lem>
+                                <rdg wit="#Q3">goe</rdg>
+                            </app>?</l>
+                    </sp>
+                    <sp who="prin">
+                        <speaker>Prince</speaker>
+                        <l>Madam, returne to <name>England,</name></l>
+                        <l>And please my father well, and then a Fig</l>
+                        <l>For all my unckles frienship here in <name>Fraunce<app>
+                                    <lem>.</lem>
+                                    <rdg wit="#Q1 #Q2 #Q3 #Q4">,</rdg>
+                                </app></name></l>
+                        <l>I warrant you, ile winne his highnes quicklie,</l>
+                        <l>
+                            <app>
+                                <lem>A</lem>
+                                <rdg wit="#R #C">He Dd1-</rdg>
+                            </app> loves me better than a thousand <name>Spencers.</name>
+                        </l>
+                    </sp>
+                    <sp who="quee">
+                        <speaker>Queene</speaker>
+                        <l>A boye, thou art deceivde at least in this,</l>
+                        <l>To thinke that we can yet be tun'd together,</l>
+                        <l>No, no, we jarre too <app>
+                                <lem>farre. Unkinde</lem>
+                                <rdg wit="#Q1 #Q2 #Q3 #Q4">, unkinde</rdg>
+                            </app>
+                            <name>Valoys,</name>
+                        </l>
+                        <l>Unhappie <name>Isabell,</name> when <name>Fraunce</name> rejects,</l>
+                        <l><app>
+                                <lem>whether</lem>
+                                <rdg wit="#Q4 #Dd1 #Bgs">whither</rdg>
+                            </app>, O <app>
+                                <lem>whether</lem>
+                                <rdg wit="#Q4 #Dd1 #Bgs">whither</rdg>
+                            </app>
+                            <app>
+                                <lem>doost</lem>
+                                <rdg wit="#D">must</rdg>
+                            </app> thou bend thy steps<app>
+                                <lem wit="#Q4">?</lem>
+                                <rdg wit="#Q1 #Q2 #Q3">.</rdg>
+                            </app></l>
+                    </sp>
+                    <stage type="entrance">Enter sir <name>John</name> of
+                        <name>Henolt</name>.</stage>
+                    <sp who="sirj">
+                        <speaker>Sir John</speaker>
+                        <l>Madam, what cheere?</l>
+                    </sp>
+                    <sp who="quee">
+                        <speaker>Queene</speaker>
+                        <l>A good sir <name>John</name> of <name>Henolt,</name></l>
+                        <l>Never so cheereles, nor so farre distrest.</l>
+                    </sp>
+                    <sp who="sirj">
+                        <speaker>Sir John</speaker>
+                        <l>I heare sweete lady of the kings unkindenes,</l>
+                        <l>But droope not madam, noble mindes contemne</l>
+                        <l>Despaire: will your grace with me to <name>Henolt,</name></l>
+                        <l>And there stay times advantage with your sonne?</l>
+                        <l>How say you my Lord, will you go with your friends,</l>
+                        <l>And shake off all <app>
+                                <lem>our</lem>
+                                <rdg wit="#R">your</rdg>
+                            </app> fortunes equallie<app>
+                                <lem wit="#Q4">?</lem>
+                                <rdg wit="#Q1 #Q2 #Q3">.</rdg>
+                            </app></l>
+                    </sp>
+                    <sp who="prin">
+                        <speaker>Prince</speaker>
+                        <l>So pleaseth the Queene my mother, me it likes<app>
+                                <lem>.</lem>
+                                <rdg wit="#Q1 #Q2 #Q3 #Q4">,</rdg>
+                            </app></l>
+                        <l>The king of <name>England,</name>
+                            <app>
+                                <lem>nor</lem>
+                                <rdg wit="#Dd1 #Dd2 #S #Dd3">not</rdg>
+                            </app> the court of <name>Fraunce,</name>
+                        </l>
+                        <l>Shall <app>
+                                <lem>have</lem>
+                                <rdg wit="#Ch #Br #Q2MS">heave</rdg>
+                            </app> me from my gratious mothers side,</l>
+                        <l>Till I be strong enough to breake a staffe,</l>
+                        <l>And then have at the proudest <name>Spencers</name> head.</l>
+                    </sp>
+                    <sp who="sirj">
+                        <speaker>Sir John</speaker>
+                        <l>Well said my lord.</l>
+                    </sp>
+                    <sp who="quee">
+                        <speaker>Queene</speaker>
+                        <l>Oh my sweet hart, how do I mone thy <app>
+                                <lem>wrongs</lem>
+                                <rdg wit="#Dd2 #Dd3">wrong</rdg>
+                            </app>,</l>
+                        <l>Yet triumphe in the hope of thee my joye?</l>
+                        <l>Ah sweete sir <name>John,</name> even to the utmost verge</l>
+                        <l>of <name>Europe,</name>
+                            <app>
+                                <lem>or</lem>
+                                <rdg wit="#D">on</rdg>
+                            </app> the shore of <name>Tanaise,</name>
+                        </l>
+                        <l>
+                            <app>
+                                <lem>Will we</lem>
+                                <rdg wit="#R #C #B #K">We will</rdg>
+                            </app> with thee to <name>Henolt,</name> so we will<app>
+                                <lem>.</lem>
+                                <rdg wit="#Q1 #Q2 #Q3 #Q4">,</rdg>
+                            </app></l>
+                        <l>The Marques is a noble Gentleman, </l>
+                        <l>His grace I <app>
+                                <lem>dare</lem>
+                                <rdg wit="#Dd1"/>
+                            </app> presume will welcome me, </l>
+                        <l>But <app>
+                                <lem>who</lem>
+                                <rdg wit="#Dd1">what</rdg>
+                            </app> are these?</l>
+                    </sp>
+                    <stage type="entrance">Enter <name>Edmund</name> [earle of <name>Kent</name>]
+                        and <name>Mortimer</name>.</stage>
+                    <sp who="kent">
+                        <speaker>
+                            <app>
+                                <lem>Kent</lem>
+                                <rdg wit="#Q1 #Q2 #Q3 #Q4">Edm</rdg>
+                            </app>
+                        </speaker>
+                        <l>Madam, long may you live,</l>
+                        <l>Much happier then your friends in <app>
+                                <lem>
+                                    <name>England</name>
+                                </lem>
+                                <rdg wit="#Q1 #Q2 #Q3 #Q4">England</rdg>
+                            </app> do.</l>
+                    </sp>
+                    <sp who="quee">
+                        <speaker>Queene</speaker>
+                        <l>Lord <name>Edmund</name> and lord <name>Mortimer</name> alive<app>
+                                <lem>?</lem>
+                                <rdg wit="#Q1 #Q2 #Q3 #Q4">,</rdg>
+                            </app></l>
+                        <l>Welcome to <name>Fraunce:</name> the newes was heere my lord,</l>
+                        <l>That you were dead, or very neare your death.</l>
+                    </sp>
+                    <sp who="moyo">
+                        <speaker>Mortimer <app>
+                                <rdg wit="#Q1 #Q2 #Q3 #Q4">ju.</rdg>
+                            </app></speaker>
+                        <l>Lady, the last was truest of the twaine,</l>
+                        <l>But <name>Mortimer</name> reservde for better hap,</l>
+                        <l>Hath shaken off the thraldome of the tower,</l>
+                        <l>And lives <app>
+                                <lem>t'</lem>
+                                <rdg wit="#Q3 #Q4 #S">to</rdg>
+                            </app>advance your standard good my lord.</l>
+                    </sp>
+                    <sp who="prin">
+                        <speaker>Prince</speaker>
+                        <l>How meane you, and the king my father lives ?</l>
+                        <l>No my lord <name>Mortimer,</name>
+                            <app>
+                                <lem>not I</lem>
+                                <rdg wit="#Ch">not so</rdg>
+                            </app>, I trow.</l>
+                    </sp>
+                    <sp who="quee">
+                        <speaker>Queene</speaker>
+                        <l>Not sonne, why not? I would it were no worse,</l>
+                        <l>But gentle lords, friendles we are in <name>Fraunce.</name></l>
+                    </sp>
+                    <sp who="moyo">
+                        <speaker>Mortimer <app>
+                                <rdg wit="#Q1 #Q2 #Q3 #Q4">ju.</rdg>
+                            </app></speaker>
+                        <l>Mounsier <name><app>
+                                    <lem>le Grand</lem>
+                                    <rdg wit="#Q1 #Q2 #Q3 #Q4">le Grand</rdg>
+                                </app>,</name> a noble friend of yours,</l>
+                        <l>Tould us at our arrivall all the newes,</l>
+                        <l>How hard the nobles, how unkinde the king</l>
+                        <l>Hath shewed himself: but madam, right makes roome,</l>
+                        <l>Where weapons <app>
+                                <lem>a</lem>
+                                <rdg wit="#R #C">so Dd1-</rdg>
+                            </app><app>
+                                <lem>want</lem>
+                                <rdg wit="#Dd1 #Dd2 #S #Ch #Dd3 #R">won't</rdg>
+                                <rdg wit="#Ox #C">wont</rdg>
+                            </app>, and though a many friends</l>
+                        <l>Are made away, as <name>Warwick, Lancaster,</name></l>
+                        <l>And others of our <app>
+                                <lem>partie</lem>
+                                <rdg wit="#D #C">part</rdg>
+                            </app> and <app>
+                                <lem>faction</lem>
+                                <rdg wit="#Ch #Br #Q2MS">our faction</rdg>
+                            </app>,</l>
+                        <l>Yet have we friends, assure your grace<app>
+                                <lem>,</lem>
+                                <rdg wit="#Q1 #Q2 #Q3 #Q4"/>
+                            </app> in <app>
+                                <lem>
+                                    <name>England</name>
+                                </lem>
+                                <rdg wit="#Q1 #Q2 #Q3 #Q4">England</rdg>
+                            </app>
+                            <app>
+                                <rdg wit="#Q1 #Q2 #Q3 #Q4">,</rdg>
+                            </app>
+                        </l>
+                        <l>Would cast up cappes, and clap their hands for joy,</l>
+                        <l>To see us there appointed for our foes.</l>
+                    </sp>
+                    <sp who="kent">
+                        <speaker>
+                            <app>
+                                <lem>Kent</lem>
+                                <rdg wit="#Q1 #Q2 #Q3 #Q4">Edm</rdg>
+                            </app>
+                        </speaker>
+                        <l>Would all were well, and <name>Edward</name> well reclaimd,</l>
+                        <l>For <name>Englands</name> honor, peace, and quietnes. </l>
+                    </sp>
+                    <sp who="moyo">
+                        <speaker>Mortimer <app>
+                                <rdg wit="#Q1 #Q2 #Q3 #Q4">ju.</rdg>
+                            </app></speaker>
+                        <l>But by the sword, my lord, it must be <app>
+                                <lem>deserv'd</lem>
+                                <rdg wit="#Ch #Br #Q2MS">earn'd</rdg>
+                            </app>.</l>
+                        <l>The king will nere forsake his flatterers.</l>
+                    </sp>
+                    <sp who="sirj">
+                        <speaker>Sir John</speaker>
+                        <l>My Lords of <name>England,</name> sith the ungentle king</l>
+                        <l>Of <name>Fraunce</name> refuseth to give aide of armes,</l>
+                        <l>To this distressed Queene his sister heere,</l>
+                        <l>Go you with her to <name>Henolt<app>
+                                    <lem>:</lem>
+                                    <rdg wit="#Q1 #Q2 #Q3 #Q4">,</rdg>
+                                </app></name> doubt yee not,</l>
+                        <l>We will finde comfort, money, men, and friends</l>
+                        <l>Ere long, to bid the English king <app>
+                                <lem>a base</lem>
+                                <rdg wit="#Q4 #Dd1 #Dd2 #S #Ch #Ox #Dd3 #R">abase</rdg>
+                            </app>
+                            <app>
+                                <lem>.</lem>
+                                <rdg wit="#Q1 #Q2 #Q3 #Q4">,</rdg>
+                            </app>
+                        </l>
+                        <l>
+                            <app>
+                                <lem>How say</lem>
+                                <rdg wit="#D">How say'st</rdg>
+                                <rdg wit="#C">Now say</rdg>
+                                <rdg type="qy" wit="#D">Now say</rdg>
+                            </app>
+                            <app>
+                                <lem>yong</lem>
+                                <rdg wit="#Ox #R #Q3">
+                                    <app>
+                                        <lem>you</lem>
+                                        <rdg wit="#Q3"/>
+                                    </app>
+                                </rdg>
+                            </app> Prince, what thinke you of the <app>
+                                <lem>match</lem>
+                                <rdg wit="#Dd1">march</rdg>
+                            </app> ?</l>
+                    </sp>
+                    <sp who="prin">
+                        <speaker>Prince</speaker>
+                        <l>I thinke king <name>Edward</name> will out-run us all.</l>
+                    </sp>
+                    <sp who="quee">
+                        <speaker>Queene</speaker>
+                        <l>Nay <app>
+                                <lem wit="#Q2">sonne</lem>
+                                <rdg wit="#Q1">soune</rdg>
+                            </app>, not so, and you must not discourage</l>
+                        <l>Your friends that are so forward in your aide.</l>
+                    </sp>
+                    <sp who="kent">
+                        <speaker>
+                            <app>
+                                <lem>Kent</lem>
+                                <rdg wit="#Q1 #Q2 #Q3 #Q4">Edm</rdg>
+                            </app>
+                        </speaker>
+                        <l>Sir <name>John</name> of<name> Henolt,</name> pardon us I pray,</l>
+                        <l>These comforts that you give our wofull queene,</l>
+                        <l>Binde us in kindenes all at your commaund.</l>
+                    </sp>
+                    <sp who="quee">
+                        <speaker>Queene</speaker>
+                        <l>Yea gentle brother, and the God of heaven,</l>
+                        <l>Prosper your happie motion good sir <name>John.</name></l>
+                    </sp>
+                    <sp who="moyo">
+                        <speaker>Mortimer <app>
+                                <rdg wit="#Q1 #Q2 #Q3 #Q4">ju.</rdg>
+                            </app></speaker>
+                        <l>This noble gentleman, forward in armes,</l>
+                        <l>Was borne I see to be our anchor hold<app>
+                                <lem>.</lem>
+                                <rdg wit="#Q1 #Q2 #Q3 #Q4">,</rdg>
+                            </app></l>
+                        <l>Sir <name>John</name> of <name>Henolt,</name> be it thy renowne,</l>
+                        <l>That <name>Englands</name> Queene, and nobles in distresse,</l>
+                        <l>Have beene by thee restored and comforted.</l>
+                    </sp>
+                    <sp who="sirj">
+                        <speaker>Sir John</speaker>
+                        <l>Madam along, and you my <app>
+                                <lem>lord</lem>
+                                <rdg wit="#D #B">lords</rdg>
+                            </app><app>
+                                <lem>,</lem>
+                                <rdg wit="#Q1 #Q2 #Q3 #Q4"/>
+                            </app> with me,</l>
+                        <l>That <name>Englands</name> peeres may <name>Henolts</name> welcome
+                            see.</l>
+                    </sp>
+                    <stage type="exit">[Exeunt.]</stage>
+                </div2>
+            </div1>
+        </body>
+    </text>
+</TEI>

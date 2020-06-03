@@ -1,0 +1,285 @@
+{
+   "indexTitle": "The Dream of the Rood [Digital Vercelli Book]",
+   "webSite": "http://vbd.humnet.unipi.it/",
+   "logoUrl": "",
+   
+   "dataUrl": "data/text/VB-DOTR.xml",
+   "sourcesUrl": "",
+   "analoguesUrl": "",
+   "sourcesTextsUrl": "",
+   "singleImagesUrl": "data/images/single/",
+   "enableXMLdownload": false,
+
+   "visCollTextUrl": "",
+   "visCollStyleUrl": "",
+   "visCollSvg": "data/viscoll/SVG/",
+   "visCollImageList": "data/viscoll/VB-imageList.xml",
+   "visCollDataModel": "data/viscoll/VB-dataModel.xml",
+
+   "defaultViewMode": "imgTxt",
+   "availableViewModes": [
+      {
+         "label": "READING_TEXT",
+         "icon": "reading-txt",
+         "viewMode": "readingTxt",
+         "visible": true
+      },
+      {
+         "label": "MULTIPLE_RECENSIONS",
+         "icon": "mode-versions",
+         "viewMode": "versions",
+         "visible": false
+      },
+      {
+         "label": "IMAGE_TEXT",
+         "icon": "mode-imgTxt",
+         "viewMode": "imgTxt",
+         "visible": true
+      },
+      {
+         "label": "TEXT_TEXT",
+         "icon": "mode-txtTxt",
+         "viewMode": "txtTxt",
+         "visible": true
+      },
+      {
+         "label": "COLLATION",
+         "icon": "mode-collation",
+         "viewMode": "collation",
+         "visible": false
+      },
+      {
+         "label": "SOURCE_TEXT",
+         "icon": "mode-srcTxt",
+         "viewMode": "srcTxt",
+         "visible": false
+      },
+      {
+         "label"    : "3DHOP",
+         "icon"     : "mode-tdhop",
+         "viewMode" : "tdhop",
+         "visible"  : false
+     }
+   ],
+
+   "defaultEdition": "diplomatic",
+   "showEditionLevelSelector": true,
+   "availableEditionLevel": [
+      {
+         "value": "critical",
+         "label": "Critical",
+         "title": "Critical edition",
+         "visible": false
+      },
+      {
+         "value": "diplomatic",
+         "label": "Diplomatic",
+         "title": "Diplomatic edition",
+         "visible": true
+      },
+      {
+         "value": "interpretative",
+         "label": "Interpretative",
+         "title": "Interpretative edition",
+         "visible": true
+      }
+   ],
+
+   "showDocumentSelector": true,
+   "enableNavBar": true,
+   "initNavBarOpened": true,
+
+   "toolPinAppEntries": true,
+   "toolImageTextLinking": true,
+
+   "namedEntitiesSelector": false,
+   "namedEntitiesToHandle": [
+      {
+         "tagName": "persName",
+         "label": "Persons",
+         "available": true
+      },
+      {
+         "tagName": "placeName",
+         "label": "Places",
+         "available": true
+      },
+      {
+         "tagName": "orgName",
+         "label": "Organizations",
+         "available": true
+      }
+   ],
+   "otherEntitiesToHandle": [
+      {
+         "tagName": "rolename",
+         "label": "Role Name",
+         "available": false,
+         "color": "#cfc"
+      },
+      {
+         "tagName": "measure",
+         "label": "Measure",
+         "available": false,
+         "color": "#ffecb3"
+      }
+   ],
+
+   "preferredWitness": "",
+   "skipWitnesses": "",
+   "maxWitsLoadTogether": 5,
+
+   "witnessesGroups": [],
+
+   "showInlineCriticalApparatus": true,
+   "showInlineSources": false,
+   "showInlineAnalogues": false,
+   "showReadingExponent": true,
+
+   "toolHeatMap": false,
+
+   "versions": [],
+
+   "listDef": "<listWit>, <listChange>",
+   "versionDef": "<witness>, <change>",
+   "fragmentMilestone": "<witStart>, <witEnd>",
+   "lacunaMilestone": "<lacunaStart>, <lacunaEnd>",
+   "notSignificantVariant": "<orig>, <sic>, [type=orthographic]",
+   "quoteDef": "<quote>",
+   "analogueDef": "<seg>,<ref[type=parallelPassage]>",
+
+   "possibleVariantFilters": "",
+   "possibleLemmaFilters": "resp",
+
+   "variantColorLight": "",
+   "variantColorDark": "",
+   "heatmapColor": "",
+   "variantColors": {
+      "type": {
+         "lessicographic": "rgb(108, 145, 207)",
+         "orthographic": "rgb(91, 204, 203)",
+         "punctuation": "rgb(248, 253, 136)",
+         "spelling": "rgb(255, 117, 118)",
+         "grammatical": "rgb(229, 103, 175)",
+         "lexical": "rgb(171, 104, 206)",
+         "repetition": "rgb(132, 113, 209)",
+         "transposition": "rgb(255, 192, 126)",
+         "other": "rgb(100, 230, 121)"
+      },
+      "cause": {
+         "unknown": "rgb(125, 125, 125)"
+      }
+   },
+
+   "defaultBibliographicStyle": "Chicago",
+   "allowedBibliographicStyles": {
+      "Chicago": {
+         "label": "Chicago",
+         "enabled": true
+      },
+      "APA": {
+         "label": "APA",
+         "enabled": true
+      },
+      "MLA": {
+         "label": "MLA",
+         "enabled": true
+      }
+   },
+
+   "virtualKeyboardKeys": [
+      "Amacr",
+      "Ginsmacr",
+      "Hunc",
+      "aacute",
+      "aenl",
+      "amacr",
+      "colmidcomposit",
+      "edotbl",
+      "eenl",
+      "emacr",
+      "et",
+      "ginsmacr",
+      "hrdes",
+      "imacr",
+      "inodot",
+      "inodotenl",
+      "middot",
+      "middot",
+      "oacute",
+      "omacr",
+      "sins",
+      "slong",
+      "umacr",
+      "ydot",
+      "ymacr",
+      "yrgmainstrok"
+   ],
+
+   "imageViewerOptions": {
+      "prefixUrl": "images/osd-images/",
+      "showRotationControl": true,
+      "showNavigator": true,
+      "visibilityRatio": 1,
+      "defaultZoomLevel": 0.55,
+      "panHorizontal": true,
+      "constrainDuringPan": true,
+      "minZoomLevel": 0.55,
+      "maxZoomLevel": 3.0,
+      "wrapVertical": false
+   },
+   "imageNormalizationCoefficient": 1265,
+
+   "languages": [
+      "en",
+      "it"
+   ],
+   "showObjectSelector": false,
+
+   "tdhopViewerOptions": {
+
+      "toolHome": false,
+      "toolZoomin": false,
+      "toolZoomout": false,
+      "toolLighting": false,
+      "toolLightControl": false,
+      "toolMeasure": false,
+      "toolPickPoint": false,
+      "toolPlaneSections": false,
+      "toolSolidColor": false,
+      "toolCamera": false,
+      "toolHotspot": false,
+      "toolFullScreen": false,
+      "toolSwitchModel": false,
+      "toolArrows": false,
+      "toolLightController": false,
+
+      "Model_1": {
+         "name": "",
+         "path": "data/models/multires/",
+         "mesh": ""
+      },
+
+      "Model_2": {
+         "name": "",
+         "path": "data/models/singleres/",
+         "mesh": ""
+      },
+
+      "Hotspots": {
+         "type": "",
+         "path": "data/models/singleres/",
+         "model": "",
+         "hotspotsdata": [
+            {
+               "name": "",
+               "type": "",
+               "position": [],
+               "radius": "",
+               "view": []
+            }
+         ],
+         "nextID": ""
+      }
+   }
+}

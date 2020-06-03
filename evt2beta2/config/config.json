@@ -1,0 +1,287 @@
+{
+   "indexTitle": "VaSto Project",
+   "webSite": "",
+   "logoUrl": "",
+   
+   "dataUrl": "data/text/pilot_proemio.xml",
+   "sourcesUrl": "",
+   "analoguesUrl": "",
+   "sourcesTextsUrl": "",
+   "singleImagesUrl": "data/images/single/",
+   "enableXMLdownload": false,
+
+   "visCollTextUrl": "",
+   "visCollStyleUrl": "",
+   "visCollSvg": "data/viscoll/SVG/",
+   "visCollImageList": "",
+   "visCollDataModel": "",
+
+   "defaultViewMode": "imgTxt",
+   "availableViewModes": [
+      {
+         "label": "READING_TEXT",
+         "icon": "reading-txt",
+         "viewMode": "readingTxt",
+         "visible": true
+      },
+      {
+         "label": "MULTIPLE_RECENSIONS",
+         "icon": "mode-versions",
+         "viewMode": "versions",
+         "visible": false
+      },
+      {
+         "label": "IMAGE_TEXT",
+         "icon": "mode-imgTxt",
+         "viewMode": "imgTxt",
+         "visible": true
+      },
+      {
+         "label": "TEXT_TEXT",
+         "icon": "mode-txtTxt",
+         "viewMode": "txtTxt",
+         "visible": true
+      },
+      {
+         "label": "COLLATION",
+         "icon": "mode-collation",
+         "viewMode": "collation",
+         "visible": true
+      },
+      {
+         "label": "SOURCE_TEXT",
+         "icon": "mode-srcTxt",
+         "viewMode": "srcTxt",
+         "visible": true
+      },
+      {
+         "label"    : "3DHOP",
+         "icon"     : "mode-tdhop",
+         "viewMode" : "tdhop",
+         "visible"  : false
+     }
+   ],
+
+   "defaultEdition": "diplomatic",
+   "showEditionLevelSelector": true,
+   "availableEditionLevel": [
+      {
+         "value": "critical",
+         "label": "Critical",
+         "title": "Critical edition",
+         "visible": true
+      },
+      {
+         "value": "diplomatic",
+         "label": "Diplomatic",
+         "title": "Diplomatic edition",
+         "visible": true
+      },
+      {
+         "value": "interpretative",
+         "label": "Interpretative",
+         "title": "Interpretative edition",
+         "visible": false
+      }
+   ],
+
+   "showDocumentSelector": true,
+   "enableNavBar": true,
+   "initNavBarOpened": true,
+
+   "toolPinAppEntries": true,
+   "toolImageTextLinking": true,
+
+   "namedEntitiesSelector": true,
+   "namedEntitiesToHandle": [
+      {
+         "tagName": "persName",
+         "label": "Persons",
+         "available": true
+      },
+      {
+         "tagName": "placeName",
+         "label": "Places",
+         "available": true
+      },
+      {
+         "tagName": "date",
+         "label": "Dates",
+         "available": false
+      }
+   ],
+   "otherEntitiesToHandle": [
+      {
+         "tagName": "date",
+         "label": "Dates",
+         "available": true,
+         "color": "#cfc"
+      },
+      {
+         "tagName": "measure",
+         "label": "Measure",
+         "available": false,
+         "color": "#ffecb3"
+      }
+   ],
+
+   "preferredWitness": "",
+   "skipWitnesses": "",
+   "maxWitsLoadTogether": 5,
+
+   "witnessesGroups": [
+   ],
+
+   "showInlineCriticalApparatus": true,
+   "showInlineSources": true,
+   "showInlineAnalogues": true,
+   "showReadingExponent": true,
+
+   "toolHeatMap": false,
+
+   "versions": ["rec1", "rec2", "rec3" ],
+
+   "listDef": "<listWit>, <listChange>",
+   "versionDef": "<witness>, <change>",
+   "fragmentMilestone": "<witStart>, <witEnd>",
+   "lacunaMilestone": "<lacunaStart>, <lacunaEnd>",
+   "notSignificantVariant": "<orig>, <sic>, [type=orthographic]",
+   "quoteDef": "<quote>",
+   "analogueDef": "<seg>,<ref[type=parallelPassage]>",
+
+   "possibleVariantFilters": "type, cause",
+   "possibleLemmaFilters": "resp, hand",
+
+   "variantColorLight": "",
+   "variantColorDark": "",
+   "heatmapColor": "",
+   "variantColors": {
+      "type": {
+         "lessicographic": "rgb(108, 145, 207)",
+         "orthographic": "rgb(91, 204, 203)",
+         "punctuation": "rgb(248, 253, 136)",
+         "spelling": "rgb(255, 117, 118)",
+         "grammatical": "rgb(229, 103, 175)",
+         "lexical": "rgb(171, 104, 206)",
+         "repetition": "rgb(132, 113, 209)",
+         "transposition": "rgb(255, 192, 126)",
+         "other": "rgb(100, 230, 121)",
+         "unknown": "rgb(125, 125, 125)"
+      },
+      "cause": {
+         "unknown": "rgb(125, 125, 125)"
+      }
+   },
+
+   "defaultBibliographicStyle": "Chicago",
+   "allowedBibliographicStyles": {
+      "Chicago": {
+         "label": "Chicago",
+         "enabled": true
+      },
+      "APA": {
+         "label": "APA",
+         "enabled": true
+      },
+      "MLA": {
+         "label": "MLA",
+         "enabled": true
+      }
+   },
+
+   "virtualKeyboardKeys": [
+      "Amacr",
+      "Ginsmacr",
+      "Hunc",
+      "aacute",
+      "aenl",
+      "amacr",
+      "colmidcomposit",
+      "edotbl",
+      "eenl",
+      "emacr",
+      "et",
+      "ginsmacr",
+      "hrdes",
+      "imacr",
+      "inodot",
+      "inodotenl",
+      "middot",
+      "middot",
+      "oacute",
+      "omacr",
+      "sins",
+      "slong",
+      "umacr",
+      "ydot",
+      "ymacr",
+      "yrgmainstrok"
+   ],
+
+   "imageViewerOptions": {
+      "prefixUrl": "images/osd-images/",
+      "showRotationControl": true,
+      "showNavigator": true,
+      "visibilityRatio": 1,
+      "defaultZoomLevel": 0.55,
+      "panHorizontal": true,
+      "constrainDuringPan": true,
+      "minZoomLevel": 0.55,
+      "maxZoomLevel": 3.0,
+      "wrapVertical": false
+   },
+   "imageNormalizationCoefficient": 1265,
+
+   "languages": [
+      "en",
+      "it"
+   ],
+   "showObjectSelector": true,
+
+   "tdhopViewerOptions": {
+
+      "toolHome": false,
+      "toolZoomin": false,
+      "toolZoomout": false,
+      "toolLighting": false,
+      "toolLightControl": false,
+      "toolMeasure": false,
+      "toolPickPoint": false,
+      "toolPlaneSections": false,
+      "toolSolidColor": false,
+      "toolCamera": false,
+      "toolHotspot": false,
+      "toolFullScreen": false,
+      "toolSwitchModel": false,
+      "toolArrows": false,
+      "toolLightController": false,
+
+      "Model_1": {
+         "name": "",
+         "path": "data/models/multires/",
+         "mesh": ""
+      },
+
+      "Model_2": {
+         "name": "",
+         "path": "data/models/singleres/",
+         "mesh": ""
+      },
+
+      "Hotspots": {
+         "type": "",
+         "path": "data/models/singleres/",
+         "model": "",
+         "hotspotsdata": [
+            {
+               "name": "",
+               "type": "",
+               "position": [],
+               "radius": "",
+               "view": []
+            }
+         ],
+         "nextID": ""
+      }
+   }
+}

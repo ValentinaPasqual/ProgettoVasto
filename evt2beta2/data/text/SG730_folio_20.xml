@@ -1,0 +1,1379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Edizione digitale dell' Editto di Rotari<title><hi rend="italic">Edictum Rothari</hi>: Ivrea, Biblioteca
+            Capitolare, XXXIV (5) (ms 3) - 643 d.C.</title></title>
+        <author>Rotari, re longobardo, per mano del notaio Ansoaldo.</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>Edizioni precedenti Leges Langobardorum</edition>
+        <respStmt xml:id="azzara">
+          <resp>Editor</resp>
+          <name ref="#Azzara2005">Azzara-Gasparri</name>
+        </respStmt>
+        <respStmt xml:id="beyerle">
+          <resp>Editor</resp>
+          <name ref="#Beyerle1962">Beyerle</name>
+        </respStmt>
+        <respStmt xml:id="bluhme">
+          <resp>Editor</resp>
+          <name ref="#Bluhme1868">Bluhme</name>
+        </respStmt>
+      </editionStmt>
+      <publicationStmt>
+        <p>Publication Information</p>
+      </publicationStmt>
+      <sourceDesc>
+        
+        <msDesc>
+          <msIdentifier>
+            <country>Italia</country>
+            <settlement>Ivrea</settlement>
+            <repository>Biblioteca Capitolare</repository>
+            <idno>Codex Eporedianus XXXIV (5)</idno>
+            <altIdentifier>
+              <settlement>Ivrea</settlement>
+              <repository>Biblioteca Capitolare</repository>
+              <idno>(ms 3) - La numerazione progressiva (ms 3) è ripresa da Bluhme,
+                Fr. (1868) (Hg.),Leges Langobardorum, Hannover (MGH, LL IV)
+                (ristampa anastatica Stuttgart 1965).</idno>
+            </altIdentifier>
+          </msIdentifier>
+          <msContents>
+            <p>Contiene tutte le <hi rend="italic">Leges</hi>, l'<hi rend="italic"
+              >Admonitio generalis</hi> e alcuni capitolari (tra cui quelli di
+              Pipino, Carlo Magno, Lotario).</p>
+            <p>L'Editto di Rotari è contenuto ai ff. 57r.-104v.</p>
+            <p>Sulla base di questo manoscritto Bluhme (1868, 1) ricostruisce la
+              titolatura e, soprattutto, il prologo dell'Editto, mancanti sia nel
+              sangallese che nel vercellese. Anche l'elenco dei <hi rend="italic"
+                >capitula</hi> è riportato secondo il codice di Ivrea (f. 58).</p>
+            <p>Il testo mostra, conformemente a quanto richiesto dalla politica purista
+              dell'epoca carolingia, un latino più sorvegliato rispetto ai volgarismi
+              che caratterizzano i due codici più antichi (sangallese e vercellese).
+              Sono presenti circa 80 termini in lingua longobarda.</p>
+          </msContents>
+          <physDesc>
+            <objectDesc form="codex">
+              <supportDesc material="perg">
+                <support>Parchment.</support>
+                <extent>
+                  <measure type="leaves">Il codice è composto da 168
+                    foll</measure>
+                  <measure type="dimensions"> -- </measure>
+                  <measure type="lines">26-27 righe per pagina</measure>
+                </extent>
+              </supportDesc>
+              <layoutDesc>
+                <p>Si veda la descrizione fornita da Mordek, H. (1995), <title
+                  rend="italic">Bibliotheca capitularium regum Francorum
+                  manuscripta. Überlieferung und Traditionszusammenhang der
+                  fränkischen Herrschererlasse</title>, München (MGH
+                  Hilfsmittel 15).</p>
+              </layoutDesc>
+            </objectDesc>
+            <handDesc>
+              <p>Grafia carolina, più mani. Rubriche in capitale rustica ed onciale.</p>
+            </handDesc>
+          </physDesc>
+          <history>
+            <p>Inizi del IX sec., di provenienza italiana settentrionale, forse Pavia
+              secondo Mordek (1995). È il primo codice a rendere nota tutta la
+              tradizione delle <hi rend="italic">Leges</hi> fino ad Astolfo.</p>
+            <p>Dal punto di vista culturale, l'<hi rend="italic">Eporedianus</hi> XXXIV
+              (5) si inserisce in un progetto di ampio respiro, promosso all' interno
+              di un centro scrittorio dinamico e specializzato quale è quello di Ivrea
+              in particolare durante il lungo periodo di attività riferibile alla
+              prestigiosa figura del vescovo Giuseppe (825?-855?).</p>
+          </history>
+          
+        </msDesc>
+        
+        <listPerson>
+          <head>Person list</head>
+
+          <person source="http://www.treccani.it/enciclopedia/rotari_(Dizionario-Biografico)" xml:id="Rothari">
+            <persName>Rotari</persName>
+            <sex>M</sex>
+            <birth>606</birth>
+            <death>652</death>
+            <floruit>636-652</floruit>
+            <occupation>Rex Langobardorum et Italiae 636-652</occupation>
+            <note>Duca longobardo di Brescia, nato agli inizi del VII secolo, nel 636 venne eletto re dei Longobardi
+              dopo la morte del predecessore Arioaldo. V. anche la voce corrispondente sul <ref
+                target="http://www.treccani.it/enciclopedia/rotari_(Dizionario-Biografico)">Dizionario Biografico degli
+                italiani</ref> e su <ref target="http://dbpedia.org/resource/Rothari">DBpedia</ref>.</note>
+          </person>
+          
+          <person xml:id="Alboin">
+            <persName>Alboin</persName>
+            <persName xml:lang="gmc">Elfwini</persName>
+            <persName xml:lang="lat">Alboinus</persName>
+            <persName xml:lang="ita">Alboino</persName>
+            <!--<ptr target="http://dbpedia.org/resource/Alboin"/>-->
+            <sex>M</sex>
+            <birth>530</birth>
+            <death>572</death>
+            <floruit>560-572</floruit>
+            <occupation>Rex Langobardorum 560-572</occupation>
+            <note>Figlio di Audoino, re dei Longobardi, e di Rodelinda, salì al trono fra il 560 e il 565. V. la voce
+              corrispondente sul <ref
+                target="http://www.treccani.it/enciclopedia/re-dei-longobardi-alboino_(Dizionario-Biografico)"
+                >Dizionario Biografico degli italiani</ref> e su <ref target="http://dbpedia.org/resource/Alboin"
+                >DBpedia</ref>.</note>
+          </person>
+
+
+        </listPerson>
+        
+        <listPlace>
+          <place xml:id="Italia">
+            <placeName>Italia</placeName>
+          </place>
+        </listPlace>
+
+      </sourceDesc>
+    </fileDesc>
+
+    <encodingDesc>
+      <charDecl>
+
+        <!-- regular letters -->
+
+        <char xml:id="ucap">
+          <charName>LATIN CAPITAL LETTER U</charName>
+          <mapping type="codepoint">U+0055</mapping>
+          <mapping type="diplomatic">U</mapping>
+          <mapping type="normalized">U</mapping>
+        </char>
+
+        <char xml:id="vcap">
+          <charName>LATIN CAPITAL LETTER V</charName>
+          <mapping type="codepoint">U+0056</mapping>
+          <mapping type="diplomatic">V</mapping>
+          <mapping type="normalized">V</mapping>
+        </char>
+
+        <char xml:id="u">
+          <charName>LATIN SMALL LETTER U</charName>
+          <mapping type="codepoint">U+0075</mapping>
+          <mapping type="diplomatic">u</mapping>
+          <mapping type="normalized">u</mapping>
+        </char>
+
+        <char xml:id="v">
+          <charName>LATIN SMALL LETTER V</charName>
+          <mapping type="codepoint">U+0076</mapping>
+          <mapping type="diplomatic">v</mapping>
+          <mapping type="normalized">v</mapping>
+        </char>
+
+        <!-- variant forms -->
+
+        <char xml:id="romnumsix">
+          <charName>ROMAN NUMERAL SIX LATE FORM</charName>
+          <mapping subtype="MUFI-PUA" type="codepoint">U+2185</mapping>
+          <mapping type="diplomatic">Ϛ</mapping>
+          <mapping type="normalized">VI</mapping>
+        </char>
+
+        <char xml:id="amacr">
+          <charName>LATIN SMALL LETTER A WITH MACRON</charName>
+          <mapping type="codepoint">U+0101</mapping>
+          <mapping type="diplomatic">ā</mapping>
+          <mapping type="normalized">a</mapping>
+        </char>
+        <char xml:id="emacr">
+          <charName>LATIN SMALL LETTER E WITH MACRON</charName>
+          <mapping type="codepoint">U+0113</mapping>
+          <mapping type="diplomatic">ē</mapping>
+          <mapping type="normalized">e</mapping>
+        </char>
+        <char xml:id="imacr">
+          <charName>LATIN SMALL LETTER I WITH MACRON</charName>
+          <mapping type="codepoint">U+012B</mapping>
+          <mapping type="diplomatic">ī</mapping>
+          <mapping type="normalized">i</mapping>
+        </char>
+        <char xml:id="omacr">
+          <charName>LATIN SMALL LETTER O WITH MACRON</charName>
+          <mapping type="codepoint">U+014D</mapping>
+          <mapping type="diplomatic">ō</mapping>
+          <mapping type="normalized">o</mapping>
+        </char>
+        <char xml:id="umacr">
+          <charName>LATIN SMALL LETTER U WITH MACRON</charName>
+          <mapping type="codepoint">U+016B</mapping>
+          <mapping type="diplomatic">ū</mapping>
+          <mapping type="normalized">u</mapping>
+        </char>
+        <char xml:id="ymacr">
+          <!-- VBD entity: ytilde -->
+          <charName>LATIN SMALL LETTER Y WITH MACRON</charName>
+          <mapping type="codepoint">U+0233</mapping>
+          <mapping type="diplomatic">ȳ</mapping>
+          <mapping type="normalized">y</mapping>
+        </char>
+        <!-- Letter L ltailstrok -->
+        <char xml:id="ltailstrok">
+          <charName>LATIN SMALL LETTER LUM</charName>
+          <mapping type="codepoint">A772</mapping>
+          <mapping type="diplomatic">ꝲ</mapping>
+          <mapping type="normalized">l</mapping>
+        </char>
+        <!-- ntilde -->
+        <char xml:id="ntilde">
+          <charName>LATIN SMALL LETTER N WITH TILDE</charName>
+          <mapping type="codepoint">00F1</mapping>
+          <mapping type="diplomatic">ñ</mapping>
+          <mapping type="normalized">n</mapping>
+        </char>
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="fourdot">
+          <charName>FOUR DOT PUNCTUATION</charName>
+          <mapping type="codepoint">2058</mapping>
+          <mapping type="diplomatic">⁘</mapping>
+          <mapping type="normalized">.</mapping>
+        </char>
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="arbar">
+          <charName>COMBINING ABBREVIATION MARK BAR ABOVE WITH DOT</charName>
+          <mapping type="codepoint">F1C0</mapping>
+          <mapping type="diplomatic">◌</mapping>
+          <mapping type="normalized">ae</mapping>
+        </char>
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="ptilde">
+          <charName>LATIN SMALL LETTER P WITH TILDE</charName>
+          <mapping subtype="composed" type="codepoint">U+0070 + U+0303</mapping>
+          <mapping type="diplomatic">p̃</mapping>
+          <mapping type="normalized">p</mapping>
+        </char>
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="qtilde">
+          <charName>LATIN SMALL LETTER Q WITH TILDE</charName>
+          <mapping subtype="composed" type="codepoint">U+0071 + U+0303</mapping>
+          <mapping type="diplomatic">q̃</mapping>
+          <mapping type="normalized">q</mapping>
+        </char>
+
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="nscapslonglig">
+          <charName>LATIN SMALL LIGATURE SMALL CAPITAL N LONG S</charName>
+          <mapping type="codepoint">EED5</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">ns</mapping>
+        </char>
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="qmacr">
+          <charName>LATIN SMALL LETTER Q WITH MACRON</charName>
+          <mapping subtype="composed" type="codepoint">E681</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">q</mapping>
+        </char>
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="pmacr">
+          <charName>LATIN SMALL LETTER P WITH MACRON</charName>
+          <mapping subtype="composed" type="codepoint">E665</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">p</mapping>
+        </char>
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="pbardes">
+          <charName>LATIN SMALL LETTER P WITH STROKE THROUGH DESCENDER</charName>
+          <mapping type="codepoint">U+A751</mapping>
+          <mapping type="diplomatic">ꝑ</mapping>
+          <mapping type="normalized">p</mapping>
+        </char>
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="qbardes">
+          <charName>LATIN SMALL LETTER Q WITH STROKE THROUGH DESCENDER</charName>
+          <mapping type="codepoint">U+A757</mapping>
+          <mapping type="diplomatic">ꝗ</mapping>
+          <mapping type="normalized">q</mapping>
+        </char>
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="dstrok">
+          <charName>LATIN SMALL LETTER D WITH STROKE</charName>
+          <mapping type="codepoint">0111</mapping>
+          <mapping type="diplomatic">d</mapping>
+          <mapping type="normalized">d</mapping>
+        </char>
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="colmidcomposit">
+          <charName>COLON WITH MIDDLE COMMA POSITURA</charName>
+          <mapping subtype="MUFI-PUA" type="codepoint">U+F1E5</mapping>
+          <mapping type="diplomatic"></mapping>
+          <!--<mapping type="normalized">.</mapping>-->
+        </char>
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="usmod">
+          <charName>MODIFIER LETTER US</charName>
+          <mapping type="codepoint">A770</mapping>
+          <mapping type="diplomatic">ꝰ</mapping>
+          <mapping type="normalized">us</mapping>
+        </char>
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="ttilde">
+          <charName>LATIN SMALL LETTER T WITH TILDE</charName>
+          <mapping subtype="composed" type="codepoint">U+0074 + U+0303</mapping>
+          <mapping type="diplomatic">t̃</mapping>
+          <mapping type="normalized">t</mapping>
+        </char>
+
+        <!-- aggiunto 2018-12-05 -->
+        <char xml:id="atilde">
+          <charName>LATIN SMALL LETTER A WITH TILDE</charName>
+          <mapping type="codepoint">00E3</mapping>
+          <mapping type="diplomatic">ã</mapping>
+          <mapping type="normalized">a</mapping>
+        </char>
+
+        <!-- aggiunto 2018-12-05 -->
+        <char xml:id="utilde">
+          <charName>LATIN SMALL LETTER U WITH TILDE</charName>
+          <mapping type="codepoint">U+0169</mapping>
+          <mapping type="diplomatic">ũ</mapping>
+          <mapping type="normalized">u</mapping>
+        </char>
+
+        <!-- aggiunto 2018-12-05 -->
+        <char xml:id="etilde">
+          <charName>LATIN SMALL LETTER E WITH TILDE</charName>
+          <mapping subtype="composed" type="codepoint">U+0065 + U+0303</mapping>
+          <mapping type="diplomatic">ẽ</mapping>
+          <mapping type="normalized">e</mapping>
+        </char>
+
+        <!-- aggiunto 2018-12-12 -->
+        <char xml:id="tridotleft">
+          <charName>THREE DOT PUNCTUATION</charName>
+          <mapping type="codepoint">2056</mapping>
+          <mapping type="diplomatic">:.</mapping>
+          <mapping type="normalized">.</mapping>
+        </char>
+
+        <!-- aggiunto 2018-12-23 -->
+        <char xml:id="ctilde">
+          <charName>LATIN SMALL LETTER C WITH TILDE</charName>
+          <mapping subtype="composed" type="codepoint">U+0065 + U+0303</mapping>
+          <mapping type="diplomatic">c̃</mapping>
+          <mapping type="normalized">c</mapping>
+        </char>
+        <!-- aggiunto 2018-12-23 -->
+        <char xml:id="otilde">
+          <charName>LATIN SMALL LETTER O WITH TILDE</charName>
+          <mapping type="codepoint">U+00F5</mapping>
+          <mapping type="diplomatic">õ</mapping>
+          <mapping type="normalized">o</mapping>
+        </char>
+
+        <!-- aggiunto 2019-01-21 -->
+        <char xml:id="rum">
+          <charName>LATIN SMALL LETTER RUM ROTUNDA</charName>
+          <mapping type="codepoint">A75D</mapping>
+          <mapping type="diplomatic">ꝝ</mapping>
+          <mapping type="normalized">rum</mapping>
+        </char>
+
+        <!-- aggiunto 2019-01-21 -->
+        <char xml:id="rmacr">
+          <charName>Latin Small Letter R with Dot Below and Macron</charName>
+          <mapping type="codepoint">U+1E5D</mapping>
+          <mapping type="diplomatic">ṝ</mapping>
+          <mapping type="normalized">r</mapping>
+        </char>
+
+        <!-- aggiunto 2019-01-21 -->
+        <char xml:id="tildedot">
+          <charName>TILDE WITH DOT ABOVE</charName>
+          <mapping type="codepoint">U+2E1E</mapping>
+          <mapping type="diplomatic">⸞</mapping>
+          <mapping type="normalized">n</mapping>
+        </char>
+
+        <!-- ligatures -->
+
+        <glyph xml:id="uslig">
+          <glyphName>LATIN SMALL LIGATURE US</glyphName>
+          <mapping type="ligature">U+0075 + U+017F</mapping>
+          <mapping type="diplomatic">us</mapping>
+          <mapping type="normalized">us</mapping>
+        </glyph>
+        <!-- aggiunto 2019-01-21 -->
+        <char xml:id="openetlig">
+          <charName>Ligature Open Et Ornament</charName>
+          <mapping type="codepoint">U+1F672</mapping>
+          <mapping type="diplomatic">🙲</mapping>
+          <mapping type="normalized">et</mapping>
+        </char>
+
+        <!-- aggiunto 2019-01-21 -->
+        <char xml:id="etlig">
+          <charName>Script Ligature Et Ornament</charName>
+          <mapping type="codepoint">U+1F670</mapping>
+          <mapping type="diplomatic">🙰</mapping>
+          <mapping type="normalized">et</mapping>
+        </char>
+
+        <!-- aggiunto 2019-01-21 -->
+        <glyph xml:id="urlig">
+          <glyphName>LATIN SMALL LIGATURE UR</glyphName>
+          <mapping subtype="composed" type="ligature">U+0075 + U+A783</mapping>
+          <mapping type="diplomatic">ur</mapping>
+          <mapping type="normalized">ur</mapping>
+        </glyph>
+
+        <!-- aggiunto 2019-01-21 -->
+        <glyph xml:id="utlig">
+          <glyphName>LATIN SMALL LIGATURE UT</glyphName>
+          <mapping subtype="composed" type="ligature">U+0075 + U+1D1B</mapping>
+          <mapping type="diplomatic">ut</mapping>
+          <mapping type="normalized">ut</mapping>
+        </glyph>
+
+        <!-- aggiunto 2019-03-12 -->
+        <char xml:id="Mtilde">
+          <charName>LATIN CAPITAL LETTER M WITH TILDE</charName>
+          <mapping subtype="composed" type="codepoint">U+004D + U+0303</mapping>
+          <mapping type="diplomatic">M̃</mapping>
+          <mapping type="normalized">M</mapping>
+        </char>
+
+        <!-- aggiunto 2019-03-12 -->
+        <char xml:id="twodot">
+          <charName>Two Dot Punctuation</charName>
+          <mapping type="codepoint">U+205A</mapping>
+          <mapping type="diplomatic">⁚</mapping>
+          <mapping type="normalized">ue</mapping>
+        </char>
+
+        <!-- aggiunto 2019-03-12 -->
+        <char xml:id="jnodotenl">
+          <charName>LATIN ENLARGED LETTER SMALL DOTLESS J</charName>
+          <mapping type="codepoint">EEFE</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">i</mapping>
+        </char>
+
+        <!-- aggiunto 2019-03-12 -->
+        <char xml:id="stilde">
+          <charName>LATIN SMALL LETTER S WITH TILDE</charName>
+          <mapping subtype="composed" type="codepoint">U+0073 + U+0303</mapping>
+          <mapping type="diplomatic">s̃</mapping>
+          <mapping type="normalized">s</mapping>
+        </char>
+
+        <!-- aggiunto 2019-03-12 -->
+        <char xml:id="eogon">
+          <charName>LATIN SMALL LETTER E WITH OGONEK</charName>
+          <mapping type="codepoint">0119</mapping>
+          <mapping type="diplomatic">ę</mapping>
+          <mapping type="normalized">ae</mapping>
+        </char>
+
+        <!-- aggiunto 2019-03-13 -->
+        <char xml:id="xtilde">
+          <charName>LATIN SMALL LETTER X WITH TILDE</charName>
+          <mapping subtype="composed" type="codepoint">U+0078 + U+0303</mapping>
+          <mapping type="diplomatic">x̃</mapping>
+          <mapping type="normalized">x</mapping>
+        </char>
+
+        <!-- aggiunto 2019-03-14 -->
+        <char xml:id="lhighstrok">
+          <charName>LATIN SMALL LETTER L WITH HIGH STROKE</charName>
+          <mapping type="codepoint">A749</mapping>
+          <mapping type="diplomatic">ł</mapping>
+          <mapping type="normalized">l</mapping>
+        </char>
+
+        <!-- aggiunto 2019-03-15 -->
+        <char xml:id="pflour">
+          <charName>LATIN SMALL LETTER P WITH FLOURISH</charName>
+          <mapping type="codepoint">A753</mapping>
+          <mapping type="diplomatic">ꝓ</mapping>
+          <mapping type="normalized">pro</mapping>
+        </char>
+
+        <!-- aggiunto 2019-03-17 -->
+        <char xml:id="mtilde">
+          <charName>LATIN SMALL LETTER M WITH TILDE</charName>
+          <mapping subtype="composed" type="codepoint">U+006D + U+0303</mapping>
+          <mapping type="diplomatic">m̃</mapping>
+          <mapping type="normalized">m</mapping>
+        </char>
+        <!-- aggiunto 2019-03-20 -->
+        <char xml:id="ur">
+          <charName>COMBINING UR ABOVE</charName>
+          <mapping type="codepoint">1DD1</mapping>
+          <mapping type="diplomatic">᷑</mapping>
+          <mapping type="normalized">ur</mapping>
+        </char>
+        <!-- aggiunto 2019-03-20 -->
+        <char xml:id="semi">
+          <charName>SEMICOLON</charName>
+          <mapping type="codepoint">003B</mapping>
+          <mapping type="diplomatic">;</mapping>
+          <mapping type="normalized">us</mapping>
+        </char>
+
+        <char xml:id="middot">
+          <charName>MIDDLE DOT</charName>
+          <mapping type="codepoint">U+00B7</mapping>
+          <mapping type="diplomatic">·</mapping>
+          <!--<mapping type="normalized"></mapping>-->
+        </char>
+        
+        <char xml:id="homothetic">
+          <charName>MIDDLE DOT</charName>
+          <mapping type="codepoint">U+223B</mapping>
+          <mapping type="diplomatic">∻</mapping>
+          <!--<mapping type="normalized"></mapping>-->
+        </char>
+
+        <char xml:id="Ptilde">
+          <charName>LATIN CAPIPTAL LETTER P WITH TILDE</charName>
+          <mapping subtype="composed" type="codepoint">U+0050 + U+0303</mapping>
+          <mapping type="diplomatic">P̃</mapping>
+          <mapping type="normalized">P</mapping>
+        </char>
+
+      </charDecl>
+    </encodingDesc>
+
+    <revisionDesc>
+      <change when="2020-01" who="RRDT">Versione iniziale di documento esempio per AIUCD 2020.</change>
+    </revisionDesc>
+
+  </teiHeader>
+
+  <facsimile>
+
+    <surface xml:id="SG730_surf_20" corresp="#SG730_folio_020">
+      <graphic url="https://www.e-codices.unifr.ch/loris/csg/csg-0730/csg-0730_020.jp2/full/full/0/default/jpg"/>
+      <zone corresp="#SG730_div_hs_20_01" lrx="1200" lry="423" rend="visible" rendition="HotSpot" ulx="360" uly="180"
+        xml:id="SG730_hs_20_01"/>
+    </surface>
+
+    <surface xml:id="SG730_surf_21" corresp="#SG730_folio_021">
+      <graphic url="images/hotspot/haldius-4.jpeg"/>
+    </surface>
+
+  </facsimile>
+  
+  <text>
+    <group>
+
+      <text n="Editto di Rotari" type="prose" xml:id="CE34-5_ER">
+        <body>
+          <div subtype="edition_text" type="prose" xml:id="CE34-5_ER_Incipit">
+            <pb facs="data/images/single/CE34-5_folio_057r.jpg" n="057r" xml:id="CE34-5_folio_057r"/>
+            <fw place="top-right" type="fol">57</fw>
+            <head>
+              <lb n="1" xml:id="CE34-5_lb_057r_1"/>
+              <w><hi rend="init[x.y] red">I</hi>N</w>
+              <w>NOMINE</w>
+              <w>
+                <choice>
+                  <abbr>D<am><g ref="#ntilde"/></am>I</abbr>
+                  <expan>D<ex>OMI</ex>NI</expan>
+                </choice>
+              </w>
+              <w>INCIP<hi rend="smallcap">I</hi>T</w>
+              <lb n="2" xml:id="CE34-5_lb_057r_2"/>
+              <w>EDICT<c corresp="#ucap">V</c>M</w>
+              <w>Q<c corresp="#ucap">V</c>EM</w>
+              <w>RE<lb n="3" xml:id="CE34-5_lb_057r_3"/>NOVA<c corresp="#vcap">U</c>IT</w>
+              <w>
+                <choice>
+                  <abbr>DO<am><g ref="#Mtilde"/></am></abbr>
+                  <expan>DOM<ex>INUS</ex></expan>
+                </choice>
+              </w>
+              <persName ref="#Rothari"><w>ROTHA<lb n="4" xml:id="CE34-5_lb_057r_4"/>RI</w></persName>
+              <w><c corresp="#vcap">U</c>IR</w>
+              <w>
+                <choice>
+                  <orig>EXCELLENTISSIMO</orig>
+                  <reg resp="alim-pi azzara bluhme beyerle">EXCELLENTISSIMUS</reg>
+                </choice>
+              </w>
+              <w/>
+              <lb n="5" xml:id="CE34-5_lb_057r_5"/><w>REX</w>
+              <w>
+                <choice>
+                  <orig>GENTI</orig>
+                  <reg resp="alim-pi azzara bluhme beyerle">GENTIS</reg>
+                </choice>
+              </w>
+              <w>LANGOBAR<lb n="6" xml:id="CE34-5_lb_057r_6"/>DOR<c corresp="#ucap">V</c>M</w>
+              <w>C<hi rend="smallcap"><c corresp="#ucap">V</c></hi>M</w>
+              <w>P<hi rend="smallcap">R</hi>IMA<lb n="7" xml:id="CE34-5_lb_057r_7"/>TOS</w>
+              <w>IUDIC<hi rend="smallcap">E</hi>S</w>
+              <w>S<c corresp="#ucap">V</c>OS</w>
+            </head>
+          </div>
+          <div subtype="edition_text" type="prose" xml:id="CE34-5_ER_Prologus">
+            <head>
+              <lb n="8" xml:id="CE34-5_lb_057r_8"/>
+              <w>
+                <choice>
+                  <abbr>INC<hi rend="smallcap">I</hi><am><g ref="#Ptilde"/></am></abbr>
+                  <expan>INCIP<ex>IT</ex></expan>
+                </choice>
+              </w>
+              <w>PR<hi rend="smallcap">O</hi>L<hi rend="smallcap">O</hi>G<c corresp="#ucap">V</c>S</w>
+            </head>
+            <lb n="9" xml:id="CE34-5_lb_057r_9"/>
+            <p>
+              <w><hi rend="init[x.y] red">E</hi>go</w>
+              <w>in</w>
+              <w>
+                <choice>
+                  <abbr>d<am><g ref="#imacr"/></am></abbr>
+                  <expan>d<ex>e</ex>i</expan>
+                </choice>
+              </w>
+              <w>nomine</w>
+              <!-- PM direct link to LOD resource -->
+              <persName ref="http://dbpedia.org/resource/Rothari"><w>rothari</w></persName>
+              <seg type="r" ana="#entimema" xml:id="r120.6a">
+                <w>vir</w>
+              </seg>
+              <w>
+                <choice>
+                  <abbr>exel<am><g ref="#ltailstrok"/></am></abbr>
+                  <expan>exell<ex>entissimus</ex></expan>
+                </choice>
+              </w>
+              <w>rex</w>
+              <lb n="10" xml:id="CE34-5_lb_057r_10"/>
+              <w><g ref="#openetlig"/></w>
+              <w>septimo</w>
+              <w>
+                <choice>
+                  <abbr>decim<am><g ref="#utilde"/></am></abbr>
+                  <expan>decimu<ex>m</ex></expan>
+                </choice>
+              </w>
+              <w>rex</w>
+              <w>gentis</w>
+              <w>
+                <choice>
+                  <abbr>langobar<lb n="11" xml:id="CE34-5_lb_057r_11_abbr"/>dor<am><g ref="#utilde"/></am></abbr>
+                  <expan>langobar<lb n="11" xml:id="CE34-5_lb_057r_11_expan"/>doru<ex>m</ex></expan>
+                </choice>
+              </w>
+              <w>annuente</w>
+              <w>
+                <choice>
+                  <abbr>d<am><g ref="#omacr"/></am></abbr>
+                  <expan>d<ex>e</ex>o</expan>
+                </choice>
+              </w>
+              <w>propitiante</w>
+              <w>regni</w>
+              <w>
+                <choice>
+                  <abbr>m<am><g ref="#etlig"/></am></abbr>
+                  <expan>m<ex>ei</ex></expan>
+                </choice>
+              </w>
+              <pb facs="data/images/single/CE34-5_folio_057v.jpg" n="057v" xml:id="CE34-5_folio_057v"/>
+              <lb n="1" xml:id="CE34-5_lb_057v_01"/>
+              <w>octabo</w>
+              <w>anno</w>
+              <w>
+                <choice>
+                  <abbr>ablatisq<am><g ref="#twodot"/></am></abbr>
+                  <expan>ablatisq<ex>ue</ex></expan>
+                </choice>
+              </w>
+              <w>
+                <choice>
+                  <orig><num>XXX</num>mo</orig>
+                  <reg>tricesimo</reg>
+                </choice>
+              </w>
+              <w>octabo</w>
+              <w>indictione</w>
+              <lb n="2" xml:id="CE34-5_lb_057v_02"/>
+              <w>secunda</w>
+              <w><hi rend="black and red">E</hi>t</w>
+              <w>post</w>
+              <w>advento</w>
+              <w>in</w>
+              <w>provincia</w>
+              <placeName ref="#Italia"><w>ital<g ref="#jnodotenl"/>e</w></placeName>
+              <lb n="3" xml:id="CE34-5_lb_057v_3"/>
+              <w>langobardorum</w>
+              <w>ex</w>
+              <w>quo</w>
+              <persName ref="#Alboin"><w>alboin</w></persName>
+              <w>tunc</w>
+              <w>temporis</w>
+              <lb n="4" xml:id="CE34-5_lb_057v_4"/>
+              <w>regem</w>
+              <w>precedentem</w>
+              <w>divina</w>
+              <w>potent<g ref="#jnodotenl"/>a</w>
+              <w>adduct<g ref="#jnodotenl"/></w>
+              <w>
+                <choice>
+                  <abbr><am><g ref="#stilde"/></am>o</abbr>
+                  <expan>s<ex>unt</ex></expan>
+                </choice>
+              </w>
+              <lb n="5" xml:id="CE34-5_lb_057v_5"/>
+              <w>anno</w>
+              <w>septuagesimo</w>
+              <w>sexto</w>
+              <w>feliciter</w>
+            </p>
+            <p>
+              <lb n="6" xml:id="CE34-5_lb_057v_6"/>
+              <w><hi rend="black and red">Q</hi>uanta</w>
+              <w>pro</w>
+              <w>subiectorum</w>
+              <w>nostrorum</w>
+              <w>quomodo</w>
+              <lb n="7" xml:id="CE34-5_lb_057v_7"/>
+              <w>ad</w>
+              <w>
+                <choice>
+                  <abbr>n<am><g ref="#rmacr"/></am><am><g ref="#eogon"/></am></abbr>
+                  <expan>n<ex>ostr</ex><ex>ae</ex></expan>
+                </choice>
+              </w>
+              <w>fuit</w>
+              <w>sollicitudinis</w>
+              <w>cura</w>
+              <w>id</w>
+              <w>est</w>
+              <w>subter</w>
+              <w>ad<lb n="8" xml:id="CE34-5_lb_057v_8"/>nexa</w>
+              <w>tenor</w>
+              <w>declarat</w>
+              <w><hi rend="black and red">p</hi>r<g ref="#eogon"/>cipuis</w>
+              <w>tam</w>
+              <w>propter</w>
+              <lb n="9" xml:id="CE34-5_lb_057v_9"/>
+              <w>adsiduas</w>
+              <w>fatigat<g ref="#jnodotenl"/>ones</w>
+              <w>paupe<g ref="#rum"/></w>
+              <w>quam</w>
+              <w><g ref="#openetlig"/>iam</w>
+              <lb n="10" xml:id="CE34-5_lb_057v_10"/>
+              <w>
+                <choice>
+                  <abbr>su<am><g ref="#pbardes"/></am>fluas</abbr>
+                  <expan>sup<ex>er</ex>fluas</expan>
+                </choice>
+              </w>
+              <w>exactiones</w>
+              <w>ab</w>
+              <w>his</w>
+              <w>qui</w>
+              <w>maiore</w>
+              <w><c corresp="#v">u</c>irtute</w>
+              <lb n="11" xml:id="CE34-5_lb_057v_11"/>
+              <w>habentur</w>
+              <w>quos</w>
+              <w><c corresp="#v">u</c>im</w>
+              <w>pat<g ref="#jnodotenl"/></w>
+              <w>cogno<c corresp="#v">u</c>imus</w>
+              <w><hi rend="black and red">O</hi>b</w>
+              <w>hoc</w>
+              <w>con<lb n="12" xml:id="CE34-5_lb_057v_12"/>siderantes</w>
+              <w>
+                <choice>
+                  <abbr>d<am><g ref="#imacr"/></am></abbr>
+                  <expan>d<ex>e</ex>i</expan>
+                </choice>
+              </w>
+              <w>
+                <choice>
+                  <abbr>om<am><g ref="#ptilde"/></am>tis</abbr>
+                  <expan>om<ex>ni</ex>p<ex>o</ex>t<ex>en</ex>is</expan>
+                </choice>
+              </w>
+              <w>grat<g ref="#jnodotenl"/>am</w>
+              <w>
+                <choice>
+                  <abbr>necessari<am><g ref="#utilde"/></am></abbr>
+                  <expan>necessariu<ex>m</ex></expan>
+                </choice>
+              </w>
+              <w>esse</w>
+              <lb n="13" xml:id="CE34-5_lb_057v_13"/>
+              <w>prospeximus</w>
+              <w>presentem</w>
+              <w>corregere</w>
+              <w>legem</w>
+              <w>quam</w>
+              <lb n="14" xml:id="CE34-5_lb_057v_14"/>
+              <w>priores</w>
+              <w>homines</w>
+              <w>renov<g ref="#openetlig"/></w>
+              <w><g ref="#openetlig"/></w>
+              <w>emend<g ref="#openetlig"/></w>
+              <w><g ref="#openetlig"/></w>
+              <w>quod</w>
+              <w>est</w>
+              <lb n="15" xml:id="CE34-5_lb_057v_15"/>
+              <w>adiciat</w>
+              <w><g ref="#openetlig"/></w>
+              <w>quod</w>
+              <w>
+                <choice>
+                  <abbr>su<am><g ref="#pbardes"/></am>fluus</abbr>
+                  <expan>sup<ex>er</ex>fluus</expan>
+                </choice>
+              </w>
+              <w>est</w>
+              <w>abscedat</w>
+              <w><hi rend="black and red">I</hi>n</w>
+              <w>unum</w>
+              <lb n="16" xml:id="CE34-5_lb_057v_16"/>
+              <w>pro<c corresp="#v">u</c>idemus</w>
+              <w><c corresp="#v">u</c>olumine</w>
+              <w>
+                <choice>
+                  <abbr>conplectend<am><g ref="#utilde"/></am></abbr>
+                  <expan>conplectendu<ex>m</ex></expan>
+                </choice>
+              </w>
+              <w>quatinus</w>
+              <w>li<lb n="17" xml:id="CE34-5_lb_057v_17"/>ceat</w>
+              <w>unum</w>
+              <w>
+                <choice>
+                  <abbr>quemq<am><g ref="#twodot"/></am></abbr>
+                  <expan>quemq<ex>ue</ex></expan>
+                </choice>
+              </w>
+              <w>salua</w>
+              <w>lege</w>
+              <w><g ref="#openetlig"/></w>
+              <w>iustit<g ref="#jnodotenl"/>a</w>
+              <w>qui<g ref="#openetlig"/>e</w>
+              <w><c corresp="#v">u</c>i<c corresp="#v">u</c>ere</w>
+              <lb n="18" xml:id="CE34-5_lb_057v_18"/>
+              <w><hi rend="black and red">E</hi>t</w>
+              <w>propter</w>
+              <w>opinionem</w>
+              <w>contra</w>
+              <w>inimicos</w>
+              <w>laborare</w>
+              <w>se</w>
+              <lb n="19" xml:id="CE34-5_lb_057v_19"/>
+              <w>
+                <choice>
+                  <abbr>suosq<am><g ref="#twodot"/></am></abbr>
+                  <expan>supsq<ex>ue</ex></expan>
+                </choice>
+              </w>
+              <w>defendere</w>
+              <w>fines</w>
+              <w><hi rend="black and red">T</hi>amen</w>
+              <w>
+                <choice>
+                  <abbr>qu<am><g ref="#atilde"/></am>qu<am><g ref="#atilde"/></am></abbr>
+                  <expan>qua<ex>m</ex>qua<ex>m</ex></expan>
+                </choice>
+              </w>
+              <w>h<am><g ref="#eogon"/></am>c</w>
+              <w>ita</w>
+              <w>se</w>
+              <lb n="20" xml:id="CE34-5_lb_057v_20"/>
+              <w>habeant</w>
+              <w>utilem</w>
+              <w>prospeximus</w>
+              <w>propter</w>
+              <w>futuris</w>
+              <w>tem<lb n="21" xml:id="CE34-5_lb_057v_21"/>poris</w>
+              <w>memoria</w>
+              <w><hi rend="black and red">N</hi>omina</w>
+              <w>regum</w>
+              <w>ante</w>
+              <w>
+                <choice>
+                  <abbr>cessor<am><g ref="#utilde"/></am></abbr>
+                  <expan>cessoru<ex>m</ex></expan>
+                </choice>
+              </w>
+              <w>
+                <choice>
+                  <abbr>n<am><g ref="#rmacr"/></am>o<g ref="#rum"/></abbr>
+                  <expan>n<ex>ost</ex>rorum</expan>
+                </choice>
+              </w>
+              <lb n="22" xml:id="CE34-5_lb_057v_22"/>
+              <w>ex</w>
+              <w>quo</w>
+              <w>ingente</w>
+              <w>
+                <choice>
+                  <abbr>n<am><g ref="#rmacr"/></am>a</abbr>
+                  <expan>n<ex>ost</ex>ra</expan>
+                </choice>
+              </w>
+              <w>
+                <choice>
+                  <abbr>langobardor<am><g ref="#utilde"/></am></abbr>
+                  <expan>langobardoru<ex>m</ex></expan>
+                </choice>
+              </w>
+              <w>reges</w>
+              <w>nominat<g ref="#jnodotenl"/></w>
+              <lb n="23" xml:id="CE34-5_lb_057v_23"/>
+              <w>coeperunt</w>
+              <w>
+                <choice>
+                  <abbr><am><g ref="#etilde"/></am><am><g ref="#etilde"/></am></abbr>
+                  <expan>e<ex>ss</ex>e</expan>
+                </choice>
+              </w>
+              <w>in</w>
+              <w>quantum</w>
+              <w>
+                <choice>
+                  <abbr><am><g ref="#pbardes"/></am></abbr>
+                  <expan>p<ex>er</ex></expan>
+                </choice>
+              </w>
+              <w>antiquos</w>
+              <w>homines</w>
+              <w>de<lb n="24" xml:id="CE34-5_lb_057v_24"/>dicimus</w>
+              <w>in</w>
+              <w>hoc</w>
+              <w>membranum</w>
+              <w>adnotari</w>
+              <w>iussimus</w>
+            </p>
+          </div>
+          <div subtype="edition_text" type="prose" xml:id="CE34-5_ER_Catalogus_regum">
+            <p>
+              <lb n="25" xml:id="CE34-5_lb_057v_25"/>
+              <w><hi rend="black and red">F</hi>uit</w>
+              <w>primus</w>
+              <persName ref="#Agimuld"><w>agilmund</w></persName>
+              <w>rex</w>
+              <w>ex</w>
+              <w>genere</w>
+              <persName xml:lang="lng">
+                <surname><w>gunzingur</w></surname>
+              </persName>
+              <lb n="26" xml:id="CE34-5_lb_057v_26"/>
+              <persName ref="#Laamisio"><w><hi rend="black and red">L</hi>aamisio</w></persName>
+              <persName ref="#Leth"><w><hi rend="black and red">L</hi>eth</w></persName>
+              <persName ref="#Geldehoc"><w><hi rend="cap">G</hi>eldehoc</w></persName>
+              <persName ref="#Godeoch"><w><hi rend="cap">G</hi>odeoch</w></persName>
+              <w>filius</w>
+              <persName ref="#Zeldehoc"><w>zeldehoc</w></persName>
+              <pb facs="data/images/single/CE34-5_folio_058r.jpg" n="058r" xml:id="CE34-5_folio_058r"/>
+              <fw place="top-right" type="fol"><add hand="unknown">58</add></fw>
+              <lb n="1" xml:id="CE34-5_lb_058r_01"/>
+              <persName ref="#Gaffo"><w><hi rend="black and red">G</hi>affo</w></persName>
+              <w>filius</w>
+              <persName ref="#Godehoc"><w>godehoc</w></persName>
+              <lb n="2" xml:id="CE34-5_lb_058r_02"/>
+              <persName ref="#Tatto"><w><hi rend="black and red">T</hi>atto</w></persName>
+              <w>filius</w>
+              <persName ref="#Gafoni"><w>gafoni</w></persName>
+              <persName ref="#Tato"><w>tato</w></persName>
+              <w><g ref="#openetlig"/></w>
+              <persName ref="#Winigis"><w><c corresp="#v">u</c><c corresp="#v">u</c>inigis</w></persName>
+              <w>filii</w>
+              <persName ref="#Gafoni"><w>gafoni</w></persName>
+              <lb n="3" xml:id="CE34-5_lb_058r_03"/>
+              <persName ref="#Waccho"><w><hi rend="black and red">W</hi>accho</w></persName>
+              <w>filius</w>
+              <persName ref="#Winigis"><w><c corresp="#v">u</c><c corresp="#v">u</c>inigis</w></persName>
+              <w>nepus</w>
+              <persName ref="#Tatoni"><w>tatoni</w></persName>
+              <lb n="4" xml:id="CE34-5_lb_058r_04"/>
+              <persName ref="#Waltari"><w><hi rend="black and red">W</hi>altari</w></persName>
+              <lb n="5" xml:id="CE34-5_lb_058r_05"/>
+              <persName ref="#Audoin"><w><hi rend="black and red">A</hi>udoin</w></persName>
+              <w>ex</w>
+              <w>genere</w>
+              <persName xml:lang="lng">
+                <surname><w>gausus</w></surname>
+              </persName>
+              <lb n="6" xml:id="CE34-5_lb_058r_06"/>
+              <persName ref="#Alboin"><w><hi rend="black and red">A</hi>lboin</w></persName>
+              <w>filius</w>
+              <persName ref="#Audoin"><w>audoin</w></persName>
+              <w>qui</w>
+              <w>exercito</w>
+              <w>ut</w>
+              <w>
+                <choice>
+                  <abbr>su<am><g ref="#pbardes"/></am></abbr>
+                  <expan>sup<ex>ra</ex></expan>
+                </choice>
+              </w>
+              <w>in</w>
+              <placeName ref="#Italia"><w>ital<g ref="#jnodotenl"/>a</w></placeName>
+              <w>
+                <choice>
+                  <abbr>addu<am><g ref="#xtilde"/></am></abbr>
+                  <expan>addux<ex>it</ex></expan>
+                </choice>
+              </w>
+              <lb n="7" xml:id="CE34-5_lb_058r_07"/>
+              <persName ref="#Clef"><w><hi rend="black and red">C</hi>lef</w></persName>
+              <w>ex</w>
+              <w>genere</w>
+              <persName xml:lang="lng">
+                <surname><w>beleos</w></surname>
+              </persName>
+              <lb n="8" xml:id="CE34-5_lb_058r_08"/>
+              <persName ref="#Authari"><w><hi rend="black and red">A</hi>uthari</w></persName>
+              <w>filius</w>
+              <persName ref="#Clef"><w>clef</w></persName>
+              <lb n="9" xml:id="CE34-5_lb_058r_09"/>
+              <persName ref="#Aginulf"><w><hi rend="black and red">A</hi>ginulf</w></persName>
+              <w>turingus</w>
+              <w>ex</w>
+              <w>genere</w>
+              <persName ref="#Anawain">
+                <surname><w>anawain</w></surname>
+              </persName>
+              <lb n="10" xml:id="CE34-5_lb_058r_10"/>
+              <persName ref="#Adawald"><w><hi rend="black and red">A</hi>dal<c corresp="#v">u</c><c corresp="#v"
+                  >u</c>ald</w></persName>
+              <w>filius</w>
+              <persName ref="#Aginulf"><w>aginulf</w></persName>
+              <lb n="11" xml:id="CE34-5_lb_058r_11"/>
+              <persName ref="#Arioald"><w><hi rend="black and red">A</hi>rioald</w></persName>
+              <w>ex</w>
+              <w>genere</w>
+              <persName ref="#Caupus">
+                <surname><w>caupus</w></surname>
+              </persName>
+              <lb n="12" xml:id="CE34-5_lb_058r_12"/>
+              <w><hi rend="black and red">S</hi>edecimus</w>
+              <w>ergo</w>
+              <w>in</w>
+              <w>
+                <choice>
+                  <abbr>d<am><g ref="#imacr"/></am></abbr>
+                  <expan>d<ex>e</ex>i</expan>
+                </choice>
+              </w>
+              <w>nomine</w>
+              <w>qui</w>
+              <w>
+                <choice>
+                  <abbr>su<am><g ref="#pbardes"/></am></abbr>
+                  <expan>sup<ex>ra</ex></expan>
+                </choice>
+              </w>
+              <persName ref="#Rothari"><w>rothari</w></persName>
+              <w>rex</w>
+              <lb n="13" xml:id="CE34-5_lb_058r_13"/>
+              <w>filius</w>
+              <persName ref="#Nanding"><w>nanding</w></persName>
+              <w>ex</w>
+              <w>genere</w>
+              <persName ref="#Harodus">
+                <surname><w>harodus</w></surname>
+              </persName>
+              <lb n="14" xml:id="CE34-5_lb_058r_14"/>
+              <persName ref="#Nanding"><w><hi rend="black and red">N</hi>anding</w></persName>
+              <w>filius</w>
+              <persName ref="#Nozuni"><w>nozuni</w></persName>
+              <persName ref="#Nozo"><w><hi rend="black and red">N</hi>ozo</w></persName>
+              <w>filius</w>
+              <persName ref="#Adamundi"><w>adamundi</w></persName>
+              <lb n="15" xml:id="CE34-5_lb_058r_15"/>
+              <persName ref="#Alamund"><w><hi rend="black and red">A</hi>lamund</w></persName>
+              <w>filius</w>
+              <persName ref="#Alaman"><w>alaman</w></persName>
+              <persName ref="#Alaman"><w>Alaman</w></persName>
+              <w>filius</w>
+              <persName ref="#Hilzuni"><w>hilzuni</w></persName>
+              <lb n="16" xml:id="CE34-5_lb_058r_16"/>
+              <persName ref="#Hilzo"><w><hi rend="black and red">H</hi>ilzo</w></persName>
+              <w>filius</w>
+              <persName ref="#Wehiloni"><w><c corresp="#v">u</c><c corresp="#v">u</c>ehiloni</w></persName>
+              <persName ref="#Weilo"><w><c corresp="#v">u</c><c corresp="#v">u</c>eilo</w></persName>
+              <w>filius</w>
+              <persName ref="#Wechoni"><w><c corresp="#v">u</c><c corresp="#v">u</c>echoni</w></persName>
+              <lb n="17" xml:id="CE34-5_lb_058r_17"/>
+              <persName ref="#Weccho"><w><c corresp="#vcap">u</c><c corresp="#vcap">u</c>eccho</w></persName>
+              <w>filius</w>
+              <persName ref="#Frochii"><w>frocchii</w></persName>
+              <persName ref="#Froccho"><w>froccho</w></persName>
+              <w>filius</w>
+              <persName ref="#Wachoni"><w><c corresp="#v">u</c><c corresp="#v">u</c>achoni</w></persName>
+              <lb n="18" xml:id="CE34-5_lb_058r_18"/>
+              <persName ref="#Wacho"><w><c corresp="#vcap">u</c><c corresp="#vcap">u</c>acho</w></persName>
+              <w>filius</w>
+              <persName ref="#Mammoni"><w>mammoni</w></persName>
+              <persName ref="#Mammo"><w>mammo</w></persName>
+              <w>filius</w>
+              <persName ref="#Obbora"><w>obbora</w></persName>
+            </p>
+          </div>
+
+        </body>
+      </text>
+
+      <text n="Editto di Rotari" type="prose" xml:id="SG730_ER">
+        <body>
+
+          <pb n="20" xml:id="SG730_folio_020" facs="https://www.e-codices.unifr.ch/loris/csg/csg-0730/csg-0730_020.jp2/full/full/0/default/jpg"/>
+          
+          <p>
+            <lb n="01" xml:id="SG730_lb_020_01"/><w>cessante</w>
+            <term xml:lang="lng"><w>faida</w></term>
+            <w>eo</w>
+            <w>quod</w>
+            <w>nolendo</w>
+            <w>fecit</w><reg>.</reg></p>
+          <p n="76" xml:id="SG730_p_20_76">
+            <lb n="02" xml:id="SG730_lb_20_02"/><label><num><w>LXXVII</w></num></label>
+            <lb n="03" type="rubric" xml:id="SG730_lb_20_03"/><w><hi rend="init4.1">D</hi>e</w>
+            <term xml:lang="lng"><w rend="cap2">haldius</w></term>
+            <lb n="04" xml:id="SG730_lb_20_04"/><w>et</w>
+            <w>ser<c corresp="#v">u</c>us</w>
+            <w>menisteria<lb n="05" xml:id="SG730_lb_20_05"/>les</w>
+            <w>de</w><orig><g ref="#middot"/></orig>
+            <w>illos</w>
+            <w><c corresp="#v">u</c>iro</w>
+            <w>menisteriales</w>
+            <lb n="06" xml:id="SG730_lb_20_06"/><w>qui</w>
+            <w>docti</w>
+            <w>domui</w>
+            <w>nutriti</w>
+            <w>pro<c corresp="#v">u</c>ati</w>
+            <w>sunt</w>
+            
+            <!-- Start test code
+            
+            <figure>
+              <graphic url="data/hotspot/haldius-1.jpeg"/>
+            </figure>
+            
+            <note>
+              <figure>
+                <graphic url="data/hotspot/haldius-2.jpeg"></graphic>
+              </figure>
+            </note>
+            
+            <w>haldius <figure>
+                <graphic url="data/hotspot/haldius-3.jpeg"></graphic>
+              </figure></w>
+            
+            <w>haldius <note>
+                <figure>
+                  <graphic url="data/hotspot/haldius-3.jpeg"></graphic>
+                </figure></note></w>
+
+             End test code -->
+
+          </p>
+          <p n="77" xml:id="SG730_p_20_77">
+            <lb n="07" type="rubric" xml:id="SG730_lb_20_07"/><label rend="black"><num><w>LXXVIII</w></num></label>
+            <w><hi rend="cap">S</hi>i</w>
+            <w>quis</w>
+            <term xml:lang="lng"><w>haldium</w></term>
+            <w>alienum</w>
+            <w>
+              <choice>
+                <abbr>a<am><g ref="#homothetic" rend="sup"/></am></abbr>
+                <expan>a<ex>ut</ex></expan>
+              </choice></w>
+            <lb n="08" xml:id="SG730_lb_20_08"/><w>ser<c corresp="#v">u</c>um</w>
+            <w>menesterialem</w>
+            <w>
+              <choice>
+                <abbr><am><g ref="#pbardes"></g></am>cuss<lb n="09" xml:id="SG730_lb_20_09_abbr"/>erit<pc>:</pc></abbr>
+                <expan>p<ex>er</ex>cus<lb n="09" xml:id="SG730_lb_20_09_expan"/>serit<pc>:</pc></expan>
+              </choice></w>
+            <w>si</w>
+            <w><c corresp="#v">u</c>ulnus</w>
+            <w>
+              <choice>
+                <abbr><am><g ref="#atilde"/></am></abbr>
+                <expan>a<ex>ut</ex></expan>
+              </choice>
+            </w>
+            <w>libor</w>
+            <w>apparu<lb n="10" xml:id="SG730_lb_20_10"/>erit</w>
+            <w>pro</w>
+            <w>
+              <choice>
+                <abbr>un<am><g ref="#atilde"/></am></abbr>
+                <expan>una<ex>m</ex></expan>
+              </choice>
+            </w>
+            <w>
+              <choice>
+                <abbr>ferit<am><g ref="#atilde"/></am></abbr>
+                <expan>ferita<ex>m</ex></expan>
+              </choice>
+            </w>
+            <w>
+              <choice>
+                <abbr>con<am><g ref="#ptilde"/></am></abbr>
+                <expan>conp<ex>onat</ex></expan>
+              </choice>
+            </w>
+            <w>ei</w>
+            <w>
+              <choice>
+                <abbr>so<am><g ref="#lhighstrok"/></am></abbr>
+                <expan>sol<ex>i</ex>d<ex>os</ex></expan>
+              </choice>
+            </w><g ref="#middot"/>
+            <lb n="11" xml:id="SG730_lb_20_11"/><measure quantity="1" type="currency" unit="soldi">
+              <num><w>unum</w></num></measure><g ref="#middot"/>
+            <w>si</w>
+            <w>duas</w>
+            <w><choice>
+                <orig>fecirit</orig>
+                <reg>fecerit</reg>
+              </choice></w>
+            <w>dit</w>
+            <w>
+              <choice>
+                <abbr>so<am><g ref="#lhighstrok"/></am></abbr>
+                <expan>sol<ex>idos</ex></expan>
+              </choice>
+            </w>
+            <lb n="12" xml:id="SG730_lb_20_12"/><measure quantity="2" type="currency" unit="soldi">
+              <num><w>duo</w></num></measure><g ref="#middot"/>
+            <w>si</w>
+            <w>tres</w>
+            <w><choice>
+                <orig>ficerit</orig>
+                <reg>fecerit</reg>
+            </choice></w>
+            <w>dit</w>
+            <w>
+              <choice>
+                <abbr>so<am><g ref="#lhighstrok"/></am></abbr>
+                <expan>sol<ex>idos</ex></expan>
+              </choice>
+            </w>
+            <lb n="13" xml:id="SG730_lb_20_13"/><measure quantity="3" type="currency" unit="soldi">
+              <num><w>tres</w></num></measure><g ref="#middot"/>
+            <w>si</w>
+            <w>quattuor</w>
+            <w><choice>
+                <orig>ficerit</orig>
+                <reg>fecerit</reg>
+            </choice></w>
+            <w>det</w>
+            <w>
+              <choice>
+                <abbr>so<am><g ref="#lhighstrok"/></am></abbr>
+                <expan>sol<ex>idos</ex></expan>
+              </choice>
+            </w>
+            <lb n="14" xml:id="SG730_lb_20_14"/><measure quantity="4" type="currency" unit="soldi">
+              <num><w>quattuor</w></num></measure>
+            <w>si</w>
+            <w><c corresp="#v">u</c>ero</w>
+            <w>amplius</w>
+            <w>dura<lb n="15" xml:id="SG730_lb_20_15" rend="indent6"/><c corresp="#v">u</c>erit</w>
+            <w>non</w>
+            <w>nomerentur</w><g ref="#middot"/><g ref="#middot"/>
+          </p>
+          <p n="78" xml:id="SG730_p_20_78">
+            <lb n="16" type="rubric" xml:id="SG730_lb_20_16"/><label rend="black"><num><w>LXXVIII</w></num></label>
+            <w><hi rend="cap">S</hi>i</w>
+            <w>quis</w>
+            <term xml:lang="lng"><w>haldium</w></term>
+            <w>alienum</w>
+            <w><choice>
+                <abbr>a<am><g ref="#homothetic" rend="sup"/></am></abbr>
+                <expan>a<ex>ut</ex></expan>
+              </choice></w>
+            <lb n="17" xml:id="SG730_lb_20_17"/><w>ser<c corresp="#v">u</c>um</w>
+            <w>
+              <choice>
+                <orig>minesterialem</orig>
+                <reg>ministerialem</reg>
+              </choice>
+            </w>
+            <lb n="18" xml:id="SG730_lb_20_18"/><w>plaga<c corresp="#v">u</c>erit</w>
+            <w>in</w>
+            <w>caput</w>
+            <lb n="19" xml:id="SG730_lb_20_19"/><w>ut</w>
+            <w>ossa</w>
+            <w>non</w>
+            <w>rumpan<lb n="20" xml:id="SG730_lb_20_20"/>tur</w>
+            <w>pro</w>
+            <w>una</w>
+            <w>placa</w>
+            <w>dit</w>
+          </p>
+          
+          <pb n="21" xml:id="SG730_folio_021" facs="https://www.e-codices.unifr.ch/loris/csg/csg-0730/csg-0730_020.jp2/800,600,3800,5000/full/0/default/jpg"/>
+          
+          <p>An IIIF-served image cropped using TEI coords.</p>
+          
+        </body>
+
+        <back>
+
+          <div type="hotspot">
+            <div facs="#SG730_hs_20_01" xml:id="SG730_div_hs_20_01">
+              <p>A sample hotspot with coords working on the IIIF-served image. You don't see it, but there's a
+                graphic element in the XML code, unfortunately EVT doesn't support it yet! Work in progress :)</p>
+              <figure>
+                <graphic url="data/hotspot/haldius-3.jpeg"/>
+              </figure>
+            </div>
+          </div>
+          
+          <!-- PM interpGrp added to use with @ana -->
+          
+          <div type="interpretation">
+            <interpGrp type="rhetoric">
+              <desc>Figure retoriche</desc>
+              <interp xml:id="anafora" sameAs="https://www.wikidata.org/entity/Q486050">Anafora</interp>
+              <interp xml:id="entimema" sameAs="https://www.wikidata.org/entity/Q422913">Entimema</interp>
+              <interp xml:id="preterizione" sameAs="https://www.wikidata.org/entity/Q1376885">Preterizione</interp>
+              <interp xml:id="reticenza" sameAs="https://www.wikidata.org/entity/Q619760">Reticenza</interp>
+              <interp xml:id="sententia" sameAs="https://www.wikidata.org/entity/Q2271441">Sententia</interp>
+              <interp xml:id="antypophora" sameAs="https://www.wikidata.org/entity/Q1641379">Antypophora</interp>
+              <interp xml:id="ossimoro" sameAs="https://www.wikidata.org/entity/Q169429">Ossimoro</interp>
+              <interp xml:id="ipotiposi" sameAs="https://www.wikidata.org/entity/Q1641487">Ipotiposi</interp>
+              <interp xml:id="antifrasi" sameAs="https://www.wikidata.org/entity/Q253147">Antifrasi</interp>
+              <interp xml:id="poliptoto" sameAs="https://www.wikidata.org/entity/Q680469">Poliptoto</interp>
+            </interpGrp>
+          </div>
+
+        </back>
+        
+      </text>
+    </group>
+  </text>
+
+</TEI>

@@ -1,0 +1,545 @@
+<?xml version="1.0"?>
+<imageList>
+    <!--<imagerv>
+        <image val="001r" url="data/images/single/VB_fol_001r.jpg" id="VB-1-1-r">001r</image>
+        <image val="001v" url="data/images/single/VB_fol_001v.jpg" id="VB-1-1-v">001v</image>
+    </imagerv>
+    <imagerv>
+        <image val="002r" url="data/images/single/VB_fol_002r.jpg" id="VB-1-2-r">002r</image>
+        <image val="002v" url="data/images/single/VB_fol_002v.jpg" id="VB-1-2-v">002v</image>
+    </imagerv>
+    <imagerv>
+        <image val="003r" url="data/images/single/VB_fol_003r.jpg" id="VB-1-3-r">003r</image>
+        <image val="003v" url="data/images/single/VB_fol_003v.jpg" id="VB-1-3-v">003v</image>
+    </imagerv>
+    <imagerv>
+        <image val="004r" url="data/images/single/VB_fol_004r.jpg" id="VB-1-4-r">004r</image>
+        <image val="004v" url="data/images/single/VB_fol_004v.jpg" id="VB-1-4-v">004v</image>
+    </imagerv>
+    <imagerv>
+        <image val="005r" url="data/images/single/VB_fol_005r.jpg" id="VB-1-5-r">005r</image>
+        <image val="005v" url="data/images/single/VB_fol_005v.jpg" id="VB-1-5-v">005v</image>
+    </imagerv>
+    <imagerv>
+        <image val="006r" url="data/images/single/VB_fol_006r.jpg" id="VB-1-6-r">006r</image>
+        <image val="006v" url="data/images/single/VB_fol_006v.jpg" id="VB-1-6-v">006v</image>
+    </imagerv>
+    <imagerv>
+        <image val="007r" url="data/images/single/VB_fol_007r.jpg" id="VB-1-8-r">007r</image>
+        <image val="007v" url="data/images/single/VB_fol_007v.jpg" id="VB-1-8-v">007v</image>
+    </imagerv>
+    <imagerv>
+        <image val="008r" url="data/images/single/VB_fol_008r.jpg" id="VB-1-9-r">008r</image>
+        <image val="008v" url="data/images/single/VB_fol_008v.jpg" id="VB-1-9-v">008v</image>
+    </imagerv>
+    <imagerv>
+        <image val="009r" url="data/images/single/VB_fol_009r.jpg" id="VB-1-10-r">009r</image>
+        <image val="009v" url="data/images/single/VB_fol_009v.jpg" id="VB-1-10-v">009v</image>
+    </imagerv>
+    <imagerv>
+        <image val="010r" url="data/images/single/VB_fol_010r.jpg" id="VB-2-1-r">010r</image>
+        <image val="010v" url="data/images/single/VB_fol_010v.jpg" id="VB-2-1-v">010v</image>
+    </imagerv>
+    <imagerv>
+        <image val="011r" url="data/images/single/VB_fol_011r.jpg" id="VB-2-2-r">011r</image>
+        <image val="011v" url="data/images/single/VB_fol_011v.jpg" id="VB-2-2-v">011v</image>
+    </imagerv>
+    <imagerv>
+        <image val="012r" url="data/images/single/VB_fol_012r.jpg" id="VB-2-3-r">012r</image>
+        <image val="012v" url="data/images/single/VB_fol_012v.jpg" id="VB-2-3-v">012v</image>
+    </imagerv>
+    <imagerv>
+        <image val="013r" url="data/images/single/VB_fol_013r.jpg" id="VB-2-5-r">013r</image>
+        <image val="013v" url="data/images/single/VB_fol_013v.jpg" id="VB-2-5-v">013v</image>
+    </imagerv>
+    <imagerv>
+        <image val="014r" url="data/images/single/VB_fol_014r.jpg" id="VB-2-6-r">014r</image>
+        <image val="014v" url="data/images/single/VB_fol_014v.jpg" id="VB-2-6-v">014v</image>
+    </imagerv>
+    <imagerv>
+        <image val="015r" url="data/images/single/VB_fol_015r.jpg" id="VB-2-7-r">015r</image>
+        <image val="015v" url="data/images/single/VB_fol_015v.jpg" id="VB-2-7-v">015v</image>
+    </imagerv>
+	<imagerv>
+        <image val="016r" url="data/images/single/VB_fol_016r.jpg" id="VB-2-9-r">016r</image>
+        <image val="016v" url="data/images/single/VB_fol_016v.jpg" id="VB-2-9-v">016v</image>
+    </imagerv>
+    <imagerv>
+        <image val="017r" url="data/images/single/VB_fol_017r.jpg" id="VB-2-10-r">017r</image>
+        <image val="017v" url="data/images/single/VB_fol_017v.jpg" id="VB-2-10-v">017v</image>
+    </imagerv>
+    <imagerv>
+        <image val="018r" url="data/images/single/VB_fol_018r.jpg" id="VB-2-12-r">018r</image>
+        <image val="018v" url="data/images/single/VB_fol_018v.jpg" id="VB-2-12-v">018v</image>
+    </imagerv>
+    <imagerv>
+        <image val="019r" url="data/images/single/VB_fol_019r.jpg" id="VB-3-1-r">019r</image>
+        <image val="019v" url="data/images/single/VB_fol_019v.jpg" id="VB-3-1-v">019v</image>
+    </imagerv>
+    <imagerv>
+        <image val="020r" url="data/images/single/VB_fol_020r.jpg" id="VB-3-2-r">020r</image>
+        <image val="020v" url="data/images/single/VB_fol_020v.jpg" id="VB-3-2-v">020v</image>
+    </imagerv>
+    <imagerv>
+        <image val="021r" url="data/images/single/VB_fol_021r.jpg" id="VB-3-3-r">021r</image>
+        <image val="021v" url="data/images/single/VB_fol_021v.jpg" id="VB-3-3-v">021v</image>
+    </imagerv>
+    <imagerv>
+        <image val="022r" url="data/images/single/VB_fol_022r.jpg" id="VB-3-4-r">022r</image>
+        <image val="022v" url="data/images/single/VB_fol_022v.jpg" id="VB-3-4-v">022v</image>
+    </imagerv>
+	<imagerv>
+        <image val="023r" url="data/images/single/VB_fol_023r.jpg" id="VB-3-5-r">023r</image>
+        <image val="023v" url="data/images/single/VB_fol_023v.jpg" id="VB-3-5-v">023v</image>
+    </imagerv>
+    <imagerv>
+        <image val="024r" url="data/images/single/VB_fol_024r.jpg" id="VB-3-7-r">024r</image>
+        <image val="024v" url="data/images/single/VB_fol_024v.jpg" id="VB-3-7-v">024v</image>
+    </imagerv>
+    <imagerv>
+        <image val="025r" url="data/images/single/VB_fol_025r.jpg" id="VB-4-1-r">025r</image>
+        <image val="025v" url="data/images/single/VB_fol_025v.jpg" id="VB-4-1-v">025v</image>
+    </imagerv>
+    <imagerv>
+        <image val="026r" url="data/images/single/VB_fol_026r.jpg" id="VB-4-2-r">026r</image>
+        <image val="026v" url="data/images/single/VB_fol_026v.jpg" id="VB-4-2-v">026v</image>
+    </imagerv>
+    <imagerv>
+        <image val="027r" url="data/images/single/VB_fol_027r.jpg" id="VB-4-4-r">027r</image>
+        <image val="027v" url="data/images/single/VB_fol_027v.jpg" id="VB-4-4-v">027v</image>
+    </imagerv>
+    <imagerv>
+        <image val="028r" url="data/images/single/VB_fol_028r.jpg" id="VB-4-5-r">028r</image>
+        <image val="028v" url="data/images/single/VB_fol_028v.jpg" id="VB-4-5-V">028V</image>
+    </imagerv>
+    <imagerv>
+        <image val="029r" url="data/images/single/VB_fol_029r.jpg" id="VB-4-6-r">029r</image>
+        <image val="029v" url="data/images/single/VB_fol_029v.jpg" id="VB-4-6-v">029v</image>
+    </imagerv>
+    <imagerv>
+        <image val="030r" url="data/images/single/VB_fol_030r.jpg" id="VB-4-8-r">030r</image>
+        <image val="030v" url="data/images/single/VB_fol_030v.jpg" id="VB-4-8-v">030v</image>
+    </imagerv>
+    <imagerv>
+        <image val="031r" url="data/images/single/VB_fol_031r.jpg" id="VB-4-9-r">031r</image>
+        <image val="031v" url="data/images/single/VB_fol_031v.jpg" id="VB-4-9-v">031v</image>
+    </imagerv>
+    <imagerv>
+        <image val="032r" url="data/images/single/VB_fol_032r.jpg" id="VB-4-10-r">032r</image>
+        <image val="032v" url="data/images/single/VB_fol_032v.jpg" id="VB-4-10-v">032v</image>
+    </imagerv>
+    <imagerv>
+        <image val="033r" url="data/images/single/VB_fol_033r.jpg" id="VB-5-1-r">033r</image>
+        <image val="033v" url="data/images/single/VB_fol_033v.jpg" id="VB-5-1-v">033v</image>
+    </imagerv>
+    <imagerv>
+        <image val="034r" url="data/images/single/VB_fol_034r.jpg" id="VB-5-2-r">034r</image>
+        <image val="034v" url="data/images/single/VB_fol_034v.jpg" id="VB-5-2-v">034v</image>
+    </imagerv>
+    <imagerv>
+        <image val="035r" url="data/images/single/VB_fol_035r.jpg" id="VB-5-3-r">035r</image>
+        <image val="035v" url="data/images/single/VB_fol_035v.jpg" id="VB-5-3-v">035v</image>
+    </imagerv>
+    <imagerv>
+        <image val="036r" url="data/images/single/VB_fol_036r.jpg" id="VB-5-5-r">036r</image>
+        <image val="036v" url="data/images/single/VB_fol_036v.jpg" id="VB-5-5-v">036v</image>
+    </imagerv>
+    <imagerv>
+        <image val="037r" url="data/images/single/VB_fol_037r.jpg" id="VB-5-6-r">037r</image>
+        <image val="037v" url="data/images/single/VB_fol_037v.jpg" id="VB-5-6-v">037v</image>
+    </imagerv>
+    <imagerv>
+        <image val="038r" url="data/images/single/VB_fol_038r.jpg" id="VB-5-7-r">038r</image>
+        <image val="038v" url="data/images/single/VB_fol_038v.jpg" id="VB-5-7-v">038v</image>
+    </imagerv>
+    <imagerv>
+        <image val="039r" url="data/images/single/VB_fol_039r.jpg" id="VB-5-9-r">039r</image>
+        <image val="039v" url="data/images/single/VB_fol_039v.jpg" id="VB-5-9-v">039v</image>
+    </imagerv>
+    <imagerv>
+        <image val="040r" url="data/images/single/VB_fol_040r.jpg" id="VB-5-10-r">040r</image>
+        <image val="040v" url="data/images/single/VB_fol_040v.jpg" id="VB-5-10-v">040v</image>
+    </imagerv>
+    <imagerv>
+        <image val="041r" url="data/images/single/VB_fol_041r.jpg" id="VB-6-1-r">041r</image>
+        <image val="041v" url="data/images/single/VB_fol_041v.jpg" id="VB-6-1-v">041v</image>
+    </imagerv>
+    <imagerv>
+        <image val="042r" url="data/images/single/VB_fol_042r.jpg" id="VB-6-2-r">042r</image>
+        <image val="042v" url="data/images/single/VB_fol_042v.jpg" id="VB-6-2-v">042v</image>
+    </imagerv>
+    <imagerv>
+        <image val="043r" url="data/images/single/VB_fol_043r.jpg" id="VB-6-4-r">043r</image>
+        <image val="043v" url="data/images/single/VB_fol_043v.jpg" id="VB-6-4-v">043v</image>
+    </imagerv>
+    <imagerv>
+        <image val="044r" url="data/images/single/VB_fol_044r.jpg" id="VB-6-5-r">044r</image>
+        <image val="044v" url="data/images/single/VB_fol_044v.jpg" id="VB-6-5-v">044v</image>
+    </imagerv>
+    <imagerv>
+        <image val="045r" url="data/images/single/VB_fol_045r.jpg" id="VB-6-6-r">045r</image>
+        <image val="045v" url="data/images/single/VB_fol_045v.jpg" id="VB-6-6-v">045v</image>
+    </imagerv>
+    <imagerv>
+        <image val="046r" url="data/images/single/VB_fol_046r.jpg" id="VB-6-7-r">046r</image>
+        <image val="046v" url="data/images/single/VB_fol_046v.jpg" id="VB-6-7-v">046v</image>
+    </imagerv>
+    <imagerv>
+        <image val="047r" url="data/images/single/VB_fol_047r.jpg" id="VB-6-8-r">047r</image>
+        <image val="047v" url="data/images/single/VB_fol_047v.jpg" id="VB-6-8-v">047v</image>
+    </imagerv>
+    <imagerv>
+        <image val="048r" url="data/images/single/VB_fol_048r.jpg" id="VB-7-1-r">048r</image>
+        <image val="048v" url="data/images/single/VB_fol_048v.jpg" id="VB-7-1-v">048v</image>
+    </imagerv>
+    <imagerv>
+        <image val="049r" url="data/images/single/VB_fol_049r.jpg" id="VB-7-2-r">049r</image>
+        <image val="049v" url="data/images/single/VB_fol_049v.jpg" id="VB-7-2-v">049v</image>
+    </imagerv>
+    <imagerv>
+        <image val="050r" url="data/images/single/VB_fol_050r.jpg" id="VB-7-3-r">050r</image>
+        <image val="050v" url="data/images/single/VB_fol_050v.jpg" id="VB-7-3-v">050v</image>
+    </imagerv>
+    <imagerv>
+        <image val="051r" url="data/images/single/VB_fol_051r.jpg" id="VB-7-5-r">051r</image>
+        <image val="051v" url="data/images/single/VB_fol_051v.jpg" id="VB-7-5-v">051v</image>
+    </imagerv>
+    <imagerv>
+        <image val="052r" url="data/images/single/VB_fol_052r.jpg" id="VB-7-6-r">052r</image>
+        <image val="052v" url="data/images/single/VB_fol_052v.jpg" id="VB-7-6-v">052v</image>
+    </imagerv>
+    <imagerv>
+        <image val="053r" url="data/images/single/VB_fol_053r.jpg" id="VB-7-7-r">053r</image>
+        <image val="053v" url="data/images/single/VB_fol_053v.jpg" id="VB-7-7-v">053v</image>
+    </imagerv>
+    <imagerv>
+        <image val="054r" url="data/images/single/VB_fol_054r.jpg" id="VB-7-9-r">054r</image>
+        <image val="054v" url="data/images/single/VB_fol_054v.jpg" id="VB-7-9-v">054v</image>
+    </imagerv>
+    <imagerv>
+        <image val="055r" url="data/images/single/VB_fol_055r.jpg" id="VB-7-10-r">055r</image>
+        <image val="055v" url="data/images/single/VB_fol_055v.jpg" id="VB-7-10-v">055v</image>
+    </imagerv>
+    <imagerv>
+        <image val="056r" url="data/images/single/VB_fol_056r.jpg" id="VB-8-2-r">056r</image>
+        <image val="056v" url="data/images/single/VB_fol_056v.jpg" id="VB-8-2-v">056v</image>
+    </imagerv>
+    <imagerv>
+        <image val="057r" url="data/images/single/VB_fol_057r.jpg" id="VB-8-3-r">057r</image>
+        <image val="057v" url="data/images/single/VB_fol_057v.jpg" id="VB-8-3-v">057v</image>
+    </imagerv>
+    <imagerv>
+        <image val="058r" url="data/images/single/VB_fol_058r.jpg" id="VB-8-5-r">058r</image>
+        <image val="058v" url="data/images/single/VB_fol_058v.jpg" id="VB-8-5-v">058v</image>
+    </imagerv>
+    <imagerv>
+        <image val="059r" url="data/images/single/VB_fol_059r.jpg" id="VB-8-6-r">059r</image>
+        <image val="059v" url="data/images/single/VB_fol_059v.jpg" id="VB-8-6-v">059v</image>
+    </imagerv>
+    <imagerv>
+        <image val="060r" url="data/images/single/VB_fol_060r.jpg" id="VB-8-7-r">060r</image>
+        <image val="060v" url="data/images/single/VB_fol_060v.jpg" id="VB-8-7-v">060v</image>
+    </imagerv>
+    <imagerv>
+        <image val="061r" url="data/images/single/VB_fol_061r.jpg" id="VB-8-9-r">061r</image>
+        <image val="061v" url="data/images/single/VB_fol_061v.jpg" id="VB-8-9-v">061v</image>
+    </imagerv>
+    <imagerv>
+        <image val="062r" url="data/images/single/VB_fol_062r.jpg" id="VB-8-10-r">062r</image>
+        <image val="062v" url="data/images/single/VB_fol_062v.jpg" id="VB-8-10-v">062v</image>
+    </imagerv>
+    <imagerv>
+        <image val="063r" url="data/images/single/VB_fol_063r.jpg" id="VB-8-11-r">063r</image>
+        <image val="063v" url="data/images/single/VB_fol_063v.jpg" id="VB-8-11-v">063v</image>
+    </imagerv>
+    <imagerv>
+        <image val="064r" url="data/images/single/VB_fol_064r.jpg" id="VB-9-1-r">064r</image>
+        <image val="064v" url="data/images/single/VB_fol_064v.jpg" id="VB-9-1-v">064v</image>
+    </imagerv>
+    <imagerv>
+        <image val="065r" url="data/images/single/VB_fol_065r.jpg" id="VB-9-2-r">065r</image>
+        <image val="065v" url="data/images/single/VB_fol_065v.jpg" id="VB-9-2-v">065v</image>
+    </imagerv>
+    <imagerv>
+        <image val="066r" url="data/images/single/VB_fol_066r.jpg" id="VB-9-3-r">066r</image>
+        <image val="066v" url="data/images/single/VB_fol_066v.jpg" id="VB-9-3-v">066v</image>
+    </imagerv>
+    <imagerv>
+        <image val="067r" url="data/images/single/VB_fol_067r.jpg" id="VB-9-5-r">067r</image>
+        <image val="067v" url="data/images/single/VB_fol_067v.jpg" id="VB-9-5-v">067v</image>
+    </imagerv>
+    <imagerv>
+        <image val="068r" url="data/images/single/VB_fol_068r.jpg" id="VB-9-6-r">068r</image>
+        <image val="068v" url="data/images/single/VB_fol_068v.jpg" id="VB-9-6-v">068v</image>
+    </imagerv>
+    <imagerv>
+        <image val="069r" url="data/images/single/VB_fol_069r.jpg" id="VB-9-7-r">069r</image>
+        <image val="069v" url="data/images/single/VB_fol_069v.jpg" id="VB-9-7-v">069v</image>
+    </imagerv>
+    <imagerv>
+        <image val="070r" url="data/images/single/VB_fol_070r.jpg" id="VB-9-9-r">070r</image>
+        <image val="070v" url="data/images/single/VB_fol_070v.jpg" id="VB-9-9-v">070v</image>
+    </imagerv>
+    <imagerv>
+        <image val="071r" url="data/images/single/VB_fol_071r.jpg" id="VB-9-10-r">071r</image>
+        <image val="071v" url="data/images/single/VB_fol_071v.jpg" id="VB-9-10-v">071v</image>
+    </imagerv>
+    <imagerv>
+        <image val="072r" url="data/images/single/VB_fol_072r.jpg" id="VB-10-1-r">072r</image>
+        <image val="072v" url="data/images/single/VB_fol_072v.jpg" id="VB-10-1-v">072v</image>
+    </imagerv>
+    <imagerv>
+        <image val="073r" url="data/images/single/VB_fol_073r.jpg" id="VB-10-2-r">073r</image>
+        <image val="073v" url="data/images/single/VB_fol_073v.jpg" id="VB-10-2-v">073v</image>
+    </imagerv>
+    <imagerv>
+        <image val="074r" url="data/images/single/VB_fol_074r.jpg" id="VB-10-3-r">074r</image>
+        <image val="074v" url="data/images/single/VB_fol_074v.jpg" id="VB-10-3-v">074v</image>
+    </imagerv>
+    <imagerv>
+        <image val="075r" url="data/images/single/VB_fol_075r.jpg" id="VB-10-4-r">075r</image>
+        <image val="075v" url="data/images/single/VB_fol_075v.jpg" id="VB-10-4-v">075v</image>
+    </imagerv>
+    <imagerv>
+        <image val="076r" url="data/images/single/VB_fol_076r.jpg" id="VB-10-6-r">076r</image>
+        <image val="076v" url="data/images/single/VB_fol_076v.jpg" id="VB-10-6-v">076v</image>
+    </imagerv>
+    <imagerv>
+        <image val="077r" url="data/images/single/VB_fol_077r.jpg" id="VB-10-7-r">077r</image>
+        <image val="077v" url="data/images/single/VB_fol_077v.jpg" id="VB-10-7-v">077v</image>
+    </imagerv>
+    <imagerv>
+        <image val="078r" url="data/images/single/VB_fol_078r.jpg" id="VB-10-8-r">078r</image>
+        <image val="078v" url="data/images/single/VB_fol_078v.jpg" id="VB-10-8-v">078v</image>
+    </imagerv>
+    <imagerv>
+        <image val="079r" url="data/images/single/VB_fol_079r.jpg" id="VB-10-10-r">079r</image>
+        <image val="079v" url="data/images/single/VB_fol_079v.jpg" id="VB-10-10-v">079v</image>
+    </imagerv>
+    <imagerv>
+        <image val="080r" url="data/images/single/VB_fol_080r.jpg" id="VB-11-1-r">080r</image>
+        <image val="080v" url="data/images/single/VB_fol_080v.jpg" id="VB-11-1-v">080v</image>
+    </imagerv>
+    <imagerv>
+        <image val="081r" url="data/images/single/VB_fol_081r.jpg" id="VB-11-2-r">081r</image>
+        <image val="081v" url="data/images/single/VB_fol_081v.jpg" id="VB-11-2-v">081v</image>
+    </imagerv>
+    <imagerv>
+        <image val="082r" url="data/images/single/VB_fol_082r.jpg" id="VB-11-3-r">082r</image>
+        <image val="082v" url="data/images/single/VB_fol_082v.jpg" id="VB-11-3-v">082v</image>
+    </imagerv>
+    <imagerv>
+        <image val="083r" url="data/images/single/VB_fol_083r.jpg" id="VB-11-5-r">083r</image>
+        <image val="083v" url="data/images/single/VB_fol_083v.jpg" id="VB-11-5-v">083v</image>
+    </imagerv>
+    <imagerv>
+        <image val="084r" url="data/images/single/VB_fol_084r.jpg" id="VB-11-7-r">084r</image>
+        <image val="084v" url="data/images/single/VB_fol_084v.jpg" id="VB-11-7-v">084v</image>
+    </imagerv>
+    <imagerv>
+        <image val="085r" url="data/images/single/VB_fol_085r.jpg" id="VB-11-9-r">085r</image>
+        <image val="085v" url="data/images/single/VB_fol_085v.jpg" id="VB-11-9-v">085v</image>
+    </imagerv>
+    <imagerv>
+        <image val="086r" url="data/images/single/VB_fol_086r.jpg" id="VB-12-1-r">086r</image>
+        <image val="086v" url="data/images/single/VB_fol_086v.jpg" id="VB-12-1-v">086v</image>
+    </imagerv>
+    <imagerv>
+        <image val="087r" url="data/images/single/VB_fol_087r.jpg" id="VB-12-2-r">087r</image>
+        <image val="087v" url="data/images/single/VB_fol_087v.jpg" id="VB-12-2-v">087v</image>
+    </imagerv>
+    <imagerv>
+        <image val="088r" url="data/images/single/VB_fol_088r.jpg" id="VB-12-3-r">088r</image>
+        <image val="088v" url="data/images/single/VB_fol_088v.jpg" id="VB-12-3-v">088v</image>
+    </imagerv>
+    <imagerv>
+        <image val="089r" url="data/images/single/VB_fol_089r.jpg" id="VB-12-4-r">08r</image>
+        <image val="089v" url="data/images/single/VB_fol_089v.jpg" id="VB-12-4-v">089v</image>
+    </imagerv>
+    <imagerv>
+        <image val="090r" url="data/images/single/VB_fol_090r.jpg" id="VB-12-5-r">090r</image>
+        <image val="090v" url="data/images/single/VB_fol_090v.jpg" id="VB-12-5-v">090v</image>
+    </imagerv>
+    <imagerv>
+        <image val="091r" url="data/images/single/VB_fol_091r.jpg" id="VB-12-6-r">091r</image>
+        <image val="091v" url="data/images/single/VB_fol_091v.jpg" id="VB-12-6-v">091v</image>
+    </imagerv>
+    <imagerv>
+        <image val="092r" url="data/images/single/VB_fol_092r.jpg" id="VB-13-1-r">092r</image>
+        <image val="092v" url="data/images/single/VB_fol_092v.jpg" id="VB-13-1-v">092v</image>
+    </imagerv>
+    <imagerv>
+        <image val="093r" url="data/images/single/VB_fol_093r.jpg" id="VB-13-2-r">093r</image>
+        <image val="093v" url="data/images/single/VB_fol_093v.jpg" id="VB-13-2-v">093v</image>
+    </imagerv>
+    <imagerv>
+        <image val="094r" url="data/images/single/VB_fol_094r.jpg" id="VB-13-4-r">094r</image>
+        <image val="094v" url="data/images/single/VB_fol_094v.jpg" id="VB-13-4-v">094v</image>
+    </imagerv>
+    <imagerv>
+        <image val="095r" url="data/images/single/VB_fol_095r.jpg" id="VB-13-5-r">095r</image>
+        <image val="095v" url="data/images/single/VB_fol_095v.jpg" id="VB-13-5-v">095v</image>
+    </imagerv>
+    <imagerv>
+        <image val="096r" url="data/images/single/VB_fol_096r.jpg" id="VB-13-6-r">096r</image>
+        <image val="096v" url="data/images/single/VB_fol_096v.jpg" id="VB-13-6-v">096v</image>
+    </imagerv>
+    <imagerv>
+        <image val="097r" url="data/images/single/VB_fol_097r.jpg" id="VB-13-8-r">097r</image>
+        <image val="097v" url="data/images/single/VB_fol_097v.jpg" id="VB-13-8-v">097v</image>
+    </imagerv>
+    <imagerv>
+        <image val="098r" url="data/images/single/VB_fol_098r.jpg" id="VB-13-10-r">098r</image>
+        <image val="098v" url="data/images/single/VB_fol_098v.jpg" id="VB-13-10-v">098v</image>
+    </imagerv>
+    <imagerv>
+        <image val="099r" url="data/images/single/VB_fol_099r.jpg" id="VB-14-1-r">099r</image>
+        <image val="099v" url="data/images/single/VB_fol_099v.jpg" id="VB-14-1-v">099v</image>
+    </imagerv>
+    <imagerv>
+        <image val="100r" url="data/images/single/VB_fol_100r.jpg" id="VB-14-2-r">100r</image>
+        <image val="100v" url="data/images/single/VB_fol_100v.jpg" id="VB-14-2-v">100v</image>
+    </imagerv>
+    <imagerv>
+        <image val="101r" url="data/images/single/VB_fol_101r.jpg" id="VB-14-4-r">101r</image>
+        <image val="101v" url="data/images/single/VB_fol_101v.jpg" id="VB-14-4-v">101v</image>
+    </imagerv>
+    <imagerv>
+        <image val="102r" url="data/images/single/VB_fol_102r.jpg" id="VB-14-5-r">102r</image>
+        <image val="102v" url="data/images/single/VB_fol_102v.jpg" id="VB-14-5-v">102v</image>
+    </imagerv>
+    <imagerv>
+        <image val="103r" url="data/images/single/VB_fol_103r.jpg" id="VB-14-6-r">103r</image>
+        <image val="103v" url="data/images/single/VB_fol_103v.jpg" id="VB-14-6-v">103v</image>
+    </imagerv>-->
+    <imagerv>
+        <image val="104v" url="data/images/single/VB_fol_104v.jpg" id="VB-14-8-v">104v</image>
+    </imagerv>
+    <imagerv>
+        <image val="105r" url="data/images/single/VB_fol_105r.jpg" id="VB-15-1-r">105r</image>
+        <image val="105v" url="data/images/single/VB_fol_105v.jpg" id="VB-15-1-v">105v</image>
+    </imagerv>
+    <imagerv>
+        <image val="106r" url="data/images/single/VB_fol_106r.jpg" id="VB-15-2-r">106r</image>
+    </imagerv>
+    <!--<imagerv>
+        <image val="107r" url="data/images/single/VB_fol_107r.jpg" id="VB-15-3-r">107r</image>
+        <image val="107v" url="data/images/single/VB_fol_107v.jpg" id="VB-15-3-v">107v</image>
+    </imagerv>
+    <imagerv>
+        <image val="108r" url="data/images/single/VB_fol_108r.jpg" id="VB-15-4-r">108r</image>
+        <image val="108v" url="data/images/single/VB_fol_108v.jpg" id="VB-15-4-v">108v</image>
+    </imagerv>
+    <imagerv>
+        <image val="109r" url="data/images/single/VB_fol_109r.jpg" id="VB-15-5-r">109r</image>
+        <image val="109v" url="data/images/single/VB_fol_109v.jpg" id="VB-15-5-v">109v</image>
+    </imagerv>
+    <imagerv>
+        <image val="110r" url="data/images/single/VB_fol_110r.jpg" id="VB-15-7-r">110r</image>
+        <image val="110v" url="data/images/single/VB_fol_110v.jpg" id="VB-15-7-v">110v</image>
+    </imagerv>
+    <imagerv>
+        <image val="111r" url="data/images/single/VB_fol_111r.jpg" id="VB-15-8-r">111r</image>
+        <image val="111v" url="data/images/single/VB_fol_111v.jpg" id="VB-15-8-v">111v</image>
+    </imagerv>
+    <imagerv>
+        <image val="112r" url="data/images/single/VB_fol_112r.jpg" id="VB-16-2-r">112r</image>
+        <image val="112v" url="data/images/single/VB_fol_112v.jpg" id="VB-16-2-v">112v</image>
+    </imagerv>
+    <imagerv>
+        <image val="113r" url="data/images/single/VB_fol_113r.jpg" id="VB-16-3-r">113r</image>
+        <image val="113v" url="data/images/single/VB_fol_113v.jpg" id="VB-16-3-v">113v</image>
+    </imagerv>
+    <imagerv>
+        <image val="114r" url="data/images/single/VB_fol_114r.jpg" id="VB-16-5-r">114r</image>
+        <image val="114v" url="data/images/single/VB_fol_114v.jpg" id="VB-16-5-v">114v</image>
+    </imagerv>
+    <imagerv>
+        <image val="115r" url="data/images/single/VB_fol_115r.jpg" id="VB-16-6-r">115r</image>
+        <image val="115v" url="data/images/single/VB_fol_115v.jpg" id="VB-16-6-v">115v</image>
+    </imagerv>
+    <imagerv>
+        <image val="116r" url="data/images/single/VB_fol_116r.jpg" id="VB-16-7-r">116r</image>
+        <image val="116v" url="data/images/single/VB_fol_116v.jpg" id="VB-16-7-v">116v</image>
+    </imagerv>
+    <imagerv>
+        <image val="117r" url="data/images/single/VB_fol_117r.jpg" id="VB-16-9-r">117r</image>
+        <image val="117v" url="data/images/single/VB_fol_117v.jpg" id="VB-16-9-v">117v</image>
+    </imagerv>
+    <imagerv>
+        <image val="118r" url="data/images/single/VB_fol_118r.jpg" id="VB-16-10-r">118r</image>
+        <image val="118v" url="data/images/single/VB_fol_118v.jpg" id="VB-16-10-v">118v</image>
+    </imagerv>
+    <imagerv>
+        <image val="119r" url="data/images/single/VB_fol_119r.jpg" id="VB-17-1-r">119r</image>
+        <image val="119v" url="data/images/single/VB_fol_119v.jpg" id="VB-17-1-v">119v</image>
+    </imagerv>
+    <imagerv>
+        <image val="120r" url="data/images/single/VB_fol_120r.jpg" id="VB-17-2-r">120r</image>
+        <image val="120v" url="data/images/single/VB_fol_120v.jpg" id="VB-17-2-v">120v</image>
+    </imagerv>
+    <imagerv>
+        <image val="121r" url="data/images/single/VB_fol_121r.jpg" id="VB-18-1-r">121r</image>
+        <image val="121v" url="data/images/single/VB_fol_121v.jpg" id="VB-18-1-v">121v</image>
+    </imagerv>
+    <imagerv>
+        <image val="122r" url="data/images/single/VB_fol_122r.jpg" id="VB-18-2-r">122r</image>
+        <image val="122v" url="data/images/single/VB_fol_122v.jpg" id="VB-18-2-v">122v</image>
+    </imagerv>
+    <imagerv>
+        <image val="123r" url="data/images/single/VB_fol_123r.jpg" id="VB-18-3-r">123r</image>
+        <image val="123v" url="data/images/single/VB_fol_123v.jpg" id="VB-18-3-v">123v</image>
+    </imagerv>
+    <imagerv>
+        <image val="124r" url="data/images/single/VB_fol_124r.jpg" id="VB-18-4-r">124r</image>
+        <image val="124v" url="data/images/single/VB_fol_124v.jpg" id="VB-18-4-v">124v</image>
+    </imagerv>
+    <imagerv>
+        <image val="125r" url="data/images/single/VB_fol_125r.jpg" id="VB-18-5-r">125r</image>
+        <image val="125v" url="data/images/single/VB_fol_125v.jpg" id="VB-18-5-v">125v</image>
+    </imagerv>
+    <imagerv>
+        <image val="126r" url="data/images/single/VB_fol_126r.jpg" id="VB-18-6-r">126r</image>
+        <image val="126v" url="data/images/single/VB_fol_126v.jpg" id="VB-18-6-v">126v</image>
+    </imagerv>
+    <imagerv>
+        <image val="127r" url="data/images/single/VB_fol_127r.jpg" id="VB-18-7-r">127r</image>
+        <image val="127v" url="data/images/single/VB_fol_127v.jpg" id="VB-18-7-v">127v</image>
+    </imagerv>
+    <imagerv>
+        <image val="128r" url="data/images/single/VB_fol_128r.jpg" id="VB-18-8-r">128r</image>
+        <image val="128v" url="data/images/single/VB_fol_128v.jpg" id="VB-18-8-v">128v</image>
+    </imagerv>
+    <imagerv>
+        <image val="129r" url="data/images/single/VB_fol_129r.jpg" id="VB-19-1-r">129r</image>
+        <image val="129v" url="data/images/single/VB_fol_129v.jpg" id="VB-19-1-v">129v</image>
+    </imagerv>
+    <imagerv>
+        <image val="130r" url="data/images/single/VB_fol_130r.jpg" id="VB-19-2-r">130r</image>
+        <image val="130v" url="data/images/single/VB_fol_130v.jpg" id="VB-19-2-v">130v</image>
+    </imagerv>
+    <imagerv>
+        <image val="131r" url="data/images/single/VB_fol_131r.jpg" id="VB-19-3-r">131r</image>
+        <image val="131v" url="data/images/single/VB_fol_131v.jpg" id="VB-19-3-v">131v</image>
+    </imagerv>
+    <imagerv>
+        <image val="132r" url="data/images/single/VB_fol_132r.jpg" id="VB-19-4-r">132r</image>
+        <image val="132v" url="data/images/single/VB_fol_132v.jpg" id="VB-19-4-v">132v</image>
+    </imagerv>
+    <imagerv>
+        <image val="133r" url="data/images/single/VB_fol_133r.jpg" id="VB-19-5-r">133r</image>
+        <image val="133v" url="data/images/single/VB_fol_133v.jpg" id="VB-19-5-v">133v</image>
+    </imagerv>
+    <imagerv>
+        <image val="134r" url="data/images/single/VB_fol_134r.jpg" id="VB-19-6-r">134r</image>
+        <image val="134v" url="data/images/single/VB_fol_134v.jpg" id="VB-19-6-v">134v</image>
+    </imagerv>
+    <imagerv>
+        <image val="135r" url="data/images/single/VB_fol_135r.jpg" id="VB-19-7-r">135r</image>
+        <image val="135v" url="data/images/single/VB_fol_135v.jpg" id="VB-19-7-v">135v</image>
+    </imagerv>
+    <imagerv>
+        <image val="136r" url="data/images/single/VB_fol_136r.jpg" id="VB-19-8-r">136r</image>
+        <image val="136v" url="data/images/single/VB_fol_136v.jpg" id="VB-19-8-v">136v</image>
+    </imagerv>-->
+</imageList>
