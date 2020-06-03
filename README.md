@@ -1,11 +1,3 @@
-## Che cos'è la Piattaforma Vasto?
-
-[intro]
-
-## Nello specifico, che cos'è il pilot della Piattaforma Vasto?
-
-[intro]
-
 ## L'edizione digitale Vasto: funzionalità e limitazioni 
 
 In particolare, edizione digitale presenta la Storia Fiorentina di Varchi, in particolare del testimone RC4. Allo stato attuale la piattaforma Vasto presenta il proemio del Primo Libro (versione Pilot).
