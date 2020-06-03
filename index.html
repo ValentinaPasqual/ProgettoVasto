@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VASTO</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Personal stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!--    <link rel="stylesheet" href="css/fixed.css">-->
+    <style>
+        .navbar {
+            background-color: #DC143C !important;
+            opacity: 0.9 !important;
+        }
+        .btn-secondary{
+            background-color: #DC143C !important;
+            opacity: 0.9 !important;
+            border-color: #DC143C !important ;
+        }
+    </style>
+</head>
+
+<body>
+
+<!--- Start Home Section -->
+<div id="home">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top sticky-navigation" style="background-color: #DC143C;">
+        <a class="navbar-brand" href="index.html">VaSto</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"  aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll active" href="index.html#Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="index.html#Progetto">Il Progetto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="index.html#EVT">EVT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="index.html#doc">Documentazione</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="page-section" id="Home">
+        <div id="Home" class="page">
+           
+                <img class="d-block w-100" src="images/history.jpg">
+                <div class="Home text-center">
+                    <h1>Welcome to VASTO</h1>
+                    <h3 class="maiusc" style="font-variant: small-caps !important;">VArchi, STOria fiorentina<br>
+                        EDIZIONE DIGITALE</h3>
+                    <a class="btn btn-light btn-lg" href="#EVT" style="color: #DC143C; background-color: white; border-color: #DC143C; opacity: 0.9; border: none;">Discover</a>
+                </div>
+           
+        </div>
+
+     </section>
+      
+
+</div>
+<!--- End Home Section -->
+
+<!--- Start Overview Section -->
+<section class="page-section" id="Progetto" style="height: 25em;">
+
+    <div class="col-12 narrow text-center">
+        <h1>Il Progetto</h1>
+        <p class="d">Il progetto VaSto, realizzato nell’ambito del /DH.arc dell’Università di Bologna, costituisce il risultato della collaborazione tra Università di Bologna, Concordia University di Montreal e CarisBo, e presenta, in un’ambiente digitale interattivo, l’edizione digitale genetica e annotata della Storia fiorentina di Benedetto Varchi (1503-1565).</p>
+        <a class="btn btn-secondary btn-md" href="Documentation.html">Guida all'<br>edizione filologica</a>
+    </div>
+</section>
+<section class="page-section" id="EVT">
+<div  class="offset">
+    <div class="col-12 narrow text-center">
+        <h1>L'Edizione EVT2</h1>
+        <div class="container">
+        <img id="evt" src="images/evt.JPG"/>
+        <a id="center" class="btn btn-secondary btn-md" href="evt2/index.html" target="_blank">EVT</a>
+        </div> 
+        <p>Scopri la nostra Edizione Digitale della <em>Storia Fiorentina</em> di Benedetto Varchi.</p>
+        <p class="red">Edizione Digitale della <em>Storia fiorentina</em> di <a href="http://www.treccani.it/enciclopedia/benedetto-varchi/" target="_blank">Benedetto Varchi</a>, opera rimasta incompiuta alla morte dell’autore nel 1565
+            e pubblicata solo nel 1721 in forma censurata: un testo cruciale per comprendere l’interazione tra potere e cultura nell’Italia
+            del pieno Rinascimento.  Il progetto intende rappresentare, in una concreta ambientazione digitale, luoghi,
+            fatti, protagonisti, della Firenze rinascimentale dal 1527 al 1530, di cui questo testo offre uno straordinario e dettagliato racconto.</p>
+        <p class="red">L'Edizione è statasviluppata attraverso <a href="http://evt.labcd.unipi.it/" target="_blank">EVT (Edition Visualisation Technology) versione 2 (o beta 1)</a> e momentaneamente comprende solo la versione Diplomatica del testo.</p>
+        
+    </div>
+</div>
+</section>
+
+<!--- End Overview Section -->
+<section class="page-section" id="doc" style="height: 25em;">
+
+    <div class="col-12 narrow text-center">
+        <h1>Documentazione</h1>
+        <p class="d">Se vuoi maggiori informazioni riguardanti lo sviluppo tecnico del progetto, gli approcci computazionali e i materiali osserva il lavoro svolto nella Repository di Github e controlla la Documentazione sul Progetto disponibile qui sotto.</p>
+        <a class="btn btn-secondary btn-md" href="https://github.com/ValentinaPasqual/ProgettoVasto" target="_blank">Documentazione <br> tecnica</a>
+
+    </div>
+</section>
+
+
+<!--- Start Contact Section -->
+<section class="foot">
+    <footer>
+        <div class="row justify-content-center pt-1" style="background-color:#DC143C;">
+
+            <div class="col-md-5 text-center" style="font-size:80%">
+                <h3>Digital Humanities Advanced Research Centre (/DH.arc)</h3>
+                <p>Questo progetto e l'edizione digitale sono parte delle attività di ricerca del Digital Humanities Advanced Research Centre <a href="https://centri.unibo.it/dharc/en/research/projects-at-dh-arc">(/DH.arc)</a></p>
+                <h3>Contatti</h3>
+                <p>Università di Bologna<br>
+                    Dipartimento di Filologia Classica e Italianistica <a href="https://ficlit.unibo.it/it">(FICLIT)</a><br>
+                    Via Zamboni 32<br>
+                    40126 Bologna, Italia</p>
+                <p><strong>Email:</strong> <a class="email-link" href="mailto:dharc@live.unibo.it">dharc@live.unibo.it</a></p>
+                <img src="images/unibologo.svg" style="width:15%; height:auto; margin-bottom:1%"/>
+
+                <p style="font-size:80%"><a href="https://upload.wikimedia.org/wikipedia/commons/archive/b/ba/20170728095613%21Nuremberg_chronicles_-_FLORENCIA.png">L'immagine 1</a> <a href="https://commons.wikimedia.org/wiki/File:Nuremberg_chronicles_-_FLORENCIA.png#filehistory">(versione 21:46, 20/06/2006)</a> utilizzata nella homepage del sito è una scannerizzazione di "Schedelsche Weltchronik" (1493) dal libro originale di Michel Wolgemut, Wilhelm Pleydenwurff (Testo: <a href="https://commons.wikimedia.org/wiki/Hartmann_Schedel">Hartmann Schedel)</a>. Questa immagine è protetta dalla licenza consuntabile al seguente <a href="https://commons.wikimedia.org/wiki/File:Nuremberg_chronicles_-_FLORENCIA.png">link.</a></p>
+            </div>
+
+            <hr class="socket">
+            <p>&copy;2020 <a href="https://centri.unibo.it/dharc/en">/DH.arc</a>- VASTO | DOI:    | <a href="credits.html">Credits</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.it"><img alt="Licenza Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" /></a><br />
+            </p>
+
+        </div> <!-- End of Row -->
+    </footer>
+</section>
+
+<!--- End Contact Section -->
+
+
+<!--- Script Source Files -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!--- End of Script Source Files -->
+</body>
+</html>
