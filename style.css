@@ -563,7 +563,7 @@ hr.socket {
 }
 @media (min-width: 1200px) { 
     .Home{
-        display: 130%;
+        height: 30em;
     }
 
 }
