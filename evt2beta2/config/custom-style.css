@@ -44,6 +44,7 @@ div.box-body.Edition  {font-size:83% !important; text-align:justify}
 .front .p .add[data-hand="#A3"] {background-color:transparent ; color:green !important}
 .front .p .del[data-hand="#A4"] {background-color:transparent ; text-decoration:line-through !important; text-decoration-color:orange !important}
 .front .p .add[data-hand="#A4"] {background-color:transparent ; color:orange !important}
+.front .hi {font-weight: bold}
 
 /* .diplomaticEdition .lb[data-n] {display:none}
 .criticalEdition .lb[data-n] {display:block !important} */
