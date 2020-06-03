@@ -1,149 +1,455 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>VASTO</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- Personal stylesheet -->
-    <link rel="stylesheet" href="style.css">
-    <!--    <link rel="stylesheet" href="css/fixed.css">-->
-    <style>
-        .navbar {
-            background-color: #DC143C !important;
-            opacity: 0.9 !important;
-        }
-        .btn-secondary{
-            background-color: #DC143C !important;
-            opacity: 0.9 !important;
-            border-color: #DC143C !important ;
-        }
-    </style>
-</head>
+<!DOCTYPE HTML>
+<html class="no-js">
+	<head>
+		<!-- <meta charset="utf-8"> -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+		<title>EVT Viewer</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-<body>
+		<link rel="stylesheet" href="styles/vendor.43a5e9b6.css">
+		
 
-<!--- Start Home Section -->
-<div id="home">
+		<link rel="stylesheet" href="styles/main.90a279e1.css">
+		<link rel="stylesheet" href="config/custom-style.css">
+		<!-- TODO: temp -->
+		<!--<link rel="stylesheet" type="text/css" href="css/main.css"></link>-->
+		<!-- <link rel="stylesheet" type="text/css" href="css/page_data-include.css"></link> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.9.0.custom.css"></link> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/ImageTextLink.css"></link> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/jquery.jqzoom.css"></link> -->
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome.min.css">
+		<!-- endbuild -->
+	</head>
+	<body ng-app="evtviewer"
+		ng-controller="InterfaceCtrl"
+		ng-keydown="handleKeydownEvent($event)"
+		ng-click="handleGenericClick($event)">
+		<!--[if lt IE 7]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		<!-- Add your site or application content here -->
+		<header>
+			<img class="logo" ng-if="getProperty('logoUrl') !== ''" ng-src="{{getProperty('logoUrl')}}" />
+			{{ getProperty('indexTitle') }}
+			<a class="webSiteLink"
+				ng-if="getProperty('webSite') !== ''"
+				href="{{getWebSite()}}" target="_blank">
+				<i class="fa fa-external-link"></i>
+			</a>
+			<div class="globalMenu">
+				<button-switch
+					title="TOC.HEADER"
+					data-icon="list-alt"
+					data-type="openToc">
+				</button-switch>
+				<div class="viewModeMenu">
+					<button-switch
+							title="VIEW_MODES.{{::mode.label}}"
+							class="mode-view"
+							data-label=""
+							data-icon="{{::mode.icon}}"
+							data-value="{{::mode.viewMode}}"
+							data-type="changeViewMode"
+							ng-repeat="mode in getAvailableViewModes() track by $index"
+							ng-if="mode.visible">
+					</button-switch>
+				</div>
+				<!-- <button-switch
+						title="Witnesses"
+						data-icon="witnesses"
+						data-type="openGlobalDialogWitnesses">
+				</button-switch>
+				<button-switch
+					title="BUTTONS.LIST"
+					ng-if="getProperty('namedEntitiesLists')"
+					data-icon="list"
+					data-type="openGlobalDialogLists">
+				</button-switch>
+				<button-switch
+					class="smaller"
+					title="BUTTONS.INFO"
+					data-icon="info"
+					data-type="openGlobalDialogInfo">
+				</button-switch>
+				<button-switch
+					title="BUTTONS.BOOKMARK"
+					data-icon="bookmark"
+					data-type="bookmark">
+				</button-switch>
+				<button-switch
+					ng-if="getProperty('enableXMLdownload')"
+					title="BUTTONS.DOWNLOAD_XML"
+					data-icon="download"
+					data-type="download-xml">
+				</button-switch> -->
+				<button-switch
+					title="Search"
+					data-icon="search"
+					data-type="searchAdvanced">
+				</button-switch>
+				<button-switch
+					title="BUTTONS.MENU"
+					data-icon="menu"
+					data-type="mainMenu">
+				</button-switch>
+				<div class="mainMenu" ng-if="getState('mainMenu') === true">
+					<ul>
+						<li>
+							<span ng-click="openGlobalDialogInfo()">
+								<i class="icon icon-evt_info-alt"></i>
+								{{'MAIN_MENU.PROJECT_INFO' | translate}}</span>
+						</li>
+						<li ng-if="getProperty('namedEntitiesLists')">
+							<span ng-click="openGlobalDialogLists()">
+								<i class="icon icon-evt_list"></i>
+								{{'MAIN_MENU.OPEN_LISTS' | translate}}</span>
+						</li>
+						<li>
+							<span ng-click="generateBookmark()">
+								<i class="icon icon-evt_bookmark"></i>
+								{{'MAIN_MENU.GENERATE_BOOKMARK' | translate}}</span>
+						</li>
+						<li ng-if="getProperty('enableXMLdownload')">
+							<span ng-click="downloadXML()">
+								<i class="icon fa fa-download"></i>
+								{{'MAIN_MENU.DOWNLOAD_XML' | translate}}</span>
+						</li>
+					</ul>
+					<hr/>
+					<ul>
+						<li>
+							<span>
+								<i class="icon fa fa-language"></i>
+								{{'MAIN_MENU.LANGUAGES' | translate}}
+								<img ng-repeat="langKey in getAvailableLanguages()"
+									ng-if="langKey && langKey !== ''"
+									ng-src="images/{{langKey}}.png"
+									ng-class="{ 'active': langKey === getCurrentLanguage() }"
+									class="flag"
+									ng-click="setLanguage(langKey)"
+									title="{{ 'LANGUAGES.'+langKey | uppercase | translate }}" alt="{{ ::langKey | uppercase}}">
+							</span>
+						</li>
+						<li class="inactive">
+							<span>
+								<i class="icon fa fa-keyboard-o"></i>
+								{{ 'MAIN_MENU.KEYBOARD_SHORT_CUTS' | translate }}</span>
+                  </li>
+                  <li>
+                        <span><!-- TODO: ng-click="aboutEVT()" -->
+                            <a href="http://evt.labcd.unipi.it/" target="_blank" title="{{ 'MAIN_MENU.GO_TO_EVT_WEB_PAGE' | translate }}">
+                                <i class="icon fa fa-copyright"></i>
+                                {{ 'MAIN_MENU.ABOUT_EVT' | translate }}
+                            </a>
+                        </span>
+                  </li>
+					</ul>
+				</div>
+				<!-- <button-switch
+						class="noPadding"
+						title="Menu"
+						data-icon="menu-vert"
+						data-type="openMenu">
+				</button-switch> -->
+			</div>
+		</header>
+		<div id="global-container-ext" ng-show="!isLoading()" ng-class="{'navbar-opened': isNavBarOpened()}">
+			<section
+				class="secondary-container"
+				ng-show="getSecondaryContentOpened() !== ''">
+				<evt-dialog data-type="toc" data-title="TOC.HEADER">
+					<evt-tabs-container ng-if="getSecondaryContentOpened() === 'toc'"
+						data-type="toc"
+						data-orientation="vertical">
+					</evt-tabs-container>
+				</evt-dialog>
+				<evt-dialog data-type="entitiesList" data-title="DIALOGS.NAMED_ENTITIES"
+					ng-if="getProperty('namedEntitiesLists')">
+					<evt-tabs-container ng-if="getSecondaryContentOpened() === 'entitiesList'"
+						data-type="entitiesList"
+						data-orientation="vertical">
+					</evt-tabs-container>
+				</evt-dialog>
+				<evt-dialog data-type="globalInfo" data-title="DIALOGS.PROJECT_INFO">
+					<evt-tabs-container ng-if="getSecondaryContentOpened() === 'globalInfo'"
+						data-type="projectInfo"
+						data-orientation="vertical">
+					</evt-tabs-container>
+				</evt-dialog>
+				<evt-dialog data-type="witnessesList" data-title="DIALOGS.WITNESSES">
+					<div compile="getWitnessesListFormatted()"></div>
+				</evt-dialog>
+				<evt-dialog data-type="bookmark" data-title="DIALOGS.BOOKMARK">
+					<div compile="getBookmark()"></div>
+				</evt-dialog>
+			</section>
+			<section id="global-container" ng-switch="getCurrentViewMode()" ng-if="!isLoading()">
+				<!-- <div id="left-nav"><span><i class="fa fa-chevron-circle-left"></i></span></div> -->
+            <!-- 3DHOP -->
+            <section id="main-container" class="viewMode" ng-switch-when="tdhop">
+               <box data-type="tdhop"
+                  id="mainTdhop">
+                  <!--div tdhop data-canvas="draw-canvas" style="height: 100%"></div-->
+               </box>
+               <box data-type="text"
+                  data-edition="{{getCurrentEdition()}}"
+                  id="mainText">
+         		</box>
+					<!--
+                    <box data-type="generic" id="generic">
+                        <div>Eventuale testo affiancato</div>
+                    </box>-->
+                </section>
+            <!-- READING TEXT -->
+				<section id="main-container" class="viewMode" ng-switch-when="readingTxt">
+					<box data-type="text"
+						 data-edition="{{getCurrentEdition()}}"
+						 id="mainText"
+						 ng-class="{'centered': !isPinnedAppBoardOpened(),
+									'half-centered': isPinnedAppBoardOpened(),
+									'half-left': isApparatusBoxOpen(),
+									'smaller-left': isApparatusBoxOpen() && isPinnedAppBoardOpened() }"></box>
+					<button-switch
+							title="BUTTONS.SHOW_PINNED_ENTRIES"
+							data-label=""
+							data-icon="pin"
+							data-type="togglePinned"
+							ng-if="::isToolAvailable('toolPinAppEntries')"
+							class="togglePinned_btn"
+							ng-class="{'centered': !isPinnedAppBoardOpened() && !isApparatusBoxOpen(),
+									   'half-centered': isPinnedAppBoardOpened() && !isApparatusBoxOpen(),
+									   'left': isPinnedAppBoardOpened() && isApparatusBoxOpen(),
+									   'half-left': !isPinnedAppBoardOpened() && isApparatusBoxOpen()}">
+					</button-switch>
 
-    <!-- Navigation -->
-    <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top sticky-navigation" style="background-color: #DC143C;">
-        <a class="navbar-brand" href="index.html">VaSto</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"  aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link page-scroll active" href="index.html#Home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.html#Progetto">Il Progetto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.html#EVT">EVT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.html#doc">Documentazione</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <section class="page-section" id="Home">
-        <div id="Home" class="page">
-           
-                <img class="d-block w-100" src="images/history.jpg">
-                <div class="Home text-center">
-                    <h1>Welcome to VASTO</h1>
-                    <h3 class="maiusc" style="font-variant: small-caps !important;">VArchi, STOria fiorentina<br>
-                        EDIZIONE DIGITALE</h3>
-                    <a class="btn btn-light btn-lg" href="#EVT" style="color: #DC143C; background-color: white; border-color: #DC143C; opacity: 0.9; border: none;">Discover</a>
-                </div>
-           
-        </div>
+					<box data-type="pinnedBoard"
+						ng-if="!isLoading() && isPinnedAppBoardOpened()"
+						ng-class="{ 'pin-centered': isPinnedAppBoardOpened() && isApparatusBoxOpen()}">
+						 <span ng-if="evtPinnedElements.getPinned().length <= 0" class="italic">
+							{{ 'MESSAGES.PINNED_ELEMENTS_SHOWN_HERE' | translate }}
+						</span>
+						<div ng-if="evtPinnedElements.getVisibleTypes().length <= 0 && evtPinnedElements.getPinned().length > 0 && entry !== ''"
+							 ng-repeat="entry in evtPinnedElements.getPinned()">
 
-     </section>
-      
+							<evt-critical-apparatus-entry
+								ng-if="::evtPinnedElements.getPinnedElementType(entry) === 'criticalApparatusEntry'"
+								class="in_critical_apparatus active"
+								ng-click="updateCurrentAppEntry(entry);"
+								data-type="pinned"
+								data-app-id="{{::entry}}"></evt-critical-apparatus-entry>
 
-</div>
-<!--- End Home Section -->
+							<evt-named-entity
+								ng-if="::evtPinnedElements.getPinnedElementType(entry).indexOf('namedEntity') >= 0"
+								data-location="pinned"
+								data-entity-id="{{::entry}}"></evt-named-entity>
+						</div>
 
-<!--- Start Overview Section -->
-<section class="page-section" id="Progetto" style="height: 25em;">
+						<div ng-if="evtPinnedElements.getVisibleTypes().length > 0"
+							 ng-repeat="type in evtPinnedElements.getVisibleTypes()">
+								<span class="pinnedTypeTitle">{{ ::type | camelToSpaces | underscoresToSpaces | capitalize  }}</span><!-- TODO: Add translation -->
+								<div ng-repeat="entry in evtPinnedElements.getPinnedByType(type)">
+									<evt-critical-apparatus-entry
+										ng-if="::type === 'criticalApparatusEntry'"
+										class="in_critical_apparatus"
+										ng-class="{'active': getCurrentAppEntry() === entry}"
+										ng-click="updateCurrentAppEntry(entry);"
+										data-type="pinned"
+										data-app-id="{{::entry}}"></evt-critical-apparatus-entry>
 
-    <div class="col-12 narrow text-center">
-        <h1>Il Progetto</h1>
-        <p class="d">Il progetto VaSto, realizzato nell’ambito del /DH.arc dell’Università di Bologna, costituisce il risultato della collaborazione tra Università di Bologna, Concordia University di Montreal e CarisBo, e presenta, in un’ambiente digitale interattivo, l’edizione digitale genetica e annotata della Storia fiorentina di Benedetto Varchi (1503-1565).</p>
-        <a class="btn btn-secondary btn-md" href="Documentation.html">Guida all'<br>edizione filologica</a>
-    </div>
-</section>
-<section class="page-section" id="EVT">
-<div  class="offset">
-    <div class="col-12 narrow text-center">
-        <h1>L'Edizione EVT2</h1>
-        <div class="container">
-        <img id="evt" src="images/evt.JPG"/>
-        <a id="center" class="btn btn-secondary btn-md" href="evt2beta2/index.html" target="_blank">EVT</a>
-        </div> 
-        <p>Scopri la nostra Edizione Digitale della <em>Storia Fiorentina</em> di Benedetto Varchi.</p>
-        <p class="red">Edizione Digitale della <em>Storia fiorentina</em> di <a href="http://www.treccani.it/enciclopedia/benedetto-varchi/" target="_blank">Benedetto Varchi</a>, opera rimasta incompiuta alla morte dell’autore nel 1565
-            e pubblicata solo nel 1721 in forma censurata: un testo cruciale per comprendere l’interazione tra potere e cultura nell’Italia
-            del pieno Rinascimento.  Il progetto intende rappresentare, in una concreta ambientazione digitale, luoghi,
-            fatti, protagonisti, della Firenze rinascimentale dal 1527 al 1530, di cui questo testo offre uno straordinario e dettagliato racconto.</p>
-        <p class="red">L'Edizione è statasviluppata attraverso <a href="http://evt.labcd.unipi.it/" target="_blank">EVT (Edition Visualisation Technology) versione 2 (o beta 1)</a> e momentaneamente comprende solo la versione Diplomatica del testo.</p>
-        
-    </div>
-</div>
-</section>
+									<evt-named-entity
+										ng-if="::type.indexOf('namedEntity') >= 0"
+										data-location="pinned"
+										data-entity-id="{{::entry}}"></evt-named-entity>
+								</div>
+						</div>
+					</box>
+					<box
+						ng-if="isApparatusBoxOpen()"
+						data-type="empty" id="empty"
+						ng-class="{ 'smaller' : isPinnedAppBoardOpened() && isApparatusBoxOpen() }">
+						<evt-apparatuses data-current-apparatus="{{vm.getCurrentApparatus()}}"></evt-apparatuses>
+					</box>
+				</section>
 
-<!--- End Overview Section -->
-<section class="page-section" id="doc" style="height: 25em;">
+				<!-- VERSIONS -->
+				<section id="main-container" class="viewMode" ng-switch-when="versions">
+					<box data-type="text"
+						 id="mainText"
+						 ng-if="existCriticalText() && (getCurrentEdition() === 'critical')"
+						 data-edition="{{getCurrentEdition()}}"></box>
 
-    <div class="col-12 narrow text-center">
-        <h1>Documentazione</h1>
-        <p class="d">Se vuoi maggiori informazioni riguardanti lo sviluppo tecnico del progetto, gli approcci computazionali e i materiali osserva il lavoro svolto nella Repository di Github e controlla la Documentazione sul Progetto disponibile qui sotto.</p>
-        <a class="btn btn-secondary btn-md" href="https://github.com/ValentinaPasqual/ProgettoVasto" target="_blank">Documentazione <br> tecnica</a>
+					<div class="compareVer_box" id="compareVer_box"
+						 ng-class="{'span9of18': (existCriticalText() && getCurrentVersions().length <= 1),
+									'span18of18': !existCriticalText()}">
+						<box data-type="version"
+							 data-version="{{version}}"
+							 ng-repeat="version in getCurrentVersions()"></box>
+					</div>
 
-    </div>
-</section>
+					<button-switch
+						ng-if="getAllVersionsNumber() > 2"
+						title="BUTTONS.ADD_VERSION"
+						data-label="Add Version"
+						data-icon="add"
+						data-type="addVer"
+						class="compareVer_box--buttonAddVer inverted-color verSelector"
+						ng-class="{'left75': (!existCriticalText() && getCurrentVersions().length == 1) || (existCriticalText() && getCurrentVersions().length == 0),
+								   'floatRight': (!existCriticalText() && getCurrentVersions().length > 1) || (existCriticalText() && getCurrentVersions().length > 0)}">
+					</button-switch>
 
+					<div
+						ng-if="isVersionSelectorActive()"
+						class="availableVersions-selector versionSelector"
+						ng-class="{'left75': (!existCriticalText() && getCurrentVersions().length == 1) || (existCriticalText() && getCurrentVersions().length == 0)}">
+						<span
+							ng-click="addVersion(version)"
+							ng-repeat="version in getAvailableVersions()"
+							compile="getVersion(version)"></span>
+					</div>
+				</section>
 
-<!--- Start Contact Section -->
-<section class="foot">
-    <footer>
-        <div class="row justify-content-center pt-1" style="background-color:#DC143C;">
+				<!-- COLLAZIONE -->
+				<section id="main-container" class="viewMode" ng-switch-when="collation">
+					<box data-type="text"
+						 data-edition="{{getCurrentEdition()}}"
+						 id="mainText"
+						 ng-if="existCriticalText()"></box>
+					<!-- <div
+						compile="printCriticalApparatus()"
+						style="position: absolute; background: rgb(255, 255, 255) none repeat scroll 0% 0%;"> -->
 
-            <div class="col-md-5 text-center" style="font-size:80%">
-                <h3>Digital Humanities Advanced Research Centre (/DH.arc)</h3>
-                <p>Questo progetto e l'edizione digitale sono parte delle attività di ricerca del Digital Humanities Advanced Research Centre <a href="https://centri.unibo.it/dharc/en/research/projects-at-dh-arc">(/DH.arc)</a></p>
-                <h3>Contatti</h3>
-                <p>Università di Bologna<br>
-                    Dipartimento di Filologia Classica e Italianistica <a href="https://ficlit.unibo.it/it">(FICLIT)</a><br>
-                    Via Zamboni 32<br>
-                    40126 Bologna, Italia</p>
-                <p><strong>Email:</strong> <a class="email-link" href="mailto:dharc@live.unibo.it">dharc@live.unibo.it</a></p>
-                <img src="images/unibologo.svg" style="width:15%; height:auto; margin-bottom:1%"/>
+					<div class="compareWits_box" id="compareWits_box"
+						 ng-class="{'span9of18': (existCriticalText() && getCurrentWitnesses().length <= 1),
+									'span18of18': !existCriticalText()}">
+						<box data-type="witness"
+							 data-witness="{{witness}}"
+							 ng-if="witness"
+							 data-witpage="{{getCurrentWitnessPage(witness)}}"
+							 ng-repeat="witness in getCurrentWitnesses()" ></box>
+					</div>
+					<button-switch
+							title="BUTTONS.ADD_WITNESS"
+							data-label="BUTTONS.ADD_WITNESS"
+							data-icon="add"
+							data-type="addWit"
+							class="compareWits_box--buttonAddWit inverted-color witnessSelector"
+							ng-class="{'left75': (!existCriticalText() && getCurrentWitnesses().length == 1) || (existCriticalText() && getCurrentWitnesses().length == 0),
+										'floatRight': (!existCriticalText() && getCurrentWitnesses().length > 1) || (existCriticalText() && getCurrentWitnesses().length > 0)}">
+					</button-switch>
 
-                <p style="font-size:80%"><a href="https://upload.wikimedia.org/wikipedia/commons/archive/b/ba/20170728095613%21Nuremberg_chronicles_-_FLORENCIA.png">L'immagine 1</a> <a href="https://commons.wikimedia.org/wiki/File:Nuremberg_chronicles_-_FLORENCIA.png#filehistory">(versione 21:46, 20/06/2006)</a> utilizzata nella homepage del sito è una scannerizzazione di "Schedelsche Weltchronik" (1493) dal libro originale di Michel Wolgemut, Wilhelm Pleydenwurff (Testo: <a href="https://commons.wikimedia.org/wiki/Hartmann_Schedel">Hartmann Schedel)</a>. Questa immagine è protetta dalla licenza consuntabile al seguente <a href="https://commons.wikimedia.org/wiki/File:Nuremberg_chronicles_-_FLORENCIA.png">link.</a></p>
+					<div
+						ng-if="isWitnessSelectorActive()"
+						class="availableWitnesses-selector witnessSelector"
+						ng-class="{'left75': (!existCriticalText() && getCurrentWitnesses().length == 1) || (existCriticalText() && getCurrentWitnesses().length == 0)}">
+						<span
+							ng-click="addWitness(witness)"
+							ng-if="::witness"
+							ng-repeat="witness in getAvailableWitnesses() track by $index">{{::getWitness(witness)}}</span>
+					</div>
+				</section>
+				<!-- TXT TXT -->
+				<section id="main-container" class="viewMode" ng-switch-when="txtTxt">
+					<box data-type="text"
+						 data-edition="{{getCurrentEdition()}}"
+						 id="mainText1"></box>
+               <box data-type="text" data-subtype="comparing" ng-show="getCurrentComparingEdition() !== undefined"
+                    data-edition="{{getCurrentComparingEdition()}}"
+                    id="mainText2"></box>
+				</section>
+				<!-- IMG TXT -->
+				<section id="main-container" class="viewMode" ng-switch-when="imgTxt">
+					<box data-type="image"
+						 id="mainImage"></box>
+					<box data-type="text"
+						 data-edition="{{getCurrentEdition()}}"
+						 id="mainText"></box>
+				</section>
+				<!-- SRC TXT -->
+				<section id="main-container" class="viewMode" ng-switch-when="srcTxt">
+					<box data-type="text"
+						 data-edition="{{getCurrentEdition()}}"
+						 id="mainText"
+						 ng-show="existCriticalText()"></box>
+					<box data-type="source"
+						 ng-if="getCurrentSourceText()"
+						 data-source={{getCurrentSourceText()}}
+						 id="srcText"></box>
+				</section>
+				<!-- LOADING... -->
+				<section id="main-container" class="viewMode" ng-switch-default>
+					<div class="loading"><i class="fa fa-spinner fa-pulse loader"></i></div>
+				</section>
+				<!-- <div id="right-nav"><span><i class="fa fa-chevron-circle-right"></i></span></div> -->
+            <!-- INDEXING IN PROGRESS -->
+            <section id="main-container"
+               class="viewMode indexingInProgress"
+               ng-show="getState('indexingInProgress')">
+               <div class="loading"><i class="fa fa-spinner fa-pulse loader"></i></div>
+            </section>
+			</section>
+			<section class="global-msg-container"
+					ng-if="getErrorMsg() !== undefined && getErrorMsg().code === '404' && !isLoading()">
+				<div class="global-msg">
+					<h1>EVT Viewer</h1>
+					<h2>{{ 'ERROR' | translate }} {{getErrorMsg().code}} - {{getErrorMsg().title | translate }}</h2>
+					<p>{{ getErrorMsg().msg | translate }}</p>
+					<p>{{ getErrorMsg().info | translate }}</p>
+				</div>
+			</section>
+         <section class="popup-container thumb_cont" ng-if="isThumbNailsOpened()">
+            <figure class="thumbnail thumb_single" data-value="{{ thumb.value }}" data-src="{{ thumb.image }}" ng-click="goToPageFromThumb(thumb)"
+                    ng-repeat="thumb in getThumbnails() track by $index" ng-class="{'active': getCurrentPage() === thumb.value}"> <!-- TEMP -->
+               <img class="thumb_single_img" ng-src="{{ thumb.image }}" onerror="this.setAttribute('src', 'images/empty-image.jpg')"/>
+               <figcaption>{{ thumb.label }}</figcaption>
+            </figure>
+         </section>
+         <section class="popup-container" ng-hide="!isVisCollOpened()">
+            <div>
+               <evt-viscoll></evt-viscoll>
             </div>
+         </section>
 
-            <hr class="socket">
-            <p>&copy;2020 <a href="https://centri.unibo.it/dharc/en">/DH.arc</a>- VASTO | DOI:    | <a href="credits.html">Credits</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.it"><img alt="Licenza Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" /></a><br />
-            </p>
+         <button-switch ng-if="getProperty('enableNavBar') && !isThumbNailsOpened() && !isVisCollOpened()"
+                        ng-class="{'navBar-opener': isNavBarOpened(), 'navBar-closer': !isNavBarOpened()}"
+                        title="BUTTONS.TOGGLE_NAVBAR"
+                        data-icon="{{isNavBarOpened() ? 'hide-bar' : 'show-bar'}}"
+                        data-type="toggler" on-btn-clicked="toggleNavBar()"></button-switch>
+         <evt-navbar ng-hide="!isNavBarOpened()"></evt-navbar>
+		</div>
 
-        </div> <!-- End of Row -->
-    </footer>
-</section>
+		<section class="global-loading-container" ng-show="isLoading()">
+			<!-- LOADING... -->
+			<div class="loading"><i class="fa fa-spinner fa-pulse loader"></i></div>
+		</section>
+		<evt-dialog
+			data-id="errorMsg"
+			data-type="error"
+			data-title="ERROR"></evt-dialog>
+		<footer>Footer</footer>
 
-<!--- End Contact Section -->
+		<!-- TODO: change route system -->
+		<!-- <div ng-view=""></div> -->
 
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+		<!--
+		<script>
+		   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<!--- Script Source Files -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		   ga('create', 'UA-XXXXX-X');
+		   ga('send', 'pageview');
+		</script>
+		-->
 
-<!--- End of Script Source Files -->
-</body>
+		<!--[if lt IE 9]>
+		<script src="scripts/oldieshim.023e8678.js"></script>
+		<![endif]-->
+
+      <script src="scripts/lib.307bc6f6.js"></script>
+		<script src="scripts/evtviewer.6feb4bea.js"></script>
+	</body>
 </html>
