@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>A machine-readable version for testing purposes of Aristotle's Metaphysics, chapter 4 section 1003a</title>
+        
+      </titleStmt>        
+      <publicationStmt>
+        <p>This document is meant only for testing purposes inside of the EVT demo and the EVT release package.</p>
+        <p>Do not copy nor publish.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          English translation of Aristotle's Metaphysics chapter 4, section 1003a, as made available on
+          <ref target="http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0052%3Abook%3D4%3Asection%3D1003a">Perseus</ref>,
+          under a Creative Commons Attribution-ShareAlike 3.0 United States License.
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+<text>
+<body>
+<div1 n="4" type="Book" org="uniform" sample="complete">
+<p>
+<milestone n="1003a" unit="section"/>
+<milestone n="21" ed="Bekker" unit="line"/>
+<milestone ed="P" unit="para"/>
+<milestone n="1.1" ed="P" unit="chap"/>
+There is a science which studies Being
+<hi rend="Italic">qua</hi>
+Being, and the properties inherent in it in virtue of its own nature. <seg xml:id="seg_1" type="srcTxtLink">This science is not the same as any of the so-called particular sciences, for none of the others contemplates Being generally</seg>
+<hi rend="Italic">qua</hi>
+Being; they divide off some portion of it and study the attribute of this portion, as do for example the mathematical sciences.
+<milestone n="1.2" ed="P" unit="chap"/>
+But since it is for the first principles and the most ultimate causes that we are searching, clearly they must belong to something in virtue of its own nature. Hence if these principles were investigated by those also who investigated the elements of existing things, the elements must be elements of Being not incidentally, but
+<hi rend="Italic">qua</hi>
+Being. Therefore it is of Being
+<hi rend="Italic">qua</hi>
+Being that we too must grasp the first causes.
+<milestone ed="P" unit="para"/>
+<milestone n="2.1" ed="P" unit="chap"/>
+The term "being" is used in various senses, but with reference to one central idea and one definite characteristic, and not as merely a common epithet. Thus as the term "healthy" always relates to health (either as preserving it or as producing it or as indicating it or as receptive of it),
+</p>
+</div1>
+</body>
+</text>
+</TEI>
