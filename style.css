@@ -369,9 +369,9 @@ hr.socket {
 #Documentation p {
     font-weight:normal
 }
-#Documentation ul{
+/* #Documentation ul{
     list-style-type: none;
-}
+}  */
 #Documentation ol{
     list-style-type: upper-roman;
     padding: 5px;

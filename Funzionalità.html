@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="style.css">
     <!--    <link rel="stylesheet" href="css/fixed.css">-->
     <style>
+      
+      @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
         .navbar {
             background-color: #DC143C !important;
             opacity: 0.9 !important;
@@ -19,6 +21,53 @@
             opacity: 0.9 !important;
             border-color: #DC143C !important ;
         }
+
+        body {
+  overflow-x: hidden;
+}
+
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+  font-family: 'Lato', sans-serif !Important;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
     </style>
 </head>
 <body>
@@ -33,7 +82,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html#Home">Home</a>
+                            <a class="nav-link" href="index.html#Home">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#Progetto">Il Progetto</a>
@@ -43,20 +92,156 @@
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link page-scroll" href="index.html#doc">Documentazione</a>
+                            <a class="nav-link page-scroll active" href="index.html#doc">Documentazione</a>
                         </li>
                     </ul>
                 </div>
             </nav>
+
     <section class="Documentation" id="Documentation">
-    <div class="col-12 narrow">
 
-        <h1 id="informazioni-e-specifiche-tecniche-della-piattaforma-vasto">Introduzione filologica all'edizione digitale VaSto</h1>
-        <h2 id="che-cos-la-piattaforma-vasto-">Il progetto</h2>
 
-        <p></p>
-    </div>
+        <div class="d-flex" id="wrapper">
+
+            <!-- Sidebar -->
+          <div class="border-right" id="sidebar-wrapper">
+              <div class="sidebar-heading pt-5"><b>Funzionalità</b></div>
+              <div class="list-group list-group-flush">
+                <a href="#l-edizione-digitale-vasto-funzionalit-e-visualizzazioni" class="list-group-item list-group-item-action ">L'edizione digitale: le visualizzazioni</a>
+                <a href="#l-edizione-digitale-vasto-fuzionalit-e-limitazioni" class="list-group-item list-group-item-action ">L'edizione digitale: le limitazioni</a>
+                <a href="#funzionalit-trasversali-alle-edizioni" class="list-group-item list-group-item-action">Funzionalità trasversali alle edizioni</a>
+                <a href="#funzionalit-dell-edizione-diplomatica" class="list-group-item list-group-item-action">Funzionalità dell'edizione diplomatica</a>
+                <a href="#limitazioni-significative-dell-edizione-critica-vasto" class="list-group-item list-group-item-action">Funzionalità dell'edizione critica</a>
+                <a href="#lista-dei-tag-xml-tei-utilizzati-per-l-encoding-dell-edizione" class="list-group-item list-group-item-action">Lista dei tag XML/TEI utilizzati</a>
+
+              </div>
+            </div>
+            <!-- /#sidebar-wrapper -->
+        
+       
+        
+        
+            <!-- Page Content -->
+            <div id="page-content-wrapper" class="m-5">
+        
+              <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+        
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav> -->
+        
+              <div class="container-fluid">
+                <h2 id="l-edizione-digitale-vasto-fuzionalit-e-visualizzazioni">L&#39;edizione Digitale VaSto: fuzionalità e visualizzazioni</h2>
+                <p>Come descritto in precedenza, l&#39;edizione digitale è composta dall&#39;edizione diplomatica e critica insieme ad alcune funzionalità trasversali alle edizioni (o &quot;knowledge site&quot;). </p>
+               
+                <h2 id="l-edizione-digitale-vasto-funzionalit-e-limitazioni">L&#39;edizione digitale VaSto: funzionalità e limitazioni</h2>
+                <p>L&#39;edizione digitale VaSto presenta la &quot;Storia Fiorentina&quot; di Varchi, in particolare il suo testimone RC4. Allo stato attuale la piattaforma presenta il proemio del Primo Libro (versione Pilot).
+                  L&#39;edizione digitale è stata implementata su EVT2 - beta 2, customizzando quest&#39;ultimo nei casi di necessità specifici riportati nei prossimi paragrafi.<br>EVT-2 permette di caricare facilmente un file in formato XML (il quale segue l’encoding XML-TEI) contente l&#39;encoding dell&#39;edizione. Il documento XML che contiene il testo marcato è unico e contiene tutti gli elementi dell&#39;edizione critica e diplomatica (opportunamente abilitati e disabilitati in un file CSS a seconda delle esigenze di visualizzazione).</p>
+                <p>La customizzazione della Piattaforma VaSto rispetto il pacchetto EVT-2 avviene attraverso la modifica di tre file: </p>
+                <ul>
+                  <li>il file XML contenente il testo marcato secondo le guidelines XML-TEI (in questo specifico caso <code>data/pilot_proemio.xml</code>).</li>
+                  <li>il file json di configuarazione della visualizzazione (<code>config/config.json</code>).</li>
+                  <li>il file CSS messo a disposizione da EVT-2 per facilitare la customizzazione della visualizzazione (<code>config/custom_style.css</code>).</li>
+                </ul>
+                <h2 id="funzionalit-trasversali-alle-edizioni">Funzionalità trasversali alle edizioni</h2>
+                <p>Con &quot;funzionalità trasversali alle edizioni&quot; (o &quot;knowledge site&quot;) si intendono tutte quelle funzionalità consultabili nel sistema a prescidere dall&#39; edizione (diplomatica o critica) sul quale l&#39;utente si trova. Le funzionalità sono le seguenti:</p>
+                <ul>
+                  <li>Nella presente edizione vengono attivate solo le visualizzazioni &quot;Testo di Lettura&quot; e &quot;Immagine Testo&quot;</li>
+                  <li>Tutte le scelte stilistiche usate per indicare i fenomeni testuali e le pelculiarità sopracitate sono indicizzati nella sezione info in alto.</li>
+                  <li>Possibilità di scaricare il file XML che descrive l&#39;edizione (bottone in alto a destra)</li>
+                  <li>Metadati descrittivi (bottone in alto a destra)</li>
+                  <li>Considerando la natura annalistica della &quot;Storia Fiorentina&quot;, testo è ricco di citazioni di luoghi, persone e date, che vengono marcate e visualizzate grazie al menù in basso (<code>NamedEnititySelection</code>) ed inoltre visualizzate in un indice generato automaticamente (dal menù in alto a destra - &quot;Apri Liste&quot;).</li>
+                </ul>
+
+                <h2 id="funzionalit-dell-edizione-diplomatica">Funzionalità dell&#39;Edizione Diplomatica</h2>
+                <p>L’edizione diplomatica si impegna a visualizzare il testo nel modo più simile possibile alle immagini proposte.
+                  In particolare vengono annotati e visualizzati: </p>
+                <ul>
+                  <li>linebreak.</li>
+                  <li>le aggiunte a margine, in riga, o a piè di pagina. Inoltre nel testo vi è un’ancora (solitamente <code>^</code>) che, se selezionata dall&#39;utente, permette di illuminare l’addizione corrispondente. </li>
+                  <li>Al centro della presente edizione diplomatica vi è la coesistenza di quattro diverse mani (cassature e addizioni) sul testimone RC4. L’edizione vuole quindi visualizzare in modo efficacie tale peculiarità. Le cassature sono rappresentate con  lo stile &quot;line-trough&quot; (scelta tipografica con linea colorata che passa al centro del testo) del colore corrispondente alla mano che l&#39;ha creata. Allo stesso modo le aggiunte vengono segnalate con il colore del testo corrispondente alla mano che l&#39;ha prodotta. La legenda relativa a questo aspetto è consultable cliccando sul bottone &quot;info&quot;.</li>
+                  <li>Nella diplomatica le abbreviazioni vengono sciolte e segnalate in corsivo e grassetto. Tale analisi è stata curata da Dario Brancato. </li>
+                  <li>Nella visualizzazione &quot;Immagine-Testo&quot; è presentata la corrispondenza tra testo diplomatico e facsimile. </li>
+                </ul>
+                <h3 id="funzionalit-aggiuntive-rispetto-ad-evt2-nell-edizione-diplomatica-vasto-">Funzionalità aggiuntive rispetto ad EVT2 nell&#39;Edizione Diplomatica Vasto:</h3>
+                <ul>
+                  <li>EVT2 non supporta alcuna visualizzazione dei marginalia del manoscritto. Le aggiunge a margine o a piè di pagina sono state customizzate specificamente per questa edizione. Lo stesso è stato fatto per le aggiunte in alto o in basso all&#39;interno delle righe del testo (anche chiamate addizioni &quot;in line&quot;). </li>
+                  <li>EVT2 non si occupa delle distinzioni delle mani nell&#39;edizione diplomatica. I colori che segnalano le mani sono stati customizzati per questa edizione attraverso il file di customizzazione (CSS).   </li>
+                </ul>
+                <h2 id="funzionalit-dell-edizione-critica">Funzionalità dell&#39;Edizione Critica</h2>
+                <p>L&#39;edizione critica presenta il testo RC4, dopo la redazione a cura di Dario Brancato, ma scindendolo in due testimoni fittizi: RC4 - il testo contenente l&#39;ultima volontà dell&#39;autore ed RC4c - il testo contenente le cassature postume a cura di Baldini.  </p>
+                <ul>
+                  <li>Normalizzazioni del testo originale (regolarizzazioni, correzioni senza alcun riferimento tipografico).</li>
+                  <li>Abbreviazioni sciolte senza alcun riferimento tipografico.</li>
+                  <li>Il testo è in versione scroll-down. La divisione delle pagine è segnalata inline all&#39;interno del testo (ad esempio con la dicitura [12v]).</li>
+                  <li>Le Note a margine e a piè di pagina sono rappresentate come parte integrante del testo senza alcuna distinzione tipografica ed appropriatamente inserite in esso. </li>
+                  <li>Le segnalazioni tipografiche delle mani sono eliminate </li>
+                  <li>Segni particolari (ad esempio <code>^</code> oppure <code>-</code>) sono normalizzati e/o eliminati.</li>
+                  <li>Il testo è ottimizzato per la lettura e la comprensione testuale.</li>
+                  <li>La visualizzazione più indicata al confronto tra RC4 ed RC4c è la funzionalità &quot;Collazione&quot;.</li>
+                </ul>
+                <h3 id="limitazioni-significative-dell-edizione-critica-vasto">Limitazioni significative dell&#39;Edizione Critica Vasto</h3>
+                <ul>
+                  <li>In tutte le visualizzazioni del testo critico abbiamo aggiunto dei piccoli riferimenti alla divisione in pagine (per esempio [8v]) marcati come <code>&lt;lb n=&quot;8v&quot;&gt;</code> nel testo. </li>
+                  <li>Nella visualizzazione &quot;Immagine-Testo&quot;. Il carosello di immagini (posizionato a sinistra nella visualizzazioni &quot;Immagine Testo&quot;) non segue lo scroll-down del testo a destra. Non vi è quindi nella visualizzazione una corrispondenza dinamica tra scroll-down del testo critico e scorrimento delle immagini nel carosello. E&#39; comunque ancora possibile un confronto manuale immagine-testo grazie all&#39;indicazione nel testo della pagina del manoscritto (ad esempio &quot;[8v]&quot;) su cui l&#39;utente si trova. </li>
+                  <li>La scelta di creare un testimone &quot;fittizio&quot; (RC4c) è stata dettata dal fatto che EVT2 richieda l&#39;uso del tag <code>&lt;app&gt;</code> per abilitare la funzionalità &quot;Collazione&quot;. </li>
+                  <li>La prima scelta visuale per comparare il due testi è stata quella di utilizzare <code>&lt;app&gt;&lt;rdgGrp&gt;&lt;rdg wit=&quot;#RC4&quot;&gt;&lt;/rdg&gt;&lt;rdg wit=&quot;RC4c&quot;&gt;&lt;/rdg&gt;&lt;/rdgGrp&gt;&lt;/app&gt;</code>. Questo schema di encoding, supportato da EVT2, presenta ancora delle limitazioni nella visualizzazione (ad esempio qualsiasi tag inserito all&#39;interno di <code>&lt;rdg&gt;</code> non viene visualizzato). Abbiamo dunque scelto di utilizzare invece lo schema XML-TEI <code>&lt;app&gt;&lt;lem wit=&quot;#RC4&quot;&gt;&lt;/lem&gt;&lt;rdg wit=&quot;RC4c&quot;&gt;&lt;/rdg&gt;&lt;/app&gt;</code>. Nonostante questo schema presenti meno limitazioni, notiamo che gli spazi non vengono ben rispettati. Al momento attendiamo la release ufficiale di EVT2 beta2 per risolvere queste imperfezioni. </li>
+                </ul>
+                <h2 id="lista-dei-tag-xml-tei-utilizzati-per-l-encoding-dell-edizione">Lista dei tag XML-TEI utilizzati per l&#39;encoding dell&#39;edizione</h2>
+                <p>Il progetto Vasto al momento, come già detto in precedenza, è da considerasi una versione pilot che necessita di essere arricchita con altri materiali. Allo scopo di ampliare il progetto, di seguito rilasciamo una legenda di tag che sono stati utilizzati nel file <code>xml pilot_proemio.xml</code> e che sono stati appostiamente customizzati per rispettare le esigenze del testimone. In particolare presentiamo qui di seguito la lista di tag presenti nel <code>&lt;body&gt;</code> del file XML. </p>
+                <ul>
+                  <li>titolo <code>&lt;head&gt;</code></li>
+                  <li>divisione pagine <code>&lt;pb&gt; @n @xml:id</code> con <code>&lt;lb @n&gt;</code> (l&#39;ultimo per indicare la divisione in pagine dell&#39;edizione critica).</li>
+                  <li>divisione per libri/sezioni <code>&lt;div&gt;</code> attrib <code>@type @xml:id</code></li>
+                  <li>divisione righe <code>&lt;lb&gt;</code></li>
+                  <li>integrazione abbreviazioni manoscritto <code>&lt;emph&gt; @rend</code></li>
+                  <li>aggiunte <code>&lt;add&gt; @hand @place @n</code></li>
+                  <li>cassature <code>&lt;del&gt; @hand</code> </li>
+                  <li>normalizzazioni <code>&lt;choice&gt;&lt;sic&gt;&lt;corr&gt;</code></li>
+                  <li>regolarizzazione diplomatica-critica: <code>&lt;span&gt;&lt;choice&gt; &lt;orig&gt;&lt;reg&gt;</code></li>
+                  <li><p>collegamento tra ancora nel testo e la nota a margine corrispondente <code>&lt;span n=&quot;x&quot;&gt;&lt;/span&gt;&lt;span @place n=&quot;x&quot;&gt;</code></p>
+                  </li>
+                  <li><p>nomi di persona <code>&lt;persName&gt; @ref</code></p>
+                  </li>
+                  <li>nomi di luoghi <code>&lt;placeName&gt; @ref</code></li>
+                  <li><p>date <code>&lt;date&gt;  @when</code></p>
+                  </li>
+                  <li><p><code>&lt;app&gt;&lt;lem @wit @hand&gt;&lt;/lem&gt;&lt;rdg @cause @wit&quot;&gt; &lt;/rdg&gt;&lt;/app&gt;</code></p>
+                  </li>
+                </ul>
+                <p>Per ulteriori esempi ed informazioni consulta il file <code>data/pilot_proemio.xml</code></p>
+                
+              </div>
+            </div>
+            <!-- /#page-content-wrapper -->
+        </div>
+
     </section>
+    </div>
 
 <!--- Start Contact Section -->
 <section class="foot">
@@ -72,7 +257,7 @@
                     Via Zamboni 32<br>
                     40126 Bologna, Italia</p>
                 <p><strong>Email:</strong> <a class="email-link" href="mailto:dharc@live.unibo.it">dharc@live.unibo.it</a></p>
-                <img src="images/unibologo.svg" style="width:15%; height:auto; margin-bottom:1%"/>
+                <img src="images/unibologo.svg" alt="unibo logo" style="width:15%; height:auto; margin-bottom:1%"/>
 
                 <p style="font-size:80%"><a href="https://upload.wikimedia.org/wikipedia/commons/archive/b/ba/20170728095613%21Nuremberg_chronicles_-_FLORENCIA.png">L'immagine 1</a> <a href="https://commons.wikimedia.org/wiki/File:Nuremberg_chronicles_-_FLORENCIA.png#filehistory">(versione 21:46, 20/06/2006)</a> utilizzata nella homepage del sito è una scannerizzazione di "Schedelsche Weltchronik" (1493) dal libro originale di Michel Wolgemut, Wilhelm Pleydenwurff (Testo: <a href="https://commons.wikimedia.org/wiki/Hartmann_Schedel">Hartmann Schedel)</a>. Questa immagine è protetta dalla licenza consuntabile al seguente <a href="https://commons.wikimedia.org/wiki/File:Nuremberg_chronicles_-_FLORENCIA.png">link.</a></p>
             </div>
@@ -82,6 +267,7 @@
             </p>
 
         </div> <!-- End of Row -->
+        
     </footer>
 </section>
  
