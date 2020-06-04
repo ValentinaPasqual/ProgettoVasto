@@ -1,4 +1,4 @@
-## L'edizione digitale Vasto: funzionalità e limitazioni 
+## L'edizione digitale VaSto: funzionalità e limitazioni 
 
 L'edizione digitale VaSto presenta la "Storia Fiorentina" di Varchi, in particolare il suo testimone RC4. Allo stato attuale la piattaforma presenta il proemio del Primo Libro (versione Pilot).
 L'edizione digitale è stata implementata su EVT2 - beta 2, customizzando quest'ultimo nei casi di necessità specifici riportati nei prossimi paragrafi.   
@@ -9,7 +9,7 @@ La customizzazione della Piattaforma VaSto rispetto il pacchetto EVT-2 avviene a
 - il file json di configuarazione della visualizzazione (```config/config.json```).
 - il file CSS messo a disposizione da EVT-2 per facilitare la customizzazione della visualizzazione (```config/custom_style.css```).
 
-## L'edizione Digitale Vasto: Fuzionalità e Visualizzazioni
+## L'edizione digitale Vasto: fuzionalità e visualizzazioni
 
 Come descritto in precedenza, l'edizione digitale è composta dall'edizione diplomatica e critica insieme ad alcune funzionalità trasversali alle edizioni (o "knowledge site"). 
 
@@ -23,7 +23,7 @@ Con "funzionalità trasversali alle edizioni" (o "knowledge site") si intendono 
 * Metadati descrittivi (bottone in alto a destra)
 * Considerando la natura annalistica della "Storia Fiorentina", testo è ricco di citazioni di luoghi, persone e date, che vengono marcate e visualizzate grazie al menù in basso (```NamedEnititySelection```) ed inoltre visualizzate in un indice generato automaticamente (dal menù in alto a destra - "Apri Liste").
 
-## Funzionalità dell'Edizione Diplomatica
+## Funzionalità dell'edizione diplomatica
 
 L’edizione diplomatica si impegna a visualizzare il testo nel modo più simile possibile alle immagini proposte.
 In particolare vengono annotati e visualizzati: 
@@ -33,11 +33,11 @@ In particolare vengono annotati e visualizzati:
 * Nella diplomatica le abbreviazioni vengono sciolte e segnalate in corsivo e grassetto. Tale analisi è stata curata da Dario Brancato. 
 * Nella visualizzazione "Immagine-Testo" è presentata la corrispondenza tra testo diplomatico e facsimile. 
 
-### Funzionalità aggiuntive rispetto ad EVT2 nell'Edizione Diplomatica Vasto: 
+### Funzionalità aggiuntive rispetto ad EVT2 nell'edizione diplomatica 
 * EVT2 non supporta alcuna visualizzazione dei marginalia del manoscritto. Le aggiunge a margine o a piè di pagina sono state customizzate specificamente per questa edizione. Lo stesso è stato fatto per le aggiunte in alto o in basso all'interno delle righe del testo (anche chiamate addizioni "in line"). 
 * EVT2 non si occupa delle distinzioni delle mani nell'edizione diplomatica. I colori che segnalano le mani sono stati customizzati per questa edizione attraverso il file di customizzazione (CSS).   
 
-## Funzionalità dell'Edizione Critica 
+## Funzionalità dell'edizione critica 
 
 L'edizione critica presenta il testo RC4, dopo la redazione a cura di Dario Brancato, ma scindendolo in due testimoni fittizi: RC4 - il testo contenente l'ultima volontà dell'autore ed RC4c - il testo contenente le cassature postume a cura di Baldini.  
 * Normalizzazioni del testo originale (regolarizzazioni, correzioni senza alcun riferimento tipografico).
@@ -49,7 +49,7 @@ L'edizione critica presenta il testo RC4, dopo la redazione a cura di Dario Bran
 * Il testo è ottimizzato per la lettura e la comprensione testuale.
 * La visualizzazione più indicata al confronto tra RC4 ed RC4c è la funzionalità "Collazione".
 
-### Limitazioni significative dell'Edizione Critica Vasto
+### Limitazioni significative dell'edizione critica 
 * In tutte le visualizzazioni del testo critico abbiamo aggiunto dei piccoli riferimenti alla divisione in pagine (per esempio [8v]) marcati come ```<lb n="8v">``` nel testo. 
 * Nella visualizzazione "Immagine-Testo". Il carosello di immagini (posizionato a sinistra nella visualizzazioni "Immagine Testo") non segue lo scroll-down del testo a destra. Non vi è quindi nella visualizzazione una corrispondenza dinamica tra scroll-down del testo critico e scorrimento delle immagini nel carosello. E' comunque ancora possibile un confronto manuale immagine-testo grazie all'indicazione nel testo della pagina del manoscritto (ad esempio "[8v]") su cui l'utente si trova. 
 * La scelta di creare un testimone "fittizio" (RC4c) è stata dettata dal fatto che EVT2 richieda l'uso del tag ```<app>``` per abilitare la funzionalità "Collazione". 
