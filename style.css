@@ -30,7 +30,12 @@ h2, h3{
     display: block;
 }
 
-
+.b{
+     border-right: 4em solid rgb(240, 240, 240);
+     border-left: 4em solid rgb(240, 240, 240);
+     border-top: 2em solid rgb(240, 240, 240);
+     border-bottom: 2em solid rgb(240, 240, 240);
+}
 
 
 /*--- Navbar --*/
@@ -444,16 +449,25 @@ hr.socket {
     #doc{
         height:40%;
     }
+    #Progetto{
+    height:40%;
+    padding-top: 2em;
+    }
     p{
         font-size:1.2rem;
     }
     .d{
-        padding-left: 2.5rem;
-        padding-right:2.5rem;
+        padding-left: 1.2rem;
+        padding-right:1.2rem;
         padding-top: 1rem;
+        font-size: 1rem;
     }
     #evt{
         width: 80%;
+    }
+    .b{
+       border-left: 2em;
+        border-right: 2em;
     }
 }
 
@@ -526,10 +540,18 @@ hr.socket {
     p{
         font-size:1.2rem;
     }
+    #Progetto{
+        padding-top:2em;
+    }
     .d{
-        padding-left: 2.5rem;
-        padding-right:2.5rem;
+        padding-left: 0.5rem;
+        padding-right:0.5rem;
         padding-top: 1rem;
+         font-size: 1rem;
+    }
+    .b{
+        border-left: 2em;
+        border-right: 2em;
     }
 }
 
@@ -606,9 +628,17 @@ hr.socket {
         font-size:85%;
     }
     .d{
-        padding-left: 2.5rem;
-        padding-right:2.5rem;
+        padding-left: 0.5rem;
+        padding-right:0.5rem;
         padding-top: 1rem;
+    }
+    .b{
+        border-left: 0em;
+        border-right: 0em;
+        font-size:75%;
+    }
+    #Progetto{
+        padding-top: 1em;
     }
 }
 @media (min-width: 1200px) { 
