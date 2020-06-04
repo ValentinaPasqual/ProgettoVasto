@@ -377,9 +377,9 @@ hr.socket {
 #Documentation p {
     font-weight:normal
 }
-#Documentation ul{
+/*  #Documentation ul{
     list-style-type: none;
-}
+}*/
 #Documentation ol{
     list-style-type: upper-roman;
     padding: 5px;
@@ -636,7 +636,7 @@ hr.socket {
         height:40%;
     }
     p{
-        font-size:60%;
+        font-size:80%;
     }
     footer{
         font-size:85%;
@@ -645,23 +645,26 @@ hr.socket {
         padding-left: 0.5rem;
         padding-right:0.5rem;
         padding-top: 0.5rem;
-        font-size:60%;
+        font-size:80%;
     }
     .b{
         border-left: 0em;
         border-right: 0em;
-        font-size:60%;
+        font-size:85%;
     }
     #Progetto{
         padding-top: 1em;
     }
     #left{
     margin-left:0em;
-    width:50%;
+    font-size:50%;
 }
     #right{
     margin-right:0em;
-    width:50%;
+    font-size:60%;
+}
+btn{
+    font-size:60%;
 }
 }
 @media (min-width: 1200px) { 
