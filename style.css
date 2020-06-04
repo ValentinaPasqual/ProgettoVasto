@@ -524,11 +524,11 @@ hr.socket {
         padding-bottom: 1rem;
     }
     #Credits h2{
-        font-size: 1rem;;
+        font-size: 1rem;
     }
     
     #Credits p{
-        font-size: .85rem
+        font-size: .85rem;
     }
     #Documentation h1{
         font-size: 1.2rem;
@@ -536,17 +536,17 @@ hr.socket {
     }
    
     #Documentation h2{
-        font-size: 1rem;;
+        font-size: 1rem;
     }
     #Documentation h3{
-        font-size: 0.9rem;;
+        font-size: 0.9rem;
     }
     
     #Documentation p{
-        font-size: .8rem
+        font-size: 90%;
     }
     #Documentation li{
-        font-size: .8rem
+        font-size: 90%;
     }
     #doc{
         height:30%;
