@@ -488,7 +488,7 @@ hr.socket {
 /*--- Media Queries --*/
 @media (max-width: 768px) {
     .Home{
-        top: 10%;
+        top: 30%;
     }
     .Home h1 {
         font-size: 2rem;
@@ -572,15 +572,15 @@ hr.socket {
 
 @media (max-width: 575px) {
     .Home{
-        top: 15%;
+        top: 20%;
     }
     .Home h1 {
-        font-size: 70%;
+        font-size: 85%;
         letter-spacing: .15rem;
         padding-bottom: .5rem;
     }
     .Home h3 {
-        font-size: 70%;
+        font-size: 85%;
         padding-bottom: .8rem;
         letter-spacing: .15rem;
     }
@@ -657,14 +657,17 @@ hr.socket {
     }
     #left{
     margin-left:0em;
-    font-size:50%;
+    font-size:70%;
 }
     #right{
     margin-right:0em;
-    font-size:60%;
+    font-size:70%;
 }
-btn{
-    font-size:60%;
+#intro{
+    font-size:70%;
+}
+#center{
+    font-size:70%;
 }
 }
 @media (min-width: 1200px) { 
