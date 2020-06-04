@@ -105,7 +105,16 @@ h2, h3{
     color:rgba(255, 255, 255, 0.911);
     font-variant: small-caps;
 }
+.parallax{
+    background-color:rgb(240, 240, 240);
+    height: 100%; 
 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .btn-lg {
     border-width: medium;
     border-radius: 0;
@@ -151,7 +160,7 @@ h2, h3{
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover;
         
-        opacity: 0.9;
+        opacity: 0.8;
         top: 0;
         left: 0;
         bottom: 0;
@@ -184,7 +193,7 @@ h2, h3{
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover;
-        opacity: 0.9;
+        opacity: 0.8;
         top: 0;
         left: 0;
         bottom: 0;
