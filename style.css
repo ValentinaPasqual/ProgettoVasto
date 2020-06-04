@@ -391,7 +391,7 @@ hr.socket {
     margin-right:0em;
 }
 
-@media (max-width: 992px) {  
+@media screen and (min-width:769px) and (max-width: 1199px) {  
     .Home{
         top: 20%;
     }
@@ -471,9 +471,9 @@ hr.socket {
         font-size:95%;
     }
     .d{
-        padding-left: 1rem;
-        padding-right:1rem;
-        padding-top: 1rem;
+        padding-left: 0em;
+        padding-right:0em;
+        padding-top: 3em;
         font-size: 85%;
     }
     #evt{
@@ -558,9 +558,9 @@ hr.socket {
         padding-top:2em;
     }
     .d{
-        padding-left: 0.5rem;
-        padding-right:0.5rem;
-        padding-top: 1rem;
+        padding-left: 0em;
+        padding-right:0em;
+        padding-top: 0em;
          font-size: 85%;
     }
     .b{
@@ -642,9 +642,9 @@ hr.socket {
         font-size:85%;
     }
     .d{
-        padding-left: 0.5rem;
-        padding-right:0.5rem;
-        padding-top: 0.5rem;
+        padding-left: 0em;
+        padding-right:0em;
+        padding-top: 0em;
         font-size:80%;
     }
     .b{
