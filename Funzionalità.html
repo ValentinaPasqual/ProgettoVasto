@@ -12,6 +12,7 @@
     <style>
       
       @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
         .navbar {
             background-color: #DC143C !important;
             opacity: 0.9 !important;
@@ -68,12 +69,17 @@
     margin-left: -15rem;
   }
 }
+
+h2 {font-family: 'Bree Serif', serif; padding-top:2.5rem}
+h3 {font-family: 'Bree Serif', serif; padding-top:1rem}
+
     </style>
 </head>
 <body>
         <div id="home">
     
             <!-- Navigation -->
+
             <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="background-color: #DC143C;">
                 <a class="navbar-brand" href="index.html">VaSto</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -104,8 +110,9 @@
         <div class="d-flex" id="wrapper">
 
             <!-- Sidebar -->
+
           <div class="border-right" id="sidebar-wrapper">
-              <div class="sidebar-heading pt-5"><b>Funzionalità</b></div>
+            <div class="sidebar-heading pt-5" ><b>Funzionalità</b></div>
               <div class="list-group list-group-flush">
                 <a href="#l-edizione-digitale-vasto-funzionalit-e-visualizzazioni" class="list-group-item list-group-item-action ">L'edizione digitale: le visualizzazioni</a>
                 <a href="#l-edizione-digitale-vasto-fuzionalit-e-limitazioni" class="list-group-item list-group-item-action ">L'edizione digitale: le limitazioni</a>
@@ -122,7 +129,7 @@
         
         
             <!-- Page Content -->
-            <div id="page-content-wrapper" class="m-5">
+          <div id="page-content-wrapper" class="m-4" style="font-family: 'Bree Serif', serif;">
         
               <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
                 <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
@@ -154,8 +161,8 @@
                 </div>
               </nav> -->
         
-              <div class="container-fluid">
-                <h2 id="l-edizione-digitale-vasto-fuzionalit-e-visualizzazioni">L&#39;edizione Digitale VaSto: fuzionalità e visualizzazioni</h2>
+              <div class="container-fluid" style="font-family: 'Bree Serif', serif;">
+                <h2 id="l-edizione-digitale-vasto-fuzionalit-e-visualizzazioni">L&#39;edizione digitale VaSto: fuzionalità e visualizzazioni</h2>
                 <p>Come descritto in precedenza, l&#39;edizione digitale è composta dall&#39;edizione diplomatica e critica insieme ad alcune funzionalità trasversali alle edizioni (o &quot;knowledge site&quot;). </p>
                
                 <h2 id="l-edizione-digitale-vasto-funzionalit-e-limitazioni">L&#39;edizione digitale VaSto: funzionalità e limitazioni</h2>
@@ -163,21 +170,21 @@
                   L&#39;edizione digitale è stata implementata su EVT2 - beta 2, customizzando quest&#39;ultimo nei casi di necessità specifici riportati nei prossimi paragrafi.<br>EVT-2 permette di caricare facilmente un file in formato XML (il quale segue l’encoding XML-TEI) contente l&#39;encoding dell&#39;edizione. Il documento XML che contiene il testo marcato è unico e contiene tutti gli elementi dell&#39;edizione critica e diplomatica (opportunamente abilitati e disabilitati in un file CSS a seconda delle esigenze di visualizzazione).</p>
                 <p>La customizzazione della Piattaforma VaSto rispetto il pacchetto EVT-2 avviene attraverso la modifica di tre file: </p>
                 <ul>
-                  <li>il file XML contenente il testo marcato secondo le guidelines XML-TEI (in questo specifico caso <code>data/pilot_proemio.xml</code>).</li>
-                  <li>il file json di configuarazione della visualizzazione (<code>config/config.json</code>).</li>
-                  <li>il file CSS messo a disposizione da EVT-2 per facilitare la customizzazione della visualizzazione (<code>config/custom_style.css</code>).</li>
+                  <li>Il file XML contenente il testo marcato secondo le guidelines XML/TEI (in questo specifico caso <code>data/pilot_proemio.xml</code>).</li>
+                  <li>Il file json di configuarazione della visualizzazione (<code>config/config.json</code>).</li>
+                  <li>Il file CSS messo a disposizione da EVT-2 per facilitare la customizzazione della visualizzazione (<code>config/custom_style.css</code>).</li>
                 </ul>
                 <h2 id="funzionalit-trasversali-alle-edizioni">Funzionalità trasversali alle edizioni</h2>
                 <p>Con &quot;funzionalità trasversali alle edizioni&quot; (o &quot;knowledge site&quot;) si intendono tutte quelle funzionalità consultabili nel sistema a prescidere dall&#39; edizione (diplomatica o critica) sul quale l&#39;utente si trova. Le funzionalità sono le seguenti:</p>
                 <ul>
-                  <li>Nella presente edizione vengono attivate solo le visualizzazioni &quot;Testo di Lettura&quot; e &quot;Immagine Testo&quot;</li>
+                  <li>Nella presente edizione vengono attivate solo le visualizzazioni &quot;Testo di Lettura&quot; e &quot;Immagine Testo&quot;.</li>
                   <li>Tutte le scelte stilistiche usate per indicare i fenomeni testuali e le pelculiarità sopracitate sono indicizzati nella sezione info in alto.</li>
-                  <li>Possibilità di scaricare il file XML che descrive l&#39;edizione (bottone in alto a destra)</li>
-                  <li>Metadati descrittivi (bottone in alto a destra)</li>
+                  <li>Possibilità di scaricare il file XML che descrive l&#39;edizione (bottone in alto a destra).</li>
+                  <li>Metadati descrittivi (bottone in alto a destra).</li>
                   <li>Considerando la natura annalistica della &quot;Storia Fiorentina&quot;, testo è ricco di citazioni di luoghi, persone e date, che vengono marcate e visualizzate grazie al menù in basso (<code>NamedEnititySelection</code>) ed inoltre visualizzate in un indice generato automaticamente (dal menù in alto a destra - &quot;Apri Liste&quot;).</li>
                 </ul>
 
-                <h2 id="funzionalit-dell-edizione-diplomatica">Funzionalità dell&#39;Edizione Diplomatica</h2>
+                <h2 id="funzionalit-dell-edizione-diplomatica">Funzionalità dell&#39;edizione diplomatica</h2>
                 <p>L’edizione diplomatica si impegna a visualizzare il testo nel modo più simile possibile alle immagini proposte.
                   In particolare vengono annotati e visualizzati: </p>
                 <ul>
@@ -187,12 +194,12 @@
                   <li>Nella diplomatica le abbreviazioni vengono sciolte e segnalate in corsivo e grassetto. Tale analisi è stata curata da Dario Brancato. </li>
                   <li>Nella visualizzazione &quot;Immagine-Testo&quot; è presentata la corrispondenza tra testo diplomatico e facsimile. </li>
                 </ul>
-                <h3 id="funzionalit-aggiuntive-rispetto-ad-evt2-nell-edizione-diplomatica-vasto-">Funzionalità aggiuntive rispetto ad EVT2 nell&#39;Edizione Diplomatica Vasto:</h3>
+                <h3 id="funzionalit-aggiuntive-rispetto-ad-evt2-nell-edizione-diplomatica-vasto-">Funzionalità aggiuntive rispetto ad EVT2 nell&#39;edizione diplomatica</h3>
                 <ul>
                   <li>EVT2 non supporta alcuna visualizzazione dei marginalia del manoscritto. Le aggiunge a margine o a piè di pagina sono state customizzate specificamente per questa edizione. Lo stesso è stato fatto per le aggiunte in alto o in basso all&#39;interno delle righe del testo (anche chiamate addizioni &quot;in line&quot;). </li>
                   <li>EVT2 non si occupa delle distinzioni delle mani nell&#39;edizione diplomatica. I colori che segnalano le mani sono stati customizzati per questa edizione attraverso il file di customizzazione (CSS).   </li>
                 </ul>
-                <h2 id="funzionalit-dell-edizione-critica">Funzionalità dell&#39;Edizione Critica</h2>
+                <h2 id="funzionalit-dell-edizione-critica">Funzionalità dell&#39;edizione critica</h2>
                 <p>L&#39;edizione critica presenta il testo RC4, dopo la redazione a cura di Dario Brancato, ma scindendolo in due testimoni fittizi: RC4 - il testo contenente l&#39;ultima volontà dell&#39;autore ed RC4c - il testo contenente le cassature postume a cura di Baldini.  </p>
                 <ul>
                   <li>Normalizzazioni del testo originale (regolarizzazioni, correzioni senza alcun riferimento tipografico).</li>
@@ -204,14 +211,14 @@
                   <li>Il testo è ottimizzato per la lettura e la comprensione testuale.</li>
                   <li>La visualizzazione più indicata al confronto tra RC4 ed RC4c è la funzionalità &quot;Collazione&quot;.</li>
                 </ul>
-                <h3 id="limitazioni-significative-dell-edizione-critica-vasto">Limitazioni significative dell&#39;Edizione Critica Vasto</h3>
+                <h3 id="limitazioni-significative-dell-edizione-critica-vasto">Limitazioni significative dell&#39;edizione Critica</h3>
                 <ul>
                   <li>In tutte le visualizzazioni del testo critico abbiamo aggiunto dei piccoli riferimenti alla divisione in pagine (per esempio [8v]) marcati come <code>&lt;lb n=&quot;8v&quot;&gt;</code> nel testo. </li>
                   <li>Nella visualizzazione &quot;Immagine-Testo&quot;. Il carosello di immagini (posizionato a sinistra nella visualizzazioni &quot;Immagine Testo&quot;) non segue lo scroll-down del testo a destra. Non vi è quindi nella visualizzazione una corrispondenza dinamica tra scroll-down del testo critico e scorrimento delle immagini nel carosello. E&#39; comunque ancora possibile un confronto manuale immagine-testo grazie all&#39;indicazione nel testo della pagina del manoscritto (ad esempio &quot;[8v]&quot;) su cui l&#39;utente si trova. </li>
                   <li>La scelta di creare un testimone &quot;fittizio&quot; (RC4c) è stata dettata dal fatto che EVT2 richieda l&#39;uso del tag <code>&lt;app&gt;</code> per abilitare la funzionalità &quot;Collazione&quot;. </li>
                   <li>La prima scelta visuale per comparare il due testi è stata quella di utilizzare <code>&lt;app&gt;&lt;rdgGrp&gt;&lt;rdg wit=&quot;#RC4&quot;&gt;&lt;/rdg&gt;&lt;rdg wit=&quot;RC4c&quot;&gt;&lt;/rdg&gt;&lt;/rdgGrp&gt;&lt;/app&gt;</code>. Questo schema di encoding, supportato da EVT2, presenta ancora delle limitazioni nella visualizzazione (ad esempio qualsiasi tag inserito all&#39;interno di <code>&lt;rdg&gt;</code> non viene visualizzato). Abbiamo dunque scelto di utilizzare invece lo schema XML-TEI <code>&lt;app&gt;&lt;lem wit=&quot;#RC4&quot;&gt;&lt;/lem&gt;&lt;rdg wit=&quot;RC4c&quot;&gt;&lt;/rdg&gt;&lt;/app&gt;</code>. Nonostante questo schema presenti meno limitazioni, notiamo che gli spazi non vengono ben rispettati. Al momento attendiamo la release ufficiale di EVT2 beta2 per risolvere queste imperfezioni. </li>
                 </ul>
-                <h2 id="lista-dei-tag-xml-tei-utilizzati-per-l-encoding-dell-edizione">Lista dei tag XML-TEI utilizzati per l&#39;encoding dell&#39;edizione</h2>
+                <h2 id="lista-dei-tag-xml-tei-utilizzati-per-l-encoding-dell-edizione">Lista dei tag XML/TEI utilizzati per l&#39;encoding dell&#39;edizione</h2>
                 <p>Il progetto Vasto al momento, come già detto in precedenza, è da considerasi una versione pilot che necessita di essere arricchita con altri materiali. Allo scopo di ampliare il progetto, di seguito rilasciamo una legenda di tag che sono stati utilizzati nel file <code>xml pilot_proemio.xml</code> e che sono stati appostiamente customizzati per rispettare le esigenze del testimone. In particolare presentiamo qui di seguito la lista di tag presenti nel <code>&lt;body&gt;</code> del file XML. </p>
                 <ul>
                   <li>titolo <code>&lt;head&gt;</code></li>
@@ -233,7 +240,7 @@
                   <li><p><code>&lt;app&gt;&lt;lem @wit @hand&gt;&lt;/lem&gt;&lt;rdg @cause @wit&quot;&gt; &lt;/rdg&gt;&lt;/app&gt;</code></p>
                   </li>
                 </ul>
-                <p>Per ulteriori esempi ed informazioni consulta il file <code>data/pilot_proemio.xml</code></p>
+                <p>Per ulteriori esempi ed informazioni consulta il file <code>data/pilot_proemio.xml</code>.</p>
                 
               </div>
             </div>
