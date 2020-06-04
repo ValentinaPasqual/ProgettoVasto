@@ -29,6 +29,14 @@ h2, h3{
     content: "";
     display: block;
 }
+#right{
+   margin-right:4em;
+}
+#left{
+   margin-left:4em;
+   padding-left:3em;
+   padding-right:3em;
+}
 
 .b{
      border-right: 4em solid rgb(240, 240, 240);
@@ -165,7 +173,7 @@ h2, h3{
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover;
         
-        opacity: 0.8;
+        opacity: 0.6;
         top: 0;
         left: 0;
         bottom: 0;
@@ -198,7 +206,7 @@ h2, h3{
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover;
-        opacity: 0.8;
+        opacity: 0.6;
         top: 0;
         left: 0;
         bottom: 0;
@@ -376,7 +384,12 @@ hr.socket {
     list-style-type: upper-roman;
     padding: 5px;
 }
-
+#left{
+    margin-left:0em;
+}
+#right{
+    margin-right:0em;
+}
 
 @media (max-width: 992px) {  
     .Home{
@@ -450,6 +463,7 @@ hr.socket {
         height:40%;
     }
     #Progetto{
+    height:120%;
  
     padding-top: 2em;
     }
@@ -619,7 +633,7 @@ hr.socket {
         font-size: 75%;
     }
     #doc{
-        height:25%;
+        height:30%;
     }
     p{
         font-size:75%;
@@ -641,6 +655,12 @@ hr.socket {
     #Progetto{
         padding-top: 1em;
     }
+    #left{
+    margin-left:0em;
+}
+    #right{
+    margin-right:0em;
+}
 }
 @media (min-width: 1200px) { 
     .Home{
