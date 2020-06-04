@@ -29,6 +29,14 @@ h2, h3{
     content: "";
     display: block;
 }
+#right{
+   margin-right:4em;
+}
+#left{
+   margin-left:4em;
+   padding-left:3em;
+   padding-right:3em;
+}
 
 .b{
      border-right: 4em solid rgb(240, 240, 240);
@@ -165,7 +173,7 @@ h2, h3{
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover;
         
-        opacity: 0.8;
+        opacity: 0.6;
         top: 0;
         left: 0;
         bottom: 0;
@@ -198,7 +206,7 @@ h2, h3{
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover;
-        opacity: 0.8;
+        opacity: 0.6;
         top: 0;
         left: 0;
         bottom: 0;
@@ -376,7 +384,12 @@ hr.socket {
     list-style-type: upper-roman;
     padding: 5px;
 }
-
+#left{
+    margin-left:0em;
+}
+#right{
+    margin-right:0em;
+}
 
 @media (max-width: 992px) {  
     .Home{
@@ -450,6 +463,7 @@ hr.socket {
         height:40%;
     }
     #Progetto{
+    height:120%;
  
     padding-top: 2em;
     }
@@ -466,8 +480,8 @@ hr.socket {
         width: 80%;
     }
     .b{
-       border-left: 2em;
-        border-right: 2em;
+       border-left: 1em;
+        border-right: 1em;
     }
 }
 
@@ -561,12 +575,12 @@ hr.socket {
         top: 15%;
     }
     .Home h1 {
-        font-size: 2rem;
+        font-size: 70%;
         letter-spacing: .15rem;
         padding-bottom: .5rem;
     }
     .Home h3 {
-        font-size: 1.2rem;
+        font-size: 70%;
         padding-bottom: .8rem;
         letter-spacing: .15rem;
     }
@@ -603,7 +617,7 @@ hr.socket {
         font-size: 75%;
     }
     #Documentation h1{
-        font-size: 90%;
+        font-size: 80%;
         padding-bottom: 1rem;
     }
     #Documentation h2{
@@ -619,10 +633,10 @@ hr.socket {
         font-size: 75%;
     }
     #doc{
-        height:25%;
+        height:40%;
     }
     p{
-        font-size:75%;
+        font-size:60%;
     }
     footer{
         font-size:85%;
@@ -630,17 +644,25 @@ hr.socket {
     .d{
         padding-left: 0.5rem;
         padding-right:0.5rem;
-        padding-top: 1rem;
-        font-size:75%;
+        padding-top: 0.5rem;
+        font-size:60%;
     }
     .b{
         border-left: 0em;
         border-right: 0em;
-        font-size:75%;
+        font-size:60%;
     }
     #Progetto{
         padding-top: 1em;
     }
+    #left{
+    margin-left:0em;
+    width:50%;
+}
+    #right{
+    margin-right:0em;
+    width:50%;
+}
 }
 @media (min-width: 1200px) { 
     .Home{
