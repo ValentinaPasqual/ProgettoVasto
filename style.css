@@ -657,9 +657,11 @@ hr.socket {
     }
     #left{
     margin-left:0em;
+    width:50%;
 }
     #right{
     margin-right:0em;
+    width:50%;
 }
 }
 @media (min-width: 1200px) { 
