@@ -450,17 +450,17 @@ hr.socket {
         height:40%;
     }
     #Progetto{
-    height:40%;
+ 
     padding-top: 2em;
     }
     p{
-        font-size:1.2rem;
+        font-size:95%;
     }
     .d{
-        padding-left: 1.2rem;
-        padding-right:1.2rem;
+        padding-left: 1rem;
+        padding-right:1rem;
         padding-top: 1rem;
-        font-size: 1rem;
+        font-size: 85%;
     }
     #evt{
         width: 80%;
@@ -538,7 +538,7 @@ hr.socket {
         height:30%;
     }
     p{
-        font-size:1.2rem;
+        font-size:90%;
     }
     #Progetto{
         padding-top:2em;
@@ -547,7 +547,7 @@ hr.socket {
         padding-left: 0.5rem;
         padding-right:0.5rem;
         padding-top: 1rem;
-         font-size: 1rem;
+         font-size: 85%;
     }
     .b{
         border-left: 2em;
@@ -631,6 +631,7 @@ hr.socket {
         padding-left: 0.5rem;
         padding-right:0.5rem;
         padding-top: 1rem;
+        font-size:75%;
     }
     .b{
         border-left: 0em;
