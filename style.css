@@ -169,10 +169,12 @@ h2, h3{
 
     color: black;
     text-shadow: 2px 2px 6px black;
-    padding-top: 6em;
+    padding-top: 5.3em;
     padding-left: 5em;
     padding-right: 5em;
+    padding-bottom:0.5em;
     position:relative;
+
 
 }
 #Progetto:after{
@@ -190,6 +192,7 @@ h2, h3{
         position: absolute;
         z-index: -1;
         filter: sepia(20%);
+        padding-bottom:0.5em;
 
       
 }
