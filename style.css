@@ -137,25 +137,63 @@ h2, h3{
 }
 
 #doc{
-    background-image: url("images/writ.JPG");
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
+
     color: black;
     text-shadow: 2px 2px 6px red;
+    position:relative;
 }
+#doc:after{
+ 
+
+        content: "";
+        background: url("images/writ.JPG");
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover;
+        
+        opacity: 0.9;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1; 
+        filter: sepia(20%);
+
+      
+}
+
 #Progetto{
-    background-image: url("images/storia.JPG");
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
+    
+
+
     color: black;
     text-shadow: 2px 2px 6px black;
     padding-top: 6em;
     padding-left: 5em;
     padding-right: 5em;
+    position:relative;
 
 }
+#Progetto:after{
+
+        content: "";
+        background: url("images/storia.JPG");
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover;
+        opacity: 0.9;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        filter: sepia(20%);
+
+      
+}
+
 #EVT{
 
     border-color: #DC143C;
@@ -198,7 +236,6 @@ position: relative;
 
 footer {
     color: white;
-    padding: 2rem 0 0;
     margin-top: 1rem;
     font-size: 1rem;
 
