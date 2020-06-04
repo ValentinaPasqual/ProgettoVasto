@@ -480,8 +480,8 @@ hr.socket {
         width: 80%;
     }
     .b{
-       border-left: 2em;
-        border-right: 2em;
+       border-left: 1em;
+        border-right: 1em;
     }
 }
 
@@ -575,12 +575,12 @@ hr.socket {
         top: 15%;
     }
     .Home h1 {
-        font-size: 2rem;
+        font-size: 70%;
         letter-spacing: .15rem;
         padding-bottom: .5rem;
     }
     .Home h3 {
-        font-size: 1.2rem;
+        font-size: 70%;
         padding-bottom: .8rem;
         letter-spacing: .15rem;
     }
@@ -617,7 +617,7 @@ hr.socket {
         font-size: 75%;
     }
     #Documentation h1{
-        font-size: 90%;
+        font-size: 80%;
         padding-bottom: 1rem;
     }
     #Documentation h2{
@@ -633,10 +633,10 @@ hr.socket {
         font-size: 75%;
     }
     #doc{
-        height:30%;
+        height:40%;
     }
     p{
-        font-size:75%;
+        font-size:60%;
     }
     footer{
         font-size:85%;
@@ -644,13 +644,13 @@ hr.socket {
     .d{
         padding-left: 0.5rem;
         padding-right:0.5rem;
-        padding-top: 1rem;
-        font-size:75%;
+        padding-top: 0.5rem;
+        font-size:60%;
     }
     .b{
         border-left: 0em;
         border-right: 0em;
-        font-size:75%;
+        font-size:60%;
     }
     #Progetto{
         padding-top: 1em;
