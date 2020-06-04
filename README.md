@@ -29,7 +29,7 @@ L’edizione diplomatica si impegna a visualizzare il testo nel modo più simile
 In particolare vengono annotati e visualizzati: 
 * linebreak.
 * le aggiunte a margine, in riga, o a piè di pagina. Inoltre nel testo vi è un’ancora (solitamente ```^```) che, se selezionata dall'utente, permette di illuminare l’addizione corrispondente. 
-* Al centro della presente edizione diplomatica vi è la coesistenza di quattro diverse mani (cassature e addizioni) sul testimone RC4. L’edizione vuole quindi visualizzare in modo efficacie tale peculiarità. Le cassature sono rappresentate con  lo stile "line-trough" (scelta tipografica con linea colorata che passa al centro del testo) del colore corrispondente alla mano che l'ha creata. Allo stesso modo le aggiunte vengono segnalate con il colore del testo corrispondente alla mano che l'ha prodotta. La legenda riguardante questo aspetto è consultable cliccando sul bottone "info" appena al disopra della visualizzazione dell'edizione diplomatica.
+* Al centro della presente edizione diplomatica vi è la coesistenza di quattro diverse mani (cassature e addizioni) sul testimone RC4. L’edizione vuole quindi visualizzare in modo efficacie tale peculiarità. Le cassature sono rappresentate con  lo stile "line-trough" (scelta tipografica con linea colorata che passa al centro del testo) del colore corrispondente alla mano che l'ha creata. Allo stesso modo le aggiunte vengono segnalate con il colore del testo corrispondente alla mano che l'ha prodotta. La legenda relativa a questo aspetto è consultable cliccando sul bottone "info".
 * Nella diplomatica le abbreviazioni vengono sciolte e segnalate in corsivo e grassetto. Tale analisi è stata curata da Dario Brancato. 
 * Nella visualizzazione "Immagine-Testo" è presentata la corrispondenza tra testo diplomatico e facsimile. 
 
@@ -39,11 +39,11 @@ In particolare vengono annotati e visualizzati:
 
 ## Funzionalità dell'Edizione Critica 
 
-Mostra il testo di RC4 dopo la redazione a cura di Dario Brancato. L'edizione critica presenta il testo RC4, ma scindendolo in due testimoni fittizi: RC4 - il testo contenente l'ultima volontà dell'autore ed RC4c - il testo contenente le cassature postume a cura di Baldini.  
+L'edizione critica presenta il testo RC4, dopo la redazione a cura di Dario Brancato, ma scindendolo in due testimoni fittizi: RC4 - il testo contenente l'ultima volontà dell'autore ed RC4c - il testo contenente le cassature postume a cura di Baldini.  
 * Normalizzazioni del testo originale (regolarizzazioni, correzioni senza alcun riferimento tipografico).
 * Abbreviazioni sciolte senza alcun riferimento tipografico.
-* Il testo in versione scroll-down. La divisione delle pagine è segnalata inline all'interno del testo (ad esempio con la dicitura [12v]).
-* Note a margine, a piè di pagina etc sono rappresentate come parte integrante del testo senza alcuna distinzione tipografica ed appropriatamente inserite in esso. 
+* Il testo è in versione scroll-down. La divisione delle pagine è segnalata inline all'interno del testo (ad esempio con la dicitura [12v]).
+* Le Note a margine e a piè di pagina sono rappresentate come parte integrante del testo senza alcuna distinzione tipografica ed appropriatamente inserite in esso. 
 * Le segnalazioni tipografiche delle mani sono eliminate 
 * Segni particolari (ad esempio ```^``` oppure ```-```) sono normalizzati e/o eliminati.
 * Il testo è ottimizzato per la lettura e la comprensione testuale.
