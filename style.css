@@ -484,7 +484,7 @@ hr.socket {
         padding-left: 0em !important;
         padding-right:0em !important;
         padding-top: 3em;
-        font-size: 85%;
+        font-size: 95%;
     }
     #evt{
         width: 80%;
@@ -569,16 +569,18 @@ hr.socket {
         height:30%;
     }
     p{
-        font-size:90%;
+        font-size:95%;
     }
     #Progetto{
         padding-top:2em;
+        padding-left: 0em;
+        padding-right: 0em;
     }
     .d{
         padding-left: 0em !important;
         padding-right:0em !important;
         padding-top: 0em;
-         font-size: 85%;
+         font-size: 95%;
     }
     .b{
         border-left: 2em;
@@ -595,7 +597,7 @@ hr.socket {
 
 @media (max-width: 575px) {
     .Home{
-        top: 10%;
+        top: 15%;
     }
     .Home h1 {
         font-size: 85%;
@@ -603,7 +605,7 @@ hr.socket {
         padding-bottom: .5rem;
     }
     .Home h3 {
-        font-size: 85%;
+        font-size: 95%;
         padding-bottom: .8rem;
         letter-spacing: .15rem;
     }
@@ -661,7 +663,7 @@ hr.socket {
         height:40%;
     }
     p{
-        font-size:80%;
+        font-size:100%;
     }
     footer{
         font-size:85%;
@@ -670,15 +672,23 @@ hr.socket {
         padding-left: 0em !important;
         padding-right:0em !important;
         padding-top: 0em;
-        font-size:80%;
+        font-size:100%;
     }
     .b{
         border-left: 0em;
         border-right: 0em;
-        font-size:85%;
+        font-size:95%;
     }
     #Progetto{
         padding-top: 1em;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    #Progetto:after{
+        opacity:0.3;
+    }
+    #doc:after{
+        opacity:0.3;
     }
     #left{
     margin-left:0em;
