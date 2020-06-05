@@ -9,7 +9,11 @@
     <!-- Personal stylesheet -->
     <link rel="stylesheet" href="style.css">
     <!--    <link rel="stylesheet" href="css/fixed.css">-->
+
     <style>
+      
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
         .navbar {
             background-color: #DC143C !important;
             opacity: 0.9 !important;
@@ -19,6 +23,58 @@
             opacity: 0.9 !important;
             border-color: #DC143C !important ;
         }
+
+        body {
+  overflow-x: hidden;
+}
+
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+  font-family: 'Lato', sans-serif !Important;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+    background-color: rgba(231, 227, 221, 0.7);
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+h2 {font-family: 'Bree Serif', serif; padding-top:2.5rem}
+h3 {font-family: 'Bree Serif', serif; padding-top:1rem}
+
     </style>
 </head>
 <body>
@@ -48,17 +104,47 @@
                     </ul>
                 </div>
             </nav>
-    <section class="Documentation" id="Documentation">
-    <div class="col-12 narrow">
 
-        <h1 id="informazioni-e-specifiche-tecniche-della-piattaforma-vasto">Il Progetto</h1>
+            <section class="Documentation" id="Documentation">
+
+            <div class="d-flex" id="wrapper">
+
+                <!-- Sidebar -->
+    
+              <div class="border-right" id="sidebar-wrapper">
+                  <div class="list-group list-group-flush">
+                    <div class="sidebar-heading" ><b>L'edizione digitale</b></div>
+
+                    <a href="#che-cos-la-piattaforma-vasto" class="list-group-item list-group-item-action ">Introduzione</a>
+                    <a href="#che-cos-la-piattaforma-vasto-2" class="list-group-item list-group-item-action">L'edizione digitale VaSto</a>
+                    <a href="#che-cos-la-piattaforma-vasto-3" class="list-group-item list-group-item-action">Il prototipo (pilot version)</a>
+                    <a href="#che-cos-la-piattaforma-vasto-4" class="list-group-item list-group-item-action">L'autore</a>
+                    <div class="sidebar-heading pt-5" ><b>Cenni storici</b></div>
+
+                    <a href="#che-cos-la-piattaforma-vasto-5" class="list-group-item list-group-item-action">La storia del testo</a>
+                    <a href="#che-cos-la-piattaforma-vasto-6" class="list-group-item list-group-item-action">Principali testimoni manoscritti</a>
+                    <a href="#che-cos-la-piattaforma-vasto-7" class="list-group-item list-group-item-action">Bibliografia Essenziale</a>
+
+    
+                  </div>
+                </div>
+                <!-- /#sidebar-wrapper -->
+            
+           
+            
+            
+                <!-- Page Content -->
+              <div id="page-content-wrapper" style="font-family: 'Bree Serif', serif;">
+            
+                  <div class="container-fluid" style="font-family: 'Bree Serif', serif;">
+                    <h1 id="informazioni-e-specifiche-tecniche-della-piattaforma-vasto">Il Progetto</h1>
         <h2 id="che-cos-la-piattaforma-vasto-">Introduzione</h2>
 
         <p>Il progetto VaSto, realizzato nell’ambito del <a href="https://centri.unibo.it/dharc/en" target="_blank">/DH.arc</a> dell’<a href="https://www.unibo.it/it" target="_blank">Università di Bologna</a>, costituisce il risultato della collaborazione tra <a href="https://www.unibo.it/it" target="_blank">Università di Bologna</a>, <a href="https://www.concordia.ca/">Concordia University</a> di Montreal e <a href="https://www.fondazionecarisbo.it/" target="_blank">CarisBo</a>, e presenta, in un’ambiente digitale interattivo, l’edizione digitale genetica e annotata della Storia fiorentina di Benedetto Varchi (1503-1565). 
         <br><br>
         Alla fine del 1546 Varchi, già noto in Italia per le sue lezioni accademiche, ma digiuno di scrittura storica e per di più ex repubblicano, aveva ricevuto a sorpresa dal duca di Firenze Cosimo I de’ Medici (1519-1574) l’incarico di continuare idealmente le Istorie fiorentine di Niccolò Machiavelli e di narrare gli eventi che avevano portato alla definitiva affermazione dei Medici alla guida di Firenze: nonostante le invidie e le perplessità suscitate in ambito fiorentino, egli si mise subito al lavoro raccogliendo un’impressionante mole di materiali (spogli di documenti, riassunti, appunti), molti dei quali ancora oggi conservati. Varchi aveva in progetto di comporre un’opera distribuita in dodici libri e incentrata sugli anni dell’ultima Repubblica di Firenze (1527-1530); tuttavia fu costretto, per espresso volere di Cosimo, a continuare la narrazione anche per gli anni successivi. Non è dato di sapere a quale anno dovesse fermarsi la Storia: Varchi infatti morì improvvisamente lasciandola incompiuta ai fatti del 1537. L’interessamento diretto di Cosimo fece sì che i materiali superstiti ricevessero forma organica, comprendendo altri quattro libri oltre ai dodici iniziali; al contempo, però, il testo fu oggetto di un’operazione di “rassettatura”, una censura cioè politico-religiosa ispirata comunque a un principio di razionalizzazione stilistica, voluta da Cosimo stesso e condotta da Baccio Baldini (1517-1589), bibliotecario della Laurenziana e medico personale del duca (e dal 1569 granduca). In questa edizione “censurata” dunque il testo è circolato per oltre 150 anni, peraltro in forma manoscritta dato l’implicito divieto alla pubblicazione, e in forma simile viene stampato nel 1721, finendo inevitabilmente all’Indice. Per la ricchezza di dati relativi a luoghi, opere d’arte, protagonisti del tempo, la Storia fiorentina è una fonte preziosa per letterati, storici e storici dell’arte, ma, lasciata incompiuta dall’autore e fortemente rimaneggiata dallo stesso Cosimo, è stata pubblicata solo nel 1721.</p>
         
-        <h2 id="che-cos-la-piattaforma-vasto-2">L'edizione digitale</h2>
+        <h2 id="che-cos-la-piattaforma-vasto-2">L'edizione digitale VaSto</h2>
         <p>L’edizione digitale della Storia fiorentina costituisce un caso esemplare di filologia digitale. Il progetto VaSto intende infatti risolvere il nodo cruciale fra l’ultima redazione d’autore (nella quale è palese lo statuto di non finito dell’opera) e l’“edizione” di Baldini e Cosimo, alla cui compiutezza si contrappongono le numerose censure. Per la versione pilota del progetto si è scelto pertanto il codice Corsiniano 1532 della <a href="https://www.lincei.it/it/biblioteca-dellaccademia-nazionale-dei-lincei-e-corsiniana" target="_blank">Biblioteca Nazionale dei Lincei e Corsiniana</a> di Roma (= <b>RC4</b>), il testimone in parte autografo, recante correzioni tardive d’autore, su cui vennero materialmente effettuati i tagli voluti da Cosimo, L’edizione, realizzata con marcatura <a href="https://tei-c.org/" target="_blank">XML/TEI</a> e visualizzata con <a href="http://evt.labcd.unipi.it/" target="_blank">EVT2</a> (beta2), permette di visualizzare la stratificazione degli interventi d’autore, editoriali e censorii. 
         L’edizione digitale del progetto VaSto è quindi un’edizione genetica, diplomatica e critica, ma è anche un’edizione annotata, poiché in corrispondenza con persone, luoghi o fatti significativi offre un commento o un rimando ad informazioni esplicative collegate al testo. VaSto costituisce anche un esempio di edizione collaborativa, realizzata dagli studenti del laboratorio di Scholarly Editions tenuto presso l’Università di Bologna nell’a.a. 2020-2021.
         L’edizione digitale completa comprenderà il testo integrale, nella versione manoscritta corrispondente all’ultima volontà dell’autore, e nella lezione post censuram divenuta poi la vulgata della Storia.</p>
@@ -76,7 +162,7 @@
        
         
         
-        <h2 id="che-cos-la-piattaforma-vasto">L'autore</h2>
+        <h2 id="che-cos-la-piattaforma-vasto-4">L'autore</h2>
         <p>Benedetto Varchi nacque a Firenze il 19 marzo 1503 da Ser Giovanni, un notaio originario di Montevarchi (da cui il soprannome di Benedetto) e da Diamante, vedova del pittore Benedetto del Ghirlandaio. Il padre aveva di avviarlo alla carriera notarile, ma dopo gli studi a Pisa e la laurea in legge, il giovane Benedetto si dedicò agli studi di letteratura e frequentò gli incontri che si tenevano agli Orti Oricellari, dove ebbe modo di conoscere Machiavelli. Negli anni ’30, Varchi approfondì le sue conoscenze di filosofia e di letteratura greca seguendo le lezioni di Francesco Verino “Primo”, erede della tradizione platonica ficiniana, e del grande filologo Piero Vettori. <br><br>
         Nel gennaio 1537 l’assassinio del duca di Firenze, Alessandro de’ Medici, da parte del cugino Lorenzino infiammò in Varchi le speranze di una restaurazione repubblicana nella città; speranze che vennero frustrate allorché la crisi istituzionale fu risolta in pochissimi giorni con l’elezione di Cosimo a nuovo duca. Varchi scelse allora la via dell’esilio, e si unì ai fuorusciti che si stringevano attorno al potente banchiere Filippo Strozzi, rimanendo ai servizi della famiglia Strozzi anche dopo la cattura di quest’ultimo: egli infatti seguì il figlio maggiore di Filippo, Piero, divenendo il precettore dei suoi fratelli minori e seguendoli prima a Venezia e poi a Padova. Testimonianza di questo periodo sono una serie di carmi latini e componimenti toscani, nei quali, con accesi toni repubblicani, si lodavano Piero Strozzi e Lorenzino de’ Medici e al contempo si vituperavano il nuovo duca, Cosimo, e la memoria di quello vecchio, Alessandro, definito un tiranno. <br><br>
         Varchi rimase a Padova anche dopo la brusca rottura dei rapporti con gli Strozzi: a questo periodo infatti, risale la frequentazione di un gruppo di intellettuali collegati all’Università, con i quali fondò nel 1540 l’Accademia degli Infiammati, presso la quale tenne numerose lezioni di filosofia (un ciclo sull’Etica nicomachea di Aristotele), o su autori classici (Teocrito, Orazio, Tibullo) e volgari (Petrarca, ma anche contemporanei come Bembo o Della Casa). Caratteristica principale delle lezioni “infiammate” era la cornice filosofica, spesso di stampo aristotelico, di cui Varchi (ma anche altri accademici come per esempio il senese Alessandro Piccolomini) si serviva per spiegare un testo poetico. La lezione poetica quindi diventava un pretesto per parlare di filosofia: fu quindi in questo ambito che prese forma il progetto di voler tradurre Aristotele in volgare, attraverso una serie di commenti che dovevano servire da un lato a irrobustire il volgare toscano arricchendolo di concetti presi dalle lingue classiche, dall’altro a dimostrare che il volgare aveva in sé tutte le caratteristiche per poter fare filosofia. Varchi cominciò a tradurre e commentare Aristotele: gli impegnativi commenti all’Etica nicomachea e gli Analitici primi, però, rimasero incompiuti, forse anche a causa delle reazioni tiepide dell’ambiente fiorentino al progetto. 
@@ -85,10 +171,10 @@
         Intorno alla fine del 1546 Varchi ricevette l’incarico ufficiale di scrivere una storia di Firenze, al quale egli si dedicò interamente raccogliendo moltissimi documenti da fonti storiche, documentarie e persino dai protagonisti delle vicende dell’ultima Repubblica Fiorentina, come i più illustri fuorusciti repubblicani, Jacopo Nardi e Giovan Battista Busini. Il lavoro fu tuttavia intervallato da varie richieste da parte del duca e della sua consorte, Eleonora di Toledo: nel 1546 infatti quest’ultima gli commissionò una traduzione del De beneficiis di Seneca (uscita nel 1554); tre anni dopo Cosimo richiese un Boezio (ovvero una traduzione toscana del De consolatione philosophiae) per soddisfare il desiderio dell’imperatore Carlo V. All’inizio degli anni ’50, inoltre, Varchi fece parte di una commissione che doveva stendere una grammatica ufficiale del volgare toscano: al di là dell’insuccesso dell’impresa, dovuto principalmente all’incompatibilità fra i vari accademici che facevano parte della commissione, la riflessione teorica di Varchi sul volgare diede i propri risultati nel dialogo L’Hercolano. Sebbene frutto di una polemica fra Annibal Caro e Lodovico Castelvetro nella quale Varchi fu coinvolto nel 1559, quest’opera, pubblicata postuma nel 1570, riassume non solo il percorso intellettuale varchiano dagli anni padovani a quelli fiorentini, ma riassume anche i vari decenni di discussioni sulla Questione della lingua. <br><br>
         Gli ultimi anni della vita del Varchi videro un’intensificazione del lavoro poetico (nel 1555 e nel 1557 pubblicò i suoi Sonetti), spesso d’occasione, e la ripresa della redazione della Storia fiorentina. Dopo aver preso gli ordini, nel 1564 gli venne affidata la pieve di Montevarchi, ma non fece in tempo a trasferirvisi perché un ictus lo uccise il 19 dicembre 1565. Alla sua morte Cosimo gli fece tributare solenni funerali durante i quali Lionardo Salviati, allievo di Varchi e futura anima dell’Accademia della Crusca, pronunziò un discorso di elogio.</p>
         
-        <h2 id="che-cos-la-piattaforma-vasto-4">La storia del testo</h2>
+        <h2 id="che-cos-la-piattaforma-vasto-5">La storia del testo</h2>
         <p>La Storia fiorentina ha una ricca e complicata tradizione testuale. Tralasciando infatti i vari riassunti e spogli da documenti e scritti storici, Varchi lasciò alla sua morte moltissime carte manoscritte, che testimoniano il progredire dell’opera nel corso degli anni. La maggior parte dei materiali, fra cui quelli cioè che contenevano l’opera al suo stadio redazionale più avanzato, rimase presso Cosimo: su questi ultimi fascicoli intervenne Baccio Baldini, in vista di un’edizione a stampa mai realizzata, anche se il testo “rassetto” fu copiato in un meraviglioso codice di dedica, che oggi si può ammirare presso la Biblioteca Palatina di Parma (Palatino 342 = Pr3). La Storia rischiò addirittura di perdersi tra la fine del Cinquecento e l’inizio del Seicento: il manoscritto di dedica infatti finì per essere trafugato dall’arcivescovo di Pisa Carl’Antonio Dal Pozzo (1547-1607), e alla sua morte mandato ai suoi eredi in Piemonte, mentre i successori di Cosimo, per motivi ancora non bene chiariti, si disfecero di gran parte delle carte d’autore. Pr3 rientrò a Firenze nel 1617 grazie all’intervento dei segretari granducali, mentre i materiali d’autore furono per lo più recuperati da due collezionisti secenteschi, Carlo di Tommaso Strozzi (1587-1670) e Orazio Tempi (1572-1639), i quali letteralmente acquistarono dai pizzicagnoli i fascicoli smembrati della Storia. Il Tempi, inoltre, si procurò di far copiare Pr3, il cui testo a questo punto cominciò a circolare ampiamente (a oggi si contano più di 100 testimoni derivati da Pr3). Ma anche l’unico testimone della Storia (in 12 libri) costituito da materiali d’autore e ancora gelosamente custodito fra le carte private dei Medici fu sottratto alla biblioteca del cardinale Carlo (1595-1666), dove era finito; il codice fu poi donato a Lorenzo Corsini (il futuro Clemente XII, 1652-1740), che lo portò a Roma ad arricchire la propria biblioteca, presso la quale il esso è ancora oggi conservato (Corsiniano 1352 = RC4). Nel 1721 Francesco Settimanni, cavaliere fiorentino caduto in disgrazia, diede alle stampe la Storia, utilizzando un codice derivato da Pr3, ma la cui lezione era contaminata con alcune redazioni d’autori anteriori a quella finale che Settimanni era riuscito a procurarsi. L’opera fu pubblicata ad Augusta, con la falsa data di Colonia, e destò subito scalpore per la presenza alla fine del volume del famigerato “oltraggio di Fano”, il presunto stupro di Cosimo Gheri, vescovo di Fano, perpetrato nel 1537 da Pier Luigi Farnese, figlio di papa Paolo III e futuro duca di Parma. Dall’edizione Settimanni deriva anche quella a tutt’oggi citata, a cura di Lelio Arbib, (1838-41, riveduta nel 1843-44) il quale si sforzò di correggere il testo sulla scorta del materiale autografo. </p>
         
-        <h2 id="che-cos-la-piattaforma-vasto-5">Principali testimoni manoscritti</h2>
+        <h2 id="che-cos-la-piattaforma-vasto-6">Principali testimoni manoscritti</h2>
         
         <p>A) Testimoni contenenti minute e prime redazioni</p>
             <ol>
@@ -123,7 +209,7 @@
         <li>Fi 1843-44 = Storia fiorentina di Benedetto Varchi, con aggiunte e correzioni tratte dagli autografi e corredata di note per cura e opera di Lelio Arbib […], Volume primo[-terzo], Firenze, A spese della Società editrice delle Storie del Nardi e del Varchi, 1843[-1844 il volume terzo].</li>
         </ol>
        
-        <h2 id="che-cos-la-piattaforma-vasto-6">Bibliografia Essenziale</h2>
+        <h2 id="che-cos-la-piattaforma-vasto-7">Bibliografia Essenziale</h2>
        
         <p>A) Su Benedetto Varchi</p>
         
@@ -142,9 +228,15 @@
         <li>Storici e politici fiorentini del Cinquecento, a cura di Angelo Baiocchi, testi a cura di Simone Albonico, Milano-Napoli, Ricciardi, 1994. In particolare, l’introduzione (di Baiocchi) e la nota al testo (di Albonico) alla Storia fiorentina, rispettivamente alle pp. 735-752 e 880-928.</li>
         </ul>
         
-
-    </div>
-    </section>
+                    
+                    
+                  </div>
+                </div>
+                <!-- /#page-content-wrapper -->
+            </div>
+        </div>
+    
+        </section>
 
 <!--- Start Contact Section -->
 <section class="foot">
