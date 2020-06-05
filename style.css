@@ -351,6 +351,7 @@ hr.socket {
     text-align: justify;
     color: rgb(31, 28, 28);
     font-size: 1.2em;
+    padding-bottom:0.4em
 }
 #Documentation h1{
     color: #DC143C;
