@@ -481,8 +481,8 @@ hr.socket {
         font-size:95%;
     }
     .d{
-        padding-left: 0em;
-        padding-right:0em;
+        padding-left: 0em !important;
+        padding-right:0em !important;
         padding-top: 3em;
         font-size: 85%;
     }
@@ -575,8 +575,8 @@ hr.socket {
         padding-top:2em;
     }
     .d{
-        padding-left: 0em;
-        padding-right:0em;
+        padding-left: 0em !important;
+        padding-right:0em !important;
         padding-top: 0em;
          font-size: 85%;
     }
@@ -667,8 +667,8 @@ hr.socket {
         font-size:85%;
     }
     .d{
-        padding-left: 0em;
-        padding-right:0em;
+        padding-left: 0em !important;
+        padding-right:0em !important;
         padding-top: 0em;
         font-size:80%;
     }
