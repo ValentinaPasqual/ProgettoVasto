@@ -39,10 +39,10 @@ h2, h3{
 }
 
 .b{
-     border-right: 4em solid rgb(231, 227, 221, 0.7);;
-     border-left: 4em solid rgb(231, 227, 221, 0.7);;
-     border-top: 2em solid rgb(231, 227, 221, 0.7);;
-     border-bottom: 2em solid rgb(231, 227, 221, 0.7);;
+     border-right: 4em solid rgba(231, 227, 221, 0.7);;
+     border-left: 4em solid rgba(231, 227, 221, 0.7);;
+     border-top: 2em solid rgba(231, 227, 221, 0.7);;
+     border-bottom: 2em solid rgba(231, 227, 221, 0.7);;
 }
 
 
@@ -261,7 +261,7 @@ position: relative;
 
 footer {
     color: white;
-    margin-top: 1rem;
+    margin-top: 1.3em;
     font-size: 1rem;
 
 }
