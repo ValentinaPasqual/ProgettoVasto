@@ -527,7 +527,7 @@ hr.socket {
     #center{
         font-size: 0.9rem;
         letter-spacing: .15rem;
-        margin-right:0.3em;
+        margin-right:0.5em;
     }
     .narrow h1 {
         font-size: 1.5rem;
@@ -618,6 +618,8 @@ hr.socket {
     #center{
         font-size: 0.9rem;
         letter-spacing: .10rem;
+        margin-right: 0.5em;
+
     }
     .narrow h1 {
         font-size: 1rem;
@@ -691,6 +693,7 @@ hr.socket {
 }
 #center{
     font-size:70%;
+    margin-right: 0.5em;
 }
 .credits{
     margin: 0em;
