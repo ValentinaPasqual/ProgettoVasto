@@ -1,9 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
 body {
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
@@ -301,14 +301,14 @@ hr.socket {
     color: #DC143C;
     font-size:3rem;
     font-weight:bold;
-    font-family: 'Bree Serif', serif;
+    font-family: 'Fira Sans', sans-serif;
     padding-bottom: 0.5rem;
 }
 #Credits h2{
     color: black;
     font-size:1.3rem;
     font-weight:bold;
-    font-family: 'Bree Serif', serif;
+    font-family: 'Fira Sans', sans-serif;
     padding-top: 0.5rem;
     padding-bottom: 0.2rem;
 }
@@ -316,8 +316,9 @@ hr.socket {
 #Credits p{
     color: rgb(31, 28, 28);
     font-size:1rem;
-    font-family: 'Bree Serif', serif;
+    font-family: 'Fira Sans', sans-serif;
     text-align: justify;
+    font-size: 1.2em;
 }
 #Credits a:link{
     color: #DC143C;
@@ -341,27 +342,28 @@ hr.socket {
   }
 
 #Documentation p{
-    font-family: 'Bree Serif', serif;
+    font-family: 'Fira Sans', sans-serif;
     text-align: justify;
     color: rgb(31, 28, 28);
 }
 #Documentation li{
-    font-family: 'Bree Serif', serif;
+    font-family: 'Fira Sans', sans-serif;
     text-align: justify;
     color: rgb(31, 28, 28);
+    font-size: 1.2em;
 }
 #Documentation h1{
     color: #DC143C;
     font-size:3rem;
     font-weight:bold;
-    font-family: 'Bree Serif', serif;
+    font-family: 'Fira Sans', sans-serif;
     padding-bottom: 0.5rem;
 }
 #Documentation h2{
     color: black;
     font-size:1.3rem;
     font-weight:bold;
-    font-family: 'Bree Serif', serif;
+    font-family: 'Fira Sans', sans-serif;
     padding-top: 0.5rem;
     padding-bottom: 0.2rem;
 }
@@ -369,13 +371,14 @@ hr.socket {
     color: black;
     font-size:1rem;
     font-weight:bold;
-    font-family: 'Bree Serif', serif;
+    font-family: 'Fira Sans', sans-serif;
     padding-top: 0.5rem;
     padding-bottom: 0.2rem;
 }
 
 #Documentation p {
-    font-weight:normal
+    font-weight:normal;
+    font-size: 1.2em;
 }
 /*  #Documentation ul{
     list-style-type: none;
@@ -383,12 +386,18 @@ hr.socket {
 #Documentation ol{
     list-style-type: upper-roman;
     padding: 5px;
+    font-size: 1.2em;
 }
 #left{
     margin-left:0em;
 }
 #right{
     margin-right:0em;
+}
+.container-fluid{
+    width: 90% !important;
+    margin-right:2em !important;
+    padding: 3em !important;
 }
 
 @media screen and (min-width:769px) and (max-width: 1199px) {  
