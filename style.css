@@ -39,10 +39,10 @@ h2, h3{
 }
 
 .b{
-     border-right: 4em solid rgba(231, 227, 221, 0.7);;
-     border-left: 4em solid rgba(231, 227, 221, 0.7);;
-     border-top: 2em solid rgba(231, 227, 221, 0.7);;
-     border-bottom: 2em solid rgba(231, 227, 221, 0.7);;
+     border-right: 4em solid rgba(231, 227, 221, 0.7);
+     border-left: 4em solid rgba(231, 227, 221, 0.7);
+     border-top: 2em solid rgba(231, 227, 221, 0.7);
+     border-bottom: 2em solid rgba(231, 227, 221, 0.7);
 }
 
 
@@ -296,7 +296,11 @@ hr.socket {
     width: 100%;
     margin: 0.5rem;
 }
-
+.credits{
+    background-color: rgba(231, 227, 221, 0.7);
+    margin-left:5em;
+    margin-right: 10em;
+}
 #Credits h1{
     color: #DC143C;
     font-size:3rem;
