@@ -436,7 +436,7 @@ hr.socket {
         font-size: 1rem;
     }
     footer{
-        font-size:75%;
+        font-size:100%;
     }
 
     #Credits h1{
@@ -491,6 +491,9 @@ hr.socket {
     .b{
        border-left: 1em;
         border-right: 1em;
+    }
+    .footer{
+        margin-top:1.9em;
     }
 }
 
@@ -575,6 +578,9 @@ hr.socket {
     .b{
         border-left: 2em;
         border-right: 2em;
+    }
+    .footer{
+        margin-top:1.6em;
     }
 }
 
