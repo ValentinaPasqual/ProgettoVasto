@@ -355,6 +355,7 @@ hr.socket {
     text-align: justify;
     color: rgb(31, 28, 28);
     font-size: 1.2em;
+    padding-bottom:0.4em
 }
 #Documentation h1{
     color: #DC143C;
@@ -389,8 +390,6 @@ hr.socket {
 }*/
 #Documentation ol{
     list-style-type: upper-roman;
-    padding: 5px;
-    font-size: 1.2em;
 }
 #left{
     margin-left:0em;
@@ -469,9 +468,7 @@ hr.socket {
     #Documentation p{
         font-size: 1rem
     }
-    #Documentation li{
-        font-size: 1rem
-    }
+
     #doc{
         height:40%;
     }
