@@ -587,7 +587,7 @@ hr.socket {
 
 @media (max-width: 575px) {
     .Home{
-        top: 20%;
+        top: 10%;
     }
     .Home h1 {
         font-size: 85%;
