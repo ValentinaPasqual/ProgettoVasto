@@ -9326,6 +9326,7 @@ angular.module("templates-main", ["src/analogue/analogue.directive.tmpl.html", "
            d = "";
           if (b.length > 0) {
            d += '<div class="colorLegend">';
+           d += '<p><span class="hi"><b>Legenda dei colori in Edizione Critica</b><span></p>'
            for (var e in b.filters) {
             var f = b.filters[e],
              h = "";
@@ -9333,11 +9334,12 @@ angular.module("templates-main", ["src/analogue/analogue.directive.tmpl.html", "
              var j = f.values[i].name,
               k = '<i class="colorLegend-filter-color" style="background:' + f.values[i].color + '"></i>';
              h += '<span class="colorLegend-filter-value">' + k + j + "</span>";
-             h += '<span> COLOR LEGEND BLILIBLI EDITION </span>' 
             }
             "" !== h && (d += '<span class="colorLegend-filter-name">' + e + "</span>" + h)
            }
-           d += '</b>COLOR LEGEND DIPLOMATIC EDITION</b>'
+           d += '<br>'
+           d += '<p><span class="hi">Legenda dei colori in Edizione Diplomatica</span></p>'
+           d += '<span class="p">Mano di Bonsi: testo base in nero</span> <span class="p">Mano di Varchi: <span class="del" data-hand="#A2">cassature</span> ed <span class="add" data-hand="#A2">aggiunte</span></span><span class="p">Mano di Baldini: <span class="del" data-hand="#A3">cassature</span> ed <span class="add" data-hand="#A3">aggiunte</span></span><span class="p">Mano non identificata: <span class="del" data-hand="#A4">cassature</span> ed <span class="add" data-hand="#A4">aggiunte</span></span><span class="p"> Le abbreviazioni nella diplomatica sono sciolte e segnalate in corsivo e grassetto </span>'
            d += "</div>"
           } else d = "<span>No filters available</span>";
           var l = d || "<span class=\"errorMsg\">{{ 'MESSAGES.GENERIC_ERROR' | translate }}</span>";

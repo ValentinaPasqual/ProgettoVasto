@@ -36,15 +36,15 @@ div.box-body.Edition  {font-size:83% !important; text-align:justify}
 .diplomaticEdition .del[data-hand="#A4"] {background-color:transparent ; text-decoration:line-through !important; text-decoration-color:orange !important}
 .diplomaticEdition .add[data-hand="#A4"] {background-color:transparent ; color:orange !important}
 
-.front .p .del[data-hand="#A1"] {background-color:transparent; text-decoration:line-through !important; text-decoration-color:red !important;}
-.front .p .add[data-hand="#A1"] {background-color:transparent ; color:red !important}
-.front .p .del[data-hand="#A2"] {background-color:transparent ; text-decoration:line-through !important; text-decoration-color:blue !important}
-.front .p .add[data-hand="#A2"] {background-color:transparent ; color:blue !important}
-.front .p .del[data-hand="#A3"] {background-color:transparent ; text-decoration:line-through !important; text-decoration-color:green !important}
-.front .p .add[data-hand="#A3"] {background-color:transparent ; color:green !important}
-.front .p .del[data-hand="#A4"] {background-color:transparent ; text-decoration:line-through !important; text-decoration-color:orange !important}
-.front .p .add[data-hand="#A4"] {background-color:transparent ; color:orange !important}
-.front .hi {font-weight: bold}
+.colorLegend .del[data-hand="#A1"] {background-color:transparent; text-decoration:line-through !important; text-decoration-color:red !important;}
+.colorLegend .add[data-hand="#A1"] {background-color:transparent ; color:red !important}
+.colorLegend .del[data-hand="#A2"] {background-color:transparent ; text-decoration:line-through !important; text-decoration-color:blue !important}
+.colorLegend .add[data-hand="#A2"] {background-color:transparent ; color:blue !important}
+.colorLegend .del[data-hand="#A3"] {background-color:transparent ; text-decoration:line-through !important; text-decoration-color:green !important}
+.colorLegend .add[data-hand="#A3"] {background-color:transparent ; color:green !important}
+.colorLegend .del[data-hand="#A4"] {background-color:transparent ; text-decoration:line-through !important; text-decoration-color:orange !important}
+.colorLegend .add[data-hand="#A4"] {background-color:transparent ; color:orange !important}
+.colorLegend .hi {font-weight: bold; margin-top:2rem!important; margin-bottom:0px !important}
 
 /* .diplomaticEdition .lb[data-n] {display:none}
 .criticalEdition .lb[data-n] {display:block !important} */
