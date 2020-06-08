@@ -9332,7 +9332,8 @@ angular.module("templates-main", ["src/analogue/analogue.directive.tmpl.html", "
             for (var i in f.values) {
              var j = f.values[i].name,
               k = '<i class="colorLegend-filter-color" style="background:' + f.values[i].color + '"></i>';
-             h += '<span class="colorLegend-filter-value">' + k + j + "</span>"
+             h += '<span class="colorLegend-filter-value">' + k + j + "</span>";
+             h += '<span> COLOR LEGEND DIPLOMATIC EDITION</span>' 
             }
             "" !== h && (d += '<span class="colorLegend-filter-name">' + e + "</span>" + h)
            }
