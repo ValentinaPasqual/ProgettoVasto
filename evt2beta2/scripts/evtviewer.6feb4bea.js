@@ -9326,6 +9326,7 @@ angular.module("templates-main", ["src/analogue/analogue.directive.tmpl.html", "
            d = "";
           if (b.length > 0) {
            d += '<div class="colorLegend">';
+           www = "" ;
            for (var e in b.filters) {
             var f = b.filters[e],
              h = "";
@@ -9333,11 +9334,10 @@ angular.module("templates-main", ["src/analogue/analogue.directive.tmpl.html", "
              var j = f.values[i].name,
               k = '<i class="colorLegend-filter-color" style="background:' + f.values[i].color + '"></i>';
              h += '<span class="colorLegend-filter-value">' + k + j + "</span>";
-             www = "" ;
-             www += '<span> COLOR LEGEND DIPLOMATIC EDITION</span>' 
             }
             "" !== h && (d += '<span class="colorLegend-filter-name">' + e + "</span>" + h)
            }
+           www += '<span> COLOR LEGEND DIPLOMATIC EDITION</span>' 
            d += "</div>"
           } else d = "<span>No filters available</span>";
           var l = d || "<span class=\"errorMsg\">{{ 'MESSAGES.GENERIC_ERROR' | translate }}</span>";
