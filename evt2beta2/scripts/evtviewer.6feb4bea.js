@@ -7954,10 +7954,7 @@ angular.module("templates-main", ["src/analogue/analogue.directive.tmpl.html", "
           title: "BUTTONS.COLOR_KEY",
           label: "",
           icon: "color-legend",
-          type: "colorLegend" ,
-          show: function() {
-            return "critical" === i.edition
-           }
+          type: "colorLegend"
          }), N.buttons.push({
           title: "BUTTONS.FILTERS",
           label: "BUTTONS.FILTERS",
