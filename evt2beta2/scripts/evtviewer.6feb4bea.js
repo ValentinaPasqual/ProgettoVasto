@@ -9326,7 +9326,7 @@ angular.module("templates-main", ["src/analogue/analogue.directive.tmpl.html", "
            d = "";
           if (b.length > 0) {
            d += '<div class="colorLegend">';
-           d += '<p><span class="hi"><b>Legenda dei colori in Edizione Critica</b><span></p>'
+           d += '<p><span class="hi">Legenda dei colori in Edizione Critica<span></p>'
            for (var e in b.filters) {
             var f = b.filters[e],
              h = "";
