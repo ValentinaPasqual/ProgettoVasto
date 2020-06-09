@@ -111,7 +111,9 @@ div.box-body.Edition .sic, div.box-body.Edition .abbr {display:none}
 /*.criticalEdition .choice .corr, .criticalEdition .choice .reg, .criticalEdition .choice .expan {color:purple !important} */
 div.box-body.Edition .del {display:inline !important}
 .criticalEdition .del[data-hand="#A3"] {display:inline !important}
-.criticalEdition .del[data-hand="#A2"] {display:none !important}
+.criticalEdition .del[data-hand="#A2"] {display:inline !important}
+div.box-body.Edition .add > .del[data-hand="#A3"] {display:none !important}
+
 .inApparatus {display:none !important}
 .app_lemma_content .inApparatus {font-size:0% !important}
 .app_lemma_content {font-size:0% !important}
@@ -123,7 +125,9 @@ div.box-body.Edition .del {display:inline !important}
 .criticalEdition [data-rend="italic"], div.box-body.Edition [data-rend="italic"] {font-style:inherit !important}
 .criticalEdition [data-n="miaone"]:hover, .criticalEdition [data-n="miaone"], div.box-body.Edition [data-n="miaone"]:hover, div.box-body.Edition [data-n="miaone"] {background:inherit !important}
 
-div.box-body.Edition {}
+.box .box-top-box:not(#msDesc) {background:rgba(236,239,241,.92)}
+
+evt-select[data-id="version_mainText"] {display:none!important}
 
 @media screen and (max-width: 1000px) and (min-width: 701px) {
   .diplomatic, [data-place="bottom"] {

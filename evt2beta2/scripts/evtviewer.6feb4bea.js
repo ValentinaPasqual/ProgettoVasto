@@ -114,7 +114,7 @@ angular.module("templates-main", ["src/analogue/analogue.directive.tmpl.html", "
      visible: !0
     }, {
      value: "diplomatic",
-     label: "Diplomatic",
+     label: "Diplomatic",     
      title: "Diplomatic edition",
      visible: !0
     }, {
@@ -9339,7 +9339,7 @@ angular.module("templates-main", ["src/analogue/analogue.directive.tmpl.html", "
            }
            d += '<br>'
            d += '<p><span class="hi">Legenda dei colori in Edizione Diplomatica</span></p>'
-           d += '<span class="p">Mano di Bonsi: testo base in nero</span> <span class="p">Mano di Varchi: <span class="del" data-hand="#A2">cassature</span> ed <span class="add" data-hand="#A2">aggiunte</span></span><span class="p">Mano di Baldini: <span class="del" data-hand="#A3">cassature</span> ed <span class="add" data-hand="#A3">aggiunte</span></span><span class="p">Mano non identificata: <span class="del" data-hand="#A4">cassature</span> ed <span class="add" data-hand="#A4">aggiunte</span></span><span class="p"> Le abbreviazioni nella diplomatica sono sciolte e segnalate in corsivo e grassetto </span>'
+           d += '<span class="p">Mano di Lelio Bonsi: testo base in nero</span> <span class="p">Mano di Benedetto Varchi: <span class="del" data-hand="#A2">cassature</span> e <span class="add" data-hand="#A2">aggiunte</span></span><span class="p">Mano di Baccio Baldini: <span class="del" data-hand="#A3">cassature</span> e <span class="add" data-hand="#A3">aggiunte</span></span><span class="p">Mano non identificata: <span class="del" data-hand="#A4">cassature</span> e <span class="add" data-hand="#A4">aggiunte</span></span><span class="p"> Le abbreviazioni nella diplomatica sono sciolte e segnalate in corsivo e grassetto (i.e. Mons<b><i>ignor</b></i>)</span>'
            d += "</div>"
           } else d = "<span>No filters available</span>";
           var l = d || "<span class=\"errorMsg\">{{ 'MESSAGES.GENERIC_ERROR' | translate }}</span>";
