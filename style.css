@@ -530,22 +530,22 @@ hr.socket {
         margin-left:0.2em !important;
     }
     .narrow h1 {
-        font-size: 1.5rem;
+        font-size: 95%;
     }
     h3{
-        font-size: 1.5rem;
+        font-size: 95%;
     }
 
     #Credits h1{
-        font-size:1.2rem;
+        font-size:95%;
         padding-bottom: 1rem;
     }
     #Credits h2{
-        font-size: 1rem;
+        font-size: 95%;
     }
     
     #Credits p{
-        font-size: .85rem;
+        font-size: 95%;
     }
     #Documentation h1{
         font-size: 1.2rem;
@@ -553,17 +553,17 @@ hr.socket {
     }
    
     #Documentation h2{
-        font-size: 1rem;
+        font-size: 95%;
     }
     #Documentation h3{
-        font-size: 0.9rem;
+        font-size: 95%;
     }
     
     #Documentation p{
-        font-size: 90%;
+        font-size: 95%;
     }
     #Documentation li{
-        font-size: 90%;
+        font-size: 95%;
     }
     #doc{
         height:30%;
@@ -633,31 +633,31 @@ hr.socket {
         font-size: 0.8rem;
     }
     #Credits h1{
-        font-size: 90%;
+        font-size: 95%;
         padding-bottom: 1rem;
     }
     #Credits h2{
-        font-size: 75%;
+        font-size: 95%;
     }
     
     #Credits p{
         font-size: 75%;
     }
     #Documentation h1{
-        font-size: 80%;
-        padding-bottom: 1rem;
+        font-size: 100%;
+        padding-bottom: 1.5rem;
     }
     #Documentation h2{
-        font-size: 75%;
+        font-size: 100%;
     }
     #Documentation h3{
         font-size: 75%;
     }
     #Documentation p{
-        font-size: 75%;
+        font-size: 95%;
     }
     #Documentation li{
-        font-size: 75%;
+        font-size: 95%;
     }
     #doc{
         height:40%;
