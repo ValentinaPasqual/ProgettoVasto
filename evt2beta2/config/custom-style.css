@@ -113,6 +113,7 @@ div.box-body.Edition .del {display:inline !important}
 .criticalEdition .del[data-hand="#A2"] {display:none !important}
 .inApparatus {display:none !important}
 .app_lemma_content .inApparatus {font-size:0% !important}
+.app_lemma_content {font-size:0% !important}
 
 
 .front .p .add {color:red !important}  
