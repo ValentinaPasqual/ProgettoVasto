@@ -1556,7 +1556,7 @@ angular.module("templates-main", ["src/analogue/analogue.directive.tmpl.html", "
      };
      angular.forEach(Object.values(a.attributes), function(a) {
       a.specified && (f[a.name.replace(":", "-")] = a.value)
-     }), f.corresp && (f.corresp = f.corresp.replace("#", "").split(" ")), f.value = f["xml-id"] || "div_" + (c.getDivs().length + 1), e.createTitle(f, "Div");
+     }), f.corresp && (f.corresp = f.corresp.replace("#", "").split(" ")), f.value = f["xml-id"] || "div_" + (c.getDivs().length + 1), e.createTitle(f, "");
      var g = angular.element(a);
      return angular.forEach(g.children("div"), function(a) {
       f.subDivs.push(e.parseDiv(a, b, d).value)
