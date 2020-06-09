@@ -127,7 +127,8 @@ div.box-body.Edition .add > .del[data-hand="#A3"] {display:none !important}
 
 .box .box-top-box:not(#msDesc) {background:rgba(236,239,241,.92)}
 
-evt-select[data-id="version_mainText"] {display:none!important}
+evt-select[data-id="version_mainText"] {display:none!important}   /* usato per nascondere il bottone della recensione --> Versione A*/
+span[title="Risultati Viscoll"] {display:none!important}           /* usato per nascondere il bottone della VisColl in basso a sx */
 
 @media screen and (max-width: 1000px) and (min-width: 701px) {
   .diplomatic, [data-place="bottom"] {
