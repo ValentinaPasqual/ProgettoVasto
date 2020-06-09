@@ -1,5 +1,5 @@
 {
-   "indexTitle": "VaSto Project",
+   "indexTitle": "Progetto VaSto",
    "webSite": "",
    "logoUrl": "",
    
@@ -115,7 +115,7 @@
          "tagName": "date",
          "label": "Dates",
          "available": true,
-         "color": "#cfc"
+         "color": "#ffecb3"
       },
       {
          "tagName": "measure",
@@ -149,8 +149,8 @@
    "quoteDef": "<quote>",
    "analogueDef": "<seg>,<ref[type=parallelPassage]>",
 
-   "possibleVariantFilters": "type, cause",
-   "possibleLemmaFilters": "resp, hand",
+   "possibleVariantFilters": "type",
+   "possibleLemmaFilters": "cause, resp",
 
    "variantColorLight": "",
    "variantColorDark": "",

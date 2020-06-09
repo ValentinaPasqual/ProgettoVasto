@@ -36,15 +36,15 @@ div.box-body.Edition  {font-size:83% !important; text-align:justify}
 .diplomaticEdition .del[data-hand="#A4"] {background-color:transparent ; text-decoration:line-through !important; text-decoration-color:orange !important}
 .diplomaticEdition .add[data-hand="#A4"] {background-color:transparent ; color:orange !important}
 
-.front .p .del[data-hand="#A1"] {background-color:transparent; text-decoration:line-through !important; text-decoration-color:red !important;}
-.front .p .add[data-hand="#A1"] {background-color:transparent ; color:red !important}
-.front .p .del[data-hand="#A2"] {background-color:transparent ; text-decoration:line-through !important; text-decoration-color:blue !important}
-.front .p .add[data-hand="#A2"] {background-color:transparent ; color:blue !important}
-.front .p .del[data-hand="#A3"] {background-color:transparent ; text-decoration:line-through !important; text-decoration-color:green !important}
-.front .p .add[data-hand="#A3"] {background-color:transparent ; color:green !important}
-.front .p .del[data-hand="#A4"] {background-color:transparent ; text-decoration:line-through !important; text-decoration-color:orange !important}
-.front .p .add[data-hand="#A4"] {background-color:transparent ; color:orange !important}
-.front .hi {font-weight: bold}
+.colorLegend .del[data-hand="#A1"] {background-color:transparent; text-decoration:line-through !important; text-decoration-color:red !important;}
+.colorLegend .add[data-hand="#A1"] {background-color:transparent ; color:red !important}
+.colorLegend .del[data-hand="#A2"] {background-color:transparent ; text-decoration:line-through !important; text-decoration-color:blue !important}
+.colorLegend .add[data-hand="#A2"] {background-color:transparent ; color:blue !important}
+.colorLegend .del[data-hand="#A3"] {background-color:transparent ; text-decoration:line-through !important; text-decoration-color:green !important}
+.colorLegend .add[data-hand="#A3"] {background-color:transparent ; color:green !important}
+.colorLegend .del[data-hand="#A4"] {background-color:transparent ; text-decoration:line-through !important; text-decoration-color:orange !important}
+.colorLegend .add[data-hand="#A4"] {background-color:transparent ; color:orange !important}
+.colorLegend .hi {font-weight: bold; margin-top:2rem!important; margin-bottom:0px !important}
 
 /* .diplomaticEdition .lb[data-n] {display:none}
 .criticalEdition .lb[data-n] {display:block !important} */
@@ -92,6 +92,7 @@ div.box-body.Edition  {font-size:83% !important; text-align:justify}
 .criticalEdition [data-n="miaone"]:hover, div.box-body.Edition [data-n="miaone"]:hover {background:inherit !important}
 
 
+
 .namedEntityRef {color:inherit} 
 
 
@@ -101,9 +102,10 @@ div.box-body.Edition  {font-size:83% !important; text-align:justify}
 .criticalEdition .lb[id="null"], div.box-body.Edition .lb[id="null"] {display:none}
 .criticalEdition .lineN,  div.box-body.Edition .lineN {display:inline !important}
 .criticalEdition .lb[data-n], div.box-body.Edition .lb[data-n] {display:inline !important}
-.diplomaticEdition .lb[data-n], div.box-body.Edition .lb[data-n] {display:none!important}
+.diplomaticEdition .lb[data-n] {display:none!important}
 .criticalEdition .lb > br, div.box-body.Edition .lb > br {display:none !important}
 .criticalEdition .head > .lb, div.box-body.Edition .head > .lb {display:block !important; text-align: center !important;}
+.criticalEdition .p,  div.box-body.Edition .p {display:inline !important}
 .criticalEdition .orig, .criticalEdition .sic, .criticalEdition .abbr, div.box-body.Edition .orig, 
 div.box-body.Edition .sic, div.box-body.Edition .abbr {display:none}
 /*.criticalEdition .choice .corr, .criticalEdition .choice .reg, .criticalEdition .choice .expan {color:purple !important} */
@@ -112,6 +114,7 @@ div.box-body.Edition .del {display:inline !important}
 .criticalEdition .del[data-hand="#A2"] {display:none !important}
 .inApparatus {display:none !important}
 .app_lemma_content .inApparatus {font-size:0% !important}
+.app_lemma_content {font-size:0% !important}
 
 
 .front .p .add {color:red !important}  
@@ -119,6 +122,8 @@ div.box-body.Edition .del {display:inline !important}
 .criticalEdition .emph, div.box-body.Edition .emph {font-weight:inherit}
 .criticalEdition [data-rend="italic"], div.box-body.Edition [data-rend="italic"] {font-style:inherit !important}
 .criticalEdition [data-n="miaone"]:hover, .criticalEdition [data-n="miaone"], div.box-body.Edition [data-n="miaone"]:hover, div.box-body.Edition [data-n="miaone"] {background:inherit !important}
+
+div.box-body.Edition {}
 
 @media screen and (max-width: 1000px) and (min-width: 701px) {
   .diplomatic, [data-place="bottom"] {
