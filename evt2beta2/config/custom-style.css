@@ -46,10 +46,12 @@ div.box-body.Edition  {font-size:83% !important; text-align:justify}
 .colorLegend .add[data-hand="#A4"] {background-color:transparent ; color:orange !important}
 .colorLegend .hi {font-weight: bold; margin-top:2rem!important; margin-bottom:0px !important}
 
+.front .p {padding-left:2rem!important; padding-right:2rem!important; padding-top:0.2rem; padding-bottom:0.2rem; text-align:justify !important}
+
 /* .diplomaticEdition .lb[data-n] {display:none}
 .criticalEdition .lb[data-n] {display:block !important} */
 
-.diplomaticEdition .sic, .diplomaticEdition .orig {color:inherit !important}
+.diplomaticEdition .sic, .diplomaticEdition .orig {color:inherit !important; text-decoration:none !important}
 .diplomaticEdition .choice .corr {display:none !important}
 .diplomaticEdition .choice .sic {text-decoration:none !important}
 
