@@ -152,8 +152,8 @@
    "possibleVariantFilters": "type",
    "possibleLemmaFilters": "cause",
 
-   "variantColorLight": "",
-   "variantColorDark": "",
+   "variantColorLight": "rgba(101, 138, 255, .15)",
+   "variantColorDark": "rgba(101, 138, 255, .3) ",
    "heatmapColor": "",
    "variantColors": {
       "type": {
