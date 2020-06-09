@@ -102,9 +102,10 @@ div.box-body.Edition  {font-size:83% !important; text-align:justify}
 .criticalEdition .lb[id="null"], div.box-body.Edition .lb[id="null"] {display:none}
 .criticalEdition .lineN,  div.box-body.Edition .lineN {display:inline !important}
 .criticalEdition .lb[data-n], div.box-body.Edition .lb[data-n] {display:inline !important}
-.diplomaticEdition .lb[data-n], div.box-body.Edition .lb[data-n] {display:none!important}
+.diplomaticEdition .lb[data-n] {display:none!important}
 .criticalEdition .lb > br, div.box-body.Edition .lb > br {display:none !important}
 .criticalEdition .head > .lb, div.box-body.Edition .head > .lb {display:block !important; text-align: center !important;}
+.criticalEdition .p,  div.box-body.Edition .p {display:inline !important}
 .criticalEdition .orig, .criticalEdition .sic, .criticalEdition .abbr, div.box-body.Edition .orig, 
 div.box-body.Edition .sic, div.box-body.Edition .abbr {display:none}
 /*.criticalEdition .choice .corr, .criticalEdition .choice .reg, .criticalEdition .choice .expan {color:purple !important} */
@@ -121,6 +122,8 @@ div.box-body.Edition .del {display:inline !important}
 .criticalEdition .emph, div.box-body.Edition .emph {font-weight:inherit}
 .criticalEdition [data-rend="italic"], div.box-body.Edition [data-rend="italic"] {font-style:inherit !important}
 .criticalEdition [data-n="miaone"]:hover, .criticalEdition [data-n="miaone"], div.box-body.Edition [data-n="miaone"]:hover, div.box-body.Edition [data-n="miaone"] {background:inherit !important}
+
+div.box-body.Edition {}
 
 @media screen and (max-width: 1000px) and (min-width: 701px) {
   .diplomatic, [data-place="bottom"] {

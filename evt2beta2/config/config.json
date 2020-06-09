@@ -115,7 +115,7 @@
          "tagName": "date",
          "label": "Dates",
          "available": true,
-         "color": "#cfc"
+         "color": "#ffecb3"
       },
       {
          "tagName": "measure",
