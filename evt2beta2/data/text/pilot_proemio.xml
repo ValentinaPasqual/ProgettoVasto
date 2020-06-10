@@ -268,7 +268,7 @@
                             <orig> ^ </orig>
                             <reg resp="#D.B."/>
                         </choice></span>
-                    <add hand="#A2" place="bottom" n="miaone">
+                    <add hand="#A2" place="bottom" n="miaone" xml:id="margin_bottom_9r">
                         <span n="miaone"><choice>
                                 <orig> ^ </orig>
                                 <reg resp="#D.B."/>
@@ -545,7 +545,7 @@
                                             <orig>^</orig>
                                             <reg resp="#D.B."/>
                                         </choice>
-                                        <add hand="#A2" place="bottom"><choice>
+                                        <add hand="#A2" place="bottom" xml:id="margin_bottom_2"><choice>
                                             <orig>^</orig>
                                             <reg resp="#D.B."/>
                                         </choice> di maniera che <lb/>fanno parere giusta<choice><orig>,</orig><corr></corr></choice> e vera essere quella

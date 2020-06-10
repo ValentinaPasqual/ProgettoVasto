@@ -81,15 +81,15 @@ div.box-body.Edition  {font-size:83% !important; text-align:justify}
 
 .diplomaticEdition .add[data-place="bottom"]{ 
     display: block !important; 
-    position: absolute !important; 
-    bottom: -20em !important;
-    
+    position: absolute !important;   
 }
 
 
 /* MARIGINI CON HOVER*/
 .diplomaticEdition [data-n="miaone"]:hover + .add[data-place="margin"], span[data-n="miaone"]:hover, [data-n="miaone"]:hover + .add[data-place="bottom"], .add[data-place="margin"]:hover + [data-n="miaone"] {background-color: #dedbbc !important}
 .diplomaticEdition [data-n="miaone"], .del[data-n="miaone"] {background-color: beige !important;}
+.diplomaticEdition span[data-n="[8r]"] ~ span.p > .add[data-n="miaone"] {bottom: -15em !important}   /* each margin bottom position needs to be customised respecting its page peculiarities */
+.diplomaticEdition span[data-n="[12r]"] ~ .app .lem .del .add[data-place="bottom"] {bottom: -20rem !important;} /* each margin bottom position needs to be customised respecting its page peculiarities */
 
 .criticalEdition [data-n="miaone"]:hover, div.box-body.Edition [data-n="miaone"]:hover {background:inherit !important}
 
@@ -141,3 +141,13 @@ span[title="Risultati Viscoll"] {display:none!important}           /* usato per 
   .diplomatic, [data-place="bottom"] {
   font-size:65% !important
   }}
+
+
+  @media screen and (max-width: 1000px) and (min-width: 850px) {
+  .diplomaticEdition span[data-n="[8r]"] ~ span.p > .add[data-place="bottom"] {bottom: -12rem !important}}
+
+  @media screen and (max-width: 850px) and (min-width: 701px) {
+    .diplomaticEdition span[data-n="[8r]"] ~ span.p > .add[data-place="bottom"] {bottom: -15rem !important}}
+
+  @media screen and (max-width: 700px) {
+    .diplomaticEdition span[data-n="[8r]"] ~ span.p > .add[data-place="bottom"] {bottom: -30em !important}}
